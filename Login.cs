@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
-        }
+
+            this.BackColor = Color.FromArgb(33, 43, 61);
+            p_form.BackColor = Color.FromArgb(53, 70, 99);
+            p_form1.BackColor = Color.FromArgb(53, 70, 99);
+        }      
     }
 }
