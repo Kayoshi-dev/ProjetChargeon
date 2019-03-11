@@ -15,6 +15,11 @@ namespace ProjetChargeon
         public Form1()
         {
             InitializeComponent();
+
+            this.BackColor = Color.FromArgb(53, 70, 100);
+            p_titre.BackColor = Color.FromArgb(33, 43, 61);
+            btn_localisation.BackColor = Color.FromArgb(53, 70, 100);
+            btn_connect.BackColor = Color.FromArgb(53, 70, 100);
         }
     }
 }
