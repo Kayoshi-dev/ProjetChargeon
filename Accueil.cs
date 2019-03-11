@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ * Date de création : 11/03/2019
+ * Dernière modification : 11/03/2019
+ * Équipe : Nathouuuu
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +23,7 @@ namespace ProjetChargeon
             InitializeComponent();
 
             //Définit les couleurs pour l'arrière plan et des boutons
-            this.BackColor = Color.FromArgb(33, 43, 61); // Background global de l'appli
+            BackColor = Color.FromArgb(33, 43, 61); // Background global de l'appli
             p_titre.BackColor = Color.FromArgb(53, 70, 100); //Panel titre en haut
             btn_localisation.BackColor = Color.FromArgb(53, 70, 100);
             btn_connect.BackColor = Color.FromArgb(53, 70, 100);
@@ -25,8 +31,7 @@ namespace ProjetChargeon
 
         private void btn_connect_Click(object sender, EventArgs e)
         {
-            this.Close(); //Ferme le formulaire au Clic sur le bouton de connexion
-
+            Hide(); //Cache le formulaire au Clic sur le bouton de connexion
         }
     }
 }
