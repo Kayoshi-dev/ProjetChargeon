@@ -79,7 +79,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 34);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Connexion";
+            this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // tb_mdp
