@@ -102,18 +102,19 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(331, 420);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(137, 21);
+            this.linkLabel1.Size = new System.Drawing.Size(143, 21);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Mention Légales";
+            this.linkLabel1.Text = "Mentions Légales";
             // 
             // p_form1
             // 
             this.p_form1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.p_form1.Controls.Add(this.label4);
-            this.p_form1.Location = new System.Drawing.Point(-19, 0);
+            this.p_form1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.p_form1.Location = new System.Drawing.Point(0, 0);
             this.p_form1.Name = "p_form1";
-            this.p_form1.Size = new System.Drawing.Size(835, 72);
+            this.p_form1.Size = new System.Drawing.Size(800, 72);
             this.p_form1.TabIndex = 10;
             // 
             // label4
@@ -150,8 +151,10 @@
             this.Controls.Add(this.linkLabel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Login";
-            this.Text = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Connexion | Chargéon";
             this.p_form1.ResumeLayout(false);
             this.p_form1.PerformLayout();
             this.p_form.ResumeLayout(false);
