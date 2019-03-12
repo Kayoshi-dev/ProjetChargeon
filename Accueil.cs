@@ -31,7 +31,10 @@ namespace ProjetChargeon
 
         private void btn_connect_Click(object sender, EventArgs e)
         {
-            Hide(); //Cache le formulaire au Clic sur le bouton de connexion
+            Hide();
+            var Login = new Login();
+            Login.ShowDialog();
+            Close();
         }
     }
 }
