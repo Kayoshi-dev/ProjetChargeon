@@ -37,12 +37,12 @@
             this.tb_login = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.p_form1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.p_form = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.p_form1.SuspendLayout();
-            this.p_form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.p_form.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,7 +113,7 @@
             // 
             // p_form1
             // 
-            this.p_form1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.p_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.p_form1.Controls.Add(this.pictureBox1);
             this.p_form1.Controls.Add(this.label4);
             this.p_form1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -121,6 +121,16 @@
             this.p_form1.Name = "p_form1";
             this.p_form1.Size = new System.Drawing.Size(800, 72);
             this.p_form1.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(758, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label4
             // 
@@ -134,7 +144,7 @@
             // 
             // p_form
             // 
-            this.p_form.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.p_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.p_form.Controls.Add(this.label1);
             this.p_form.Controls.Add(this.label2);
             this.p_form.Controls.Add(this.tb_login);
@@ -146,20 +156,10 @@
             this.p_form.Size = new System.Drawing.Size(206, 257);
             this.p_form.TabIndex = 11;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(758, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.p_form);
             this.Controls.Add(this.p_form1);
@@ -173,9 +173,9 @@
             this.Text = "Connexion | Chargéon";
             this.p_form1.ResumeLayout(false);
             this.p_form1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.p_form.ResumeLayout(false);
             this.p_form.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
