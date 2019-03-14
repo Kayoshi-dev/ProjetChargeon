@@ -19,6 +19,11 @@ namespace ProjetChargeon
             BackColor = Color.FromArgb(33, 43, 61); // Background global de l'appli
             p_form.BackColor = Color.FromArgb(53, 70, 99); //Panel 
             p_form1.BackColor = Color.FromArgb(53, 70, 99); // Panel 
-        }      
+        }
+
+        private void PictureBox1_Click(object sender, System.EventArgs e)
+        {
+            Close();
+        }
     }
 }

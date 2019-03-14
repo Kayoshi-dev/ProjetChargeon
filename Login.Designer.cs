@@ -39,8 +39,10 @@
             this.p_form1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.p_form = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.p_form1.SuspendLayout();
             this.p_form.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,6 +114,7 @@
             // p_form1
             // 
             this.p_form1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.p_form1.Controls.Add(this.pictureBox1);
             this.p_form1.Controls.Add(this.label4);
             this.p_form1.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_form1.Location = new System.Drawing.Point(0, 0);
@@ -143,6 +146,16 @@
             this.p_form.Size = new System.Drawing.Size(206, 257);
             this.p_form.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(758, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -152,7 +165,7 @@
             this.Controls.Add(this.p_form1);
             this.Controls.Add(this.linkLabel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Login";
@@ -162,6 +175,7 @@
             this.p_form1.PerformLayout();
             this.p_form.ResumeLayout(false);
             this.p_form.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +193,6 @@
         private System.Windows.Forms.Panel p_form1;
         private System.Windows.Forms.Panel p_form;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
