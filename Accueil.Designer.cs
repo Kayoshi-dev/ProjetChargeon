@@ -33,7 +33,9 @@
             this.p_titre = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_localisation = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.p_titre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_connect
@@ -50,6 +52,7 @@
             // p_titre
             // 
             this.p_titre.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.p_titre.Controls.Add(this.pictureBox1);
             this.p_titre.Controls.Add(this.label1);
             resources.ApplyResources(this.p_titre, "p_titre");
             this.p_titre.Name = "p_titre";
@@ -70,6 +73,13 @@
             this.btn_localisation.Name = "btn_localisation";
             this.btn_localisation.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // Accueil
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -78,10 +88,12 @@
             this.Controls.Add(this.p_titre);
             this.Controls.Add(this.btn_connect);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Accueil";
             this.p_titre.ResumeLayout(false);
             this.p_titre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,6 +104,7 @@
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_localisation;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
