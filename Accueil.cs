@@ -21,12 +21,6 @@ namespace ProjetChargeon
         public Accueil()
         {
             InitializeComponent();
-
-            //Définit les couleurs pour l'arrière plan et des boutons
-            BackColor = Color.FromArgb(33, 43, 61); // Background global de l'appli
-            p_titre.BackColor = Color.FromArgb(53, 70, 100); //Panel titre en haut
-            btn_localisation.BackColor = Color.FromArgb(53, 70, 100);
-            btn_connect.BackColor = Color.FromArgb(53, 70, 100);
         }
 
         private void btn_connect_Click(object sender, EventArgs e)

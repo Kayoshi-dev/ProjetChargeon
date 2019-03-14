@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.btn_connect = new System.Windows.Forms.Button();
             this.p_titre = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_localisation = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_connect
             // 
-            this.btn_connect.BackColor = System.Drawing.Color.Black;
+            this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.btn_connect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_connect.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btn_connect, "btn_connect");
@@ -51,11 +51,18 @@
             // 
             // p_titre
             // 
-            this.p_titre.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.p_titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.p_titre.Controls.Add(this.pictureBox1);
             this.p_titre.Controls.Add(this.label1);
             resources.ApplyResources(this.p_titre, "p_titre");
             this.p_titre.Name = "p_titre";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label1
             // 
@@ -65,7 +72,7 @@
             // 
             // btn_localisation
             // 
-            this.btn_localisation.BackColor = System.Drawing.Color.Black;
+            this.btn_localisation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.btn_localisation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_localisation.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btn_localisation, "btn_localisation");
@@ -73,16 +80,10 @@
             this.btn_localisation.Name = "btn_localisation";
             this.btn_localisation.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
             // Accueil
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.btn_localisation);
             this.Controls.Add(this.p_titre);
