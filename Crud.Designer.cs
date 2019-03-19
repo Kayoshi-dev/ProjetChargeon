@@ -190,7 +190,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(667, 250);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -281,7 +280,6 @@
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Puissance";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -291,7 +289,6 @@
             this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 11;
             this.label8.Text = "N° Série";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox8
             // 
@@ -299,7 +296,6 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(82, 20);
             this.textBox8.TabIndex = 10;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label9
             // 
@@ -309,7 +305,6 @@
             this.label9.Size = new System.Drawing.Size(57, 13);
             this.label9.TabIndex = 9;
             this.label9.Text = "Référence";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label6
             // 
@@ -319,7 +314,6 @@
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 16;
             this.label6.Text = "Type";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox5
             // 
