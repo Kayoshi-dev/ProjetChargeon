@@ -82,15 +82,16 @@
             // 
             // b_valider
             // 
+            this.b_valider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.b_valider.Cursor = System.Windows.Forms.Cursors.Hand;
             this.b_valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_valider.ForeColor = System.Drawing.Color.White;
-            this.b_valider.Location = new System.Drawing.Point(53, 208);
+            this.b_valider.Location = new System.Drawing.Point(51, 206);
             this.b_valider.Name = "b_valider";
             this.b_valider.Size = new System.Drawing.Size(104, 34);
-            this.b_valider.TabIndex = 5;
+            this.b_valider.TabIndex = 3;
             this.b_valider.Text = "Valider";
-            this.b_valider.UseVisualStyleBackColor = true;
+            this.b_valider.UseVisualStyleBackColor = false;
             // 
             // tb_mdp
             // 
@@ -100,7 +101,7 @@
             this.tb_mdp.Location = new System.Drawing.Point(37, 154);
             this.tb_mdp.Name = "tb_mdp";
             this.tb_mdp.Size = new System.Drawing.Size(159, 20);
-            this.tb_mdp.TabIndex = 6;
+            this.tb_mdp.TabIndex = 2;
             // 
             // tb_login
             // 
@@ -110,7 +111,7 @@
             this.tb_login.Location = new System.Drawing.Point(37, 82);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(159, 20);
-            this.tb_login.TabIndex = 7;
+            this.tb_login.TabIndex = 1;
             // 
             // p_form1
             // 
