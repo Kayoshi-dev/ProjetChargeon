@@ -32,7 +32,6 @@
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btn_connect = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
@@ -50,6 +49,7 @@
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
@@ -59,15 +59,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
             // 
             // btn_connect
             // 
@@ -96,7 +87,6 @@
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_connect);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.p_titre);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,7 +96,6 @@
             this.p_titre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -114,7 +103,6 @@
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btn_connect;
         private System.Windows.Forms.Button button1;
     }
