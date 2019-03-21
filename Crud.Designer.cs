@@ -1,4 +1,4 @@
-﻿namespace ProjetChargeon
+namespace ProjetChargeon
 {
     partial class Crud
     {
@@ -147,6 +147,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(758, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -157,12 +158,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chargéon";
             // 
@@ -175,7 +176,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 79);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 346);
+            this.tabControl1.Size = new System.Drawing.Size(776, 359);
             this.tabControl1.TabIndex = 9;
             // 
             // tabSites
@@ -196,11 +197,61 @@
             this.tabSites.Location = new System.Drawing.Point(4, 22);
             this.tabSites.Name = "tabSites";
             this.tabSites.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSites.Size = new System.Drawing.Size(768, 320);
+            this.tabSites.Size = new System.Drawing.Size(768, 333);
             this.tabSites.TabIndex = 0;
             this.tabSites.Text = "Sites";
             // 
             // bSupprimerSites
+            // 
+            this.bSupprimerSites.Location = new System.Drawing.Point(677, 158);
+            this.bSupprimerSites.Name = "bSupprimerSites";
+            this.bSupprimerSites.Size = new System.Drawing.Size(85, 32);
+            this.bSupprimerSites.TabIndex = 11;
+            this.bSupprimerSites.Text = "Supprimer";
+            this.bSupprimerSites.UseVisualStyleBackColor = true;
+            // 
+            // bModifierSites
+            // 
+            this.bModifierSites.Location = new System.Drawing.Point(677, 111);
+            this.bModifierSites.Name = "bModifierSites";
+            this.bModifierSites.Size = new System.Drawing.Size(85, 32);
+            this.bModifierSites.TabIndex = 10;
+            this.bModifierSites.Text = "Modifier";
+            this.bModifierSites.UseVisualStyleBackColor = true;
+            // 
+            // bAjouterSites
+            // 
+            this.bAjouterSites.Location = new System.Drawing.Point(677, 64);
+            this.bAjouterSites.Name = "bAjouterSites";
+            this.bAjouterSites.Size = new System.Drawing.Size(85, 32);
+            this.bAjouterSites.TabIndex = 9;
+            this.bAjouterSites.Text = "Ajouter";
+            this.bAjouterSites.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(501, 267);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Ville";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(460, 283);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(365, 267);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Code postal";
             // 
             this.bSupprimerSites.Location = new System.Drawing.Point(677, 158);
             this.bSupprimerSites.Name = "bSupprimerSites";
@@ -290,6 +341,192 @@
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_site,
+            this.nom_site,
+            this.adresse_site,
+            this.cp_site,
+            this.ville_site});
+            this.dataGridView1.Location = new System.Drawing.Point(4, 7);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(667, 250);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // id_site
+            // 
+            this.id_site.HeaderText = "Id";
+            this.id_site.Name = "id_site";
+            // 
+            // nom_site
+            // 
+            this.nom_site.HeaderText = "Nom ";
+            this.nom_site.Name = "nom_site";
+            // 
+            // adresse_site
+            // 
+            this.adresse_site.HeaderText = "Adresse";
+            this.adresse_site.Name = "adresse_site";
+            // 
+            // cp_site
+            // 
+            this.cp_site.HeaderText = "Code postal ";
+            this.cp_site.Name = "cp_site";
+            // 
+            // ville_site
+            // 
+            this.ville_site.HeaderText = "Ville";
+            this.ville_site.Name = "ville_site";
+            // 
+            // tabBornes
+            // 
+            this.tabBornes.Controls.Add(this.bSupprimerBornes);
+            this.tabBornes.Controls.Add(this.bModifierBornes);
+            this.tabBornes.Controls.Add(this.bAjouterBornes);
+            this.tabBornes.Controls.Add(this.label11);
+            this.tabBornes.Controls.Add(this.label10);
+            this.tabBornes.Controls.Add(this.textBox10);
+            this.tabBornes.Controls.Add(this.textBox9);
+            this.tabBornes.Controls.Add(this.textBox7);
+            this.tabBornes.Controls.Add(this.textBox6);
+            this.tabBornes.Controls.Add(this.textBox5);
+            this.tabBornes.Controls.Add(this.label6);
+            this.tabBornes.Controls.Add(this.label7);
+            this.tabBornes.Controls.Add(this.label8);
+            this.tabBornes.Controls.Add(this.textBox8);
+            this.tabBornes.Controls.Add(this.label9);
+            this.tabBornes.Controls.Add(this.dataGridView2);
+            this.tabBornes.Location = new System.Drawing.Point(4, 22);
+            this.tabBornes.Name = "tabBornes";
+            this.tabBornes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabBornes.Size = new System.Drawing.Size(768, 333);
+            this.tabBornes.TabIndex = 1;
+            this.tabBornes.Text = "Bornes";
+            this.tabBornes.UseVisualStyleBackColor = true;
+            // 
+            // bSupprimerBornes
+            // 
+            this.bSupprimerBornes.Location = new System.Drawing.Point(677, 163);
+            this.bSupprimerBornes.Name = "bSupprimerBornes";
+            this.bSupprimerBornes.Size = new System.Drawing.Size(85, 32);
+            this.bSupprimerBornes.TabIndex = 26;
+            this.bSupprimerBornes.Text = "Supprimer";
+            this.bSupprimerBornes.UseVisualStyleBackColor = true;
+            // 
+            // bModifierBornes
+            // 
+            this.bModifierBornes.Location = new System.Drawing.Point(677, 115);
+            this.bModifierBornes.Name = "bModifierBornes";
+            this.bModifierBornes.Size = new System.Drawing.Size(85, 32);
+            this.bModifierBornes.TabIndex = 25;
+            this.bModifierBornes.Text = "Modifier";
+            this.bModifierBornes.UseVisualStyleBackColor = true;
+            // 
+            // bAjouterBornes
+            // 
+            this.bAjouterBornes.Location = new System.Drawing.Point(677, 68);
+            this.bAjouterBornes.Name = "bAjouterBornes";
+            this.bAjouterBornes.Size = new System.Drawing.Size(85, 32);
+            this.bAjouterBornes.TabIndex = 24;
+            this.bAjouterBornes.Text = "Ajouter";
+            this.bAjouterBornes.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(466, 268);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Priorité";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(565, 268);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "État";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(539, 284);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(82, 20);
+            this.textBox10.TabIndex = 21;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(226, 283);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(257, 267);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Adresse";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(106, 283);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(147, 267);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nom";
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(442, 284);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(82, 20);
+            this.textBox9.TabIndex = 20;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(346, 284);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(82, 20);
+            this.textBox7.TabIndex = 19;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(249, 284);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(82, 20);
+            this.textBox6.TabIndex = 18;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(151, 284);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(82, 20);
+            this.textBox5.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(373, 268);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Type";
             // 
             // dataGridView1
             // 
@@ -472,6 +709,15 @@
             this.textBox8.TabIndex = 10;
             // 
             // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(64, 268);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Référence";
+            // 
+            // dataGridView2
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(64, 268);

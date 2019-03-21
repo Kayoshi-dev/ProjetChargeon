@@ -1,6 +1,6 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 18/03/2019
+ * Dernière modification : 11/03/2019
  * Équipe : Nathouuuu
  */
 
@@ -16,24 +16,21 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Accueil : Form
+    public partial class Logged_Admin : Form
     {
-        public Accueil()
+        public Logged_Admin()
         {
             InitializeComponent();
-        }
-
-        private void btn_connect_Click(object sender, EventArgs e)
-        {
-            Hide();
-            var Login = new Login();
-            Login.ShowDialog();
-            Close();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btn_connect_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
