@@ -147,6 +147,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(758, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -157,12 +158,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chargéon";
             // 
@@ -175,7 +176,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 79);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 346);
+            this.tabControl1.Size = new System.Drawing.Size(776, 359);
             this.tabControl1.TabIndex = 9;
             // 
             // tabSites
@@ -196,7 +197,7 @@
             this.tabSites.Location = new System.Drawing.Point(4, 22);
             this.tabSites.Name = "tabSites";
             this.tabSites.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSites.Size = new System.Drawing.Size(768, 320);
+            this.tabSites.Size = new System.Drawing.Size(768, 333);
             this.tabSites.TabIndex = 0;
             this.tabSites.Text = "Sites";
             // 
@@ -252,12 +253,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Code postal";
             // 
-            // textBox3
+            // textBox10
             // 
-            this.textBox3.Location = new System.Drawing.Point(345, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.textBox10.Location = new System.Drawing.Point(539, 284);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(82, 20);
+            this.textBox10.TabIndex = 21;
             // 
             // textBox2
             // 
@@ -532,7 +533,7 @@
             // 
             this.etat_borne.HeaderText = "État";
             this.etat_borne.Name = "etat_borne";
-            // 
+            //
             // tabInterventions
             // 
             this.tabInterventions.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -912,7 +913,7 @@
             this.label18.Size = new System.Drawing.Size(74, 13);
             this.label18.TabIndex = 50;
             this.label18.Text = "Fin habilitation";
-            // 
+            //
             // Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

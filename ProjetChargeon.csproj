@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,9 +64,21 @@
     </Compile>
     <Compile Include="Facturation.Designer.cs">
       <DependentUpon>Facturation.cs</DependentUpon>
+    <Compile Include="Logged_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logged_Customer.Designer.cs">
+      <DependentUpon>Logged_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Logged_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logged_Admin.Designer.cs">
+      <DependentUpon>Logged_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDAO.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +87,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation.resx">
       <DependentUpon>Facturation.cs</DependentUpon>
+    <EmbeddedResource Include="Logged_Customer.resx">
+      <DependentUpon>Logged_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Logged_Admin.resx">
+      <DependentUpon>Logged_Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

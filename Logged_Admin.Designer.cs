@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-    partial class Accueil
+    partial class Logged_Admin
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,27 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
-            this.btn_connect = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Logged_Admin));
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_localisation = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btn_connect = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_connect
-            // 
-            this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_connect.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_connect.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_connect, "btn_connect");
-            this.btn_connect.ForeColor = System.Drawing.Color.White;
-            this.btn_connect.Name = "btn_connect";
-            this.btn_connect.UseVisualStyleBackColor = false;
-            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
             // p_titre
             // 
@@ -72,54 +62,75 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
-            // btn_localisation
+            // btn_connect
             // 
-            this.btn_localisation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_localisation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_localisation.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_localisation, "btn_localisation");
-            this.btn_localisation.ForeColor = System.Drawing.Color.White;
-            this.btn_localisation.Name = "btn_localisation";
-            this.btn_localisation.UseVisualStyleBackColor = false;
+            this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_connect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_connect.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_connect, "btn_connect");
+            this.btn_connect.ForeColor = System.Drawing.Color.White;
+            this.btn_connect.Name = "btn_connect";
+            this.btn_connect.UseVisualStyleBackColor = false;
             // 
-            // linkLabel1
+            // button1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // Accueil
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // Logged_Admin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.btn_localisation);
-            this.Controls.Add(this.p_titre);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_connect);
+            this.Controls.Add(this.p_titre);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.Name = "Accueil";
+            this.Name = "Logged_Admin";
             this.p_titre.ResumeLayout(false);
             this.p_titre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_connect;
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_localisation;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btn_connect;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
