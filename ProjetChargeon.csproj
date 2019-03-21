@@ -59,6 +59,12 @@
     <Compile Include="Crud.Designer.cs">
       <DependentUpon>Crud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Facturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation.Designer.cs">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logged_Customer.cs">
       <SubType>Form</SubType>
     </Compile>

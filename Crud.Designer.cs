@@ -75,6 +75,51 @@
             this.type_borne = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priorite_borne = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etat_borne = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabInterventions = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type_int = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tech_nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabTechniciens = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.id_tech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nom_tech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenom_tech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hab_tech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hab_debut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fin_hab = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -82,6 +127,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabBornes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabInterventions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabTechniciens.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // p_titre
@@ -98,7 +147,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(758, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -109,12 +157,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 21);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chargéon";
             // 
@@ -122,10 +170,12 @@
             // 
             this.tabControl1.Controls.Add(this.tabSites);
             this.tabControl1.Controls.Add(this.tabBornes);
+            this.tabControl1.Controls.Add(this.tabInterventions);
+            this.tabControl1.Controls.Add(this.tabTechniciens);
             this.tabControl1.Location = new System.Drawing.Point(12, 79);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 359);
+            this.tabControl1.Size = new System.Drawing.Size(776, 346);
             this.tabControl1.TabIndex = 9;
             // 
             // tabSites
@@ -146,7 +196,7 @@
             this.tabSites.Location = new System.Drawing.Point(4, 22);
             this.tabSites.Name = "tabSites";
             this.tabSites.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSites.Size = new System.Drawing.Size(768, 333);
+            this.tabSites.Size = new System.Drawing.Size(768, 320);
             this.tabSites.TabIndex = 0;
             this.tabSites.Text = "Sites";
             // 
@@ -283,6 +333,7 @@
             // 
             // tabBornes
             // 
+            this.tabBornes.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tabBornes.Controls.Add(this.bSupprimerBornes);
             this.tabBornes.Controls.Add(this.bModifierBornes);
             this.tabBornes.Controls.Add(this.bAjouterBornes);
@@ -302,10 +353,9 @@
             this.tabBornes.Location = new System.Drawing.Point(4, 22);
             this.tabBornes.Name = "tabBornes";
             this.tabBornes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBornes.Size = new System.Drawing.Size(768, 333);
+            this.tabBornes.Size = new System.Drawing.Size(768, 320);
             this.tabBornes.TabIndex = 1;
             this.tabBornes.Text = "Bornes";
-            this.tabBornes.UseVisualStyleBackColor = true;
             // 
             // bSupprimerBornes
             // 
@@ -483,6 +533,386 @@
             this.etat_borne.HeaderText = "État";
             this.etat_borne.Name = "etat_borne";
             // 
+            // tabInterventions
+            // 
+            this.tabInterventions.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tabInterventions.Controls.Add(this.label12);
+            this.tabInterventions.Controls.Add(this.label13);
+            this.tabInterventions.Controls.Add(this.textBox11);
+            this.tabInterventions.Controls.Add(this.textBox12);
+            this.tabInterventions.Controls.Add(this.textBox13);
+            this.tabInterventions.Controls.Add(this.textBox14);
+            this.tabInterventions.Controls.Add(this.textBox15);
+            this.tabInterventions.Controls.Add(this.label14);
+            this.tabInterventions.Controls.Add(this.label15);
+            this.tabInterventions.Controls.Add(this.label16);
+            this.tabInterventions.Controls.Add(this.textBox16);
+            this.tabInterventions.Controls.Add(this.label17);
+            this.tabInterventions.Controls.Add(this.button3);
+            this.tabInterventions.Controls.Add(this.button2);
+            this.tabInterventions.Controls.Add(this.button1);
+            this.tabInterventions.Controls.Add(this.dataGridView3);
+            this.tabInterventions.Location = new System.Drawing.Point(4, 22);
+            this.tabInterventions.Name = "tabInterventions";
+            this.tabInterventions.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInterventions.Size = new System.Drawing.Size(768, 320);
+            this.tabInterventions.TabIndex = 2;
+            this.tabInterventions.Text = "Interventions";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(457, 265);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "Type";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(541, 265);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 13);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Technicien";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(523, 281);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(89, 20);
+            this.textBox11.TabIndex = 37;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(426, 281);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(89, 20);
+            this.textBox12.TabIndex = 36;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(330, 281);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(89, 20);
+            this.textBox13.TabIndex = 35;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(233, 281);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(89, 20);
+            this.textBox14.TabIndex = 34;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(135, 281);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(89, 20);
+            this.textBox15.TabIndex = 33;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(358, 265);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 13);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Durée";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(264, 265);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(30, 13);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Date";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(146, 265);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(68, 13);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Commentaire";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(37, 281);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(89, 20);
+            this.textBox16.TabIndex = 29;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(68, 265);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 13);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "Titre";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(677, 161);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(85, 32);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "Supprimer";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(679, 114);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 32);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Modifier";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(679, 66);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 32);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Ajouter";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.type_int,
+            this.tech_nom});
+            this.dataGridView3.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(667, 250);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 20;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Titre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Commentaire";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Durée";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // type_int
+            // 
+            this.type_int.HeaderText = "Type";
+            this.type_int.Name = "type_int";
+            // 
+            // tech_nom
+            // 
+            this.tech_nom.HeaderText = "Technicien";
+            this.tech_nom.Name = "tech_nom";
+            // 
+            // tabTechniciens
+            // 
+            this.tabTechniciens.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tabTechniciens.Controls.Add(this.label18);
+            this.tabTechniciens.Controls.Add(this.textBox18);
+            this.tabTechniciens.Controls.Add(this.textBox19);
+            this.tabTechniciens.Controls.Add(this.textBox20);
+            this.tabTechniciens.Controls.Add(this.textBox21);
+            this.tabTechniciens.Controls.Add(this.label20);
+            this.tabTechniciens.Controls.Add(this.label21);
+            this.tabTechniciens.Controls.Add(this.label22);
+            this.tabTechniciens.Controls.Add(this.textBox22);
+            this.tabTechniciens.Controls.Add(this.label23);
+            this.tabTechniciens.Controls.Add(this.button6);
+            this.tabTechniciens.Controls.Add(this.button5);
+            this.tabTechniciens.Controls.Add(this.button4);
+            this.tabTechniciens.Controls.Add(this.dataGridView4);
+            this.tabTechniciens.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tabTechniciens.Location = new System.Drawing.Point(4, 22);
+            this.tabTechniciens.Name = "tabTechniciens";
+            this.tabTechniciens.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTechniciens.Size = new System.Drawing.Size(768, 320);
+            this.tabTechniciens.TabIndex = 3;
+            this.tabTechniciens.Text = "Techniciens";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(677, 174);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(85, 32);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Supprimer";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(677, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 32);
+            this.button5.TabIndex = 27;
+            this.button5.Text = "Modifier";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(677, 78);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(85, 32);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Ajouter";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_tech,
+            this.nom_tech,
+            this.prenom_tech,
+            this.hab_tech,
+            this.hab_debut,
+            this.fin_hab});
+            this.dataGridView4.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(665, 238);
+            this.dataGridView4.TabIndex = 0;
+            // 
+            // id_tech
+            // 
+            this.id_tech.HeaderText = "Id";
+            this.id_tech.Name = "id_tech";
+            // 
+            // nom_tech
+            // 
+            this.nom_tech.HeaderText = "Nom";
+            this.nom_tech.Name = "nom_tech";
+            // 
+            // prenom_tech
+            // 
+            this.prenom_tech.HeaderText = "Prénom";
+            this.prenom_tech.Name = "prenom_tech";
+            // 
+            // hab_tech
+            // 
+            this.hab_tech.HeaderText = "Habilitation";
+            this.hab_tech.Name = "hab_tech";
+            // 
+            // hab_debut
+            // 
+            this.hab_debut.HeaderText = "Début habilitation";
+            this.hab_debut.Name = "hab_debut";
+            // 
+            // fin_hab
+            // 
+            this.fin_hab.HeaderText = "Fin habilitation";
+            this.fin_hab.Name = "fin_hab";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(491, 277);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(89, 20);
+            this.textBox18.TabIndex = 48;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(395, 277);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(89, 20);
+            this.textBox19.TabIndex = 47;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(298, 277);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(89, 20);
+            this.textBox20.TabIndex = 46;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(200, 277);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(89, 20);
+            this.textBox21.TabIndex = 45;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(396, 261);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(89, 13);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "Début habilitation";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(313, 261);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(59, 13);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "Habilitation";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(220, 261);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(43, 13);
+            this.label22.TabIndex = 42;
+            this.label22.Text = "Prénom";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(102, 277);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(89, 20);
+            this.textBox22.TabIndex = 41;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(133, 261);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 13);
+            this.label23.TabIndex = 40;
+            this.label23.Text = "Nom";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(497, 261);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 13);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "Fin habilitation";
+            // 
             // Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -504,6 +934,12 @@
             this.tabBornes.ResumeLayout(false);
             this.tabBornes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabInterventions.ResumeLayout(false);
+            this.tabInterventions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabTechniciens.ResumeLayout(false);
+            this.tabTechniciens.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -556,5 +992,50 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn type_borne;
         private System.Windows.Forms.DataGridViewTextBoxColumn priorite_borne;
         private System.Windows.Forms.DataGridViewTextBoxColumn etat_borne;
+        private System.Windows.Forms.TabPage tabInterventions;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type_int;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tech_nom;
+        private System.Windows.Forms.TabPage tabTechniciens;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_tech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nom_tech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenom_tech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hab_tech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hab_debut;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fin_hab;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label23;
     }
 }
