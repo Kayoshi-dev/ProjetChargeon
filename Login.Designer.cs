@@ -100,6 +100,7 @@
             this.tb_mdp.ForeColor = System.Drawing.Color.White;
             this.tb_mdp.Location = new System.Drawing.Point(37, 154);
             this.tb_mdp.Name = "tb_mdp";
+            this.tb_mdp.PasswordChar = '•';
             this.tb_mdp.Size = new System.Drawing.Size(159, 20);
             this.tb_mdp.TabIndex = 2;
             // 

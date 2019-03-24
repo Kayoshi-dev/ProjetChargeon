@@ -100,6 +100,16 @@
             this.type_int = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tech_nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabTechniciens = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -110,16 +120,6 @@
             this.hab_tech = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hab_debut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fin_hab = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -157,12 +157,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chargéon";
             // 
@@ -760,78 +760,14 @@
             this.tabTechniciens.TabIndex = 3;
             this.tabTechniciens.Text = "Techniciens";
             // 
-            // button6
+            // label18
             // 
-            this.button6.Location = new System.Drawing.Point(677, 174);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 32);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Supprimer";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(677, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 32);
-            this.button5.TabIndex = 27;
-            this.button5.Text = "Modifier";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(677, 78);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 32);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Ajouter";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_tech,
-            this.nom_tech,
-            this.prenom_tech,
-            this.hab_tech,
-            this.hab_debut,
-            this.fin_hab});
-            this.dataGridView4.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(665, 238);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // id_tech
-            // 
-            this.id_tech.HeaderText = "Id";
-            this.id_tech.Name = "id_tech";
-            // 
-            // nom_tech
-            // 
-            this.nom_tech.HeaderText = "Nom";
-            this.nom_tech.Name = "nom_tech";
-            // 
-            // prenom_tech
-            // 
-            this.prenom_tech.HeaderText = "Prénom";
-            this.prenom_tech.Name = "prenom_tech";
-            // 
-            // hab_tech
-            // 
-            this.hab_tech.HeaderText = "Habilitation";
-            this.hab_tech.Name = "hab_tech";
-            // 
-            // hab_debut
-            // 
-            this.hab_debut.HeaderText = "Début habilitation";
-            this.hab_debut.Name = "hab_debut";
-            // 
-            // fin_hab
-            // 
-            this.fin_hab.HeaderText = "Fin habilitation";
-            this.fin_hab.Name = "fin_hab";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(497, 261);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 13);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "Fin habilitation";
             // 
             // textBox18
             // 
@@ -904,14 +840,78 @@
             this.label23.TabIndex = 40;
             this.label23.Text = "Nom";
             // 
-            // label18
+            // button6
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(497, 261);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 13);
-            this.label18.TabIndex = 50;
-            this.label18.Text = "Fin habilitation";
+            this.button6.Location = new System.Drawing.Point(677, 174);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(85, 32);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Supprimer";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(677, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 32);
+            this.button5.TabIndex = 27;
+            this.button5.Text = "Modifier";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(677, 78);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(85, 32);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Ajouter";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_tech,
+            this.nom_tech,
+            this.prenom_tech,
+            this.hab_tech,
+            this.hab_debut,
+            this.fin_hab});
+            this.dataGridView4.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(665, 238);
+            this.dataGridView4.TabIndex = 0;
+            // 
+            // id_tech
+            // 
+            this.id_tech.HeaderText = "Id";
+            this.id_tech.Name = "id_tech";
+            // 
+            // nom_tech
+            // 
+            this.nom_tech.HeaderText = "Nom";
+            this.nom_tech.Name = "nom_tech";
+            // 
+            // prenom_tech
+            // 
+            this.prenom_tech.HeaderText = "Prénom";
+            this.prenom_tech.Name = "prenom_tech";
+            // 
+            // hab_tech
+            // 
+            this.hab_tech.HeaderText = "Habilitation";
+            this.hab_tech.Name = "hab_tech";
+            // 
+            // hab_debut
+            // 
+            this.hab_debut.HeaderText = "Début habilitation";
+            this.hab_debut.Name = "hab_debut";
+            // 
+            // fin_hab
+            // 
+            this.fin_hab.HeaderText = "Fin habilitation";
+            this.fin_hab.Name = "fin_hab";
             // 
             // Crud
             // 
