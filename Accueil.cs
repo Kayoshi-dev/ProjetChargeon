@@ -31,6 +31,14 @@ namespace ProjetChargeon
             Close();
         }
 
+        private void Btn_localisation_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var Localisation = new Localisation();
+            Localisation.ShowDialog();
+            Close();
+        }
+
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();

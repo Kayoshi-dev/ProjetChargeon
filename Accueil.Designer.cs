@@ -81,6 +81,7 @@
             this.btn_localisation.ForeColor = System.Drawing.Color.White;
             this.btn_localisation.Name = "btn_localisation";
             this.btn_localisation.UseVisualStyleBackColor = false;
+            this.btn_localisation.Click += new System.EventHandler(this.Btn_localisation_Click);
             // 
             // linkLabel1
             // 

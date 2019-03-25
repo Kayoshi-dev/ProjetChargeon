@@ -32,9 +32,12 @@
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.wb_map = new System.Windows.Forms.WebBrowser();
+            this.tb_villes = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cb_bornes = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.b_valider = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +53,7 @@
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
@@ -60,15 +64,17 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
-            // webBrowser1
+            // wb_map
             // 
-            resources.ApplyResources(this.webBrowser1, "webBrowser1");
-            this.webBrowser1.Name = "webBrowser1";
+            resources.ApplyResources(this.wb_map, "wb_map");
+            this.wb_map.Name = "wb_map";
+            this.wb_map.ScrollBarsEnabled = false;
+            this.wb_map.Url = new System.Uri("https://www.google.com/maps/d/u/1/embed?mid=1V7pB1Nj9I5lG1zQgtwDQMqjzxh_Fgy2p", System.UriKind.Absolute);
             // 
-            // textBox1
+            // tb_villes
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.tb_villes, "tb_villes");
+            this.tb_villes.Name = "tb_villes";
             // 
             // label2
             // 
@@ -76,14 +82,35 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
+            // cb_bornes
+            // 
+            resources.ApplyResources(this.cb_bornes, "cb_bornes");
+            this.cb_bornes.FormattingEnabled = true;
+            this.cb_bornes.Name = "cb_bornes";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // b_valider
+            // 
+            resources.ApplyResources(this.b_valider, "b_valider");
+            this.b_valider.Name = "b_valider";
+            this.b_valider.UseVisualStyleBackColor = true;
+            // 
             // Localisation
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.b_valider);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cb_bornes);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.tb_villes);
+            this.Controls.Add(this.wb_map);
             this.Controls.Add(this.p_titre);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -101,9 +128,12 @@
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.WebBrowser wb_map;
+        private System.Windows.Forms.TextBox tb_villes;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_bornes;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button b_valider;
     }
 }
 
