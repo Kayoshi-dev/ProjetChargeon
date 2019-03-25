@@ -56,7 +56,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 21);
+            this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Connexion";
             // 
@@ -66,7 +66,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 21);
+            this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Login :";
             // 
@@ -76,7 +76,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 21);
+            this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mot de passe :";
             // 
@@ -92,6 +92,7 @@
             this.b_valider.TabIndex = 3;
             this.b_valider.Text = "Valider";
             this.b_valider.UseVisualStyleBackColor = false;
+            this.b_valider.Click += new System.EventHandler(this.b_valider_Click);
             // 
             // tb_mdp
             // 
@@ -101,7 +102,7 @@
             this.tb_mdp.Location = new System.Drawing.Point(37, 154);
             this.tb_mdp.Name = "tb_mdp";
             this.tb_mdp.PasswordChar = '•';
-            this.tb_mdp.Size = new System.Drawing.Size(159, 20);
+            this.tb_mdp.Size = new System.Drawing.Size(159, 19);
             this.tb_mdp.TabIndex = 2;
             // 
             // tb_login
@@ -111,7 +112,7 @@
             this.tb_login.ForeColor = System.Drawing.Color.White;
             this.tb_login.Location = new System.Drawing.Point(37, 82);
             this.tb_login.Name = "tb_login";
-            this.tb_login.Size = new System.Drawing.Size(159, 20);
+            this.tb_login.Size = new System.Drawing.Size(159, 19);
             this.tb_login.TabIndex = 1;
             // 
             // p_form1
@@ -142,7 +143,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 21);
+            this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Chargéon";
             // 
@@ -205,7 +206,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.p_form);
             this.Controls.Add(this.p_form1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

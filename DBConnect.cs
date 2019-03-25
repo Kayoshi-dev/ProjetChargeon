@@ -45,6 +45,7 @@ namespace ProjetChargeon
             try
             {
                 connection.Open();
+                MessageBox.Show("Ok");
                 return true;
             }
             catch(MySqlException ex)
@@ -74,5 +75,15 @@ namespace ProjetChargeon
                 return false;
             }
         }
+
+        public bool VerifLogin(string user, string password)
+        {
+            string query = "SELECT * FROM connexion WHERE Col_Login= '" + user + "' AND Col_Mdp '" + password + "'";
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+
+        }
+
+        
     }
 }

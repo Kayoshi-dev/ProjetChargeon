@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetChargeon
 {
@@ -29,6 +30,11 @@ namespace ProjetChargeon
         private void PictureBox1_Click(object sender, System.EventArgs e)
         {
             Close();
+        }
+
+        private void b_valider_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
