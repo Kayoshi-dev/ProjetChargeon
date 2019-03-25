@@ -23,6 +23,7 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
+        // Au Clic sur le bouton, accéder à la page Login
         private void btn_connect_Click(object sender, EventArgs e)
         {
             Hide();
@@ -31,6 +32,7 @@ namespace ProjetChargeon
             Close();
         }
 
+        // Au Click sur l'image, fermer la page et kill le process
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();

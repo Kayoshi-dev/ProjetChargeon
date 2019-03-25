@@ -32,10 +32,10 @@
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_connect = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_client = new System.Windows.Forms.Button();
+            this.btn_bornes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_ajout = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,25 +62,27 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
-            // btn_connect
+            // btn_client
             // 
-            this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_connect.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_connect.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_connect, "btn_connect");
-            this.btn_connect.ForeColor = System.Drawing.Color.White;
-            this.btn_connect.Name = "btn_connect";
-            this.btn_connect.UseVisualStyleBackColor = false;
+            this.btn_client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_client.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_client.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_client, "btn_client");
+            this.btn_client.ForeColor = System.Drawing.Color.White;
+            this.btn_client.Name = "btn_client";
+            this.btn_client.UseVisualStyleBackColor = false;
+            this.btn_client.Click += new System.EventHandler(this.onClickToCustomers);
             // 
-            // button1
+            // btn_bornes
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_bornes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_bornes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_bornes.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_bornes, "btn_bornes");
+            this.btn_bornes.ForeColor = System.Drawing.Color.White;
+            this.btn_bornes.Name = "btn_bornes";
+            this.btn_bornes.UseVisualStyleBackColor = false;
+            this.btn_bornes.Click += new System.EventHandler(this.onClickToBornes);
             // 
             // button2
             // 
@@ -91,26 +93,28 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.onClickToStats);
             // 
-            // button3
+            // btn_ajout
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_ajout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_ajout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ajout.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_ajout, "btn_ajout");
+            this.btn_ajout.ForeColor = System.Drawing.Color.White;
+            this.btn_ajout.Name = "btn_ajout";
+            this.btn_ajout.UseVisualStyleBackColor = false;
+            this.btn_ajout.Click += new System.EventHandler(this.onClickToAdd);
             // 
             // Logged_Admin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_ajout);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_connect);
+            this.Controls.Add(this.btn_bornes);
+            this.Controls.Add(this.btn_client);
             this.Controls.Add(this.p_titre);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -127,10 +131,10 @@
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_connect;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_client;
+        private System.Windows.Forms.Button btn_bornes;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_ajout;
     }
 }
 
