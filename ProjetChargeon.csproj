@@ -67,6 +67,12 @@
     <Compile Include="Facturation.Designer.cs">
       <DependentUpon>Facturation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localisation.Designer.cs">
+      <DependentUpon>Localisation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logged_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation.resx">
       <DependentUpon>Facturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localisation.resx">
+      <DependentUpon>Localisation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logged_Customer.resx">
       <DependentUpon>Logged_Customer.cs</DependentUpon>

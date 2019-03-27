@@ -82,7 +82,7 @@
             this.btn_factures.ForeColor = System.Drawing.Color.White;
             this.btn_factures.Image = ((System.Drawing.Image)(resources.GetObject("btn_factures.Image")));
             this.btn_factures.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_factures.Location = new System.Drawing.Point(468, 133);
+            this.btn_factures.Location = new System.Drawing.Point(449, 161);
             this.btn_factures.Name = "btn_factures";
             this.btn_factures.Size = new System.Drawing.Size(200, 200);
             this.btn_factures.TabIndex = 13;
@@ -102,7 +102,7 @@
             this.btn_bornes.ForeColor = System.Drawing.Color.White;
             this.btn_bornes.Image = ((System.Drawing.Image)(resources.GetObject("btn_bornes.Image")));
             this.btn_bornes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_bornes.Location = new System.Drawing.Point(139, 133);
+            this.btn_bornes.Location = new System.Drawing.Point(146, 161);
             this.btn_bornes.Name = "btn_bornes";
             this.btn_bornes.Size = new System.Drawing.Size(200, 200);
             this.btn_bornes.TabIndex = 14;

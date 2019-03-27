@@ -1,7 +1,8 @@
 /* 
  * Date de création : 11/03/2019
- * Dernière modification : 27/03/2019
+ * Dernière modification : 25/03/2019
  * Équipe : Nathouuuu
+ * Rôle : Affichage du formulaire de Localisation
  */
 
 using System;
@@ -16,14 +17,13 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Accueil : Form
+    public partial class Localisation : Form
     {
-        public Accueil()
+        public Localisation()
         {
             InitializeComponent();
         }
 
-        // Au Clic sur le bouton, accéder à la page Login
         private void btn_connect_Click(object sender, EventArgs e)
         {
             Hide();
@@ -31,16 +31,7 @@ namespace ProjetChargeon
             Login.ShowDialog();
             Close();
         }
-        
-        private void Btn_localisation_Click(object sender, EventArgs e)
-        {
-            Hide();
-            var Localisation = new Localisation();
-            Localisation.ShowDialog();
-            Close();
-        }
 
-        // Au Click sur l'image, fermer la page et kill le process
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();
