@@ -34,6 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_factures = new System.Windows.Forms.Button();
             this.btn_bornes = new System.Windows.Forms.Button();
+            this.btn_stats = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +90,7 @@
             this.btn_factures.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_factures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_factures.UseVisualStyleBackColor = false;
+            this.btn_factures.Click += new System.EventHandler(this.onClickToFactures);
             // 
             // btn_bornes
             // 
@@ -108,6 +110,27 @@
             this.btn_bornes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_bornes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_bornes.UseVisualStyleBackColor = false;
+            this.btn_bornes.Click += new System.EventHandler(this.onClickToBornes);
+            // 
+            // btn_stats
+            // 
+            this.btn_stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_stats.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_stats.FlatAppearance.BorderSize = 0;
+            this.btn_stats.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_stats.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btn_stats.ForeColor = System.Drawing.Color.White;
+            this.btn_stats.Image = ((System.Drawing.Image)(resources.GetObject("btn_stats.Image")));
+            this.btn_stats.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_stats.Location = new System.Drawing.Point(139, 329);
+            this.btn_stats.Name = "btn_stats";
+            this.btn_stats.Size = new System.Drawing.Size(200, 71);
+            this.btn_stats.TabIndex = 15;
+            this.btn_stats.Text = "Statistiques";
+            this.btn_stats.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_stats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_stats.UseVisualStyleBackColor = false;
+            this.btn_stats.Click += new System.EventHandler(this.onClickToStats);
             // 
             // Logged_Customer
             // 
@@ -115,6 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_stats);
             this.Controls.Add(this.btn_bornes);
             this.Controls.Add(this.btn_factures);
             this.Controls.Add(this.p_titre);
@@ -135,5 +159,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_factures;
         private System.Windows.Forms.Button btn_bornes;
+        private System.Windows.Forms.Button btn_stats;
     }
 }

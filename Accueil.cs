@@ -1,6 +1,6 @@
-﻿/* 
+/* 
  * Date de création : 11/03/2019
- * Dernière modification : 18/03/2019
+ * Dernière modification : 27/03/2019
  * Équipe : Nathouuuu
  */
 
@@ -23,6 +23,7 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
+        // Au Clic sur le bouton, accéder à la page Login
         private void btn_connect_Click(object sender, EventArgs e)
         {
             Hide();
@@ -30,7 +31,7 @@ namespace ProjetChargeon
             Login.ShowDialog();
             Close();
         }
-
+        
         private void Btn_localisation_Click(object sender, EventArgs e)
         {
             Hide();
@@ -39,6 +40,7 @@ namespace ProjetChargeon
             Close();
         }
 
+        // Au Click sur l'image, fermer la page et kill le process
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Close();
