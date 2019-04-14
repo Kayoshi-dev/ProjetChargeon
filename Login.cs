@@ -23,8 +23,6 @@ namespace ProjetChargeon
         public Login()
         {
             InitializeComponent();
-            DBConnect Connect = new DBConnect();
-            Connect.OpenConnection();
         }
 
         private void PictureBox1_Click(object sender, System.EventArgs e)
@@ -34,7 +32,14 @@ namespace ProjetChargeon
 
         private void b_valider_Click(object sender, EventArgs e)
         {
-
+			DBConnect Connect = new DBConnect();
+			int Count = Connect.CheckLogin(tb_login.Text, tb_mdp.Text);
+			if(Count == 1) {
+				Hide();
+				var Logged_Customer = new Logged_Customer();
+				Logged_Customer.ShowDialog();
+				Close();
+			}
         }
     }
 }

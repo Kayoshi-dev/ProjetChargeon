@@ -50,15 +50,22 @@ namespace ProjetChargeon
             }
             catch(MySqlException ex)
             {
-                if(ex.Number == 0) //
+                if(ex.Number == 0) // Si le message d'erreur est 0
                 {
                     MessageBox.Show("Erreur de connexion au serveur.");
                 }
-                else if (ex.Number == 1045)
+                else if (ex.Number == 1045) // Si le message d'erreur est 1045
                 {
                     MessageBox.Show("User ou mot de passe incorect");
                 }
-                return false;
+				else { // Sinon on affiche un message général
+					MessageBox.Show("Une erreur inconnue est survenue");	
+				} 
+				// et on ferme l'application
+				Environment.Exit(0);
+				
+				// On retourne quand même false car Csharp exige une valeur de retour
+				return false;
             }
         }
 
@@ -76,14 +83,28 @@ namespace ProjetChargeon
             }
         }
 
-        public bool VerifLogin(string user, string password)
+        public int CheckLogin(string username, string password)
         {
-            string query = "SELECT * FROM connexion WHERE Col_Login= '" + user + "' AND Col_Mdp '" + password + "'";
-            MySqlCommand req = new MySqlCommand(query, connection);
+            string query = "SELECT COUNT(*) FROM connexion WHERE username = @username AND password = @password";
+            int Count = -1;
 
+            if(OpenConnection() == true) {
+                MySqlCommand req = new MySqlCommand(query, connection);
 
-        }
+                req.Parameters.Clear();
+                req.Parameters.AddWithValue("@username", username);
+                req.Parameters.AddWithValue("@password", password);
+                Count = int.Parse(req.ExecuteScalar()+"");
+                
+                CloseConnection();
 
-        
+				return Count;
+            }
+            else 
+            {
+				MessageBox.Show("Connexion fermée");
+                return Count;
+            }
+        }      
     }
 }
