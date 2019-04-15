@@ -1,8 +1,8 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 24/03/2019
+ * Dernière modification : 16/04/2019
  * Équipe : Nathouuuu
- * Rôle : Affichage du formulaire de connexion
+ * Rôle : Affichage et traitement du formulaire de connexion
  */
 
 using System;
@@ -33,13 +33,40 @@ namespace ProjetChargeon
         private void b_valider_Click(object sender, EventArgs e)
         {
 			DBConnect Connect = new DBConnect();
-			int Count = Connect.CheckLogin(tb_login.Text, tb_mdp.Text);
-			if(Count == 1) {
-				Hide();
-				var Logged_Customer = new Logged_Customer();
-				Logged_Customer.ShowDialog();
-				Close();
+			DataSet DataAccount = Connect.CheckLogin(tb_login.Text, tb_mdp.Text);
+
+			//On parcours
+			for (int i = 0; i <= DataAccount.Tables[0].Rows.Count - 1; i++)
+			{
+				//DataAccount.Tables[0].Rows[i].ItemArray[0].ToString() corresponds au Count(*)
+				if (DataAccount.Tables[0].Rows[i].ItemArray[0].ToString() == "1") 
+				{
+					
+
+					//DataAccount.Tables[0].Rows[i].ItemArray[1].ToString() corresponds au statut du compte (cad Admin ou non)
+					//Si non Admin
+					if (DataAccount.Tables[0].Rows[i].ItemArray[1].ToString() == "False") {
+						Hide();
+						var LoggedCustomer = new Logged_Customer();
+						LoggedCustomer.ShowDialog();
+						Close();
+					}
+					//Si Admin
+					else
+					{
+						Hide();
+						var LoggedAdmin = new Logged_Admin();
+						LoggedAdmin.ShowDialog();
+						Close();
+					}
+				}
+				else
+				{
+					
+				}
 			}
-        }
+			
+			MessageBox.Show("Mauvais identifiant ou mot de passe.");
+		}
     }
 }
