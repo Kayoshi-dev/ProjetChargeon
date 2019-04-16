@@ -1,12 +1,13 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 24/03/2019
+ * Dernière modification : 16/04/2019
  * Équipe : Nathouuuu
  * Rôle : Connexion à la base de donnée
  */
 
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,19 +46,27 @@ namespace ProjetChargeon
             try
             {
                 connection.Open();
+                //MessageBox.Show("Connexion ouverte!");
                 return true;
             }
             catch(MySqlException ex)
             {
-                if(ex.Number == 0) //
+                if(ex.Number == 0) // Si le message d'erreur est 0
                 {
                     MessageBox.Show("Erreur de connexion au serveur.");
                 }
-                else if (ex.Number == 1045)
+                else if (ex.Number == 1045) // Si le message d'erreur est 1045
                 {
-                    MessageBox.Show("User ou mot de passe incorect");
+                    MessageBox.Show("User ou Password pour la BDD incorect.");
                 }
-                return false;
+				else { // Sinon on affiche un message général
+					MessageBox.Show("Impossible de se connecter à la base de donnée.");	
+				} 
+				// et on ferme l'application
+				Environment.Exit(0);
+				
+				// On retourne quand même false car Csharp exige une valeur de retour
+				return false;
             }
         }
 
@@ -74,5 +83,37 @@ namespace ProjetChargeon
                 return false;
             }
         }
+
+        public DataSet CheckLogin(string username, string password)
+        {
+            string query = "SELECT ChkAdmin.CntUser, Co_Admin FROM connexion, (SELECT COUNT(*) AS CntUser FROM connexion) AS ChkAdmin WHERE Co_Login = @username AND Co_Mdp = @password GROUP BY ChkAdmin.CntUser, Co_Admin";
+
+			if (OpenConnection() == true) {
+                MySqlCommand req = new MySqlCommand(query, connection);
+
+                req.Parameters.Clear();
+                req.Parameters.AddWithValue("@username", username);
+                req.Parameters.AddWithValue("@password", password);
+
+				MySqlDataAdapter adapter = new MySqlDataAdapter();
+				DataSet DataAccount = new DataSet();
+
+				//On remplie le DataSet avec notre objet "req"
+				adapter.SelectCommand = req;
+				adapter.Fill(DataAccount);
+
+				//On libère les ressources
+				adapter.Dispose();
+				req.Dispose();
+
+				return DataAccount;
+			}
+            else 
+            {
+				MessageBox.Show("Connexion fermée");
+				DataSet DataAccount = new DataSet();
+				return DataAccount = null;
+            }
+        }      
     }
 }
