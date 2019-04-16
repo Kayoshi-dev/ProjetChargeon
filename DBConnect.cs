@@ -46,7 +46,7 @@ namespace ProjetChargeon
             try
             {
                 connection.Open();
-                MessageBox.Show("Connexion ouverte!");
+                //MessageBox.Show("Connexion ouverte!");
                 return true;
             }
             catch(MySqlException ex)
@@ -57,10 +57,10 @@ namespace ProjetChargeon
                 }
                 else if (ex.Number == 1045) // Si le message d'erreur est 1045
                 {
-                    MessageBox.Show("User ou mot de passe incorect");
+                    MessageBox.Show("User ou Password pour la BDD incorect.");
                 }
 				else { // Sinon on affiche un message général
-					MessageBox.Show("Une erreur inconnue est survenue");	
+					MessageBox.Show("Impossible de se connecter à la base de donnée.");	
 				} 
 				// et on ferme l'application
 				Environment.Exit(0);

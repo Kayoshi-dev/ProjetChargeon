@@ -30,43 +30,35 @@ namespace ProjetChargeon
             Close();
         }
 
-        private void b_valider_Click(object sender, EventArgs e)
-        {
+		private void b_valider_Click(object sender, EventArgs e)
+		{
 			DBConnect Connect = new DBConnect();
 			DataSet DataAccount = Connect.CheckLogin(tb_login.Text, tb_mdp.Text);
 
-			//On parcours
-			for (int i = 0; i <= DataAccount.Tables[0].Rows.Count - 1; i++)
+			//Si le Count renvoie 0, on affiche une erreur
+			if (DataAccount.Tables[0].Rows.Count == 0)
 			{
-				//DataAccount.Tables[0].Rows[i].ItemArray[0].ToString() corresponds au Count(*)
-				if (DataAccount.Tables[0].Rows[i].ItemArray[0].ToString() == "1") 
+				MessageBox.Show("Login ou mot de passe incorrect.");
+			}
+			//Sinon on parcours pour 
+			else
+			{
+				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
 				{
-					
-
-					//DataAccount.Tables[0].Rows[i].ItemArray[1].ToString() corresponds au statut du compte (cad Admin ou non)
-					//Si non Admin
-					if (DataAccount.Tables[0].Rows[i].ItemArray[1].ToString() == "False") {
-						Hide();
-						var LoggedCustomer = new Logged_Customer();
-						LoggedCustomer.ShowDialog();
-						Close();
-					}
-					//Si Admin
-					else
-					{
-						Hide();
-						var LoggedAdmin = new Logged_Admin();
-						LoggedAdmin.ShowDialog();
-						Close();
-					}
+					Hide();
+					var LoggedCustomer = new Logged_Customer();
+					LoggedCustomer.ShowDialog();
+					Close();
 				}
+				//Si Admin
 				else
 				{
-					
+					Hide();
+					var LoggedAdmin = new Logged_Admin();
+					LoggedAdmin.ShowDialog();
+					Close();
 				}
 			}
-			
-			MessageBox.Show("Mauvais identifiant ou mot de passe.");
 		}
     }
 }
