@@ -21,5 +21,18 @@ namespace ProjetChargeon
 		{
 			Close();
 		}
+
+		private void Btn_factures_Click(object sender, EventArgs e)
+		{
+			Hide();
+			var Facturation = new Facturation();
+			Facturation.ShowDialog();
+			Close();
+		}
+
+		private void Btn_bornes_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -41,19 +41,28 @@ namespace ProjetChargeon
         // Au Clic sr le bouton, accéder à la page Gestion Clients
         private void onClickToCustomers(object sender, EventArgs e)
         {
-
-        }
+			Hide();
+			var Stats = new Stats();
+			Stats.ShowDialog();
+			Close();
+		}
 
         // Au Clic sur le bouton, accéder à la page Gestion Bornes
         private void onClickToBornes(object sender, EventArgs e)
         {
-
-        }
+			Hide();
+			var Stats = new Stats();
+			Stats.ShowDialog();
+			Close();
+		}
 
         // Au Clic sur le bouton, accéder à la page Ajout Rapide
         private void onClickToAdd(object sender, EventArgs e)
         {
-
-        }
+			Hide();
+			var Manager = new Crud();
+			Manager.ShowDialog();
+			Close();
+		}
     }
 }
