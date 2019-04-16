@@ -60,5 +60,13 @@ namespace ProjetChargeon
 				}
 			}
 		}
-    }
+
+		private void PictureBox4_Click(object sender, EventArgs e)
+		{
+			Hide();
+			var Accueil = new Accueil();
+			Accueil.ShowDialog();
+			Close();
+		}
+	}
 }

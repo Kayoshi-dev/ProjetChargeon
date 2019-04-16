@@ -34,8 +34,11 @@ namespace ProjetChargeon
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btn_factures = new System.Windows.Forms.Button();
 			this.btn_bornes = new System.Windows.Forms.Button();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.label2 = new System.Windows.Forms.Label();
 			this.p_titre.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// p_titre
@@ -55,7 +58,7 @@ namespace ProjetChargeon
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
 			this.label1.ForeColor = System.Drawing.SystemColors.Window;
 			this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.label1.Location = new System.Drawing.Point(12, 25);
+			this.label1.Location = new System.Drawing.Point(146, 161);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(90, 21);
 			this.label1.TabIndex = 3;
@@ -83,7 +86,7 @@ namespace ProjetChargeon
 			this.btn_factures.ForeColor = System.Drawing.Color.White;
 			this.btn_factures.Image = ((System.Drawing.Image)(resources.GetObject("btn_factures.Image")));
 			this.btn_factures.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.btn_factures.Location = new System.Drawing.Point(468, 133);
+			this.btn_factures.Location = new System.Drawing.Point(449, 161);
 			this.btn_factures.Name = "btn_factures";
 			this.btn_factures.Size = new System.Drawing.Size(200, 200);
 			this.btn_factures.TabIndex = 13;
@@ -103,7 +106,7 @@ namespace ProjetChargeon
 			this.btn_bornes.ForeColor = System.Drawing.Color.White;
 			this.btn_bornes.Image = ((System.Drawing.Image)(resources.GetObject("btn_bornes.Image")));
 			this.btn_bornes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.btn_bornes.Location = new System.Drawing.Point(139, 133);
+			this.btn_bornes.Location = new System.Drawing.Point(146, 161);
 			this.btn_bornes.Name = "btn_bornes";
 			this.btn_bornes.Size = new System.Drawing.Size(200, 200);
 			this.btn_bornes.TabIndex = 14;
@@ -113,12 +116,40 @@ namespace ProjetChargeon
 			this.btn_bornes.UseVisualStyleBackColor = false;
 			this.btn_bornes.Click += new System.EventHandler(this.Btn_bornes_Click);
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+			this.pictureBox2.Cursor = System.Windows.Forms.Cursors.PanWest;
+			this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.pictureBox2.Location = new System.Drawing.Point(707, 12);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+			this.pictureBox2.TabIndex = 15;
+			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.SystemColors.Window;
+			this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label2.Location = new System.Drawing.Point(12, 25);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(90, 21);
+			this.label2.TabIndex = 16;
+			this.label2.Text = "Chargéon";
+			// 
 			// Logged_Customer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.btn_bornes);
 			this.Controls.Add(this.btn_factures);
 			this.Controls.Add(this.p_titre);
@@ -130,7 +161,9 @@ namespace ProjetChargeon
 			this.p_titre.ResumeLayout(false);
 			this.p_titre.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
@@ -142,5 +175,7 @@ namespace ProjetChargeon
         private System.Windows.Forms.Button btn_factures;
         private System.Windows.Forms.Button btn_bornes;
         private System.Windows.Forms.Button btn_stats;
-    }
+		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.Label label2;
+	}
 }

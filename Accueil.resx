@@ -139,7 +139,7 @@
 </value>
   </data>
   <data name="btn_connect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 161</value>
+    <value>146, 115</value>
   </data>
   <data name="btn_connect.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -167,7 +167,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_connect.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -254,7 +254,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_titre.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_localisation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -277,7 +277,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_localisation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 161</value>
+    <value>449, 115</value>
   </data>
   <data name="btn_localisation.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_localisation.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,6 +331,59 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAoVJREFUSEutloFxwjAMRekGbFC6ALBB2QA2aDegG3QERmg36AiMwAbtCAzAHel/
+        QR/i4ITkkn+nM5blL9mSTCZtKIpiKtlIdpK95CA5SupA9yf5kXxKNkHRD9q4kjQ5AegtbSCQ96BthoyW
+        EhwaEPsUBMP6NMwTSD+TcDtbCXuqOJzP51mYptAipD4BziHIOukK7ScQUgDgXsbSDVKSQ0A+BzmsQ3xf
+        JbMOFKoLpOCaANGN6tQIbnDj12Rx0RXHUI0OcdvxIlSJY/AR6tEA54W6RKNjQFXeF0JPiINOqFd41jHX
+        4SsBFJxbKd8OFciGBwdb9tTb0h2TdVxWnUauxoZ1EBgBWXDQ9NhgCxcBOZBmx4bm9CHR46B6EzngGBs/
+        OEmqNO/uOAfZ0Ho8Nq8xIuiSNtScoAm4TJHGVsdEPUofi+e9ZIz6kLTmmEUie1hIXSCeZwk3Uq3s/FVL
+        3HM8nasw6QXtc3XD4QLrlmP9rraEC4brg7CaX4R8suZC9M0x75Tju+KSjujfJJDw2LuFOAnCbwJjDRuC
+        WM7n8yfGoHnoeLS3WlxOWZkujW7HrGOwDvUgiMdF5Q8EI+vYUe1iaRDEQ5pcYK3tRB6I0H/cvStb9q5o
+        OHC257NHY7fi0m8IyBPFBCDh6lxIBGVhDjE2nI4914oG+t3NcR1ac65oG77HICYwxG12dXQ6nV40J6jy
+        JdSYdczpwJhVjVNAUPC7ftJXUQpH9B2qwRDXWlKtmX0s3SAlBq48gnj8Id4C7eeUpMYHgjv/VcOCxIaG
+        n8skh1VIjxPqhBO6IH0IwDy7N4GMiBSHbYDYkgN6HG6Dth+0kSA4MSS/kpwjdNwUwVJUnLzlf30y+Qds
+        a1W0qBUdWAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 326</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 78</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

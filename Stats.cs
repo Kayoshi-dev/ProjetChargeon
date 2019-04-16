@@ -21,5 +21,13 @@ namespace ProjetChargeon
 		{
 			Close();
 		}
+
+		private void PictureBox4_Click(object sender, EventArgs e)
+		{
+			Hide();
+			var Logged_Admin = new Logged_Admin();
+			Logged_Admin.ShowDialog();
+			Close();
+		}
 	}
 }

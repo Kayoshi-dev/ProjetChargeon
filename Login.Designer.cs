@@ -37,46 +37,51 @@
 			this.tb_login = new System.Windows.Forms.TextBox();
 			this.p_form1 = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label4 = new System.Windows.Forms.Label();
 			this.p_form = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.p_form1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.p_form.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(3, 10);
+			this.label1.Location = new System.Drawing.Point(47, 10);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(84, 20);
+			this.label1.Size = new System.Drawing.Size(109, 22);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Connexion";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.White;
 			this.label2.Location = new System.Drawing.Point(3, 54);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(56, 20);
+			this.label2.Size = new System.Drawing.Size(59, 21);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Login :";
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.ForeColor = System.Drawing.Color.White;
 			this.label3.Location = new System.Drawing.Point(3, 121);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(113, 20);
+			this.label3.Size = new System.Drawing.Size(123, 21);
 			this.label3.TabIndex = 3;
 			this.label3.Text = "Mot de passe :";
 			// 
@@ -85,6 +90,7 @@
 			this.b_valider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.b_valider.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.b_valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.b_valider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.b_valider.ForeColor = System.Drawing.Color.White;
 			this.b_valider.Location = new System.Drawing.Point(51, 206);
 			this.b_valider.Name = "b_valider";
@@ -118,8 +124,8 @@
 			// p_form1
 			// 
 			this.p_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-			this.p_form1.Controls.Add(this.pictureBox1);
 			this.p_form1.Controls.Add(this.label4);
+			this.p_form1.Controls.Add(this.pictureBox1);
 			this.p_form1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.p_form1.Location = new System.Drawing.Point(0, 0);
 			this.p_form1.Name = "p_form1";
@@ -136,16 +142,6 @@
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
 			this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(12, 25);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(79, 20);
-			this.label4.TabIndex = 0;
-			this.label4.Text = "Chargéon";
 			// 
 			// p_form
 			// 
@@ -199,11 +195,37 @@
 			this.panel1.Size = new System.Drawing.Size(159, 1);
 			this.panel1.TabIndex = 12;
 			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+			this.pictureBox4.Cursor = System.Windows.Forms.Cursors.PanWest;
+			this.pictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.pictureBox4.Location = new System.Drawing.Point(707, 12);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+			this.pictureBox4.TabIndex = 12;
+			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
+			this.label4.ForeColor = System.Drawing.SystemColors.Window;
+			this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label4.Location = new System.Drawing.Point(12, 25);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(90, 21);
+			this.label4.TabIndex = 4;
+			this.label4.Text = "Chargéon";
+			// 
 			// Login
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.p_form);
 			this.Controls.Add(this.p_form1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +242,7 @@
 			this.p_form.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -234,11 +257,12 @@
         private System.Windows.Forms.TextBox tb_login;
         private System.Windows.Forms.Panel p_form1;
         private System.Windows.Forms.Panel p_form;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
+		private System.Windows.Forms.PictureBox pictureBox4;
+		private System.Windows.Forms.Label label4;
 	}
 }

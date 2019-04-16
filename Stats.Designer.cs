@@ -38,9 +38,11 @@
 			this.ch_Graphe = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.cb_Bornes = new System.Windows.Forms.ComboBox();
 			this.lb_TitreCb = new System.Windows.Forms.Label();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.p_titre.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ch_Graphe)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// p_titre
@@ -90,11 +92,21 @@
 			this.lb_TitreCb.ForeColor = System.Drawing.Color.White;
 			this.lb_TitreCb.Name = "lb_TitreCb";
 			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			resources.ApplyResources(this.pictureBox4, "pictureBox4");
+			this.pictureBox4.Cursor = System.Windows.Forms.Cursors.PanWest;
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
+			// 
 			// Stats
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			resources.ApplyResources(this, "$this");
+			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.lb_TitreCb);
 			this.Controls.Add(this.cb_Bornes);
 			this.Controls.Add(this.ch_Graphe);
@@ -106,6 +118,7 @@
 			this.p_titre.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ch_Graphe)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -119,5 +132,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart ch_Graphe;
         private System.Windows.Forms.ComboBox cb_Bornes;
         private System.Windows.Forms.Label lb_TitreCb;
-    }
+		private System.Windows.Forms.PictureBox pictureBox4;
+	}
 }

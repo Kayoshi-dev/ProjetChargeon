@@ -150,6 +150,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+			this.pictureBox2.Cursor = System.Windows.Forms.Cursors.PanWest;
 			this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
 			this.pictureBox2.Location = new System.Drawing.Point(707, 12);
 			this.pictureBox2.Name = "pictureBox2";

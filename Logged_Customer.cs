@@ -34,5 +34,13 @@ namespace ProjetChargeon
 		{
 
 		}
+
+		private void PictureBox2_Click(object sender, EventArgs e)
+		{
+			Hide();
+			var Accueil = new Accueil();
+			Accueil.ShowDialog();
+			Close();
+		}
 	}
 }

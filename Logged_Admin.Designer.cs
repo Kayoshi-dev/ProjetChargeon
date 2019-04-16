@@ -36,8 +36,10 @@
 			this.btn_bornes = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.btn_ajout = new System.Windows.Forms.Button();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.p_titre.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// p_titre
@@ -106,11 +108,21 @@
 			this.btn_ajout.UseVisualStyleBackColor = false;
 			this.btn_ajout.Click += new System.EventHandler(this.onClickToAdd);
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			resources.ApplyResources(this.pictureBox2, "pictureBox2");
+			this.pictureBox2.Cursor = System.Windows.Forms.Cursors.PanWest;
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+			// 
 			// Logged_Admin
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			resources.ApplyResources(this, "$this");
+			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.btn_ajout);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.btn_bornes);
@@ -123,6 +135,7 @@
 			this.p_titre.ResumeLayout(false);
 			this.p_titre.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -135,6 +148,7 @@
         private System.Windows.Forms.Button btn_bornes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_ajout;
-    }
+		private System.Windows.Forms.PictureBox pictureBox2;
+	}
 }
 
