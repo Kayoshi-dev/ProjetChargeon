@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Logged_Customer : Form
+    public partial class Stats : Form
     {
-        public Logged_Customer()
+        public Stats()
         {
             InitializeComponent();
         }
 
-		private void PictureBox1_Click(object sender, EventArgs e)
-		{
-			Close();
-		}
-	}
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+    }
 }

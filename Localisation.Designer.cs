@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-    partial class Accueil
+    partial class Localisation
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,27 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
-            this.btn_connect = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Localisation));
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_localisation = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.wb_map = new System.Windows.Forms.WebBrowser();
+            this.tb_villes = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_bornes = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.b_valider = new System.Windows.Forms.Button();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_connect
-            // 
-            this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_connect.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_connect.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_connect, "btn_connect");
-            this.btn_connect.ForeColor = System.Drawing.Color.White;
-            this.btn_connect.Name = "btn_connect";
-            this.btn_connect.UseVisualStyleBackColor = false;
-            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
             // p_titre
             // 
@@ -72,39 +64,58 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
-            // btn_localisation
+            // wb_map
             // 
-            this.btn_localisation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_localisation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_localisation.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_localisation, "btn_localisation");
-            this.btn_localisation.ForeColor = System.Drawing.Color.White;
-            this.btn_localisation.Name = "btn_localisation";
-            this.btn_localisation.UseVisualStyleBackColor = false;
-            this.btn_localisation.Click += new System.EventHandler(this.Btn_localisation_Click);
+            resources.ApplyResources(this.wb_map, "wb_map");
+            this.wb_map.Name = "wb_map";
+            this.wb_map.ScrollBarsEnabled = false;
+            this.wb_map.Url = new System.Uri("https://www.google.com/maps/d/u/1/embed?mid=1V7pB1Nj9I5lG1zQgtwDQMqjzxh_Fgy2p", System.UriKind.Absolute);
             // 
-            // linkLabel1
+            // tb_villes
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.tb_villes, "tb_villes");
+            this.tb_villes.Name = "tb_villes";
             // 
-            // Accueil
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // cb_bornes
+            // 
+            resources.ApplyResources(this.cb_bornes, "cb_bornes");
+            this.cb_bornes.FormattingEnabled = true;
+            this.cb_bornes.Name = "cb_bornes";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // b_valider
+            // 
+            resources.ApplyResources(this.b_valider, "b_valider");
+            this.b_valider.Name = "b_valider";
+            this.b_valider.UseVisualStyleBackColor = true;
+            // 
+            // Localisation
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.btn_localisation);
+            this.Controls.Add(this.b_valider);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cb_bornes);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tb_villes);
+            this.Controls.Add(this.wb_map);
             this.Controls.Add(this.p_titre);
-            this.Controls.Add(this.btn_connect);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.Name = "Accueil";
+            this.Name = "Localisation";
             this.p_titre.ResumeLayout(false);
             this.p_titre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -114,13 +125,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_connect;
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_localisation;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.WebBrowser wb_map;
+        private System.Windows.Forms.TextBox tb_villes;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_bornes;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button b_valider;
     }
 }
 
