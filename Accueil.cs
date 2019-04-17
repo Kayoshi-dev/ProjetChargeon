@@ -24,7 +24,7 @@ namespace ProjetChargeon
         }
 
         // Au Clic sur le bouton, accéder à la page Login
-        private void btn_connect_Click(object sender, EventArgs e)
+        private void OpenLogin(object sender, EventArgs e)
         {
             Hide();
             var Login = new Login();
@@ -32,18 +32,26 @@ namespace ProjetChargeon
             Close();
         }
         
-        private void Btn_localisation_Click(object sender, EventArgs e)
+        private void OpenCarte(object sender, EventArgs e)
         {
             Hide();
-            var Localisation = new Localisation();
+            var Localisation = new Carte();
             Localisation.ShowDialog();
             Close();
         }
 
         // Au Click sur l'image, fermer la page et kill le process
-        private void PictureBox1_Click(object sender, EventArgs e)
+        private void CloseProgram(object sender, EventArgs e)
         {
             Close();
         }
-    }
+
+		private void OpenStatut(object sender, EventArgs e)
+		{
+			Hide();
+			var StatutBornes = new StatutBornes();
+			StatutBornes.ShowDialog();
+			Close();
+		}
+	}
 }

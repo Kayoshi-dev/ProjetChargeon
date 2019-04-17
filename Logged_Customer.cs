@@ -17,7 +17,7 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-		private void PictureBox1_Click(object sender, EventArgs e)
+		private void CloseProgram(object sender, EventArgs e)
 		{
 			Close();
 		}
