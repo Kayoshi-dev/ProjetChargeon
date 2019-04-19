@@ -1,8 +1,9 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 16/04/2019
+ * Dernière modification : 18/04/2019
  * Équipe : Nathouuuu
  * Rôle : Connexion à la base de donnée
+ * Développeurs : Maxime, Kevin
  */
 
 using System;
@@ -24,7 +25,7 @@ namespace ProjetChargeon
         private string user;
         private string password;
 
-        public DBConnect() //Constructeur
+		public DBConnect() //Constructeur
         {
             Initialize();
         }
@@ -40,6 +41,12 @@ namespace ProjetChargeon
 
             connection = new MySqlConnection(infosDB);
         }
+
+		//Cette méthode permet de récuperer l'objet Connection afin de pouvoir l'utiliser dans d'autres classes.
+		public MySqlConnection GetConnection() 
+		{
+			return connection;
+		}
 
         public bool OpenConnection()
         {
@@ -105,6 +112,7 @@ namespace ProjetChargeon
 				//On libère les ressources
 				adapter.Dispose();
 				req.Dispose();
+				CloseConnection();
 
 				return DataAccount;
 			}

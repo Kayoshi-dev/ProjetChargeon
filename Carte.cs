@@ -2,7 +2,7 @@
  * Date de création : 11/03/2019
  * Dernière modification : 25/03/2019
  * Équipe : Nathouuuu
- * Rôle : Affichage du formulaire de Localisation
+ * Rôle : Affichage de la carte
  */
 
 using System;
@@ -17,22 +17,14 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Localisation : Form
+    public partial class Carte : Form
     {
-        public Localisation()
+        public Carte()
         {
             InitializeComponent();
         }
 
-        private void btn_connect_Click(object sender, EventArgs e)
-        {
-            Hide();
-            var Login = new Login();
-            Login.ShowDialog();
-            Close();
-        }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
+        private void CloseProgram(object sender, EventArgs e)
         {
             Close();
         }

@@ -74,7 +74,7 @@ namespace ProjetChargeon
 			this.pictureBox1.Size = new System.Drawing.Size(30, 30);
 			this.pictureBox1.TabIndex = 2;
 			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+			this.pictureBox1.Click += new System.EventHandler(this.CloseProgram);
 			// 
 			// btn_factures
 			// 
@@ -174,7 +174,6 @@ namespace ProjetChargeon
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_factures;
         private System.Windows.Forms.Button btn_bornes;
-        private System.Windows.Forms.Button btn_stats;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Label label2;
 	}

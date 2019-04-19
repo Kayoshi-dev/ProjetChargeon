@@ -98,7 +98,7 @@
 			this.b_valider.TabIndex = 3;
 			this.b_valider.Text = "Valider";
 			this.b_valider.UseVisualStyleBackColor = false;
-			this.b_valider.Click += new System.EventHandler(this.b_valider_Click);
+			this.b_valider.Click += new System.EventHandler(this.Connect);
 			// 
 			// tb_mdp
 			// 
@@ -206,7 +206,7 @@
 			this.pictureBox4.Size = new System.Drawing.Size(30, 30);
 			this.pictureBox4.TabIndex = 12;
 			this.pictureBox4.TabStop = false;
-			this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
+			this.pictureBox4.Click += new System.EventHandler(this.BackForm);
 			// 
 			// label4
 			// 

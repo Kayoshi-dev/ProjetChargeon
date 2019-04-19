@@ -35,7 +35,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.btn_localisation = new System.Windows.Forms.Button();
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.button1 = new System.Windows.Forms.Button();
+			this.btn_statut = new System.Windows.Forms.Button();
 			this.p_titre.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -49,7 +49,7 @@
 			this.btn_connect.ForeColor = System.Drawing.Color.White;
 			this.btn_connect.Name = "btn_connect";
 			this.btn_connect.UseVisualStyleBackColor = false;
-			this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
+			this.btn_connect.Click += new System.EventHandler(this.OpenLogin);
 			// 
 			// p_titre
 			// 
@@ -65,7 +65,7 @@
 			this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+			this.pictureBox1.Click += new System.EventHandler(this.CloseProgram);
 			// 
 			// label1
 			// 
@@ -82,7 +82,7 @@
 			this.btn_localisation.ForeColor = System.Drawing.Color.White;
 			this.btn_localisation.Name = "btn_localisation";
 			this.btn_localisation.UseVisualStyleBackColor = false;
-			this.btn_localisation.Click += new System.EventHandler(this.Btn_localisation_Click);
+			this.btn_localisation.Click += new System.EventHandler(this.OpenCarte);
 			// 
 			// linkLabel1
 			// 
@@ -93,22 +93,23 @@
 			this.linkLabel1.TabStop = true;
 			this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
 			// 
-			// button1
+			// btn_statut
 			// 
-			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button1.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(this.button1, "button1");
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Name = "button1";
-			this.button1.UseVisualStyleBackColor = false;
+			this.btn_statut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.btn_statut.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_statut.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(this.btn_statut, "btn_statut");
+			this.btn_statut.ForeColor = System.Drawing.Color.White;
+			this.btn_statut.Name = "btn_statut";
+			this.btn_statut.UseVisualStyleBackColor = false;
+			this.btn_statut.Click += new System.EventHandler(this.OpenStatut);
 			// 
 			// Accueil
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			resources.ApplyResources(this, "$this");
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btn_statut);
 			this.Controls.Add(this.linkLabel1);
 			this.Controls.Add(this.btn_localisation);
 			this.Controls.Add(this.p_titre);
@@ -133,7 +134,7 @@
         private System.Windows.Forms.Button btn_localisation;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btn_statut;
 	}
 }
 

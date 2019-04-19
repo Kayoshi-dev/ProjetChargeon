@@ -1,6 +1,6 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 16/04/2019
+ * Dernière modification : 19/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage et traitement du formulaire de connexion
  */
@@ -14,7 +14,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace ProjetChargeon
 {
@@ -30,7 +29,7 @@ namespace ProjetChargeon
             Close();
         }
 
-		private void b_valider_Click(object sender, EventArgs e)
+		private void Connect(object sender, EventArgs e)
 		{
 			DBConnect Connect = new DBConnect();
 			DataSet DataAccount = Connect.CheckLogin(tb_login.Text, tb_mdp.Text);
@@ -40,7 +39,7 @@ namespace ProjetChargeon
 			{
 				MessageBox.Show("Login ou mot de passe incorrect.");
 			}
-			//Sinon on parcours pour 
+			//Sinon on parcours
 			else
 			{
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
@@ -61,7 +60,7 @@ namespace ProjetChargeon
 			}
 		}
 
-		private void PictureBox4_Click(object sender, EventArgs e)
+		private void BackForm(object sender, EventArgs e)
 		{
 			Hide();
 			var Accueil = new Accueil();
