@@ -2,7 +2,7 @@
  * Date de création : 11/03/2019
  * Dernière modification : 25/03/2019
  * Équipe : Nathouuuu
- * Rôle : Affichage du formulaire de Localisation
+ * Rôle : Affichage de la carte
  */
 
 using System;

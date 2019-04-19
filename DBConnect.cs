@@ -1,8 +1,9 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 16/04/2019
+ * Dernière modification : 18/04/2019
  * Équipe : Nathouuuu
  * Rôle : Connexion à la base de donnée
+ * Développeurs : Maxime, Kevin
  */
 
 using System;
@@ -41,6 +42,7 @@ namespace ProjetChargeon
             connection = new MySqlConnection(infosDB);
         }
 
+		//Cette méthode permet de récuperer l'objet Connection afin de pouvoir l'utiliser dans d'autres classes.
 		public MySqlConnection GetConnection() 
 		{
 			return connection;
