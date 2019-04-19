@@ -21,12 +21,33 @@ namespace ProjetChargeon
 
 		public DataSet SelectBornes()
 		{
-			string query = "SELECT * FROM bornes";
+			string query = "SELECT Borne_Id, Borne_Ref FROM bornes";
 
 			MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
 			DataSet listeBornes = new DataSet();
 			da.Fill(listeBornes, "Borne");
 			return listeBornes;
+		}
+
+		public DataSet SelectDetailsBornes(int id, string test) 
+		{
+			string query = "SELECT * FROM bornes WHERE Borne_Id = @id";
+
+			MySqlCommand req = new MySqlCommand(query, connection);
+
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@id", test));
+
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			DataSet listeDetailsBornes = new DataSet();
+
+			adapter.SelectCommand = req;
+			adapter.Fill(listeDetailsBornes);
+
+			adapter.Dispose();
+			req.Dispose();
+
+			return listeDetailsBornes;
 		}
 	}
 }

@@ -12,10 +12,10 @@ namespace ProjetChargeon
 {
 	public partial class StatutBornes : Form
 	{
+		CrudBornes selectBornes = new CrudBornes();
 		public StatutBornes()
 		{
 			InitializeComponent();
-			CrudBornes selectBornes = new CrudBornes();
 			DataSet listeBornes = selectBornes.SelectBornes();
 			cb_bornes.DisplayMember = "Borne_Ref";
 			cb_bornes.ValueMember = "Borne_Id";
@@ -29,7 +29,15 @@ namespace ProjetChargeon
 
 		private void ComboIndexChange(object sender, EventArgs e)
 		{
-			
+			DataSet listeBornes = selectBornes.SelectBornes();
+
+			string idSelected = cb_bornes.SelectedValue.ToString();
+
+			CrudBornes selectDetailsBornes = new CrudBornes();
+			DataSet listeDetailsBornes = selectDetailsBornes.SelectDetailsBornes(Convert.ToInt32(listeBornes.Tables[0].Rows[0].ItemArray[0]), idSelected);
+
+			l_id.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[0].ToString();
+			l_desc.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString();
 		}
 	}
 }

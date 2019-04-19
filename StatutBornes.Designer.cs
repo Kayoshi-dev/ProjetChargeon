@@ -40,16 +40,13 @@
 			this.l_title_desc = new System.Windows.Forms.Label();
 			this.l_title_ns = new System.Windows.Forms.Label();
 			this.l_title_type = new System.Windows.Forms.Label();
+			this.l_id = new System.Windows.Forms.Label();
+			this.l_zone = new System.Windows.Forms.Label();
+			this.l_desc = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.panel5 = new System.Windows.Forms.Panel();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.p_titre.SuspendLayout();
-			this.panel5.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -90,7 +87,7 @@
 			// 
 			this.cb_bornes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.cb_bornes.FormattingEnabled = true;
-			this.cb_bornes.Location = new System.Drawing.Point(34, 124);
+			this.cb_bornes.Location = new System.Drawing.Point(32, 83);
 			this.cb_bornes.Name = "cb_bornes";
 			this.cb_bornes.Size = new System.Drawing.Size(121, 29);
 			this.cb_bornes.TabIndex = 4;
@@ -100,7 +97,7 @@
 			// 
 			this.l_title.AutoSize = true;
 			this.l_title.ForeColor = System.Drawing.Color.White;
-			this.l_title.Location = new System.Drawing.Point(12, 100);
+			this.l_title.Location = new System.Drawing.Point(15, 27);
 			this.l_title.Name = "l_title";
 			this.l_title.Size = new System.Drawing.Size(168, 21);
 			this.l_title.TabIndex = 5;
@@ -166,62 +163,45 @@
 			this.l_title_type.TabIndex = 11;
 			this.l_title_type.Text = "Type Borne";
 			// 
+			// l_id
+			// 
+			this.l_id.AutoSize = true;
+			this.l_id.ForeColor = System.Drawing.Color.White;
+			this.l_id.Location = new System.Drawing.Point(230, 156);
+			this.l_id.Name = "l_id";
+			this.l_id.Size = new System.Drawing.Size(57, 21);
+			this.l_id.TabIndex = 16;
+			this.l_id.Text = "label2";
+			// 
+			// l_zone
+			// 
+			this.l_zone.AutoSize = true;
+			this.l_zone.ForeColor = System.Drawing.Color.White;
+			this.l_zone.Location = new System.Drawing.Point(414, 156);
+			this.l_zone.Name = "l_zone";
+			this.l_zone.Size = new System.Drawing.Size(57, 21);
+			this.l_zone.TabIndex = 17;
+			this.l_zone.Text = "label2";
+			// 
+			// l_desc
+			// 
+			this.l_desc.AutoSize = true;
+			this.l_desc.ForeColor = System.Drawing.Color.White;
+			this.l_desc.Location = new System.Drawing.Point(383, 340);
+			this.l_desc.Name = "l_desc";
+			this.l_desc.Size = new System.Drawing.Size(57, 21);
+			this.l_desc.TabIndex = 18;
+			this.l_desc.Text = "label2";
+			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Location = new System.Drawing.Point(334, 73);
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+			this.panel1.Controls.Add(this.cb_bornes);
+			this.panel1.Controls.Add(this.l_title);
+			this.panel1.Location = new System.Drawing.Point(0, 73);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1, 183);
-			this.panel1.TabIndex = 12;
-			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Location = new System.Drawing.Point(198, 73);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1, 183);
-			this.panel2.TabIndex = 13;
-			// 
-			// panel3
-			// 
-			this.panel3.BackColor = System.Drawing.Color.White;
-			this.panel3.Location = new System.Drawing.Point(564, 74);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1, 183);
-			this.panel3.TabIndex = 13;
-			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.Color.White;
-			this.panel4.Location = new System.Drawing.Point(548, 0);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(1, 183);
-			this.panel4.TabIndex = 14;
-			// 
-			// panel5
-			// 
-			this.panel5.BackColor = System.Drawing.Color.White;
-			this.panel5.Controls.Add(this.panel4);
-			this.panel5.Location = new System.Drawing.Point(0, 256);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(800, 1);
-			this.panel5.TabIndex = 15;
-			// 
-			// panel6
-			// 
-			this.panel6.BackColor = System.Drawing.Color.White;
-			this.panel6.Location = new System.Drawing.Point(278, 256);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(1, 194);
-			this.panel6.TabIndex = 13;
-			// 
-			// panel7
-			// 
-			this.panel7.BackColor = System.Drawing.Color.White;
-			this.panel7.Location = new System.Drawing.Point(564, 256);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(1, 194);
-			this.panel7.TabIndex = 14;
+			this.panel1.Size = new System.Drawing.Size(200, 188);
+			this.panel1.TabIndex = 19;
 			// 
 			// StatutBornes
 			// 
@@ -229,20 +209,16 @@
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.ControlBox = false;
-			this.Controls.Add(this.panel7);
-			this.Controls.Add(this.panel5);
-			this.Controls.Add(this.panel6);
-			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.l_desc);
+			this.Controls.Add(this.l_zone);
+			this.Controls.Add(this.l_id);
 			this.Controls.Add(this.l_title_type);
 			this.Controls.Add(this.l_title_ns);
 			this.Controls.Add(this.l_title_desc);
 			this.Controls.Add(this.l_title_ref);
 			this.Controls.Add(this.l_titre_zone);
 			this.Controls.Add(this.l_titre_id);
-			this.Controls.Add(this.l_title);
-			this.Controls.Add(this.cb_bornes);
 			this.Controls.Add(this.p_titre);
 			this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -253,7 +229,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.p_titre.ResumeLayout(false);
 			this.p_titre.PerformLayout();
-			this.panel5.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -272,12 +249,9 @@
 		private System.Windows.Forms.Label l_title_desc;
 		private System.Windows.Forms.Label l_title_ns;
 		private System.Windows.Forms.Label l_title_type;
+		private System.Windows.Forms.Label l_id;
+		private System.Windows.Forms.Label l_zone;
+		private System.Windows.Forms.Label l_desc;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Panel panel5;
-		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Panel panel7;
 	}
 }
