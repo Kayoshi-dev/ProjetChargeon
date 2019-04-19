@@ -60,6 +60,7 @@
     <Compile Include="Crud.Designer.cs">
       <DependentUpon>Crud.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudBornes.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="Facturation.cs">
       <SubType>Form</SubType>

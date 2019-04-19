@@ -15,11 +15,21 @@ namespace ProjetChargeon
 		public StatutBornes()
 		{
 			InitializeComponent();
+			CrudBornes selectBornes = new CrudBornes();
+			DataSet listeBornes = selectBornes.SelectBornes();
+			cb_bornes.DisplayMember = "Borne_Ref";
+			cb_bornes.ValueMember = "Borne_Id";
+			cb_bornes.DataSource = listeBornes.Tables["Borne"];
 		}
 
 		private void CloseProgram(object sender, EventArgs e)
 		{
 			Close();
+		}
+
+		private void ComboIndexChange(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

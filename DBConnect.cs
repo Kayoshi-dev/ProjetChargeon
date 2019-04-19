@@ -24,7 +24,7 @@ namespace ProjetChargeon
         private string user;
         private string password;
 
-        public DBConnect() //Constructeur
+		public DBConnect() //Constructeur
         {
             Initialize();
         }
@@ -40,6 +40,11 @@ namespace ProjetChargeon
 
             connection = new MySqlConnection(infosDB);
         }
+
+		public MySqlConnection GetConnection() 
+		{
+			return connection;
+		}
 
         public bool OpenConnection()
         {
@@ -105,6 +110,7 @@ namespace ProjetChargeon
 				//On libère les ressources
 				adapter.Dispose();
 				req.Dispose();
+				CloseConnection();
 
 				return DataAccount;
 			}

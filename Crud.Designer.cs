@@ -168,6 +168,7 @@
 			this.pictureBox1.Size = new System.Drawing.Size(30, 30);
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.CloseProgram);
 			// 
 			// label1
 			// 
@@ -938,6 +939,7 @@
 			this.Controls.Add(this.p_titre);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Crud";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Crud";
 			this.p_titre.ResumeLayout(false);
 			this.p_titre.PerformLayout();

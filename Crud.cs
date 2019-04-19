@@ -24,5 +24,10 @@ namespace ProjetChargeon
 			LoggedAdmin.ShowDialog();
 			Close();
 		}
+
+		private void CloseProgram(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

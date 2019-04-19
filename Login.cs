@@ -40,7 +40,7 @@ namespace ProjetChargeon
 			{
 				MessageBox.Show("Login ou mot de passe incorrect.");
 			}
-			//Sinon on parcours pour 
+			//Sinon on parcours
 			else
 			{
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
