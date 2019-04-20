@@ -20,10 +20,10 @@ namespace ProjetChargeon
 {
 	public partial class StatutBornes : Form
 	{
-		CrudBornes selectBornes = new CrudBornes();
 		public StatutBornes()
 		{
 			InitializeComponent();
+			CrudBornes selectBornes = new CrudBornes();
 			DataSet listeBornes = selectBornes.SelectBornes();
 			cb_bornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
 			cb_bornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant
@@ -37,8 +37,6 @@ namespace ProjetChargeon
 
 		private void ComboIndexChange(object sender, EventArgs e)
 		{
-			DataSet listeBornes = selectBornes.SelectBornes();
-
 			string idSelected = cb_bornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
 			CrudBornes selectDetailsBornes = new CrudBornes();

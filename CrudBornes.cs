@@ -61,5 +61,26 @@ namespace ProjetChargeon
 
 			return listeDetailsBornes;
 		}
+
+		public DataSet SelectBornesClient(int idAccount)
+		{
+			string query = "SELECT * FROM bornes WHERE Borne_NoCli = @idAccount";
+
+			MySqlCommand req = new MySqlCommand(query, connection);
+
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idAccount", idAccount));
+
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			DataSet listeBornesClient = new DataSet();
+
+			adapter.SelectCommand = req;
+			adapter.Fill(listeBornesClient);
+
+			adapter.Dispose();
+			req.Dispose();
+
+			return listeBornesClient;
+		}
 	}
 }

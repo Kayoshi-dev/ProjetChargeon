@@ -3,6 +3,7 @@
  * Dernière modification : 19/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage et traitement du formulaire de connexion
+ * Développeurs : Maxime
  */
 
 using System;
@@ -42,6 +43,9 @@ namespace ProjetChargeon
 			//Sinon on parcours
 			else
 			{
+				var ListeID = new UserDAO();
+				ListeID.GetId(tb_login.Text);
+
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
 				{
 					Hide();
