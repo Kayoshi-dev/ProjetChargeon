@@ -65,7 +65,7 @@ namespace ProjetChargeon
         //Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
         public DataSet SelectDetailsStats(string idSelected)
         {
-            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoSite AND Borne_NoSite = @id";
+            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
