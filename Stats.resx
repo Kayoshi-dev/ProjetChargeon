@@ -291,7 +291,7 @@
   <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
+        wQAADsEBuJFr7QAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
         yfrTzTaI4RcMHy/4rLol9yX4XTUb7sliI+cujdhJZc/7jq1M55tG6NaWa5QuPViuUXrei+UapW96t1zj
         f94EOul5V5zrQic9b+BcFzLpeVuc7UK2s1or+Zv7BN3Rcq0F57vQXS3XmnC+C93ecq0B57vQnSzXmnO+
         C93Ncq0x57vQaX/bVHr2s+VaM853oWss1xpxvoutXOfZ2VUx5Y4sNtVkz47nffu6Mu6LC7f49NqH3yWE
@@ -370,34 +370,34 @@
   <data name="&gt;&gt;panel_titre.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="l_duree.AutoSize" type="System.Boolean, mscorlib">
+  <data name="l_Duree.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="l_duree.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="l_Duree.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_duree.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="l_Duree.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 14</value>
   </data>
-  <data name="l_duree.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="l_Duree.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 21</value>
   </data>
-  <data name="l_duree.TabIndex" type="System.Int32, mscorlib">
+  <data name="l_Duree.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="l_duree.Text" xml:space="preserve">
+  <data name="l_Duree.Text" xml:space="preserve">
     <value>XXX</value>
   </data>
-  <data name="&gt;&gt;l_duree.Name" xml:space="preserve">
-    <value>l_duree</value>
+  <data name="&gt;&gt;l_Duree.Name" xml:space="preserve">
+    <value>l_Duree</value>
   </data>
-  <data name="&gt;&gt;l_duree.Type" xml:space="preserve">
+  <data name="&gt;&gt;l_Duree.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;l_duree.Parent" xml:space="preserve">
+  <data name="&gt;&gt;l_Duree.Parent" xml:space="preserve">
     <value>panel5</value>
   </data>
-  <data name="&gt;&gt;l_duree.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;l_Duree.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
@@ -421,34 +421,34 @@
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="l_puisAbs.AutoSize" type="System.Boolean, mscorlib">
+  <data name="l_PuisAbs.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="l_puisAbs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="l_PuisAbs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_puisAbs.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="l_PuisAbs.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 14</value>
   </data>
-  <data name="l_puisAbs.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="l_PuisAbs.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 21</value>
   </data>
-  <data name="l_puisAbs.TabIndex" type="System.Int32, mscorlib">
+  <data name="l_PuisAbs.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="l_puisAbs.Text" xml:space="preserve">
+  <data name="l_PuisAbs.Text" xml:space="preserve">
     <value>XXX</value>
   </data>
-  <data name="&gt;&gt;l_puisAbs.Name" xml:space="preserve">
-    <value>l_puisAbs</value>
+  <data name="&gt;&gt;l_PuisAbs.Name" xml:space="preserve">
+    <value>l_PuisAbs</value>
   </data>
-  <data name="&gt;&gt;l_puisAbs.Type" xml:space="preserve">
+  <data name="&gt;&gt;l_PuisAbs.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;l_puisAbs.Parent" xml:space="preserve">
+  <data name="&gt;&gt;l_PuisAbs.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;l_puisAbs.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;l_PuisAbs.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
@@ -472,34 +472,34 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="l_date.AutoSize" type="System.Boolean, mscorlib">
+  <data name="l_Date.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="l_date.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="l_Date.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_date.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="l_Date.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 14</value>
   </data>
-  <data name="l_date.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="l_Date.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 21</value>
   </data>
-  <data name="l_date.TabIndex" type="System.Int32, mscorlib">
+  <data name="l_Date.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="l_date.Text" xml:space="preserve">
+  <data name="l_Date.Text" xml:space="preserve">
     <value>XXX</value>
   </data>
-  <data name="&gt;&gt;l_date.Name" xml:space="preserve">
-    <value>l_date</value>
+  <data name="&gt;&gt;l_Date.Name" xml:space="preserve">
+    <value>l_Date</value>
   </data>
-  <data name="&gt;&gt;l_date.Type" xml:space="preserve">
+  <data name="&gt;&gt;l_Date.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;l_date.Parent" xml:space="preserve">
+  <data name="&gt;&gt;l_Date.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;l_date.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;l_Date.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
@@ -523,34 +523,34 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="l_titre.AutoSize" type="System.Boolean, mscorlib">
+  <data name="l_Titre.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="l_titre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="l_Titre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_titre.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="l_Titre.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 14</value>
   </data>
-  <data name="l_titre.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="l_Titre.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 21</value>
   </data>
-  <data name="l_titre.TabIndex" type="System.Int32, mscorlib">
+  <data name="l_Titre.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="l_titre.Text" xml:space="preserve">
+  <data name="l_Titre.Text" xml:space="preserve">
     <value>XXX</value>
   </data>
-  <data name="&gt;&gt;l_titre.Name" xml:space="preserve">
-    <value>l_titre</value>
+  <data name="&gt;&gt;l_Titre.Name" xml:space="preserve">
+    <value>l_Titre</value>
   </data>
-  <data name="&gt;&gt;l_titre.Type" xml:space="preserve">
+  <data name="&gt;&gt;l_Titre.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;l_titre.Parent" xml:space="preserve">
+  <data name="&gt;&gt;l_Titre.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;l_titre.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;l_Titre.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
