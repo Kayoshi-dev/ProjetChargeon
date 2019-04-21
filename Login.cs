@@ -43,9 +43,11 @@ namespace ProjetChargeon
 			//Sinon on parcours
 			else
 			{
+				//On initialise l'ID de l'utilisateur
 				var ListeID = new UserDAO();
-				ListeID.GetId(tb_login.Text);
+				ListeID.RetrieveCustomerId(tb_login.Text);
 
+				//On verifie son rôle
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
 				{
 					Hide();

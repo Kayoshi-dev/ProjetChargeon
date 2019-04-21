@@ -62,7 +62,7 @@ namespace ProjetChargeon
 			return listeDetailsBornes;
 		}
 
-		public DataSet SelectBornesClient(int idAccount)
+		public DataSet SelectBornesCustomer(int idAccount)
 		{
 			string query = "SELECT * FROM bornes WHERE Borne_NoCli = @idAccount";
 

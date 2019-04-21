@@ -20,7 +20,7 @@ namespace ProjetChargeon
     class UserDAO
     {
 		private MySqlConnection connection;
-		public int idAccount;
+		public static int idAccount;
 
 		public UserDAO() 
 		{
@@ -28,9 +28,9 @@ namespace ProjetChargeon
 			this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.
 		}
 
-		public void GetId(string username) 
+		public void RetrieveCustomerId(string username) 
 		{
-			string query = "SELECT Co_Id FROM connexion WHERE Co_Login = @username";
+			string query = "SELECT Cli_Id FROM connexion, client WHERE Co_Login = @username AND Co_Id = Cli_NoCo";
 			MySqlCommand req = new MySqlCommand(query, connection);
 
 			req.Parameters.Clear();
@@ -46,10 +46,12 @@ namespace ProjetChargeon
 			req.Dispose();
 
 			int id = Convert.ToInt32(DataId.Tables[0].Rows[0].ItemArray[0]);
-			MessageBox.Show("Id From GetId " + idAccount.ToString());
 			idAccount = id;
 		}
 
-
+		public int GetId() 
+		{
+			return idAccount;
+		}
     }
 }
