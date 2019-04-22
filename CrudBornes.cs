@@ -62,6 +62,27 @@ namespace ProjetChargeon
 			return listeDetailsBornes;
 		}
 
+		public DataSet SelectCityForBornes(string idSelected) 
+		{
+			string query = "SELECT Site_Ville FROM site, bornes WHERE Borne_NoSite = Site_Id AND Borne_Id = @idSelected";
+
+			MySqlCommand req = new MySqlCommand(query, connection);
+
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idSelected", idSelected));
+
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			DataSet cityForBorne = new DataSet();
+
+			adapter.SelectCommand = req;
+			adapter.Fill(cityForBorne);
+
+			adapter.Dispose();
+			req.Dispose();
+
+			return cityForBorne;
+		}
+
 		public DataSet SelectBornesCustomer(int idAccount)
 		{
 			string query = "SELECT * FROM bornes WHERE Borne_NoCli = @idAccount";
