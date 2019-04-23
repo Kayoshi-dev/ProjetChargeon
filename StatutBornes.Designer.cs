@@ -194,13 +194,13 @@
 			// 
 			// l_desc
 			// 
-			this.l_desc.AutoSize = true;
 			this.l_desc.ForeColor = System.Drawing.Color.White;
-			this.l_desc.Location = new System.Drawing.Point(240, 339);
+			this.l_desc.Location = new System.Drawing.Point(244, 339);
 			this.l_desc.Name = "l_desc";
-			this.l_desc.Size = new System.Drawing.Size(48, 21);
+			this.l_desc.Size = new System.Drawing.Size(141, 40);
 			this.l_desc.TabIndex = 18;
 			this.l_desc.Text = "Desc";
+			this.l_desc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// panel1
 			// 
@@ -222,13 +222,13 @@
 			// 
 			// l_power
 			// 
-			this.l_power.AutoSize = true;
 			this.l_power.ForeColor = System.Drawing.Color.White;
-			this.l_power.Location = new System.Drawing.Point(648, 130);
+			this.l_power.Location = new System.Drawing.Point(623, 130);
 			this.l_power.Name = "l_power";
-			this.l_power.Size = new System.Drawing.Size(30, 21);
+			this.l_power.Size = new System.Drawing.Size(129, 21);
 			this.l_power.TabIndex = 21;
 			this.l_power.Text = "ref";
+			this.l_power.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// l_titre_etat
 			// 
@@ -239,25 +239,27 @@
 			this.l_titre_etat.Size = new System.Drawing.Size(94, 21);
 			this.l_titre_etat.TabIndex = 22;
 			this.l_titre_etat.Text = "Etat borne";
+			this.l_titre_etat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// l_etat
 			// 
-			this.l_etat.AutoSize = true;
 			this.l_etat.ForeColor = System.Drawing.Color.White;
-			this.l_etat.Location = new System.Drawing.Point(667, 339);
+			this.l_etat.Location = new System.Drawing.Point(643, 339);
 			this.l_etat.Name = "l_etat";
-			this.l_etat.Size = new System.Drawing.Size(0, 21);
+			this.l_etat.Size = new System.Drawing.Size(90, 21);
 			this.l_etat.TabIndex = 23;
+			this.l_etat.Text = "etat";
+			this.l_etat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// l_type
 			// 
-			this.l_type.AutoSize = true;
 			this.l_type.ForeColor = System.Drawing.Color.White;
-			this.l_type.Location = new System.Drawing.Point(449, 339);
+			this.l_type.Location = new System.Drawing.Point(452, 339);
 			this.l_type.Name = "l_type";
-			this.l_type.Size = new System.Drawing.Size(95, 21);
+			this.l_type.Size = new System.Drawing.Size(92, 21);
 			this.l_type.TabIndex = 24;
 			this.l_type.Text = "Type Borne";
+			this.l_type.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// l_ns
 			// 
