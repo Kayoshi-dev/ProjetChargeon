@@ -104,7 +104,7 @@ namespace ProjetChargeon
 			return listeBornesClient;
 		}
 
-		//Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
+		// Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
 		public DataSet SelectDetailsStats(string idSelected)
 		{
 			string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
@@ -126,6 +126,7 @@ namespace ProjetChargeon
 			return listeDetailsStats;
 		}
 
+        // Cette méthode permet d'obtenir l'ID et les noms des clients dans la ComboBox
         public DataSet SelectClients()
         {
             string query = "SELECT Cli_Id, Cli_Nom FROM client";
@@ -134,6 +135,28 @@ namespace ProjetChargeon
             DataSet listeClients = new DataSet();
             da.Fill(listeClients, "Client");
             return listeClients;
+        }
+
+        // Cette méthode permet d'obtenir les données des Clients en fonction du client sélectionné
+        public DataSet SelectDetailsClient(string idSelected)
+        {
+            string query = "SELECT Cli_Id, Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville FROM client WHERE Cli_Id = @id";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataSet listeDetailsClient = new DataSet();
+
+            adapter.SelectCommand = req;
+            adapter.Fill(listeDetailsClient);
+
+            adapter.Dispose();
+            req.Dispose();
+
+            return listeDetailsClient;
         }
 	}
 }

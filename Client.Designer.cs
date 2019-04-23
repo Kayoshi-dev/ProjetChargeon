@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client));
             this.p_form1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.l_Client = new System.Windows.Forms.Label();
             this.cb_Client = new System.Windows.Forms.ComboBox();
@@ -73,18 +73,6 @@
             this.p_form1.Size = new System.Drawing.Size(800, 72);
             this.p_form1.TabIndex = 12;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(12, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Chargéon";
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
@@ -97,6 +85,18 @@
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.BackForm);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(12, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 21);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Chargéon";
             // 
             // pictureBox1
             // 
@@ -121,10 +121,11 @@
             // 
             // cb_Client
             // 
+            this.cb_Client.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Client.FormattingEnabled = true;
-            this.cb_Client.Location = new System.Drawing.Point(38, 143);
+            this.cb_Client.Location = new System.Drawing.Point(12, 143);
             this.cb_Client.Name = "cb_Client";
-            this.cb_Client.Size = new System.Drawing.Size(121, 29);
+            this.cb_Client.Size = new System.Drawing.Size(182, 28);
             this.cb_Client.TabIndex = 15;
             this.cb_Client.SelectedIndexChanged += new System.EventHandler(this.cb_Client_SelectedIndexChanged);
             // 
@@ -211,7 +212,7 @@
             this.panel1.Controls.Add(this.l_Adresse);
             this.panel1.Location = new System.Drawing.Point(516, 133);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(189, 45);
+            this.panel1.Size = new System.Drawing.Size(189, 86);
             this.panel1.TabIndex = 36;
             // 
             // l_Adresse
@@ -219,9 +220,9 @@
             this.l_Adresse.ForeColor = System.Drawing.Color.White;
             this.l_Adresse.Location = new System.Drawing.Point(-1, 12);
             this.l_Adresse.Name = "l_Adresse";
-            this.l_Adresse.Size = new System.Drawing.Size(189, 21);
+            this.l_Adresse.Size = new System.Drawing.Size(189, 59);
             this.l_Adresse.TabIndex = 30;
-            this.l_Adresse.Text = "AfficheAdr";
+            this.l_Adresse.Text = "AfficheAdresse";
             this.l_Adresse.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2

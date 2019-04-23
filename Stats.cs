@@ -88,7 +88,6 @@ namespace ProjetChargeon
             }
 
 			// Code pour le graphique
-
 			ch_Graphe.Series["Bornes"].XValueMember = "Stats_Duree";
 			ch_Graphe.Series["Bornes"].YValueMembers = "Stats_PuisAbs";
 			ch_Graphe.DataSource = listeDetailsStats;
