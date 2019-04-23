@@ -126,7 +126,7 @@
 			// 
 			this.l_titre_zone.AutoSize = true;
 			this.l_titre_zone.ForeColor = System.Drawing.Color.White;
-			this.l_titre_zone.Location = new System.Drawing.Point(448, 88);
+			this.l_titre_zone.Location = new System.Drawing.Point(60, 276);
 			this.l_titre_zone.Name = "l_titre_zone";
 			this.l_titre_zone.Size = new System.Drawing.Size(96, 21);
 			this.l_titre_zone.TabIndex = 7;
@@ -156,7 +156,7 @@
 			// 
 			this.l_title_ns.AutoSize = true;
 			this.l_title_ns.ForeColor = System.Drawing.Color.White;
-			this.l_title_ns.Location = new System.Drawing.Point(12, 276);
+			this.l_title_ns.Location = new System.Drawing.Point(416, 88);
 			this.l_title_ns.Name = "l_title_ns";
 			this.l_title_ns.Size = new System.Drawing.Size(185, 21);
 			this.l_title_ns.TabIndex = 10;
@@ -184,13 +184,13 @@
 			// 
 			// l_zone
 			// 
-			this.l_zone.AutoSize = true;
 			this.l_zone.ForeColor = System.Drawing.Color.White;
-			this.l_zone.Location = new System.Drawing.Point(471, 130);
+			this.l_zone.Location = new System.Drawing.Point(29, 339);
 			this.l_zone.Name = "l_zone";
-			this.l_zone.Size = new System.Drawing.Size(47, 21);
+			this.l_zone.Size = new System.Drawing.Size(151, 21);
 			this.l_zone.TabIndex = 17;
 			this.l_zone.Text = "zone";
+			this.l_zone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// l_desc
 			// 
@@ -263,13 +263,13 @@
 			// 
 			// l_ns
 			// 
-			this.l_ns.AutoSize = true;
 			this.l_ns.ForeColor = System.Drawing.Color.White;
-			this.l_ns.Location = new System.Drawing.Point(56, 339);
+			this.l_ns.Location = new System.Drawing.Point(416, 130);
 			this.l_ns.Name = "l_ns";
-			this.l_ns.Size = new System.Drawing.Size(81, 21);
+			this.l_ns.Size = new System.Drawing.Size(181, 21);
 			this.l_ns.TabIndex = 25;
 			this.l_ns.Text = "numSerie";
+			this.l_ns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// pictureBox2
 			// 

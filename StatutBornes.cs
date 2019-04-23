@@ -43,7 +43,11 @@ namespace ProjetChargeon
 			DataSet listeDetailsBornes = selectDetailsBornes.SelectDetailsBornes(idSelected);
 
 			l_id.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[0].ToString(); // Affiche l'ID
-			l_zone.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[1].ToString(); // Affiche la zone
+
+			// Affiche la zone
+			DataSet listeCity = selectDetailsBornes.SelectCityForBornes(idSelected);
+			l_zone.Text = listeCity.Tables[0].Rows[0].ItemArray[0].ToString(); 
+
 			l_desc.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString(); // Affiche la description
 			l_ns.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString(); // Affiche le Numéro de série
 			if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString() == "False") 
