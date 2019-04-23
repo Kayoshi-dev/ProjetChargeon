@@ -18,6 +18,7 @@ namespace ProjetChargeon
         public Stats()
         {
             InitializeComponent();
+
             DataSet listeBornes = selectBornes.SelectBornes();
             cb_Bornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
             cb_Bornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant

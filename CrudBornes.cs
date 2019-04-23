@@ -125,5 +125,15 @@ namespace ProjetChargeon
 
 			return listeDetailsStats;
 		}
+
+        public DataSet SelectClients()
+        {
+            string query = "SELECT Cli_Id, Cli_Nom FROM client";
+
+            MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
+            DataSet listeClients = new DataSet();
+            da.Fill(listeClients, "Client");
+            return listeClients;
+        }
 	}
 }
