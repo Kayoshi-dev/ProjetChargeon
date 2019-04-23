@@ -20,7 +20,7 @@ namespace ProjetChargeon
 {
 	public partial class StatutBornes : Form
 	{
-		CrudBornes selectBornes = new CrudBornes();
+		CrudBornes selectBornes = new CrudBornes(); // Connexion à la BDD
 		public StatutBornes()
 		{
 			InitializeComponent();
