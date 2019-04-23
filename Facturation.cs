@@ -16,5 +16,13 @@ namespace ProjetChargeon
         {
             InitializeComponent();
         }
-    }
+
+		private void BackForm(object sender, EventArgs e)
+		{
+			Hide();
+			var Logged_Customer = new Logged_Customer();
+			Logged_Customer.ShowDialog();
+			Close();
+		}
+	}
 }

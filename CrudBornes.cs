@@ -1,9 +1,9 @@
-﻿/* 
- * Date de création : 17/04/2019
- * Dernière modification : 19/04/2019
- * Équipe : Nathouuuu
- * Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
- */
+/* 
+* Date de création : 17/04/2019
+* Dernière modification : 23/04/2019
+* Équipe : Nathouuuu
+* Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
+*/
 
 using System;
 using System.Collections.Generic;
@@ -62,27 +62,68 @@ namespace ProjetChargeon
 			return listeDetailsBornes;
 		}
 
-        //Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
-        public DataSet SelectDetailsStats(string idSelected)
-        {
-            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
+		public DataSet SelectCityForBornes(string idSelected) 
+		{
+			string query = "SELECT Site_Ville FROM site, bornes WHERE Borne_NoSite = Site_Id AND Borne_Id = @idSelected";
 
-            MySqlCommand req = new MySqlCommand(query, connection);
+			MySqlCommand req = new MySqlCommand(query, connection);
 
-            req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idSelected", idSelected));
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataSet listeDetailsStats = new DataSet();
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			DataSet cityForBorne = new DataSet();
 
-            adapter.SelectCommand = req;
-            adapter.Fill(listeDetailsStats);
+			adapter.SelectCommand = req;
+			adapter.Fill(cityForBorne);
 
-            adapter.Dispose();
-            req.Dispose();
+			adapter.Dispose();
+			req.Dispose();
 
-            return listeDetailsStats;
-        }
+			return cityForBorne;
+		}
 
-    }
+		public DataSet SelectBornesCustomer(int idAccount)
+		{
+			string query = "SELECT * FROM bornes WHERE Borne_NoCli = @idAccount";
+
+			MySqlCommand req = new MySqlCommand(query, connection);
+
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idAccount", idAccount));
+
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			DataSet listeBornesClient = new DataSet();
+
+			adapter.SelectCommand = req;
+			adapter.Fill(listeBornesClient);
+
+			adapter.Dispose();
+			req.Dispose();
+
+			return listeBornesClient;
+		}
+	}
+  
+  //Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
+  public DataSet SelectDetailsStats(string idSelected)
+  {
+       string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
+
+       MySqlCommand req = new MySqlCommand(query, connection);
+
+       req.Parameters.Clear();
+       req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+       MySqlDataAdapter adapter = new MySqlDataAdapter();
+       DataSet listeDetailsStats = new DataSet();
+
+       adapter.SelectCommand = req;
+       adapter.Fill(listeDetailsStats);
+
+       adapter.Dispose();
+       req.Dispose();
+
+       return listeDetailsStats;
+   }
 }

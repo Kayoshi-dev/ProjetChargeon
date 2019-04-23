@@ -3,6 +3,7 @@
  * Dernière modification : 19/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage et traitement du formulaire de connexion
+ * Développeurs : Maxime
  */
 
 using System;
@@ -24,11 +25,6 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        private void PictureBox1_Click(object sender, System.EventArgs e)
-        {
-            Close();
-        }
-
 		private void Connect(object sender, EventArgs e)
 		{
 			DBConnect Connect = new DBConnect();
@@ -42,8 +38,13 @@ namespace ProjetChargeon
 			//Sinon on parcours
 			else
 			{
+				//On verifie son rôle
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
 				{
+					//On initialise l'ID du client
+					var ListeID = new UserDAO();
+					ListeID.RetrieveCustomerId(tb_login.Text);
+
 					Hide();
 					var LoggedCustomer = new Logged_Customer();
 					LoggedCustomer.ShowDialog();
@@ -65,6 +66,11 @@ namespace ProjetChargeon
 			Hide();
 			var Accueil = new Accueil();
 			Accueil.ShowDialog();
+			Close();
+		}
+
+		private void PictureBox1_Click(object sender, System.EventArgs e)
+		{
 			Close();
 		}
 	}

@@ -32,7 +32,10 @@ namespace ProjetChargeon
 
 		private void Btn_bornes_Click(object sender, EventArgs e)
 		{
-
+			Hide();
+			var MesBornes = new MesBornes();
+			MesBornes.ShowDialog();
+			Close();
 		}
 
 		private void PictureBox2_Click(object sender, EventArgs e)
