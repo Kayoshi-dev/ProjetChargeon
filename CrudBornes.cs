@@ -1,9 +1,9 @@
-﻿/* 
- * Date de création : 17/04/2019
- * Dernière modification : 19/04/2019
- * Équipe : Nathouuuu
- * Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
- */
+/* 
+* Date de création : 17/04/2019
+* Dernière modification : 23/04/2019
+* Équipe : Nathouuuu
+* Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
+*/
 
 using System;
 using System.Collections.Generic;
@@ -104,4 +104,26 @@ namespace ProjetChargeon
 			return listeBornesClient;
 		}
 	}
+  
+  //Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
+  public DataSet SelectDetailsStats(string idSelected)
+  {
+       string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
+
+       MySqlCommand req = new MySqlCommand(query, connection);
+
+       req.Parameters.Clear();
+       req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+       MySqlDataAdapter adapter = new MySqlDataAdapter();
+       DataSet listeDetailsStats = new DataSet();
+
+       adapter.SelectCommand = req;
+       adapter.Fill(listeDetailsStats);
+
+       adapter.Dispose();
+       req.Dispose();
+
+       return listeDetailsStats;
+   }
 }

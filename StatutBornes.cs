@@ -1,10 +1,10 @@
-﻿/* 
- * Date de création : 17/04/2019
- * Dernière modification : 19/04/2019
- * Équipe : Nathouuuu
- * Rôle : Affichage des informations concernant toute les bornes 
- * Développeur : Maxime
- */
+/* 
+* Date de création : 17/04/2019
+* Dernière modification : 23/04/2019
+* Équipe : Nathouuuu
+* Rôle : Affichage des informations concernant toute les bornes 
+* Développeur : Maxime
+*/
 
 using System;
 using System.Collections.Generic;
