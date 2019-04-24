@@ -207,6 +207,54 @@ namespace ProjetChargeon
             }
         }
 
+        // Au Clic sur le bouton, permet d'ajouter un client dans la Base de Données
+        private void Ajouter_Client(object sender, EventArgs e)
+        {
+            // Récupère les valeurs des TextBox, et on les ajoutent dans une variable
+            // Pour l'instant, on met le TextBox CodePostal en String, on effectuera plus tard sa convertion en Int32
+            string nomClient = tb_Nom_Ajout.Text.ToString();
+            string adresseClient = tb_Adresse_Ajout.Text.ToString();
+            string cpClientText = tb_CP_Ajout.Text.ToString();
+            string villeClient = tb_Ville_Ajout.Text.ToString();
+
+            CrudBornes insertClient = new CrudBornes();
+
+            // On vérifie si tous les TextBox sont remplis
+            if (nomClient == "" || adresseClient == "" || cpClientText == "" || villeClient == "")
+            {
+                // Si un d'entre eux n'est pas remplis, on affiche une erreur
+                MessageBox.Show("Veuillez remplir toutes les cases du formulaire !");
+            }
+            // Ensuite on vérifie le nombre de caractère des TextBox afin d'éviter les attaques (Injection SQL ...)
+            else if(nomClient.Length > 20 || adresseClient.Length > 70 || cpClientText.Length > 5 || villeClient.Length > 20)
+            {
+                MessageBox.Show("Veuillez réduire le nombre de caractère pour le formulaire !");
+            }
+
+            // Si tous est Ok, alors on peut traiter le TextBox CP, et exécuter la requête 
+            else
+            {
+                // On convertit maintenant le TextBox Code Postal en Int32
+                int cpClient = Convert.ToInt32(cpClientText);
+
+                // On exécute notre requête SQL INSERT
+                bool insertClientBool = insertClient.InsertClient(nomClient, adresseClient, cpClient, villeClient);
+
+                
+                if (insertClientBool == true)
+                {
+                    // Si requête exécutée, on affiche un message positif
+                    MessageBox.Show("Requête exécutée, client ajouté !");
+                }
+                else
+                {
+                    // Sinon on affiche une erreur
+                    MessageBox.Show("Erreur : Requête INSERT non exécutée !");
+                }
+            }
+        }
+
+        // Au Clic sur le bouton, permet de supprimer le client sélectionné dans la ComboBox
         private void Supprimer_Client(object sender, EventArgs e)
         {
             // On récupère l'ID de la ComboBox
@@ -215,14 +263,17 @@ namespace ProjetChargeon
             CrudBornes deleteClient = new CrudBornes();
             bool deleteClientBool = deleteClient.DeleteClient(idSelected);
 
+            // Si requête exécutée, on affiche un message positif, sinon on affiche une erreur
             if (deleteClientBool == true)
             {
                 MessageBox.Show("Requête exécutée, client supprimé !");
             }
             else
             {
-                MessageBox.Show("Erreur : Requête non exécutée !");
+                MessageBox.Show("Erreur : Requête DELETE non exécutée !");
             }
         }
+
+        
     }
 }

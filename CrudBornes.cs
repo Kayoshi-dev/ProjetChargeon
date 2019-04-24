@@ -159,6 +159,30 @@ namespace ProjetChargeon
             return listeDetailsClient;
         }
 
+        /* Fonctions permettant de faire les requêtes SQL du CRUD Client */
+
+        // Cette méthode permet d'ajouter un Client
+        public bool InsertClient(string nomClient, string adresseClient, int cpClient, string villeClient)
+        {
+            string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES ('@nom', '@adresse', @cp, '@ville')";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@nom", nomClient));
+            req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
+            req.Parameters.Add(new MySqlParameter("@cp", cpClient));
+            req.Parameters.Add(new MySqlParameter("@ville", villeClient));
+            req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
+
+            validate = true;
+
+            return validate;
+        }
+
+        // A Réfléchir : Pour la requête SQL Update, une méthode pour chaque champ de texte ou un méthode pour l'ensemble des champs
+
         // Cette méthode permet de supprimer un Client
         public bool DeleteClient(string idSelected)
         {
@@ -169,7 +193,7 @@ namespace ProjetChargeon
 
             req.Parameters.Clear();
             req.Parameters.Add(new MySqlParameter("@id", idSelected));
-            //req.ExecuteNonQuery(); -> Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
+            req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
 
             validate = true;
 

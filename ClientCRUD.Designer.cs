@@ -208,6 +208,7 @@
             this.bt_Ajout.TabIndex = 23;
             this.bt_Ajout.Text = "Enregistrer";
             this.bt_Ajout.UseVisualStyleBackColor = true;
+            this.bt_Ajout.Click += new System.EventHandler(this.Ajouter_Client);
             // 
             // tb_Ville_Ajout
             // 
