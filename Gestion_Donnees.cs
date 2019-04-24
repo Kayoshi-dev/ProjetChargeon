@@ -37,5 +37,13 @@ namespace ProjetChargeon
             Client.ShowDialog();
             Close();
         }
+
+        private void onClickToClientCRUD(object sender, EventArgs e)
+        {
+            Hide();
+            var ClientCRUD = new ClientCRUD();
+            ClientCRUD.ShowDialog();
+            Close();
+        }
     }
 }

@@ -19,8 +19,12 @@ namespace ProjetChargeon
             CrudBornes selectClients = new CrudBornes();
             DataSet listeClients = selectClients.SelectClients();
 
-            cb_Client.DisplayMember = "Cli_Nom"; // La ComboBox affiche la référence
-            cb_Client.ValueMember = "Cli_Id"; // Mais vaut l'ID correspondant
+            // Affiche le Client dans la ComboBox
+            cb_Client.DisplayMember = "Cli_Nom";
+
+            // ID du Client Sélectionné
+            cb_Client.ValueMember = "Cli_Id";
+
             cb_Client.DataSource = listeClients.Tables["Client"];
         }
 
@@ -32,8 +36,8 @@ namespace ProjetChargeon
         private void BackForm(object sender, EventArgs e)
         {
             Hide();
-            var Logged_Admin = new Logged_Admin();
-            Logged_Admin.ShowDialog();
+            var Data = new Gestion_Donnees();
+            Data.ShowDialog();
             Close();
         }
 

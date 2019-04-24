@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client));
             this.p_form1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.img_Return = new System.Windows.Forms.PictureBox();
+            this.l_Titre_Chargeon = new System.Windows.Forms.Label();
+            this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Client = new System.Windows.Forms.Label();
             this.cb_Client = new System.Windows.Forms.ComboBox();
-            this.panel_1 = new System.Windows.Forms.Panel();
+            this.p_separator = new System.Windows.Forms.Panel();
             this.l_titleNom = new System.Windows.Forms.Label();
             this.l_titleAdresse = new System.Windows.Forms.Label();
             this.l_titleID = new System.Windows.Forms.Label();
@@ -52,8 +52,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.l_ID = new System.Windows.Forms.Label();
             this.p_form1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             this.p_Nom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,50 +64,50 @@
             // p_form1
             // 
             this.p_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.p_form1.Controls.Add(this.pictureBox4);
-            this.p_form1.Controls.Add(this.label4);
-            this.p_form1.Controls.Add(this.pictureBox1);
+            this.p_form1.Controls.Add(this.img_Return);
+            this.p_form1.Controls.Add(this.l_Titre_Chargeon);
+            this.p_form1.Controls.Add(this.img_Close);
             this.p_form1.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_form1.Location = new System.Drawing.Point(0, 0);
             this.p_form1.Name = "p_form1";
             this.p_form1.Size = new System.Drawing.Size(800, 72);
             this.p_form1.TabIndex = 12;
             // 
-            // pictureBox4
+            // img_Return
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.pictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox4.Location = new System.Drawing.Point(707, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.BackForm);
+            this.img_Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.img_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_Return.BackgroundImage")));
+            this.img_Return.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.img_Return.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.img_Return.Location = new System.Drawing.Point(707, 12);
+            this.img_Return.Name = "img_Return";
+            this.img_Return.Size = new System.Drawing.Size(30, 30);
+            this.img_Return.TabIndex = 13;
+            this.img_Return.TabStop = false;
+            this.img_Return.Click += new System.EventHandler(this.BackForm);
             // 
-            // label4
+            // l_Titre_Chargeon
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(12, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Chargéon";
+            this.l_Titre_Chargeon.AutoSize = true;
+            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
+            this.l_Titre_Chargeon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Titre_Chargeon.Location = new System.Drawing.Point(12, 25);
+            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
+            this.l_Titre_Chargeon.Size = new System.Drawing.Size(90, 21);
+            this.l_Titre_Chargeon.TabIndex = 4;
+            this.l_Titre_Chargeon.Text = "Chargéon";
             // 
-            // pictureBox1
+            // img_Close
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(758, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.CloseProgram);
+            this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_Close.Image = ((System.Drawing.Image)(resources.GetObject("img_Close.Image")));
+            this.img_Close.Location = new System.Drawing.Point(758, 12);
+            this.img_Close.Name = "img_Close";
+            this.img_Close.Size = new System.Drawing.Size(30, 30);
+            this.img_Close.TabIndex = 1;
+            this.img_Close.TabStop = false;
+            this.img_Close.Click += new System.EventHandler(this.CloseProgram);
             // 
             // l_Client
             // 
@@ -129,13 +129,13 @@
             this.cb_Client.TabIndex = 15;
             this.cb_Client.SelectedIndexChanged += new System.EventHandler(this.cb_Client_SelectedIndexChanged);
             // 
-            // panel_1
+            // p_separator
             // 
-            this.panel_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel_1.Location = new System.Drawing.Point(211, 92);
-            this.panel_1.Name = "panel_1";
-            this.panel_1.Size = new System.Drawing.Size(3, 340);
-            this.panel_1.TabIndex = 16;
+            this.p_separator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.p_separator.Location = new System.Drawing.Point(211, 92);
+            this.p_separator.Name = "p_separator";
+            this.p_separator.Size = new System.Drawing.Size(1, 340);
+            this.p_separator.TabIndex = 16;
             // 
             // l_titleNom
             // 
@@ -297,7 +297,7 @@
             this.Controls.Add(this.l_titleID);
             this.Controls.Add(this.l_titleAdresse);
             this.Controls.Add(this.l_titleNom);
-            this.Controls.Add(this.panel_1);
+            this.Controls.Add(this.p_separator);
             this.Controls.Add(this.cb_Client);
             this.Controls.Add(this.l_Client);
             this.Controls.Add(this.p_form1);
@@ -309,8 +309,8 @@
             this.Text = "Client";
             this.p_form1.ResumeLayout(false);
             this.p_form1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             this.p_Nom.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -324,12 +324,12 @@
         #endregion
 
         private System.Windows.Forms.Panel p_form1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox img_Return;
+        private System.Windows.Forms.Label l_Titre_Chargeon;
+        private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Label l_Client;
         private System.Windows.Forms.ComboBox cb_Client;
-        private System.Windows.Forms.Panel panel_1;
+        private System.Windows.Forms.Panel p_separator;
         private System.Windows.Forms.Label l_titleNom;
         private System.Windows.Forms.Label l_titleAdresse;
         private System.Windows.Forms.Label l_titleID;

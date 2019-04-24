@@ -116,6 +116,7 @@
             this.btn_ajoutClient.ForeColor = System.Drawing.Color.White;
             this.btn_ajoutClient.Name = "btn_ajoutClient";
             this.btn_ajoutClient.UseVisualStyleBackColor = false;
+            this.btn_ajoutClient.Click += new System.EventHandler(this.onClickToClientCRUD);
             // 
             // btn_bornes
             // 
