@@ -39,13 +39,17 @@
             this.l_Titre_Ville_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_CP_Ajout = new System.Windows.Forms.Label();
             this.p_Ajout_Client = new System.Windows.Forms.Panel();
+            this.bt_Ajout = new System.Windows.Forms.Button();
             this.tb_Ville_Ajout = new System.Windows.Forms.TextBox();
             this.tb_CP_Ajout = new System.Windows.Forms.TextBox();
             this.tb_Adresse_Ajout = new System.Windows.Forms.TextBox();
             this.tb_Nom_Ajout = new System.Windows.Forms.TextBox();
             this.p_separator_1 = new System.Windows.Forms.Panel();
-            this.bt_Ajout = new System.Windows.Forms.Button();
             this.p_MAJ_Client = new System.Windows.Forms.Panel();
+            this.chb_Ville = new System.Windows.Forms.CheckBox();
+            this.chb_CP = new System.Windows.Forms.CheckBox();
+            this.chb_Adresse = new System.Windows.Forms.CheckBox();
+            this.chb_Nom_MAJ = new System.Windows.Forms.CheckBox();
             this.bt_MAJ = new System.Windows.Forms.Button();
             this.tb_Ville_MAJ = new System.Windows.Forms.TextBox();
             this.tb_CP_MAJ = new System.Windows.Forms.TextBox();
@@ -59,14 +63,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.l_Titre_Supprimer = new System.Windows.Forms.Label();
             this.p_Supprimer_Client = new System.Windows.Forms.Panel();
+            this.chb_Nom_Supprimer = new System.Windows.Forms.CheckBox();
+            this.cb_Nom = new System.Windows.Forms.ComboBox();
             this.bt_Supprimer = new System.Windows.Forms.Button();
             this.tb_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
-            this.chb_Nom_MAJ = new System.Windows.Forms.CheckBox();
-            this.chb_Adresse = new System.Windows.Forms.CheckBox();
-            this.chb_CP = new System.Windows.Forms.CheckBox();
-            this.chb_Ville = new System.Windows.Forms.CheckBox();
-            this.cb_Nom = new System.Windows.Forms.ComboBox();
-            this.chb_Nom_Supprimer = new System.Windows.Forms.CheckBox();
             this.p_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -200,6 +200,15 @@
             this.p_Ajout_Client.Size = new System.Drawing.Size(296, 292);
             this.p_Ajout_Client.TabIndex = 19;
             // 
+            // bt_Ajout
+            // 
+            this.bt_Ajout.Location = new System.Drawing.Point(130, 246);
+            this.bt_Ajout.Name = "bt_Ajout";
+            this.bt_Ajout.Size = new System.Drawing.Size(105, 29);
+            this.bt_Ajout.TabIndex = 23;
+            this.bt_Ajout.Text = "Enregistrer";
+            this.bt_Ajout.UseVisualStyleBackColor = true;
+            // 
             // tb_Ville_Ajout
             // 
             this.tb_Ville_Ajout.Location = new System.Drawing.Point(100, 191);
@@ -238,15 +247,6 @@
             this.p_separator_1.Size = new System.Drawing.Size(1, 360);
             this.p_separator_1.TabIndex = 20;
             // 
-            // bt_Ajout
-            // 
-            this.bt_Ajout.Location = new System.Drawing.Point(130, 246);
-            this.bt_Ajout.Name = "bt_Ajout";
-            this.bt_Ajout.Size = new System.Drawing.Size(105, 29);
-            this.bt_Ajout.TabIndex = 23;
-            this.bt_Ajout.Text = "Enregistrer";
-            this.bt_Ajout.UseVisualStyleBackColor = true;
-            // 
             // p_MAJ_Client
             // 
             this.p_MAJ_Client.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -267,6 +267,46 @@
             this.p_MAJ_Client.Name = "p_MAJ_Client";
             this.p_MAJ_Client.Size = new System.Drawing.Size(296, 292);
             this.p_MAJ_Client.TabIndex = 24;
+            // 
+            // chb_Ville
+            // 
+            this.chb_Ville.AutoSize = true;
+            this.chb_Ville.Location = new System.Drawing.Point(-1, 198);
+            this.chb_Ville.Name = "chb_Ville";
+            this.chb_Ville.Size = new System.Drawing.Size(15, 14);
+            this.chb_Ville.TabIndex = 30;
+            this.chb_Ville.UseVisualStyleBackColor = true;
+            this.chb_Ville.CheckedChanged += new System.EventHandler(this.VilleIsCheck);
+            // 
+            // chb_CP
+            // 
+            this.chb_CP.AutoSize = true;
+            this.chb_CP.Location = new System.Drawing.Point(-1, 151);
+            this.chb_CP.Name = "chb_CP";
+            this.chb_CP.Size = new System.Drawing.Size(15, 14);
+            this.chb_CP.TabIndex = 29;
+            this.chb_CP.UseVisualStyleBackColor = true;
+            this.chb_CP.CheckedChanged += new System.EventHandler(this.CPIsCheck);
+            // 
+            // chb_Adresse
+            // 
+            this.chb_Adresse.AutoSize = true;
+            this.chb_Adresse.Location = new System.Drawing.Point(-1, 61);
+            this.chb_Adresse.Name = "chb_Adresse";
+            this.chb_Adresse.Size = new System.Drawing.Size(15, 14);
+            this.chb_Adresse.TabIndex = 28;
+            this.chb_Adresse.UseVisualStyleBackColor = true;
+            this.chb_Adresse.CheckedChanged += new System.EventHandler(this.AdresseIsCheck);
+            // 
+            // chb_Nom_MAJ
+            // 
+            this.chb_Nom_MAJ.AutoSize = true;
+            this.chb_Nom_MAJ.Location = new System.Drawing.Point(-1, 20);
+            this.chb_Nom_MAJ.Name = "chb_Nom_MAJ";
+            this.chb_Nom_MAJ.Size = new System.Drawing.Size(15, 14);
+            this.chb_Nom_MAJ.TabIndex = 27;
+            this.chb_Nom_MAJ.UseVisualStyleBackColor = true;
+            this.chb_Nom_MAJ.CheckedChanged += new System.EventHandler(this.NomIsCheck);
             // 
             // bt_MAJ
             // 
@@ -399,6 +439,25 @@
             this.p_Supprimer_Client.Size = new System.Drawing.Size(296, 110);
             this.p_Supprimer_Client.TabIndex = 25;
             // 
+            // chb_Nom_Supprimer
+            // 
+            this.chb_Nom_Supprimer.AutoSize = true;
+            this.chb_Nom_Supprimer.Location = new System.Drawing.Point(-1, 20);
+            this.chb_Nom_Supprimer.Name = "chb_Nom_Supprimer";
+            this.chb_Nom_Supprimer.Size = new System.Drawing.Size(15, 14);
+            this.chb_Nom_Supprimer.TabIndex = 31;
+            this.chb_Nom_Supprimer.UseVisualStyleBackColor = true;
+            this.chb_Nom_Supprimer.CheckedChanged += new System.EventHandler(this.NomIsCheck_2);
+            // 
+            // cb_Nom
+            // 
+            this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Nom.FormattingEnabled = true;
+            this.cb_Nom.Location = new System.Drawing.Point(91, 13);
+            this.cb_Nom.Name = "cb_Nom";
+            this.cb_Nom.Size = new System.Drawing.Size(187, 28);
+            this.cb_Nom.TabIndex = 24;
+            // 
             // bt_Supprimer
             // 
             this.bt_Supprimer.Location = new System.Drawing.Point(91, 69);
@@ -407,7 +466,7 @@
             this.bt_Supprimer.TabIndex = 23;
             this.bt_Supprimer.Text = "Enregistrer";
             this.bt_Supprimer.UseVisualStyleBackColor = true;
-            this.bt_Supprimer.Click += new System.EventHandler(this.onClick);
+            this.bt_Supprimer.Click += new System.EventHandler(this.Supprimer_Client);
             // 
             // tb_Titre_Nom_Supprimer
             // 
@@ -420,65 +479,6 @@
             this.tb_Titre_Nom_Supprimer.Size = new System.Drawing.Size(59, 21);
             this.tb_Titre_Nom_Supprimer.TabIndex = 15;
             this.tb_Titre_Nom_Supprimer.Text = "Nom : ";
-            // 
-            // chb_Nom_MAJ
-            // 
-            this.chb_Nom_MAJ.AutoSize = true;
-            this.chb_Nom_MAJ.Location = new System.Drawing.Point(-1, 20);
-            this.chb_Nom_MAJ.Name = "chb_Nom_MAJ";
-            this.chb_Nom_MAJ.Size = new System.Drawing.Size(15, 14);
-            this.chb_Nom_MAJ.TabIndex = 27;
-            this.chb_Nom_MAJ.UseVisualStyleBackColor = true;
-            this.chb_Nom_MAJ.CheckedChanged += new System.EventHandler(this.NomIsCheck);
-            // 
-            // chb_Adresse
-            // 
-            this.chb_Adresse.AutoSize = true;
-            this.chb_Adresse.Location = new System.Drawing.Point(-1, 61);
-            this.chb_Adresse.Name = "chb_Adresse";
-            this.chb_Adresse.Size = new System.Drawing.Size(15, 14);
-            this.chb_Adresse.TabIndex = 28;
-            this.chb_Adresse.UseVisualStyleBackColor = true;
-            this.chb_Adresse.CheckedChanged += new System.EventHandler(this.AdresseIsCheck);
-            // 
-            // chb_CP
-            // 
-            this.chb_CP.AutoSize = true;
-            this.chb_CP.Location = new System.Drawing.Point(-1, 151);
-            this.chb_CP.Name = "chb_CP";
-            this.chb_CP.Size = new System.Drawing.Size(15, 14);
-            this.chb_CP.TabIndex = 29;
-            this.chb_CP.UseVisualStyleBackColor = true;
-            this.chb_CP.CheckedChanged += new System.EventHandler(this.CPIsCheck);
-            // 
-            // chb_Ville
-            // 
-            this.chb_Ville.AutoSize = true;
-            this.chb_Ville.Location = new System.Drawing.Point(-1, 198);
-            this.chb_Ville.Name = "chb_Ville";
-            this.chb_Ville.Size = new System.Drawing.Size(15, 14);
-            this.chb_Ville.TabIndex = 30;
-            this.chb_Ville.UseVisualStyleBackColor = true;
-            this.chb_Ville.CheckedChanged += new System.EventHandler(this.VilleIsCheck);
-            // 
-            // cb_Nom
-            // 
-            this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Nom.FormattingEnabled = true;
-            this.cb_Nom.Location = new System.Drawing.Point(91, 13);
-            this.cb_Nom.Name = "cb_Nom";
-            this.cb_Nom.Size = new System.Drawing.Size(187, 28);
-            this.cb_Nom.TabIndex = 24;
-            // 
-            // chb_Nom_Supprimer
-            // 
-            this.chb_Nom_Supprimer.AutoSize = true;
-            this.chb_Nom_Supprimer.Location = new System.Drawing.Point(-1, 20);
-            this.chb_Nom_Supprimer.Name = "chb_Nom_Supprimer";
-            this.chb_Nom_Supprimer.Size = new System.Drawing.Size(15, 14);
-            this.chb_Nom_Supprimer.TabIndex = 31;
-            this.chb_Nom_Supprimer.UseVisualStyleBackColor = true;
-            this.chb_Nom_Supprimer.CheckedChanged += new System.EventHandler(this.NomIsCheck_2);
             // 
             // ClientCRUD
             // 

@@ -158,5 +158,22 @@ namespace ProjetChargeon
 
             return listeDetailsClient;
         }
-	}
+
+        // Cette méthode permet de supprimer un Client
+        public bool DeleteClient(string idSelected)
+        {
+            string query = "DELETE FROM client WHERE Cli_Id = @id";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+            //req.ExecuteNonQuery(); -> Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
+
+            validate = true;
+
+            return validate;
+        }
+    }
 }

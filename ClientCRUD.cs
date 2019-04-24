@@ -207,9 +207,22 @@ namespace ProjetChargeon
             }
         }
 
-        private void onClick(object sender, EventArgs e)
+        private void Supprimer_Client(object sender, EventArgs e)
         {
-            MessageBox.Show("Requête exécutée, client supprimé !");
+            // On récupère l'ID de la ComboBox
+            string idSelected = cb_Nom.SelectedValue.ToString();
+
+            CrudBornes deleteClient = new CrudBornes();
+            bool deleteClientBool = deleteClient.DeleteClient(idSelected);
+
+            if (deleteClientBool == true)
+            {
+                MessageBox.Show("Requête exécutée, client supprimé !");
+            }
+            else
+            {
+                MessageBox.Show("Erreur : Requête non exécutée !");
+            }
         }
     }
 }
