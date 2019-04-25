@@ -64,8 +64,8 @@ namespace ProjetChargeon
 		private void BackForm(object sender, EventArgs e)
 		{
 			Hide();
-			var Logged_Customer = new Logged_Customer();
-			Logged_Customer.ShowDialog();
+			var Data = new Gestion_Donnees();
+			Data.ShowDialog();
 			Close();
 		}
 

@@ -127,6 +127,7 @@
             this.btn_bornes.ForeColor = System.Drawing.Color.White;
             this.btn_bornes.Name = "btn_bornes";
             this.btn_bornes.UseVisualStyleBackColor = false;
+            this.btn_bornes.Click += new System.EventHandler(this.onClickToBornes);
             // 
             // btn_client
             // 

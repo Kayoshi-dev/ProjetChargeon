@@ -45,5 +45,13 @@ namespace ProjetChargeon
             ClientCRUD.ShowDialog();
             Close();
         }
+
+        private void onClickToBornes(object sender, EventArgs e)
+        {
+            Hide();
+            var Bornes = new MesBornes();
+            Bornes.ShowDialog();
+            Close();
+        }
     }
 }
