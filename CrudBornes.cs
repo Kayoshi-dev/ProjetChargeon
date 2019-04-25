@@ -29,7 +29,10 @@ namespace ProjetChargeon
 		 * grouper en une seule méthode *
 		 * il faut y réfléchir */
 
-		//Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
+		
+        /* Méthodes pour les Bornes */
+            
+        //Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
 		public DataSet SelectBornes()
 		{
 			string query = "SELECT Borne_Id, Borne_Ref FROM bornes";
@@ -104,7 +107,10 @@ namespace ProjetChargeon
 			return listeBornesClient;
 		}
 
-		// Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
+		
+        /* Méthodes pour les Statistiques */
+        
+        // Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
 		public DataSet SelectDetailsStats(string idSelected)
 		{
 			string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
@@ -126,6 +132,9 @@ namespace ProjetChargeon
 			return listeDetailsStats;
 		}
 
+        
+        /* Méthodes pour les Clients */
+        
         // Cette méthode permet d'obtenir l'ID et les noms des clients dans la ComboBox
         public DataSet SelectClients()
         {
@@ -159,7 +168,8 @@ namespace ProjetChargeon
             return listeDetailsClient;
         }
 
-        /* Fonctions permettant de faire les requêtes SQL du CRUD Client */
+        
+        /* Méthodes pour le CRUD Client */
 
         // Cette méthode permet d'ajouter un Client
         public bool InsertClient(string nomClient, string adresseClient, int cpClient, string villeClient)

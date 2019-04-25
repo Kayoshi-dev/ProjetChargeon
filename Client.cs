@@ -28,7 +28,7 @@ namespace ProjetChargeon
             cb_Client.DataSource = listeClients.Tables["Client"];
         }
 
-        private void CloseProgram(object sender, EventArgs e)
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }

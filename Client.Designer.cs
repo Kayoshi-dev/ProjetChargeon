@@ -33,7 +33,7 @@
             this.img_Return = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.img_Close = new System.Windows.Forms.PictureBox();
-            this.l_Client = new System.Windows.Forms.Label();
+            this.l_Titre_Client = new System.Windows.Forms.Label();
             this.cb_Client = new System.Windows.Forms.ComboBox();
             this.p_separator = new System.Windows.Forms.Panel();
             this.l_titleNom = new System.Windows.Forms.Label();
@@ -107,17 +107,17 @@
             this.img_Close.Size = new System.Drawing.Size(30, 30);
             this.img_Close.TabIndex = 1;
             this.img_Close.TabStop = false;
-            this.img_Close.Click += new System.EventHandler(this.CloseProgram);
+            this.img_Close.Click += new System.EventHandler(this.Close);
             // 
-            // l_Client
+            // l_Titre_Client
             // 
-            this.l_Client.AutoSize = true;
-            this.l_Client.ForeColor = System.Drawing.Color.White;
-            this.l_Client.Location = new System.Drawing.Point(69, 119);
-            this.l_Client.Name = "l_Client";
-            this.l_Client.Size = new System.Drawing.Size(56, 21);
-            this.l_Client.TabIndex = 14;
-            this.l_Client.Text = "Client";
+            this.l_Titre_Client.AutoSize = true;
+            this.l_Titre_Client.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Client.Location = new System.Drawing.Point(69, 119);
+            this.l_Titre_Client.Name = "l_Titre_Client";
+            this.l_Titre_Client.Size = new System.Drawing.Size(56, 21);
+            this.l_Titre_Client.TabIndex = 14;
+            this.l_Titre_Client.Text = "Client";
             // 
             // cb_Client
             // 
@@ -299,7 +299,7 @@
             this.Controls.Add(this.l_titleNom);
             this.Controls.Add(this.p_separator);
             this.Controls.Add(this.cb_Client);
-            this.Controls.Add(this.l_Client);
+            this.Controls.Add(this.l_Titre_Client);
             this.Controls.Add(this.p_form1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -327,7 +327,7 @@
         private System.Windows.Forms.PictureBox img_Return;
         private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.PictureBox img_Close;
-        private System.Windows.Forms.Label l_Client;
+        private System.Windows.Forms.Label l_Titre_Client;
         private System.Windows.Forms.ComboBox cb_Client;
         private System.Windows.Forms.Panel p_separator;
         private System.Windows.Forms.Label l_titleNom;
