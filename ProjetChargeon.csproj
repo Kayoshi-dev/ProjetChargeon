@@ -61,11 +61,11 @@
       <DependentUpon>Crud.cs</DependentUpon>
     </Compile>
     <Compile Include="CrudBornes.cs" />
-    <Compile Include="CRUDTechnicien.cs">
+    <Compile Include="TechnicienCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CRUDTechnicien.Designer.cs">
-      <DependentUpon>CRUDTechnicien.cs</DependentUpon>
+    <Compile Include="TechnicienCRUD.Designer.cs">
+      <DependentUpon>TechnicienCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Facturation.cs">
@@ -164,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatutBornes.resx">
       <DependentUpon>StatutBornes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technicien.resx">
+      <DependentUpon>Technicien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

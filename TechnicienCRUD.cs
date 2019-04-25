@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class CRUDTechnicien : Form
+    public partial class TechnicienCRUD : Form
     {
-        public CRUDTechnicien()
+        public TechnicienCRUD()
         {
             InitializeComponent();
         }

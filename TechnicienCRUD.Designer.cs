@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-    partial class CRUDTechnicien
+    partial class TechnicienCRUD
     {
         /// <summary>
         /// Required designer variable.
