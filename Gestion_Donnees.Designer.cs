@@ -32,13 +32,13 @@
             this.p_titre = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_ajoutTechnicien = new System.Windows.Forms.Button();
-            this.btn_interventions = new System.Windows.Forms.Button();
-            this.btn_techniciens = new System.Windows.Forms.Button();
-            this.btn_ajoutBorne = new System.Windows.Forms.Button();
-            this.btn_ajoutClient = new System.Windows.Forms.Button();
-            this.btn_bornes = new System.Windows.Forms.Button();
-            this.btn_client = new System.Windows.Forms.Button();
+            this.btn_AjoutTechnicien = new System.Windows.Forms.Button();
+            this.btn_Intervention = new System.Windows.Forms.Button();
+            this.btn_Technicien = new System.Windows.Forms.Button();
+            this.btn_AjoutBorne = new System.Windows.Forms.Button();
+            this.btn_AjoutClient = new System.Windows.Forms.Button();
+            this.btn_Borne = new System.Windows.Forms.Button();
+            this.btn_Client = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.p_titre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,78 +67,78 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
-            // btn_ajoutTechnicien
+            // btn_AjoutTechnicien
             // 
-            this.btn_ajoutTechnicien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_ajoutTechnicien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ajoutTechnicien.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_ajoutTechnicien, "btn_ajoutTechnicien");
-            this.btn_ajoutTechnicien.ForeColor = System.Drawing.Color.White;
-            this.btn_ajoutTechnicien.Name = "btn_ajoutTechnicien";
-            this.btn_ajoutTechnicien.UseVisualStyleBackColor = false;
+            this.btn_AjoutTechnicien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_AjoutTechnicien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AjoutTechnicien.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_AjoutTechnicien, "btn_AjoutTechnicien");
+            this.btn_AjoutTechnicien.ForeColor = System.Drawing.Color.White;
+            this.btn_AjoutTechnicien.Name = "btn_AjoutTechnicien";
+            this.btn_AjoutTechnicien.UseVisualStyleBackColor = false;
             // 
-            // btn_interventions
+            // btn_Intervention
             // 
-            this.btn_interventions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_interventions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_interventions.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_interventions, "btn_interventions");
-            this.btn_interventions.ForeColor = System.Drawing.Color.White;
-            this.btn_interventions.Name = "btn_interventions";
-            this.btn_interventions.UseVisualStyleBackColor = false;
+            this.btn_Intervention.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Intervention.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Intervention.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Intervention, "btn_Intervention");
+            this.btn_Intervention.ForeColor = System.Drawing.Color.White;
+            this.btn_Intervention.Name = "btn_Intervention";
+            this.btn_Intervention.UseVisualStyleBackColor = false;
             // 
-            // btn_techniciens
+            // btn_Technicien
             // 
-            this.btn_techniciens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_techniciens.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_techniciens.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_techniciens, "btn_techniciens");
-            this.btn_techniciens.ForeColor = System.Drawing.Color.White;
-            this.btn_techniciens.Name = "btn_techniciens";
-            this.btn_techniciens.UseVisualStyleBackColor = false;
+            this.btn_Technicien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Technicien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Technicien.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Technicien, "btn_Technicien");
+            this.btn_Technicien.ForeColor = System.Drawing.Color.White;
+            this.btn_Technicien.Name = "btn_Technicien";
+            this.btn_Technicien.UseVisualStyleBackColor = false;
             // 
-            // btn_ajoutBorne
+            // btn_AjoutBorne
             // 
-            this.btn_ajoutBorne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_ajoutBorne.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ajoutBorne.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_ajoutBorne, "btn_ajoutBorne");
-            this.btn_ajoutBorne.ForeColor = System.Drawing.Color.White;
-            this.btn_ajoutBorne.Name = "btn_ajoutBorne";
-            this.btn_ajoutBorne.UseVisualStyleBackColor = false;
+            this.btn_AjoutBorne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_AjoutBorne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AjoutBorne.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_AjoutBorne, "btn_AjoutBorne");
+            this.btn_AjoutBorne.ForeColor = System.Drawing.Color.White;
+            this.btn_AjoutBorne.Name = "btn_AjoutBorne";
+            this.btn_AjoutBorne.UseVisualStyleBackColor = false;
             // 
-            // btn_ajoutClient
+            // btn_AjoutClient
             // 
-            this.btn_ajoutClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_ajoutClient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ajoutClient.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_ajoutClient, "btn_ajoutClient");
-            this.btn_ajoutClient.ForeColor = System.Drawing.Color.White;
-            this.btn_ajoutClient.Name = "btn_ajoutClient";
-            this.btn_ajoutClient.UseVisualStyleBackColor = false;
-            this.btn_ajoutClient.Click += new System.EventHandler(this.onClickToClientCRUD);
+            this.btn_AjoutClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_AjoutClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AjoutClient.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_AjoutClient, "btn_AjoutClient");
+            this.btn_AjoutClient.ForeColor = System.Drawing.Color.White;
+            this.btn_AjoutClient.Name = "btn_AjoutClient";
+            this.btn_AjoutClient.UseVisualStyleBackColor = false;
+            this.btn_AjoutClient.Click += new System.EventHandler(this.onClickToClientCRUD);
             // 
-            // btn_bornes
+            // btn_Borne
             // 
-            this.btn_bornes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_bornes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_bornes.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_bornes, "btn_bornes");
-            this.btn_bornes.ForeColor = System.Drawing.Color.White;
-            this.btn_bornes.Name = "btn_bornes";
-            this.btn_bornes.UseVisualStyleBackColor = false;
-            this.btn_bornes.Click += new System.EventHandler(this.onClickToBornes);
+            this.btn_Borne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Borne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Borne.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Borne, "btn_Borne");
+            this.btn_Borne.ForeColor = System.Drawing.Color.White;
+            this.btn_Borne.Name = "btn_Borne";
+            this.btn_Borne.UseVisualStyleBackColor = false;
+            this.btn_Borne.Click += new System.EventHandler(this.onClickToBornes);
             // 
-            // btn_client
+            // btn_Client
             // 
-            this.btn_client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_client.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_client.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_client, "btn_client");
-            this.btn_client.ForeColor = System.Drawing.Color.White;
-            this.btn_client.Name = "btn_client";
-            this.btn_client.UseVisualStyleBackColor = false;
-            this.btn_client.Click += new System.EventHandler(this.onClickToCustomers);
+            this.btn_Client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Client.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Client.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Client, "btn_Client");
+            this.btn_Client.ForeColor = System.Drawing.Color.White;
+            this.btn_Client.Name = "btn_Client";
+            this.btn_Client.UseVisualStyleBackColor = false;
+            this.btn_Client.Click += new System.EventHandler(this.onClickToCustomers);
             // 
             // pictureBox2
             // 
@@ -155,14 +155,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_ajoutTechnicien);
-            this.Controls.Add(this.btn_interventions);
+            this.Controls.Add(this.btn_AjoutTechnicien);
+            this.Controls.Add(this.btn_Intervention);
             this.Controls.Add(this.p_titre);
-            this.Controls.Add(this.btn_techniciens);
-            this.Controls.Add(this.btn_client);
-            this.Controls.Add(this.btn_ajoutBorne);
-            this.Controls.Add(this.btn_bornes);
-            this.Controls.Add(this.btn_ajoutClient);
+            this.Controls.Add(this.btn_Technicien);
+            this.Controls.Add(this.btn_Client);
+            this.Controls.Add(this.btn_AjoutBorne);
+            this.Controls.Add(this.btn_Borne);
+            this.Controls.Add(this.btn_AjoutClient);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Gestion_Donnees";
@@ -179,13 +179,13 @@
         private System.Windows.Forms.Panel p_titre;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_ajoutTechnicien;
-        private System.Windows.Forms.Button btn_interventions;
-        private System.Windows.Forms.Button btn_techniciens;
-        private System.Windows.Forms.Button btn_ajoutBorne;
-        private System.Windows.Forms.Button btn_ajoutClient;
-        private System.Windows.Forms.Button btn_bornes;
-        private System.Windows.Forms.Button btn_client;
+        private System.Windows.Forms.Button btn_AjoutTechnicien;
+        private System.Windows.Forms.Button btn_Intervention;
+        private System.Windows.Forms.Button btn_Technicien;
+        private System.Windows.Forms.Button btn_AjoutBorne;
+        private System.Windows.Forms.Button btn_AjoutClient;
+        private System.Windows.Forms.Button btn_Borne;
+        private System.Windows.Forms.Button btn_Client;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
