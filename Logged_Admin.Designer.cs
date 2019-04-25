@@ -32,8 +32,8 @@
             this.p_Titre_Chargeon = new System.Windows.Forms.Panel();
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
-            this.bt_Données = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Données = new System.Windows.Forms.Button();
+            this.btn_Stats = new System.Windows.Forms.Button();
             this.img_Return = new System.Windows.Forms.PictureBox();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -62,27 +62,27 @@
             this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
             // 
-            // bt_Données
+            // btn_Données
             // 
-            this.bt_Données.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.bt_Données.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Données.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.bt_Données, "bt_Données");
-            this.bt_Données.ForeColor = System.Drawing.Color.White;
-            this.bt_Données.Name = "bt_Données";
-            this.bt_Données.UseVisualStyleBackColor = false;
-            this.bt_Données.Click += new System.EventHandler(this.onClickToData);
+            this.btn_Données.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Données.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Données.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Données, "btn_Données");
+            this.btn_Données.ForeColor = System.Drawing.Color.White;
+            this.btn_Données.Name = "btn_Données";
+            this.btn_Données.UseVisualStyleBackColor = false;
+            this.btn_Données.Click += new System.EventHandler(this.onClickToData);
             // 
-            // button2
+            // btn_Stats
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.onClickToStats);
+            this.btn_Stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Stats.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Stats.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Stats, "btn_Stats");
+            this.btn_Stats.ForeColor = System.Drawing.Color.White;
+            this.btn_Stats.Name = "btn_Stats";
+            this.btn_Stats.UseVisualStyleBackColor = false;
+            this.btn_Stats.Click += new System.EventHandler(this.onClickToStats);
             // 
             // img_Return
             // 
@@ -99,8 +99,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.img_Return);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.bt_Données);
+            this.Controls.Add(this.btn_Stats);
+            this.Controls.Add(this.btn_Données);
             this.Controls.Add(this.p_Titre_Chargeon);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -118,8 +118,8 @@
         private System.Windows.Forms.Panel p_Titre_Chargeon;
         private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.PictureBox img_Close;
-        private System.Windows.Forms.Button bt_Données;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Données;
+        private System.Windows.Forms.Button btn_Stats;
 		private System.Windows.Forms.PictureBox img_Return;
 	}
 }
