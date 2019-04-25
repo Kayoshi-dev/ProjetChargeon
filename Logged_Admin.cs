@@ -24,8 +24,17 @@ namespace ProjetChargeon
         }
 
         // Au Clic sur l'image, fermer la page et kill le process
-        private void PictureBox1_Click(object sender, EventArgs e)
+        private void Close(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        // Au Clic sur l'image, on revient à la page de Connexion
+        private void Return(object sender, EventArgs e)
+        {
+            Hide();
+            var Accueil = new Accueil();
+            Accueil.ShowDialog();
             Close();
         }
 
@@ -38,47 +47,13 @@ namespace ProjetChargeon
             Close();
         }
 
-        // Au Clic sr le bouton, accéder à la page Gestion Clients
-        private void onClickToCustomers(object sender, EventArgs e)
+        // Au Clic sur le bouton, accéder à la page Gestion des Données
+        private void onClickToData(object sender, EventArgs e)
         {
-            // Creér l'interface Gestion des Bornes, puis modifier ce code pour adapter la redirection. En attendant, redirection annulée !
-
-            /*
             Hide();
-			var Stats = new Stats();
-			Stats.ShowDialog();
-			Close();
-            */
-		}
-
-        // Au Clic sur le bouton, accéder à la page Gestion Bornes
-        private void onClickToBornes(object sender, EventArgs e)
-        {
-			// Creér l'interface Gestion des Bornes, puis modifier ce code pour adapter la redirection. En attendant, redirection annulée !
-            
-            /*
-            Hide();
-			var Stats = new Stats();
-			Stats.ShowDialog();
-			Close();
-            */
-		}
-
-        // Au Clic sur le bouton, accéder à la page Ajout Rapide
-        private void onClickToAdd(object sender, EventArgs e)
-        {
-			Hide();
-			var Manager = new Crud();
-			Manager.ShowDialog();
-			Close();
-		}
-
-		private void PictureBox2_Click(object sender, EventArgs e)
-		{
-			Hide();
-			var Accueil = new Accueil();
-			Accueil.ShowDialog();
-			Close();
-		}
-	}
+            var Data = new Gestion_Donnees();
+            Data.ShowDialog();
+            Close();
+        }
+    }
 }

@@ -74,6 +74,12 @@
     <Compile Include="Carte.Designer.cs">
       <DependentUpon>Carte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion_Donnees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_Donnees.Designer.cs">
+      <DependentUpon>Gestion_Donnees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logged_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Carte.resx">
       <DependentUpon>Carte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_Donnees.resx">
+      <DependentUpon>Gestion_Donnees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logged_Customer.resx">
       <DependentUpon>Logged_Customer.cs</DependentUpon>
