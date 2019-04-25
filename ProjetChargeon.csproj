@@ -61,6 +61,12 @@
       <DependentUpon>Crud.cs</DependentUpon>
     </Compile>
     <Compile Include="CrudBornes.cs" />
+    <Compile Include="CRUDTechnicien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDTechnicien.Designer.cs">
+      <DependentUpon>CRUDTechnicien.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Facturation.cs">
       <SubType>Form</SubType>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="StatutBornes.Designer.cs">
       <DependentUpon>StatutBornes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technicien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technicien.Designer.cs">
+      <DependentUpon>Technicien.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDAO.cs" />
     <EmbeddedResource Include="Accueil.resx">
