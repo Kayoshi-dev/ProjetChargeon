@@ -125,5 +125,19 @@ namespace ProjetChargeon
 
 			return listeDetailsStats;
 		}
-	}
+
+
+        /* Méthodes pour les Techniciens */
+
+        // Cette méthode permet d'obtenir l'ID et les noms des techniciens dans la ComboBox
+        public DataSet SelectTechniciens()
+        {
+            string query = "SELECT Tech_Id, Tech_Nom FROM technicien";
+
+            MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
+            DataSet listeTechniciens = new DataSet();
+            da.Fill(listeTechniciens, "Technicien");
+            return listeTechniciens;
+        }
+    }
 }

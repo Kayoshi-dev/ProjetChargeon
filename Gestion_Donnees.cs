@@ -43,5 +43,14 @@ namespace ProjetChargeon
         {
 
         }
+
+        // Au Clic, redirection vers Gestion des Techniciens
+        private void onClickToTechnicien(object sender, EventArgs e)
+        {
+            Hide();
+            var Technicien = new Technicien();
+            Technicien.ShowDialog();
+            Close();
+        }
     }
 }

@@ -12,9 +12,23 @@ namespace ProjetChargeon
 {
     public partial class Technicien : Form
     {
+        /* Code lors de l'initialisation de la Page */
+
         public Technicien()
         {
             InitializeComponent();
+
+            // Affiche dans la ComboBox la liste des Techniciens enregistrés dans la BDD
+            CrudBornes selectTechnicien = new CrudBornes();
+            DataSet listeTechniciens = selectTechnicien.SelectTechniciens();
+
+            // Affiche le Nom du Technicien dans la ComboBox
+            cb_Technicien.DisplayMember = "Tech_Nom";
+
+            // ID du Technicien Sélectionné
+            cb_Technicien.ValueMember = "Tech_Id";
+
+            cb_Technicien.DataSource = listeTechniciens.Tables["Technicien"];
         }
 
         

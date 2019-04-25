@@ -117,6 +117,7 @@
             this.btn_Techniciens.ForeColor = System.Drawing.Color.White;
             this.btn_Techniciens.Name = "btn_Techniciens";
             this.btn_Techniciens.UseVisualStyleBackColor = false;
+            this.btn_Techniciens.Click += new System.EventHandler(this.onClickToTechnicien);
             // 
             // btn_AjoutClient
             // 
