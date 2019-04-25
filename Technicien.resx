@@ -313,31 +313,31 @@
   <data name="&gt;&gt;l_title_Puis.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="l_ns.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="l_Nom.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 17</value>
   </data>
-  <data name="l_ns.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="l_Nom.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 21</value>
   </data>
-  <data name="l_ns.TabIndex" type="System.Int32, mscorlib">
+  <data name="l_Nom.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="l_ns.Text" xml:space="preserve">
+  <data name="l_Nom.Text" xml:space="preserve">
     <value>AfficheNom</value>
   </data>
-  <data name="l_ns.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="l_Nom.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;l_ns.Name" xml:space="preserve">
-    <value>l_ns</value>
+  <data name="&gt;&gt;l_Nom.Name" xml:space="preserve">
+    <value>l_Nom</value>
   </data>
-  <data name="&gt;&gt;l_ns.Type" xml:space="preserve">
+  <data name="&gt;&gt;l_Nom.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;l_ns.Parent" xml:space="preserve">
+  <data name="&gt;&gt;l_Nom.Parent" xml:space="preserve">
     <value>p_Nom</value>
   </data>
-  <data name="&gt;&gt;l_ns.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;l_Nom.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="l_Titre_Nom.AutoSize" type="System.Boolean, mscorlib">
@@ -469,25 +469,25 @@
   <data name="&gt;&gt;l_Titre_Dispo.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="p_etat.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="p_Dispo.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 314</value>
   </data>
-  <data name="p_etat.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="p_Dispo.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 101</value>
   </data>
-  <data name="p_etat.TabIndex" type="System.Int32, mscorlib">
+  <data name="p_Dispo.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;p_etat.Name" xml:space="preserve">
-    <value>p_etat</value>
+  <data name="&gt;&gt;p_Dispo.Name" xml:space="preserve">
+    <value>p_Dispo</value>
   </data>
-  <data name="&gt;&gt;p_etat.Type" xml:space="preserve">
+  <data name="&gt;&gt;p_Dispo.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;p_etat.Parent" xml:space="preserve">
+  <data name="&gt;&gt;p_Dispo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;p_etat.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;p_Dispo.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="l_Titre_Technicien.AutoSize" type="System.Boolean, mscorlib">

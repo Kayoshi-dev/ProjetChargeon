@@ -34,13 +34,13 @@
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.l_title_Puis = new System.Windows.Forms.Label();
-            this.l_ns = new System.Windows.Forms.Label();
+            this.l_Nom = new System.Windows.Forms.Label();
             this.l_Titre_Nom = new System.Windows.Forms.Label();
             this.l_Titre_ID = new System.Windows.Forms.Label();
             this.p_Separator = new System.Windows.Forms.Panel();
             this.l_Dispo = new System.Windows.Forms.Label();
             this.l_Titre_Dispo = new System.Windows.Forms.Label();
-            this.p_etat = new System.Windows.Forms.PictureBox();
+            this.p_Dispo = new System.Windows.Forms.PictureBox();
             this.l_Titre_Technicien = new System.Windows.Forms.Label();
             this.cb_Technicien = new System.Windows.Forms.ComboBox();
             this.p_Nom = new System.Windows.Forms.Panel();
@@ -51,7 +51,7 @@
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p_etat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p_Dispo)).BeginInit();
             this.p_Nom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -95,11 +95,11 @@
             resources.ApplyResources(this.l_title_Puis, "l_title_Puis");
             this.l_title_Puis.Name = "l_title_Puis";
             // 
-            // l_ns
+            // l_Nom
             // 
-            this.l_ns.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.l_ns, "l_ns");
-            this.l_ns.Name = "l_ns";
+            this.l_Nom.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.l_Nom, "l_Nom");
+            this.l_Nom.Name = "l_Nom";
             // 
             // l_Titre_Nom
             // 
@@ -133,12 +133,12 @@
             this.l_Titre_Dispo.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Dispo.Name = "l_Titre_Dispo";
             // 
-            // p_etat
+            // p_Dispo
             // 
-            this.p_etat.Image = global::ProjetChargeon.Properties.Resources.circle_green;
-            resources.ApplyResources(this.p_etat, "p_etat");
-            this.p_etat.Name = "p_etat";
-            this.p_etat.TabStop = false;
+            this.p_Dispo.Image = global::ProjetChargeon.Properties.Resources.circle_green;
+            resources.ApplyResources(this.p_Dispo, "p_Dispo");
+            this.p_Dispo.Name = "p_Dispo";
+            this.p_Dispo.TabStop = false;
             // 
             // l_Titre_Technicien
             // 
@@ -153,11 +153,12 @@
             this.cb_Technicien.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Technicien, "cb_Technicien");
             this.cb_Technicien.Name = "cb_Technicien";
+            this.cb_Technicien.SelectedIndexChanged += new System.EventHandler(this.cb_Technicien_SelectedIndexChanged);
             // 
             // p_Nom
             // 
             this.p_Nom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.p_Nom.Controls.Add(this.l_ns);
+            this.p_Nom.Controls.Add(this.l_Nom);
             resources.ApplyResources(this.p_Nom, "p_Nom");
             this.p_Nom.Name = "p_Nom";
             // 
@@ -201,7 +202,7 @@
             this.Controls.Add(this.p_Separator);
             this.Controls.Add(this.l_Dispo);
             this.Controls.Add(this.l_Titre_Dispo);
-            this.Controls.Add(this.p_etat);
+            this.Controls.Add(this.p_Dispo);
             this.Controls.Add(this.l_Titre_Technicien);
             this.Controls.Add(this.cb_Technicien);
             this.Controls.Add(this.p_Titre_Chargeon);
@@ -212,7 +213,7 @@
             this.p_Titre_Chargeon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p_etat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p_Dispo)).EndInit();
             this.p_Nom.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -228,13 +229,13 @@
         private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.Label l_title_Puis;
-        private System.Windows.Forms.Label l_ns;
+        private System.Windows.Forms.Label l_Nom;
         private System.Windows.Forms.Label l_Titre_Nom;
         private System.Windows.Forms.Label l_Titre_ID;
         private System.Windows.Forms.Panel p_Separator;
         private System.Windows.Forms.Label l_Dispo;
         private System.Windows.Forms.Label l_Titre_Dispo;
-        private System.Windows.Forms.PictureBox p_etat;
+        private System.Windows.Forms.PictureBox p_Dispo;
         private System.Windows.Forms.Label l_Titre_Technicien;
         private System.Windows.Forms.ComboBox cb_Technicien;
         private System.Windows.Forms.Panel p_Nom;
