@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stats));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.p_titre = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.p_Titre = new System.Windows.Forms.Panel();
+            this.img_Close = new System.Windows.Forms.PictureBox();
+            this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.ch_Graphe = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cb_Bornes = new System.Windows.Forms.ComboBox();
             this.lb_TitreCb = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.img_Return = new System.Windows.Forms.PictureBox();
             this.l_titre_stats = new System.Windows.Forms.Label();
             this.panel_titre = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -56,10 +56,10 @@
             this.l_titre_puisAbs = new System.Windows.Forms.Label();
             this.panel_date = new System.Windows.Forms.Panel();
             this.l_titre_date = new System.Windows.Forms.Label();
-            this.p_titre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.p_Titre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ch_Graphe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             this.panel_titre.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -71,45 +71,45 @@
             this.panel_date.SuspendLayout();
             this.SuspendLayout();
             // 
-            // p_titre
+            // p_Titre
             // 
-            this.p_titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.p_titre.Controls.Add(this.pictureBox1);
-            this.p_titre.Controls.Add(this.label1);
-            resources.ApplyResources(this.p_titre, "p_titre");
-            this.p_titre.Name = "p_titre";
+            this.p_Titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.p_Titre.Controls.Add(this.img_Close);
+            this.p_Titre.Controls.Add(this.l_Titre_Chargeon);
+            resources.ApplyResources(this.p_Titre, "p_Titre");
+            this.p_Titre.Name = "p_Titre";
             // 
-            // pictureBox1
+            // img_Close
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.CloseProgram);
+            resources.ApplyResources(this.img_Close, "img_Close");
+            this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_Close.Name = "img_Close";
+            this.img_Close.TabStop = false;
+            this.img_Close.Click += new System.EventHandler(this.CloseProgram);
             // 
-            // label1
+            // l_Titre_Chargeon
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.l_Titre_Chargeon, "l_Titre_Chargeon");
+            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
+            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
             // 
             // ch_Graphe
             // 
-            chartArea3.Name = "ChartArea1";
-            this.ch_Graphe.ChartAreas.Add(chartArea3);
-            legend3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend3.IsTextAutoFit = false;
-            legend3.Name = "Legend1";
-            this.ch_Graphe.Legends.Add(legend3);
+            chartArea2.Name = "ChartArea1";
+            this.ch_Graphe.ChartAreas.Add(chartArea2);
+            legend2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.ch_Graphe.Legends.Add(legend2);
             resources.ApplyResources(this.ch_Graphe, "ch_Graphe");
             this.ch_Graphe.Name = "ch_Graphe";
             this.ch_Graphe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series3.BorderColor = System.Drawing.Color.Transparent;
-            series3.ChartArea = "ChartArea1";
-            series3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.Legend = "Legend1";
-            series3.Name = "Bornes";
-            this.ch_Graphe.Series.Add(series3);
+            series2.BorderColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Legend = "Legend1";
+            series2.Name = "Bornes";
+            this.ch_Graphe.Series.Add(series2);
             // 
             // cb_Bornes
             // 
@@ -124,14 +124,14 @@
             this.lb_TitreCb.ForeColor = System.Drawing.Color.White;
             this.lb_TitreCb.Name = "lb_TitreCb";
             // 
-            // pictureBox4
+            // img_Return
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
+            this.img_Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            resources.ApplyResources(this.img_Return, "img_Return");
+            this.img_Return.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.img_Return.Name = "img_Return";
+            this.img_Return.TabStop = false;
+            this.img_Return.Click += new System.EventHandler(this.Return);
             // 
             // l_titre_stats
             // 
@@ -257,19 +257,19 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.img_Return);
             this.Controls.Add(this.lb_TitreCb);
             this.Controls.Add(this.cb_Bornes);
             this.Controls.Add(this.ch_Graphe);
-            this.Controls.Add(this.p_titre);
+            this.Controls.Add(this.p_Titre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Stats";
-            this.p_titre.ResumeLayout(false);
-            this.p_titre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.p_Titre.ResumeLayout(false);
+            this.p_Titre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ch_Graphe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
             this.panel_titre.ResumeLayout(false);
             this.panel_titre.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -290,13 +290,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel p_titre;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel p_Titre;
+        private System.Windows.Forms.PictureBox img_Close;
+        private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.DataVisualization.Charting.Chart ch_Graphe;
         private System.Windows.Forms.ComboBox cb_Bornes;
         private System.Windows.Forms.Label lb_TitreCb;
-		private System.Windows.Forms.PictureBox pictureBox4;
+		private System.Windows.Forms.PictureBox img_Return;
         private System.Windows.Forms.Label l_titre_stats;
         private System.Windows.Forms.Panel panel_titre;
         private System.Windows.Forms.Panel panel4;

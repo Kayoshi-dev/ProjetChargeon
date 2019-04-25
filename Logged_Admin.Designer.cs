@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Logged_Admin));
-            this.p_Titre_Chargeon = new System.Windows.Forms.Panel();
+            this.p_Chargeon = new System.Windows.Forms.Panel();
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.btn_Données = new System.Windows.Forms.Button();
             this.btn_Stats = new System.Windows.Forms.Button();
             this.img_Return = new System.Windows.Forms.PictureBox();
-            this.p_Titre_Chargeon.SuspendLayout();
+            this.p_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             this.SuspendLayout();
             // 
-            // p_Titre_Chargeon
+            // p_Chargeon
             // 
-            this.p_Titre_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.p_Titre_Chargeon.Controls.Add(this.img_Close);
-            this.p_Titre_Chargeon.Controls.Add(this.l_Titre_Chargeon);
-            resources.ApplyResources(this.p_Titre_Chargeon, "p_Titre_Chargeon");
-            this.p_Titre_Chargeon.Name = "p_Titre_Chargeon";
+            this.p_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.p_Chargeon.Controls.Add(this.img_Close);
+            this.p_Chargeon.Controls.Add(this.l_Titre_Chargeon);
+            resources.ApplyResources(this.p_Chargeon, "p_Chargeon");
+            this.p_Chargeon.Name = "p_Chargeon";
             // 
             // img_Close
             // 
@@ -101,13 +101,13 @@
             this.Controls.Add(this.img_Return);
             this.Controls.Add(this.btn_Stats);
             this.Controls.Add(this.btn_Données);
-            this.Controls.Add(this.p_Titre_Chargeon);
+            this.Controls.Add(this.p_Chargeon);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Logged_Admin";
-            this.p_Titre_Chargeon.ResumeLayout(false);
-            this.p_Titre_Chargeon.PerformLayout();
+            this.p_Chargeon.ResumeLayout(false);
+            this.p_Chargeon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
             this.ResumeLayout(false);
@@ -115,7 +115,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel p_Titre_Chargeon;
+        private System.Windows.Forms.Panel p_Chargeon;
         private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Button btn_Données;

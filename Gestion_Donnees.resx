@@ -121,7 +121,7 @@
   <data name="img_Return.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
+        vQAADr0BR/uQrQAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
         yfrTzTaI4RcMHy/4rLol9yX4XTUb7sliI+cujdhJZc/7jq1M55tG6NaWa5QuPViuUXrei+UapW96t1zj
         f94EOul5V5zrQic9b+BcFzLpeVuc7UK2s1or+Zv7BN3Rcq0F57vQXS3XmnC+C93ecq0B57vQnSzXmnO+
         C93Ncq0x57vQaX/bVHr2s+VaM853oWss1xpxvoutXOfZ2VUx5Y4sNtVkz47nffu6Mu6LC7f49NqH3yWE
@@ -248,12 +248,12 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_Titre_Chargeon.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
-  <data name="btn_Client.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Clients.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="btn_Client.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Clients.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
@@ -269,43 +269,43 @@
         QmCC
 </value>
   </data>
-  <data name="btn_Client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Clients.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Client.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Clients.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 145</value>
   </data>
-  <data name="btn_Client.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Clients.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
-  <data name="btn_Client.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Clients.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="btn_Client.Text" xml:space="preserve">
-    <value>Gestion Client</value>
+  <data name="btn_Clients.Text" xml:space="preserve">
+    <value>Gestion Clients</value>
   </data>
-  <data name="btn_Client.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Clients.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_Client.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Clients.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="&gt;&gt;btn_Client.Name" xml:space="preserve">
-    <value>btn_Client</value>
+  <data name="&gt;&gt;btn_Clients.Name" xml:space="preserve">
+    <value>btn_Clients</value>
   </data>
-  <data name="&gt;&gt;btn_Client.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Clients.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Client.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Clients.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_Client.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;btn_Clients.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="btn_Borne.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Bornes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="btn_Borne.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Bornes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
@@ -321,43 +321,43 @@
         QmCC
 </value>
   </data>
-  <data name="btn_Borne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Bornes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Borne.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Bornes.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 145</value>
   </data>
-  <data name="btn_Borne.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Bornes.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
-  <data name="btn_Borne.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Bornes.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="btn_Borne.Text" xml:space="preserve">
-    <value>Gestion Borne</value>
+  <data name="btn_Bornes.Text" xml:space="preserve">
+    <value>Gestion Bornes</value>
   </data>
-  <data name="btn_Borne.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Bornes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_Borne.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Bornes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="&gt;&gt;btn_Borne.Name" xml:space="preserve">
-    <value>btn_Borne</value>
+  <data name="&gt;&gt;btn_Bornes.Name" xml:space="preserve">
+    <value>btn_Bornes</value>
   </data>
-  <data name="&gt;&gt;btn_Borne.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Bornes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Borne.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Bornes.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_Borne.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;btn_Bornes.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="btn_Intervention.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Interventions.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="btn_Intervention.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Interventions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
@@ -373,43 +373,43 @@
         QmCC
 </value>
   </data>
-  <data name="btn_Intervention.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Interventions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Intervention.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Interventions.Location" type="System.Drawing.Point, System.Drawing">
     <value>627, 145</value>
   </data>
-  <data name="btn_Intervention.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Interventions.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
-  <data name="btn_Intervention.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Interventions.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="btn_Intervention.Text" xml:space="preserve">
-    <value>Gestion Intervention</value>
+  <data name="btn_Interventions.Text" xml:space="preserve">
+    <value>Gestion Interventions</value>
   </data>
-  <data name="btn_Intervention.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Interventions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_Intervention.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Interventions.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="&gt;&gt;btn_Intervention.Name" xml:space="preserve">
-    <value>btn_Intervention</value>
+  <data name="&gt;&gt;btn_Interventions.Name" xml:space="preserve">
+    <value>btn_Interventions</value>
   </data>
-  <data name="&gt;&gt;btn_Intervention.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Interventions.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Intervention.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Interventions.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_Intervention.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btn_Interventions.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="btn_Technicien.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Techniciens.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="btn_Technicien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Techniciens.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
@@ -425,37 +425,193 @@
         QmCC
 </value>
   </data>
-  <data name="btn_Technicien.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Techniciens.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Technicien.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Techniciens.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 145</value>
   </data>
-  <data name="btn_Technicien.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Techniciens.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
-  <data name="btn_Technicien.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Techniciens.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="btn_Technicien.Text" xml:space="preserve">
-    <value>Gestion Technicien</value>
+  <data name="btn_Techniciens.Text" xml:space="preserve">
+    <value>Gestion Techniciens</value>
   </data>
-  <data name="btn_Technicien.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Techniciens.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_Technicien.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Techniciens.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="&gt;&gt;btn_Technicien.Name" xml:space="preserve">
-    <value>btn_Technicien</value>
+  <data name="&gt;&gt;btn_Techniciens.Name" xml:space="preserve">
+    <value>btn_Techniciens</value>
   </data>
-  <data name="&gt;&gt;btn_Technicien.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Techniciens.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Technicien.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Techniciens.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_Technicien.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Techniciens.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_AjoutClient.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AjoutClient.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
+        /2yD+94r65K0WdM0ZTGGx+OxVNuoHdROahe1mLMauo0NeQ1NhMO9Wt9Rjb1NMR0N/lKLHdJnVWu1ldqH
+        Nfoejf4Hbm26OjJmlUziEFomXppJEdlt1Qh94H6//5gqj+xw+htG6Os1iFWPcthH49gi52jiNDLwlRKy
+        bJik4wMJ8dpESa7X66dsnIOJu0jB6iDrVPJcsmWTSTpywulmvQRM6JPtTNxB8ngbUmTDKZ2H/WKiBgl2
+        jTwkRXJPJXebEqXt8YT7dkG82tLAY2NS5GTmA6Qj26FZtTocFTgHQQbp+/uaohvKCOniBW4Q+L4Vq430
+        7dksUPt4PzWHeMJinZU+Ppc5konpSO/hPvHiy/8wfRLp41ClON9ut9ocnH248OIUB4FsGJgKeSirZpZF
+        NtT2wCTHjmwJGceL8NMfW8c7jj18K9P/G/hoXCkJ9UOYYPwVNhN8NK6a5PJsTRfxNyIfz6OrHy8gtcOP
+        HfvKWWQCKhlPGjJ02QSTblBAsiVT7+hSt1GNQTGSLL79mmRUp72Hg8DQu8vn0N5W6rMAP4bPIqMXFAH9
+        6wi3h7q+Ba8QQq+n5xHOu0dPgtaRnNN/ZbUOc3iIIZ0DUsTOpu5rDp+n/JdXBmPu3akQ6np1M8N3Mc6p
+        I2OvMnMhxNWLI4sGx8kxBhzO/j8+QBOR6YSNHPCE4Umj3qPjEhjhcLH4AxBvD0CnxDCPAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="btn_AjoutClient.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AjoutClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 311</value>
+  </data>
+  <data name="btn_AjoutClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 71</value>
+  </data>
+  <data name="btn_AjoutClient.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btn_AjoutClient.Text" xml:space="preserve">
+    <value>CRUD Client</value>
+  </data>
+  <data name="btn_AjoutClient.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btn_AjoutClient.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutClient.Name" xml:space="preserve">
+    <value>btn_AjoutClient</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutClient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutClient.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_AjoutBorne.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AjoutBorne.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
+        /2yD+94r65K0WdM0ZTGGx+OxVNuoHdROahe1mLMauo0NeQ1NhMO9Wt9Rjb1NMR0N/lKLHdJnVWu1ldqH
+        Nfoejf4Hbm26OjJmlUziEFomXppJEdlt1Qh94H6//5gqj+xw+htG6Os1iFWPcthH49gi52jiNDLwlRKy
+        bJik4wMJ8dpESa7X66dsnIOJu0jB6iDrVPJcsmWTSTpywulmvQRM6JPtTNxB8ngbUmTDKZ2H/WKiBgl2
+        jTwkRXJPJXebEqXt8YT7dkG82tLAY2NS5GTmA6Qj26FZtTocFTgHQQbp+/uaohvKCOniBW4Q+L4Vq430
+        7dksUPt4PzWHeMJinZU+Ppc5konpSO/hPvHiy/8wfRLp41ClON9ut9ocnH248OIUB4FsGJgKeSirZpZF
+        NtT2wCTHjmwJGceL8NMfW8c7jj18K9P/G/hoXCkJ9UOYYPwVNhN8NK6a5PJsTRfxNyIfz6OrHy8gtcOP
+        HfvKWWQCKhlPGjJ02QSTblBAsiVT7+hSt1GNQTGSLL79mmRUp72Hg8DQu8vn0N5W6rMAP4bPIqMXFAH9
+        6wi3h7q+Ba8QQq+n5xHOu0dPgtaRnNN/ZbUOc3iIIZ0DUsTOpu5rDp+n/JdXBmPu3akQ6np1M8N3Mc6p
+        I2OvMnMhxNWLI4sGx8kxBhzO/j8+QBOR6YSNHPCE4Umj3qPjEhjhcLH4AxBvD0CnxDCPAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="btn_AjoutBorne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AjoutBorne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 311</value>
+  </data>
+  <data name="btn_AjoutBorne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 71</value>
+  </data>
+  <data name="btn_AjoutBorne.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btn_AjoutBorne.Text" xml:space="preserve">
+    <value>CRUD Borne</value>
+  </data>
+  <data name="btn_AjoutBorne.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btn_AjoutBorne.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutBorne.Name" xml:space="preserve">
+    <value>btn_AjoutBorne</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutBorne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutBorne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutBorne.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_AjoutTechnicien.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AjoutTechnicien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAjlJREFUSEu1lg+VwjAMh5GAhJOABM4BEpBwDjgHnAMknAQkIAEJCOAB9/u6ZHRb
+        /2yD+94r65K0WdM0ZTGGx+OxVNuoHdROahe1mLMauo0NeQ1NhMO9Wt9Rjb1NMR0N/lKLHdJnVWu1ldqH
+        Nfoejf4Hbm26OjJmlUziEFomXppJEdlt1Qh94H6//5gqj+xw+htG6Os1iFWPcthH49gi52jiNDLwlRKy
+        bJik4wMJ8dpESa7X66dsnIOJu0jB6iDrVPJcsmWTSTpywulmvQRM6JPtTNxB8ngbUmTDKZ2H/WKiBgl2
+        jTwkRXJPJXebEqXt8YT7dkG82tLAY2NS5GTmA6Qj26FZtTocFTgHQQbp+/uaohvKCOniBW4Q+L4Vq430
+        7dksUPt4PzWHeMJinZU+Ppc5konpSO/hPvHiy/8wfRLp41ClON9ut9ocnH248OIUB4FsGJgKeSirZpZF
+        NtT2wCTHjmwJGceL8NMfW8c7jj18K9P/G/hoXCkJ9UOYYPwVNhN8NK6a5PJsTRfxNyIfz6OrHy8gtcOP
+        HfvKWWQCKhlPGjJ02QSTblBAsiVT7+hSt1GNQTGSLL79mmRUp72Hg8DQu8vn0N5W6rMAP4bPIqMXFAH9
+        6wi3h7q+Ba8QQq+n5xHOu0dPgtaRnNN/ZbUOc3iIIZ0DUsTOpu5rDp+n/JdXBmPu3akQ6np1M8N3Mc6p
+        I2OvMnMhxNWLI4sGx8kxBhzO/j8+QBOR6YSNHPCE4Umj3qPjEhjhcLH4AxBvD0CnxDCPAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="btn_AjoutTechnicien.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AjoutTechnicien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 311</value>
+  </data>
+  <data name="btn_AjoutTechnicien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 71</value>
+  </data>
+  <data name="btn_AjoutTechnicien.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btn_AjoutTechnicien.Text" xml:space="preserve">
+    <value>CRUD Technicien</value>
+  </data>
+  <data name="btn_AjoutTechnicien.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btn_AjoutTechnicien.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutTechnicien.Name" xml:space="preserve">
+    <value>btn_AjoutTechnicien</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutTechnicien.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutTechnicien.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_AjoutTechnicien.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

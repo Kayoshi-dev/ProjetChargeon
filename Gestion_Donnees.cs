@@ -17,7 +17,10 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        // Au Clic sur l'image, fermer la page et kill le process
+
+        /* Evènement sur les images */
+
+        // Au Clic sur l'image, on kill le process et on ferme la page
         private void Close(object sender, EventArgs e)
         {
             Close();
@@ -27,9 +30,18 @@ namespace ProjetChargeon
         private void Return(object sender, EventArgs e)
         {
             Hide();
-            var Accueil = new Accueil();
-            Accueil.ShowDialog();
+            var Logged_Admin = new Logged_Admin();
+            Logged_Admin.ShowDialog();
             Close();
+        }
+
+
+        /* Liens de Redirection */
+
+        // Au Click sur le Bouton, redirection vers Gestion des Bornes
+        private void onClickToBorne(object sender, EventArgs e)
+        {
+
         }
     }
 }

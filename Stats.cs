@@ -24,18 +24,26 @@ namespace ProjetChargeon
             cb_Bornes.DataSource = listeBornes.Tables["Borne"];
         }
 
+
+        /* Evènement sur les images */
+
+        // Au Clic, on kill le process et on ferme la page
 		private void CloseProgram(object sender, EventArgs e)
 		{
 			Close();
 		}
 
-		private void PictureBox4_Click(object sender, EventArgs e)
-		{
-			Hide();
-			var Logged_Admin = new Logged_Admin();
-			Logged_Admin.ShowDialog();
-			Close();
-		}
+        // Au Clic, on retourne à la page Logged_Admin
+        private void Return(object sender, EventArgs e)
+        {
+            Hide();
+            var Logged_Admin = new Logged_Admin();
+            Logged_Admin.ShowDialog();
+            Close();
+        }
+
+
+        /* Méthodes pour les Statistiques */
 
         private void ComboIndexChange(object sender, EventArgs e)
         {
@@ -86,7 +94,8 @@ namespace ProjetChargeon
                 l_Duree.Text = "Vide";
             }
 
-			// Code pour le graphique
+
+            /* Codes pour gérer le graphique */
 
 			ch_Graphe.Series["Bornes"].XValueMember = "Stats_Duree";
 			ch_Graphe.Series["Bornes"].YValueMembers = "Stats_PuisAbs";

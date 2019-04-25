@@ -150,7 +150,7 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;img_Close.Parent" xml:space="preserve">
-    <value>p_Titre_Chargeon</value>
+    <value>p_Chargeon</value>
   </data>
   <data name="&gt;&gt;img_Close.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -177,34 +177,34 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;l_Titre_Chargeon.Parent" xml:space="preserve">
-    <value>p_Titre_Chargeon</value>
+    <value>p_Chargeon</value>
   </data>
   <data name="&gt;&gt;l_Titre_Chargeon.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="p_Titre_Chargeon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="p_Chargeon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="p_Titre_Chargeon.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="p_Chargeon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="p_Titre_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="p_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
     <value>800, 73</value>
   </data>
-  <data name="p_Titre_Chargeon.TabIndex" type="System.Int32, mscorlib">
+  <data name="p_Chargeon.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Name" xml:space="preserve">
-    <value>p_Titre_Chargeon</value>
+  <data name="&gt;&gt;p_Chargeon.Name" xml:space="preserve">
+    <value>p_Chargeon</value>
   </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Type" xml:space="preserve">
+  <data name="&gt;&gt;p_Chargeon.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Parent" xml:space="preserve">
+  <data name="&gt;&gt;p_Chargeon.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;p_Chargeon.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="btn_Données.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -265,7 +265,7 @@
   <data name="btn_Stats.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAAS1JREFUSEvtlc0RgjAQhS2BEiiBEigBO6AEO7AESqAES7AESrAE7xzA99ZdXRJB
+        vQAADr0BR/uQrQAAAS1JREFUSEvtlc0RgjAQhS2BEiiBEigBO6AEO7AESqAES7AESrAE7xzA99ZdXRJB
         QTg44zfzhmSzP2SJcTeXvu8rKKJt2726fAdyJdBZsj6pdHk5SMLEBdQwo4PzRN3mw2DIJ75CR+ik40z9
         SrWLJPgT4Gw9Z7IDJG+LJ+2FOAGMw5293xWcMoiJ2fNBAOapDgXMXxfAgG9Faki2a2BuHzNX0yjwGS3A
         t/SnguOy6zr2lEQnBDbGmKxl0y2Cgc7chYftCVuTy8qTWu2ffwMssm0MeHxEA7bvC0yBwGUFYGCLGEwN
@@ -309,7 +309,7 @@
   <data name="img_Return.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
+        vwAADr8BOAVTJAAAAONJREFUSEvt1TsKAkEQhOGJjATFFyIG4oJHMFLBR6CJ97+N1mxX4MjYO0ENiPiB
         yfrTzTaI4RcMHy/4rLol9yX4XTUb7sliI+cujdhJZc/7jq1M55tG6NaWa5QuPViuUXrei+UapW96t1zj
         f94EOul5V5zrQic9b+BcFzLpeVuc7UK2s1or+Zv7BN3Rcq0F57vQXS3XmnC+C93ecq0B57vQnSzXmnO+
         C93Ncq0x57vQaX/bVHr2s+VaM853oWss1xpxvoutXOfZ2VUx5Y4sNtVkz47nffu6Mu6LC7f49NqH3yWE

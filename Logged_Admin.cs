@@ -23,7 +23,10 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        // Au Clic sur l'image, fermer la page et kill le process
+
+        /* Evènement sur les images */
+
+        // Au Clic sur l'image, on kill le process et on ferme la page
         private void Close(object sender, EventArgs e)
         {
             Close();
@@ -37,6 +40,9 @@ namespace ProjetChargeon
             Accueil.ShowDialog();
             Close();
         }
+
+        
+        /* Liens de Redirection */
 
         // Au Clic sur le bouton, accéder à la page Statistiques
         private void onClickToStats(object sender, EventArgs e)

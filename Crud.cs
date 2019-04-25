@@ -20,7 +20,7 @@ namespace ProjetChargeon
 		private void PictureBox2_Click(object sender, EventArgs e)
 		{
 			Hide();
-			var LoggedAdmin = new Logged_Admin();
+			var LoggedAdmin = new Gestion_Donnees();
 			LoggedAdmin.ShowDialog();
 			Close();
 		}
