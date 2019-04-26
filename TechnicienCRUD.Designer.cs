@@ -34,20 +34,7 @@
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.l_Titre_Ajout = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.p_Ajout_Technicien = new System.Windows.Forms.Panel();
-            this.p_Separator_2 = new System.Windows.Forms.Panel();
-            this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
-            this.l_Titre_Nom_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Prenom_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Dispo_Modif = new System.Windows.Forms.Label();
-            this.tb_Prenom = new System.Windows.Forms.TextBox();
-            this.btn_Modifier = new System.Windows.Forms.Button();
-            this.btn_Supprimer = new System.Windows.Forms.Button();
-            this.l_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
-            this.cb_Nom_Supprimer = new System.Windows.Forms.ComboBox();
-            this.cb_Dispo_Modif = new System.Windows.Forms.ComboBox();
             this.l_Titre_Nom_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_Prenom_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_Dispo_Ajout = new System.Windows.Forms.Label();
@@ -55,10 +42,19 @@
             this.tb_Nom_Ajout = new System.Windows.Forms.TextBox();
             this.tb_Prenom_Ajout = new System.Windows.Forms.TextBox();
             this.cb_Dispo_Ajout = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             this.p_Ajout_Technicien.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -99,18 +95,6 @@
             this.l_Titre_Ajout.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Ajout.Name = "l_Titre_Ajout";
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
-            // 
             // p_Ajout_Technicien
             // 
             this.p_Ajout_Technicien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -123,71 +107,6 @@
             this.p_Ajout_Technicien.Controls.Add(this.l_Titre_Dispo_Ajout);
             resources.ApplyResources(this.p_Ajout_Technicien, "p_Ajout_Technicien");
             this.p_Ajout_Technicien.Name = "p_Ajout_Technicien";
-            // 
-            // p_Separator_2
-            // 
-            this.p_Separator_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.p_Separator_2, "p_Separator_2");
-            this.p_Separator_2.Name = "p_Separator_2";
-            // 
-            // cb_Nom_Modif
-            // 
-            this.cb_Nom_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
-            this.cb_Nom_Modif.Name = "cb_Nom_Modif";
-            // 
-            // l_Titre_Nom_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Nom_Modif, "l_Titre_Nom_Modif");
-            this.l_Titre_Nom_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Nom_Modif.Name = "l_Titre_Nom_Modif";
-            // 
-            // l_Titre_Prenom_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Prenom_Modif, "l_Titre_Prenom_Modif");
-            this.l_Titre_Prenom_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Prenom_Modif.Name = "l_Titre_Prenom_Modif";
-            // 
-            // l_Titre_Dispo_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Dispo_Modif, "l_Titre_Dispo_Modif");
-            this.l_Titre_Dispo_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Dispo_Modif.Name = "l_Titre_Dispo_Modif";
-            // 
-            // tb_Prenom
-            // 
-            resources.ApplyResources(this.tb_Prenom, "tb_Prenom");
-            this.tb_Prenom.Name = "tb_Prenom";
-            // 
-            // btn_Modifier
-            // 
-            resources.ApplyResources(this.btn_Modifier, "btn_Modifier");
-            this.btn_Modifier.Name = "btn_Modifier";
-            this.btn_Modifier.UseVisualStyleBackColor = true;
-            // 
-            // btn_Supprimer
-            // 
-            resources.ApplyResources(this.btn_Supprimer, "btn_Supprimer");
-            this.btn_Supprimer.Name = "btn_Supprimer";
-            this.btn_Supprimer.UseVisualStyleBackColor = true;
-            // 
-            // l_Titre_Nom_Supprimer
-            // 
-            resources.ApplyResources(this.l_Titre_Nom_Supprimer, "l_Titre_Nom_Supprimer");
-            this.l_Titre_Nom_Supprimer.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Nom_Supprimer.Name = "l_Titre_Nom_Supprimer";
-            // 
-            // cb_Nom_Supprimer
-            // 
-            this.cb_Nom_Supprimer.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Nom_Supprimer, "cb_Nom_Supprimer");
-            this.cb_Nom_Supprimer.Name = "cb_Nom_Supprimer";
-            // 
-            // cb_Dispo_Modif
-            // 
-            this.cb_Dispo_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Dispo_Modif, "cb_Dispo_Modif");
-            this.cb_Dispo_Modif.Name = "cb_Dispo_Modif";
             // 
             // l_Titre_Nom_Ajout
             // 
@@ -229,25 +148,66 @@
             resources.ApplyResources(this.cb_Dispo_Ajout, "cb_Dispo_Ajout");
             this.cb_Dispo_Ajout.Name = "cb_Dispo_Ajout";
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
             // TechnicienCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.cb_Dispo_Modif);
-            this.Controls.Add(this.cb_Nom_Supprimer);
-            this.Controls.Add(this.l_Titre_Nom_Supprimer);
-            this.Controls.Add(this.btn_Supprimer);
-            this.Controls.Add(this.btn_Modifier);
-            this.Controls.Add(this.tb_Prenom);
-            this.Controls.Add(this.l_Titre_Dispo_Modif);
-            this.Controls.Add(this.l_Titre_Prenom_Modif);
-            this.Controls.Add(this.l_Titre_Nom_Modif);
-            this.Controls.Add(this.cb_Nom_Modif);
-            this.Controls.Add(this.p_Separator_2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.p_Ajout_Technicien);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.l_Titre_Ajout);
             this.Controls.Add(this.p_Titre_Chargeon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -259,6 +219,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             this.p_Ajout_Technicien.ResumeLayout(false);
             this.p_Ajout_Technicien.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,20 +233,7 @@
         private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.Label l_Titre_Ajout;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel p_Ajout_Technicien;
-        private System.Windows.Forms.Panel p_Separator_2;
-        private System.Windows.Forms.ComboBox cb_Nom_Modif;
-        private System.Windows.Forms.Label l_Titre_Nom_Modif;
-        private System.Windows.Forms.Label l_Titre_Prenom_Modif;
-        private System.Windows.Forms.Label l_Titre_Dispo_Modif;
-        private System.Windows.Forms.TextBox tb_Prenom;
-        private System.Windows.Forms.Button btn_Modifier;
-        private System.Windows.Forms.Button btn_Supprimer;
-        private System.Windows.Forms.Label l_Titre_Nom_Supprimer;
-        private System.Windows.Forms.ComboBox cb_Nom_Supprimer;
-        private System.Windows.Forms.ComboBox cb_Dispo_Modif;
         private System.Windows.Forms.Label l_Titre_Nom_Ajout;
         private System.Windows.Forms.Label l_Titre_Prenom_Ajout;
         private System.Windows.Forms.Label l_Titre_Dispo_Ajout;
@@ -292,5 +241,13 @@
         private System.Windows.Forms.TextBox tb_Nom_Ajout;
         private System.Windows.Forms.TextBox tb_Prenom_Ajout;
         private System.Windows.Forms.ComboBox cb_Dispo_Ajout;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
