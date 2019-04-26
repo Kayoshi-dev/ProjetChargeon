@@ -205,6 +205,7 @@
 			this.bt_Ajout.TabIndex = 23;
 			this.bt_Ajout.Text = "Ajouter";
 			this.bt_Ajout.UseVisualStyleBackColor = true;
+			this.bt_Ajout.Click += new System.EventHandler(this.AddClick);
 			// 
 			// tb_Ville_Ajout
 			// 
@@ -409,6 +410,7 @@
 			this.bt_Supprimer.TabIndex = 23;
 			this.bt_Supprimer.Text = "Supprimer";
 			this.bt_Supprimer.UseVisualStyleBackColor = true;
+			this.bt_Supprimer.Click += new System.EventHandler(this.DeleteClick);
 			// 
 			// cb_Nom
 			// 

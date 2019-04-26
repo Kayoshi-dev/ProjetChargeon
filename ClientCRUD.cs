@@ -64,7 +64,36 @@ namespace ProjetChargeon
 			if(test == true)
 			{
 				l_test.Text = "ok";
+				DataSet ListCustomer = DataUser.SelectClients();
+				cb_Nom.DataSource = ListCustomer.Tables[0];
+
 			}
+		}
+
+		private void DeleteClick(object sender, EventArgs e)
+		{
+			string idSelected = cb_Nom.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
+
+			bool test = DataUser.DeleteCustomer(idSelected);
+
+			DataSet ListCustomer = DataUser.SelectClients();
+			cb_Nom.DataSource = ListCustomer.Tables[0];
+		}
+
+		private void AddClick(object sender, EventArgs e)
+		{
+			bool test = DataUser.InsertCustomer(tb_Nom_Ajout.Text, tb_Adresse_Ajout.Text, tb_CP_Ajout.Text, tb_Ville_Ajout.Text);
+
+			if (test == true)
+			{
+				tb_Nom_Ajout.Text = "";
+				tb_Adresse_Ajout.Text = "";
+				tb_CP_Ajout.Text = "";
+				tb_Ville_Ajout.Text = "";
+			}
+
+			DataSet ListCustomer = DataUser.SelectClients();
+			cb_Nom.DataSource = ListCustomer.Tables[0];
 		}
 
 		/*
