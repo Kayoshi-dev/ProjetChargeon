@@ -148,6 +148,7 @@
             this.btn_AjoutTechnicien.ForeColor = System.Drawing.Color.White;
             this.btn_AjoutTechnicien.Name = "btn_AjoutTechnicien";
             this.btn_AjoutTechnicien.UseVisualStyleBackColor = false;
+            this.btn_AjoutTechnicien.Click += new System.EventHandler(this.onClickToCRUDTechnicien);
             // 
             // Gestion_Donnees
             // 

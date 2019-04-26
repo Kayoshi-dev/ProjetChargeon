@@ -52,5 +52,14 @@ namespace ProjetChargeon
             Technicien.ShowDialog();
             Close();
         }
+
+        // Au Clic, redirection vers le CRUD Technicien
+        private void onClickToCRUDTechnicien(object sender, EventArgs e)
+        {
+            Hide();
+            var CRUD_Technicien = new TechnicienCRUD();
+            CRUD_Technicien.ShowDialog();
+            Close();
+        }
     }
 }
