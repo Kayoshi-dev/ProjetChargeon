@@ -54,6 +54,7 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudTechnicien.cs" />
     <Compile Include="Crud.cs">
       <SubType>Form</SubType>
     </Compile>

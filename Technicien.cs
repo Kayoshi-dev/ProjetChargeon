@@ -19,7 +19,7 @@ namespace ProjetChargeon
             InitializeComponent();
 
             // Affiche dans la ComboBox la liste des Techniciens enregistrés dans la BDD
-            CrudBornes selectTechnicien = new CrudBornes();
+            CrudTechnicien selectTechnicien = new CrudTechnicien();
             DataSet listeTechniciens = selectTechnicien.SelectTechniciens();
 
             // Affiche le Nom du Technicien dans la ComboBox
@@ -58,7 +58,7 @@ namespace ProjetChargeon
             // On récupère l'ID de la ComboBox
             string idSelected = cb_Technicien.SelectedValue.ToString();
 
-            CrudBornes selectDetailsTechniciens = new CrudBornes();
+            CrudTechnicien selectDetailsTechniciens = new CrudTechnicien();
             DataSet listeDetailsTechniciens = selectDetailsTechniciens.SelectDetailsTechnicien(idSelected);
 
             /* Affichage des données dans chaque label */
