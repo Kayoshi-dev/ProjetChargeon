@@ -29,9 +29,6 @@ namespace ProjetChargeon
 		 * grouper en une seule méthode *
 		 * il faut y réfléchir */
 
-		
-        /* Méthodes pour les Bornes */
-            
         //Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
 		public DataSet SelectBornes()
 		{
@@ -39,7 +36,9 @@ namespace ProjetChargeon
 
 			MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
 			DataSet listeBornes = new DataSet();
+
 			da.Fill(listeBornes, "Borne");
+
 			return listeBornes;
 		}
 
@@ -106,108 +105,5 @@ namespace ProjetChargeon
 
 			return listeBornesClient;
 		}
-
-		
-        /* Méthodes pour les Statistiques */
-        
-        // Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
-		public DataSet SelectDetailsStats(string idSelected)
-		{
-			string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
-
-			MySqlCommand req = new MySqlCommand(query, connection);
-
-			req.Parameters.Clear();
-			req.Parameters.Add(new MySqlParameter("@id", idSelected));
-
-			MySqlDataAdapter adapter = new MySqlDataAdapter();
-			DataSet listeDetailsStats = new DataSet();
-
-			adapter.SelectCommand = req;
-			adapter.Fill(listeDetailsStats);
-
-			adapter.Dispose();
-			req.Dispose();
-
-			return listeDetailsStats;
-		}
-
-        
-        /* Méthodes pour les Clients */
-        
-        // Cette méthode permet d'obtenir l'ID et les noms des clients dans la ComboBox
-        public DataSet SelectClients()
-        {
-            string query = "SELECT Cli_Id, Cli_Nom FROM client";
-
-            MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
-            DataSet listeClients = new DataSet();
-            da.Fill(listeClients, "Client");
-            return listeClients;
-        }
-
-        // Cette méthode permet d'obtenir les données des Clients en fonction du client sélectionné
-        public DataSet SelectDetailsClient(string idSelected)
-        {
-            string query = "SELECT Cli_Id, Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville FROM client WHERE Cli_Id = @id";
-
-            MySqlCommand req = new MySqlCommand(query, connection);
-
-            req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@id", idSelected));
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataSet listeDetailsClient = new DataSet();
-
-            adapter.SelectCommand = req;
-            adapter.Fill(listeDetailsClient);
-
-            adapter.Dispose();
-            req.Dispose();
-
-            return listeDetailsClient;
-        }
-
-        
-        /* Méthodes pour le CRUD Client */
-
-        // Cette méthode permet d'ajouter un Client
-        public bool InsertClient(string nomClient, string adresseClient, int cpClient, string villeClient)
-        {
-            string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES ('@nom', '@adresse', @cp, '@ville')";
-            bool validate = false;
-
-            MySqlCommand req = new MySqlCommand(query, connection);
-
-            req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@nom", nomClient));
-            req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
-            req.Parameters.Add(new MySqlParameter("@cp", cpClient));
-            req.Parameters.Add(new MySqlParameter("@ville", villeClient));
-            req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
-
-            validate = true;
-
-            return validate;
-        }
-
-        // A Réfléchir : Pour la requête SQL Update, une méthode pour chaque champ de texte ou un méthode pour l'ensemble des champs
-
-        // Cette méthode permet de supprimer un Client
-        public bool DeleteClient(string idSelected)
-        {
-            string query = "DELETE FROM client WHERE Cli_Id = @id";
-            bool validate = false;
-
-            MySqlCommand req = new MySqlCommand(query, connection);
-
-            req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@id", idSelected));
-            req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
-
-            validate = true;
-
-            return validate;
-        }
     }
 }

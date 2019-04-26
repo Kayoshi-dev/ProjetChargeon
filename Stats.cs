@@ -42,15 +42,15 @@ namespace ProjetChargeon
         {
             string idSelected = cb_Bornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
-            CrudBornes selectDetailsStats = new CrudBornes();
-            DataSet listeDetailsStats = selectDetailsStats.SelectDetailsStats(idSelected);
+            StatsDAO selectDetailsStats = new StatsDAO();
+            DataSet listDetailsStats = selectDetailsStats.SelectDetailsStats(idSelected);
 
             // Affichage des données dans chaque label
 
             // Condition pour Vérifier l'éxistence de la donnée Titre
-            if (listeDetailsStats.Tables[0].Rows[0].ItemArray[0].ToString() != null)
+            if (listDetailsStats.Tables[0].Rows[0].ItemArray[0].ToString() != null)
             {
-                l_Titre.Text = listeDetailsStats.Tables[0].Rows[0].ItemArray[0].ToString(); // Affiche le titre de la Stat
+                l_Titre.Text = listDetailsStats.Tables[0].Rows[0].ItemArray[0].ToString(); // Affiche le titre de la Stat
             }
             else
             {
@@ -58,9 +58,9 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Date
-            if (listeDetailsStats.Tables[0].Rows[0].ItemArray[1].ToString() != null)
+            if (listDetailsStats.Tables[0].Rows[0].ItemArray[1].ToString() != null)
             {
-                l_Date.Text = listeDetailsStats.Tables[0].Rows[0].ItemArray[1].ToString(); // Affiche la date de la Stat
+                l_Date.Text = listDetailsStats.Tables[0].Rows[0].ItemArray[1].ToString(); // Affiche la date de la Stat
             }
             else
             {
@@ -68,9 +68,9 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Puissance Absorbée
-            if (listeDetailsStats.Tables[0].Rows[0].ItemArray[2].ToString() != null)
+            if (listDetailsStats.Tables[0].Rows[0].ItemArray[2].ToString() != null)
             {
-                l_PuisAbs.Text = listeDetailsStats.Tables[0].Rows[0].ItemArray[2].ToString(); // Affiche la Puissance Absorbée de la borne
+                l_PuisAbs.Text = listDetailsStats.Tables[0].Rows[0].ItemArray[2].ToString(); // Affiche la Puissance Absorbée de la borne
             }
             else
             {
@@ -78,9 +78,9 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Durée
-            if (listeDetailsStats.Tables[0].Rows[0].ItemArray[3].ToString() != null)
+            if (listDetailsStats.Tables[0].Rows[0].ItemArray[3].ToString() != null)
             {
-                l_Duree.Text = listeDetailsStats.Tables[0].Rows[0].ItemArray[3].ToString(); // Affiche la Durée de Chargement de la borne
+                l_Duree.Text = listDetailsStats.Tables[0].Rows[0].ItemArray[3].ToString(); // Affiche la Durée de Chargement de la borne
             }
             else
             {
@@ -90,7 +90,7 @@ namespace ProjetChargeon
 			// Code pour le graphique
 			ch_Graphe.Series["Bornes"].XValueMember = "Stats_Duree";
 			ch_Graphe.Series["Bornes"].YValueMembers = "Stats_PuisAbs";
-			ch_Graphe.DataSource = listeDetailsStats;
+			ch_Graphe.DataSource = listDetailsStats;
 			ch_Graphe.DataBind();
         }
     }

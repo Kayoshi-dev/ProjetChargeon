@@ -16,17 +16,14 @@ namespace ProjetChargeon
         {
             InitializeComponent();
 
-            CrudBornes selectClients = new CrudBornes();
-            DataSet listeClients = selectClients.SelectClients();
+			UserDAO DataUser = new UserDAO();
+			DataSet ListCustomer = DataUser.SelectClients();
 
-            // Affiche le Client dans la ComboBox
-            cb_Client.DisplayMember = "Cli_Nom";
-
-            // ID du Client Sélectionné
-            cb_Client.ValueMember = "Cli_Id";
-
-            cb_Client.DataSource = listeClients.Tables["Client"];
-        }
+			// Affiche le Client dans la ComboBox
+			cb_Client.DisplayMember = "Cli_Nom";
+			cb_Client.ValueMember = "Cli_Id";
+			cb_Client.DataSource = ListCustomer.Tables[0];
+		}
 
         private void Close(object sender, EventArgs e)
         {
@@ -46,17 +43,16 @@ namespace ProjetChargeon
             // On récupère l'ID de la ComboBox
             string idSelected = cb_Client.SelectedValue.ToString();
 
-            CrudBornes selectDetailsClient = new CrudBornes();
-            DataSet listeDetailsClient = selectDetailsClient.SelectDetailsClient(idSelected);
+			UserDAO DataUser = new UserDAO();
+			DataSet ListCustomerDetails = DataUser.SelectClients();
 
-            
-            /* Affichage des données dans chaque label */
+			/* Affichage des données dans chaque label */
 
-            // Condition pour Vérifier l'éxistence de la donnée ID
-            if (listeDetailsClient.Tables[0].Rows[0].ItemArray[0].ToString() != null)
+			// Condition pour Vérifier l'éxistence de la donnée ID
+			if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[0].ToString() != null)
             {
                 // Affiche l'ID du client sélectionné
-                l_ID.Text = listeDetailsClient.Tables[0].Rows[0].ItemArray[0].ToString();
+                l_ID.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[0].ToString();
             }
             else
             {
@@ -64,10 +60,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Nom
-            if (listeDetailsClient.Tables[0].Rows[0].ItemArray[1].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[1].ToString() != null)
             {
                 // Affiche le Nom du client sélectionné
-                l_Nom.Text = listeDetailsClient.Tables[0].Rows[0].ItemArray[1].ToString();
+                l_Nom.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[1].ToString();
             }
             else
             {
@@ -75,10 +71,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Adresse
-            if (listeDetailsClient.Tables[0].Rows[0].ItemArray[2].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[2].ToString() != null)
             {
                 // Affiche l'Adresse du client sélectionné
-                l_Adresse.Text = listeDetailsClient.Tables[0].Rows[0].ItemArray[2].ToString();
+                l_Adresse.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[2].ToString();
             }
             else
             {
@@ -86,10 +82,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Code Postal
-            if (listeDetailsClient.Tables[0].Rows[0].ItemArray[3].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString() != null)
             {
                 // Affiche le Code Postal du client sélectionné
-                l_CP.Text = listeDetailsClient.Tables[0].Rows[0].ItemArray[3].ToString();
+                l_CP.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
             }
             else
             {
@@ -97,10 +93,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Ville
-            if (listeDetailsClient.Tables[0].Rows[0].ItemArray[4].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString() != null)
             {
                 // Affiche la Ville du client sélectionné
-                l_Ville.Text = listeDetailsClient.Tables[0].Rows[0].ItemArray[4].ToString();
+                l_Ville.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString();
             }
             else
             {

@@ -118,6 +118,7 @@
     <Compile Include="Stats.Designer.cs">
       <DependentUpon>Stats.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatsDAO.cs" />
     <Compile Include="StatutBornes.cs">
       <SubType>Form</SubType>
     </Compile>
