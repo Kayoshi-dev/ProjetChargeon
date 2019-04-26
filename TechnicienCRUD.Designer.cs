@@ -36,7 +36,7 @@
             this.l_Titre_Ajout = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.p_Separator_1 = new System.Windows.Forms.Panel();
+            this.p_Ajout_Technicien = new System.Windows.Forms.Panel();
             this.p_Separator_2 = new System.Windows.Forms.Panel();
             this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
             this.l_Titre_Nom_Modif = new System.Windows.Forms.Label();
@@ -58,6 +58,7 @@
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
+            this.p_Ajout_Technicien.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -110,11 +111,18 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
-            // p_Separator_1
+            // p_Ajout_Technicien
             // 
-            this.p_Separator_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.p_Separator_1, "p_Separator_1");
-            this.p_Separator_1.Name = "p_Separator_1";
+            this.p_Ajout_Technicien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Ajout_Technicien.Controls.Add(this.tb_Prenom_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.cb_Dispo_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.l_Titre_Nom_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.tb_Nom_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.btn_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.l_Titre_Prenom_Ajout);
+            this.p_Ajout_Technicien.Controls.Add(this.l_Titre_Dispo_Ajout);
+            resources.ApplyResources(this.p_Ajout_Technicien, "p_Ajout_Technicien");
+            this.p_Ajout_Technicien.Name = "p_Ajout_Technicien";
             // 
             // p_Separator_2
             // 
@@ -226,13 +234,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.cb_Dispo_Ajout);
-            this.Controls.Add(this.tb_Prenom_Ajout);
-            this.Controls.Add(this.tb_Nom_Ajout);
-            this.Controls.Add(this.btn_Ajout);
-            this.Controls.Add(this.l_Titre_Dispo_Ajout);
-            this.Controls.Add(this.l_Titre_Prenom_Ajout);
-            this.Controls.Add(this.l_Titre_Nom_Ajout);
             this.Controls.Add(this.cb_Dispo_Modif);
             this.Controls.Add(this.cb_Nom_Supprimer);
             this.Controls.Add(this.l_Titre_Nom_Supprimer);
@@ -244,7 +245,7 @@
             this.Controls.Add(this.l_Titre_Nom_Modif);
             this.Controls.Add(this.cb_Nom_Modif);
             this.Controls.Add(this.p_Separator_2);
-            this.Controls.Add(this.p_Separator_1);
+            this.Controls.Add(this.p_Ajout_Technicien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.l_Titre_Ajout);
@@ -256,6 +257,8 @@
             this.p_Titre_Chargeon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
+            this.p_Ajout_Technicien.ResumeLayout(false);
+            this.p_Ajout_Technicien.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +273,7 @@
         private System.Windows.Forms.Label l_Titre_Ajout;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel p_Separator_1;
+        private System.Windows.Forms.Panel p_Ajout_Technicien;
         private System.Windows.Forms.Panel p_Separator_2;
         private System.Windows.Forms.ComboBox cb_Nom_Modif;
         private System.Windows.Forms.Label l_Titre_Nom_Modif;
