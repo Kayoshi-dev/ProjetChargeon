@@ -19,7 +19,7 @@ namespace ProjetChargeon
             InitializeComponent();
 
             // Affiche dans la ComboBox la liste des Techniciens enregistrés dans la BDD
-            CrudTechnicien selectTechnicien = new CrudTechnicien();
+            TechnicienDAO selectTechnicien = new TechnicienDAO();
             DataSet listeTechniciens = selectTechnicien.SelectTechniciens();
 
             // Affiche le Nom du Technicien dans les ComboBox
@@ -49,6 +49,35 @@ namespace ProjetChargeon
         private void Close(object sender, EventArgs e)
         {
             Close();
+        }
+
+        // Au Clic, Ajoute un technicien dans la BDD
+        private void AddTechnicien(object sender, EventArgs e)
+        {
+            /*bool test = DataUser.InsertCustomer(tb_Nom_Ajout.Text, tb_Adresse_Ajout.Text, tb_CP_Ajout.Text, tb_Ville_Ajout.Text);
+
+            if (test == true)
+            {
+                tb_Nom_Ajout.Text = "";
+                tb_Adresse_Ajout.Text = "";
+                tb_CP_Ajout.Text = "";
+                tb_Ville_Ajout.Text = "";
+            }
+
+            DataSet ListCustomer = DataUser.SelectClients();
+            cb_Nom.DataSource = ListCustomer.Tables[0];*/
+        }
+
+        // Au Clic, Modifie les données du technicien sélectionné
+        private void UpdateTechnicien(object sender, EventArgs e)
+        {
+
+        }
+
+        // Après avoir choisi le technicien dans la ComoBox, affiche ces données
+        private void DataTechnicienChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

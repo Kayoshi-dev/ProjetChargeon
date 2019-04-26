@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ProjetChargeon
 {
-    class CrudTechnicien
+    class TechnicienDAO
     {
         private MySqlConnection connection;
 
-        public CrudTechnicien()
+        public TechnicienDAO()
         {
             var ConnectObject = new DBConnect();
             this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.
@@ -49,6 +49,30 @@ namespace ProjetChargeon
             req.Dispose();
 
             return listeDetailsTechniciens;
+        }
+
+        // Cette méthode permet d'ajouter un technicien dans la BDD
+        public bool InsertTechnicien(string nomTechnicien, string prenomTechnicien, int dispoTechnicien)
+        {
+            string query = "INSERT INTO technicien (Tech_Id, Tech_Nom, Tech_Prenom, Tech_Dispo) VALUES (@nom, @prenom, @dispo)";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@nom", nomTechnicien));
+            req.Parameters.Add(new MySqlParameter("@prenom", prenomTechnicien));
+            req.Parameters.Add(new MySqlParameter("@dispo", dispoTechnicien));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
         }
 
         /* Début de SQL pour Technicien et son Habilitation */
