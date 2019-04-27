@@ -66,12 +66,6 @@
     <Compile Include="ClientCRUD.Designer.cs">
       <DependentUpon>ClientCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crud.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Crud.Designer.cs">
-      <DependentUpon>Crud.cs</DependentUpon>
-    </Compile>
     <Compile Include="CrudBornes.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="Facturation.cs">
@@ -91,6 +85,12 @@
     </Compile>
     <Compile Include="Gestion_Donnees.Designer.cs">
       <DependentUpon>Gestion_Donnees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intervention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intervention.Designer.cs">
+      <DependentUpon>Intervention.cs</DependentUpon>
     </Compile>
     <Compile Include="Logged_Customer.cs">
       <SubType>Form</SubType>
@@ -135,9 +135,6 @@
     <EmbeddedResource Include="ClientCRUD.resx">
       <DependentUpon>ClientCRUD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crud.resx">
-      <DependentUpon>Crud.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Facturation.resx">
       <DependentUpon>Facturation.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion_Donnees.resx">
       <DependentUpon>Gestion_Donnees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intervention.resx">
+      <DependentUpon>Intervention.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logged_Customer.resx">
       <DependentUpon>Logged_Customer.cs</DependentUpon>
