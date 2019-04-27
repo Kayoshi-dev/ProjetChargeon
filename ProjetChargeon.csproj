@@ -54,6 +54,18 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCRUD.Designer.cs">
+      <DependentUpon>ClientCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Crud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,7 @@
     <Compile Include="Stats.Designer.cs">
       <DependentUpon>Stats.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatsDAO.cs" />
     <Compile Include="StatutBornes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +128,12 @@
     <Compile Include="UserDAO.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCRUD.resx">
+      <DependentUpon>ClientCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Crud.resx">
       <DependentUpon>Crud.cs</DependentUpon>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,31 +17,41 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-
-        /* Evènement sur les images */
-
-        // Au Clic sur l'image, on kill le process et on ferme la page
-        private void Close(object sender, EventArgs e)
+        private void Close_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        // Au Clic sur l'image, on revient à la page de Connexion
-        private void Return(object sender, EventArgs e)
+        private void Return_Click(object sender, EventArgs e)
         {
             Hide();
-            var Logged_Admin = new Logged_Admin();
-            Logged_Admin.ShowDialog();
+            var accueilAdmin = new Logged_Admin();
+            accueilAdmin.ShowDialog();
             Close();
         }
 
-
-        /* Liens de Redirection */
-
-        // Au Click sur le Bouton, redirection vers Gestion des Bornes
-        private void onClickToBorne(object sender, EventArgs e)
+        private void onClickToCustomers(object sender, EventArgs e)
         {
+            Hide();
+            var Client = new Client();
+            Client.ShowDialog();
+            Close();
+        }
 
+        private void onClickToClientCRUD(object sender, EventArgs e)
+        {
+            Hide();
+            var ClientCRUD = new ClientCRUD();
+            ClientCRUD.ShowDialog();
+            Close();
+        }
+
+        private void onClickToBornes(object sender, EventArgs e)
+        {
+            Hide();
+            var Bornes = new MesBornes();
+            Bornes.ShowDialog();
+            Close();
         }
     }
 }

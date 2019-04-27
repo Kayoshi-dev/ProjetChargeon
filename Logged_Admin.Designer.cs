@@ -1,4 +1,4 @@
-﻿namespace ProjetChargeon
+namespace ProjetChargeon
 {
     partial class Logged_Admin
     {
@@ -29,98 +29,97 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Logged_Admin));
-            this.p_Chargeon = new System.Windows.Forms.Panel();
-            this.img_Close = new System.Windows.Forms.PictureBox();
-            this.l_Titre_Chargeon = new System.Windows.Forms.Label();
-            this.btn_Données = new System.Windows.Forms.Button();
-            this.btn_Stats = new System.Windows.Forms.Button();
-            this.img_Return = new System.Windows.Forms.PictureBox();
-            this.p_Chargeon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
+            this.p_titre = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_stats = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.p_titre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // p_Chargeon
+            // p_titre
             // 
-            this.p_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.p_Chargeon.Controls.Add(this.img_Close);
-            this.p_Chargeon.Controls.Add(this.l_Titre_Chargeon);
-            resources.ApplyResources(this.p_Chargeon, "p_Chargeon");
-            this.p_Chargeon.Name = "p_Chargeon";
+            this.p_titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.p_titre.Controls.Add(this.pictureBox1);
+            this.p_titre.Controls.Add(this.label1);
+            resources.ApplyResources(this.p_titre, "p_titre");
+            this.p_titre.Name = "p_titre";
             // 
-            // img_Close
+            // label1
             // 
-            resources.ApplyResources(this.img_Close, "img_Close");
-            this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img_Close.Name = "img_Close";
-            this.img_Close.TabStop = false;
-            this.img_Close.Click += new System.EventHandler(this.Close);
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Name = "label1";
             // 
-            // l_Titre_Chargeon
+            // button2
             // 
-            resources.ApplyResources(this.l_Titre_Chargeon, "l_Titre_Chargeon");
-            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
-            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.onClickToData);
             // 
-            // btn_Données
+            // pictureBox2
             // 
-            this.btn_Données.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_Données.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Données.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_Données, "btn_Données");
-            this.btn_Données.ForeColor = System.Drawing.Color.White;
-            this.btn_Données.Name = "btn_Données";
-            this.btn_Données.UseVisualStyleBackColor = false;
-            this.btn_Données.Click += new System.EventHandler(this.onClickToData);
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
-            // btn_Stats
+            // btn_stats
             // 
-            this.btn_Stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btn_Stats.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Stats.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_Stats, "btn_Stats");
-            this.btn_Stats.ForeColor = System.Drawing.Color.White;
-            this.btn_Stats.Name = "btn_Stats";
-            this.btn_Stats.UseVisualStyleBackColor = false;
-            this.btn_Stats.Click += new System.EventHandler(this.onClickToStats);
+            this.btn_stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_stats.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_stats.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_stats, "btn_stats");
+            this.btn_stats.ForeColor = System.Drawing.Color.White;
+            this.btn_stats.Name = "btn_stats";
+            this.btn_stats.UseVisualStyleBackColor = false;
+            this.btn_stats.Click += new System.EventHandler(this.onClickToStats);
             // 
-            // img_Return
+            // pictureBox1
             // 
-            this.img_Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            resources.ApplyResources(this.img_Return, "img_Return");
-            this.img_Return.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.img_Return.Name = "img_Return";
-            this.img_Return.TabStop = false;
-            this.img_Return.Click += new System.EventHandler(this.Return);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // Logged_Admin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.img_Return);
-            this.Controls.Add(this.btn_Stats);
-            this.Controls.Add(this.btn_Données);
-            this.Controls.Add(this.p_Chargeon);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btn_stats);
+            this.Controls.Add(this.p_titre);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Logged_Admin";
-            this.p_Chargeon.ResumeLayout(false);
-            this.p_Chargeon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
+            this.p_titre.ResumeLayout(false);
+            this.p_titre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
-        private System.Windows.Forms.Panel p_Chargeon;
-        private System.Windows.Forms.Label l_Titre_Chargeon;
-        private System.Windows.Forms.PictureBox img_Close;
-        private System.Windows.Forms.Button btn_Données;
-        private System.Windows.Forms.Button btn_Stats;
-		private System.Windows.Forms.PictureBox img_Return;
-	}
+        private System.Windows.Forms.Panel p_titre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_stats;
+		    private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
+    }
 }
 
