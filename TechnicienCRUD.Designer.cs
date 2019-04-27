@@ -42,8 +42,7 @@
             this.btn_Ajout = new System.Windows.Forms.Button();
             this.l_Titre_Prenom_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_Dispo_Ajout = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
+            this.p_Modifier_Technicien = new System.Windows.Forms.Panel();
             this.tb_Prenom_Modif = new System.Windows.Forms.TextBox();
             this.cb_Dispo_Modif = new System.Windows.Forms.ComboBox();
             this.l_Titre_Nom_Modif = new System.Windows.Forms.Label();
@@ -51,11 +50,19 @@
             this.l_Titre_Prenom_Modif = new System.Windows.Forms.Label();
             this.l_Titre_Dispo_Modif = new System.Windows.Forms.Label();
             this.l_Titre_Modifier_Technicien = new System.Windows.Forms.Label();
+            this.p_Supprimer_Technicien = new System.Windows.Forms.Panel();
+            this.cb_Nom_Supprimer = new System.Windows.Forms.ComboBox();
+            this.l_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
+            this.btn_Supprimer = new System.Windows.Forms.Button();
+            this.l_Titre_Supprimer_Technicien = new System.Windows.Forms.Label();
+            this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
+            this.tb_Nom_Modif = new System.Windows.Forms.TextBox();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             this.p_Ajout_Technicien.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.p_Modifier_Technicien.SuspendLayout();
+            this.p_Supprimer_Technicien.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -150,25 +157,19 @@
             this.l_Titre_Dispo_Ajout.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Dispo_Ajout.Name = "l_Titre_Dispo_Ajout";
             // 
-            // panel1
+            // p_Modifier_Technicien
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cb_Nom_Modif);
-            this.panel1.Controls.Add(this.tb_Prenom_Modif);
-            this.panel1.Controls.Add(this.cb_Dispo_Modif);
-            this.panel1.Controls.Add(this.l_Titre_Nom_Modif);
-            this.panel1.Controls.Add(this.btn_Modifier);
-            this.panel1.Controls.Add(this.l_Titre_Prenom_Modif);
-            this.panel1.Controls.Add(this.l_Titre_Dispo_Modif);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // cb_Nom_Modif
-            // 
-            this.cb_Nom_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
-            this.cb_Nom_Modif.Name = "cb_Nom_Modif";
-            this.cb_Nom_Modif.SelectedIndexChanged += new System.EventHandler(this.DataTechnicienChanged);
+            this.p_Modifier_Technicien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Modifier_Technicien.Controls.Add(this.tb_Nom_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.cb_Nom_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.tb_Prenom_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.cb_Dispo_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.l_Titre_Nom_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.btn_Modifier);
+            this.p_Modifier_Technicien.Controls.Add(this.l_Titre_Prenom_Modif);
+            this.p_Modifier_Technicien.Controls.Add(this.l_Titre_Dispo_Modif);
+            resources.ApplyResources(this.p_Modifier_Technicien, "p_Modifier_Technicien");
+            this.p_Modifier_Technicien.Name = "p_Modifier_Technicien";
             // 
             // tb_Prenom_Modif
             // 
@@ -212,13 +213,61 @@
             this.l_Titre_Modifier_Technicien.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Modifier_Technicien.Name = "l_Titre_Modifier_Technicien";
             // 
+            // p_Supprimer_Technicien
+            // 
+            this.p_Supprimer_Technicien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Supprimer_Technicien.Controls.Add(this.cb_Nom_Supprimer);
+            this.p_Supprimer_Technicien.Controls.Add(this.l_Titre_Nom_Supprimer);
+            this.p_Supprimer_Technicien.Controls.Add(this.btn_Supprimer);
+            resources.ApplyResources(this.p_Supprimer_Technicien, "p_Supprimer_Technicien");
+            this.p_Supprimer_Technicien.Name = "p_Supprimer_Technicien";
+            // 
+            // cb_Nom_Supprimer
+            // 
+            this.cb_Nom_Supprimer.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Nom_Supprimer, "cb_Nom_Supprimer");
+            this.cb_Nom_Supprimer.Name = "cb_Nom_Supprimer";
+            // 
+            // l_Titre_Nom_Supprimer
+            // 
+            resources.ApplyResources(this.l_Titre_Nom_Supprimer, "l_Titre_Nom_Supprimer");
+            this.l_Titre_Nom_Supprimer.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Nom_Supprimer.Name = "l_Titre_Nom_Supprimer";
+            // 
+            // btn_Supprimer
+            // 
+            resources.ApplyResources(this.btn_Supprimer, "btn_Supprimer");
+            this.btn_Supprimer.Name = "btn_Supprimer";
+            this.btn_Supprimer.UseVisualStyleBackColor = true;
+            this.btn_Supprimer.Click += new System.EventHandler(this.DeleteTechnicien);
+            // 
+            // l_Titre_Supprimer_Technicien
+            // 
+            resources.ApplyResources(this.l_Titre_Supprimer_Technicien, "l_Titre_Supprimer_Technicien");
+            this.l_Titre_Supprimer_Technicien.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Supprimer_Technicien.Name = "l_Titre_Supprimer_Technicien";
+            // 
+            // cb_Nom_Modif
+            // 
+            this.cb_Nom_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
+            this.cb_Nom_Modif.Name = "cb_Nom_Modif";
+            this.cb_Nom_Modif.SelectedIndexChanged += new System.EventHandler(this.DataSelected);
+            // 
+            // tb_Nom_Modif
+            // 
+            resources.ApplyResources(this.tb_Nom_Modif, "tb_Nom_Modif");
+            this.tb_Nom_Modif.Name = "tb_Nom_Modif";
+            // 
             // TechnicienCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.l_Titre_Supprimer_Technicien);
+            this.Controls.Add(this.p_Supprimer_Technicien);
             this.Controls.Add(this.l_Titre_Modifier_Technicien);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.p_Modifier_Technicien);
             this.Controls.Add(this.p_Ajout_Technicien);
             this.Controls.Add(this.l_Titre_Ajout_Technicien);
             this.Controls.Add(this.p_Titre_Chargeon);
@@ -231,8 +280,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             this.p_Ajout_Technicien.ResumeLayout(false);
             this.p_Ajout_Technicien.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.p_Modifier_Technicien.ResumeLayout(false);
+            this.p_Modifier_Technicien.PerformLayout();
+            this.p_Supprimer_Technicien.ResumeLayout(false);
+            this.p_Supprimer_Technicien.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,14 +304,20 @@
         private System.Windows.Forms.TextBox tb_Nom_Ajout;
         private System.Windows.Forms.TextBox tb_Prenom_Ajout;
         private System.Windows.Forms.ComboBox cb_Dispo_Ajout;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel p_Modifier_Technicien;
         private System.Windows.Forms.TextBox tb_Prenom_Modif;
         private System.Windows.Forms.ComboBox cb_Dispo_Modif;
         private System.Windows.Forms.Label l_Titre_Nom_Modif;
         private System.Windows.Forms.Button btn_Modifier;
         private System.Windows.Forms.Label l_Titre_Prenom_Modif;
         private System.Windows.Forms.Label l_Titre_Dispo_Modif;
-        private System.Windows.Forms.ComboBox cb_Nom_Modif;
         private System.Windows.Forms.Label l_Titre_Modifier_Technicien;
+        private System.Windows.Forms.Panel p_Supprimer_Technicien;
+        private System.Windows.Forms.ComboBox cb_Nom_Supprimer;
+        private System.Windows.Forms.Label l_Titre_Nom_Supprimer;
+        private System.Windows.Forms.Button btn_Supprimer;
+        private System.Windows.Forms.Label l_Titre_Supprimer_Technicien;
+        private System.Windows.Forms.ComboBox cb_Nom_Modif;
+        private System.Windows.Forms.TextBox tb_Nom_Modif;
     }
 }

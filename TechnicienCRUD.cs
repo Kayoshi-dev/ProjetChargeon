@@ -12,26 +12,45 @@ namespace ProjetChargeon
 {
     public partial class TechnicienCRUD : Form
     {
+        TechnicienDAO DataTechnicien = new TechnicienDAO();
+
         /* Code lors de l'initialisation de la Page */
 
         public TechnicienCRUD()
         {
             InitializeComponent();
+            InitializeComboBoxUpdate();
+            InitializeComboBoxDelete();
+        }
 
-            // Affiche dans la ComboBox la liste des Techniciens enregistrés dans la BDD
+        private void InitializeComboBoxUpdate()
+        {
+            // Affiche dans la ComboBox Update la liste des Techniciens enregistrés dans la BDD
             TechnicienDAO selectTechnicien = new TechnicienDAO();
             DataSet listeTechniciens = selectTechnicien.SelectTechniciens();
 
-            // Affiche le Nom du Technicien dans les ComboBox
+            // Affiche le Nom du Technicien dans la ComboBox
+            cb_Nom_Supprimer.DisplayMember = "Tech_Nom";
+
+            // ID du Technicien Sélectionné
+            cb_Nom_Supprimer.ValueMember = "Tech_Id";
+
+            cb_Nom_Supprimer.DataSource = listeTechniciens.Tables["Technicien"];
+        }
+
+        private void InitializeComboBoxDelete()
+        {
+            // Affiche dans la ComboBox Delete la liste des Techniciens enregistrés dans la BDD
+            TechnicienDAO selectTechnicien = new TechnicienDAO();
+            DataSet listeTechniciens = selectTechnicien.SelectTechniciens();
+
+            // Affiche le Nom du Technicien dans la ComboBox
             cb_Nom_Modif.DisplayMember = "Tech_Nom";
-            //cb_Nom_Supprimer.DisplayMember = "Tech_Nom";
 
             // ID du Technicien Sélectionné
             cb_Nom_Modif.ValueMember = "Tech_Id";
-            //cb_Nom_Supprimer.ValueMember = "Tech_Id";
 
             cb_Nom_Modif.DataSource = listeTechniciens.Tables["Technicien"];
-            //cb_Nom_Supprimer.DataSource = listeTechniciens.Tables["Technicien"];
         }
 
         /* Liens de Redirection */
@@ -51,33 +70,59 @@ namespace ProjetChargeon
             Close();
         }
 
-        // Au Clic, Ajoute un technicien dans la BDD
-        private void AddTechnicien(object sender, EventArgs e)
+        // ComboBox Update : Affiche les données du technicien sélectionné
+        private void DataSelected(object sender, EventArgs e)
         {
-            /*bool test = DataUser.InsertCustomer(tb_Nom_Ajout.Text, tb_Adresse_Ajout.Text, tb_CP_Ajout.Text, tb_Ville_Ajout.Text);
+            // On récupère l'ID de la ComboBox
+            string idSelected = cb_Nom_Modif.SelectedValue.ToString();
 
-            if (test == true)
+            TechnicienDAO selectDetailsTechniciens = new TechnicienDAO();
+            DataSet listeDetailsTechniciens = selectDetailsTechniciens.SelectDetailsTechnicien(idSelected);
+
+            // Condition pour Vérifier l'éxistence de la donnée Nom
+            if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[1].ToString() != null)
             {
-                tb_Nom_Ajout.Text = "";
-                tb_Adresse_Ajout.Text = "";
-                tb_CP_Ajout.Text = "";
-                tb_Ville_Ajout.Text = "";
+                // Affiche le prénom du client sélectionné
+                tb_Nom_Modif.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[1].ToString();
+            }
+            else
+            {
+                tb_Nom_Modif.Text = "";
             }
 
-            DataSet ListCustomer = DataUser.SelectClients();
-            cb_Nom.DataSource = ListCustomer.Tables[0];*/
+            // Condition pour Vérifier l'éxistence de la donnée Prénom
+            if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[2].ToString() != null)
+            {
+                // Affiche le prénom du client sélectionné
+                tb_Prenom_Modif.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[2].ToString();
+            }
+            else
+            {
+                tb_Prenom_Modif.Text = "";
+            }
         }
 
-        // Au Clic, Modifie les données du technicien sélectionné
+        // Au Clic, on ajoute un technicien dans la BDD
+        private void AddTechnicien(object sender, EventArgs e)
+        {
+            
+        }
+
+        // Au Clic, on peut modifier les données enregistrées dans la BDD en fonction du technicien sélectionné
         private void UpdateTechnicien(object sender, EventArgs e)
         {
 
         }
 
-        // Après avoir choisi le technicien dans la ComoBox, affiche ces données
-        private void DataTechnicienChanged(object sender, EventArgs e)
+        // Au Clic, on supprime le technicien sélectionné de la BDD
+        private void DeleteTechnicien(object sender, EventArgs e)
         {
+            string idSelected = cb_Nom_Supprimer.SelectedValue.ToString();
 
+            bool test = DataTechnicien.DeleteTechnicien(idSelected);
+
+            DataSet ListTechnicien = DataTechnicien.SelectTechniciens();
+            cb_Nom_Supprimer.DataSource = ListTechnicien.Tables[0];
         }
     }
 }

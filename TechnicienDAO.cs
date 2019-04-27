@@ -75,6 +75,28 @@ namespace ProjetChargeon
             return validate;
         }
 
+        // Cette méthode permet de supprimer un technicien dans la BDD
+        public bool DeleteTechnicien(string idSelected)
+        {
+            string query = "DELETE FROM technicien WHERE Tech_Id = @id";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
+        }
+
         /* Début de SQL pour Technicien et son Habilitation */
 
         /*string query = "SELECT Tech_Id, Tech_Nom, Tech_Prenom, TypeHab_Ref, Tech_Dispo FROM technicien, habilitation, typehab " +
