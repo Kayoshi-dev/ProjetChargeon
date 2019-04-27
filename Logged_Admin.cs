@@ -1,4 +1,4 @@
-﻿/* 
+/* 
  * Date de création : 11/03/2019
  * Dernière modification : 11/03/2019
  * Équipe : Nathouuuu
@@ -23,8 +23,11 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        // Au Clic sur l'image, fermer la page et kill le process
-        private void PictureBox1_Click(object sender, EventArgs e)
+
+        /* Evènement sur les images */
+
+        // Au Clic sur l'image, on kill le process et on ferme la page
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }

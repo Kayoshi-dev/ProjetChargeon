@@ -1,4 +1,4 @@
-﻿namespace ProjetChargeon
+namespace ProjetChargeon
 {
     partial class Logged_Admin
     {
@@ -111,7 +111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -119,7 +118,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_stats;
-		private System.Windows.Forms.PictureBox pictureBox2;
+		    private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,18 +25,26 @@ namespace ProjetChargeon
             cb_Bornes.DataSource = listeBornes.Tables["Borne"];
         }
 
+
+        /* Evènement sur les images */
+
+        // Au Clic, on kill le process et on ferme la page
 		private void CloseProgram(object sender, EventArgs e)
 		{
 			Close();
 		}
 
-		private void PictureBox4_Click(object sender, EventArgs e)
-		{
-			Hide();
-			var Logged_Admin = new Logged_Admin();
-			Logged_Admin.ShowDialog();
-			Close();
-		}
+        // Au Clic, on retourne à la page Logged_Admin
+        private void Return(object sender, EventArgs e)
+        {
+            Hide();
+            var Logged_Admin = new Logged_Admin();
+            Logged_Admin.ShowDialog();
+            Close();
+        }
+
+
+        /* Méthodes pour les Statistiques */
 
         private void ComboIndexChange(object sender, EventArgs e)
         {

@@ -1,4 +1,4 @@
-﻿namespace ProjetChargeon
+namespace ProjetChargeon
 {
     partial class Gestion_Donnees
     {
@@ -96,6 +96,7 @@
             this.btn_Technicien.ForeColor = System.Drawing.Color.White;
             this.btn_Technicien.Name = "btn_Technicien";
             this.btn_Technicien.UseVisualStyleBackColor = false;
+
             // 
             // btn_AjoutBorne
             // 
@@ -171,7 +172,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
