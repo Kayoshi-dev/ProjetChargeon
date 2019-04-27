@@ -44,7 +44,7 @@ namespace ProjetChargeon
             string idSelected = cb_Client.SelectedValue.ToString();
 
 			UserDAO DataUser = new UserDAO();
-			DataSet ListCustomerDetails = DataUser.SelectClients();
+			DataSet ListCustomerDetails = DataUser.SelectDetailsClient(idSelected);
 
 			/* Affichage des données dans chaque label */
 
@@ -60,10 +60,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Nom
-            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[1].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString() != null)
             {
                 // Affiche le Nom du client sélectionné
-                l_Nom.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[1].ToString();
+                l_Nom.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
             }
             else
             {
@@ -71,10 +71,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Adresse
-            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[2].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString() != null)
             {
                 // Affiche l'Adresse du client sélectionné
-                l_Adresse.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[2].ToString();
+                l_Adresse.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString();
             }
             else
             {
@@ -82,10 +82,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Code Postal
-            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[5].ToString() != null)
             {
                 // Affiche le Code Postal du client sélectionné
-                l_CP.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
+                l_CP.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[5].ToString();
             }
             else
             {
@@ -93,10 +93,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Ville
-            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString() != null)
+            if (ListCustomerDetails.Tables[0].Rows[0].ItemArray[6].ToString() != null)
             {
                 // Affiche la Ville du client sélectionné
-                l_Ville.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString();
+                l_Ville.Text = ListCustomerDetails.Tables[0].Rows[0].ItemArray[6].ToString();
             }
             else
             {

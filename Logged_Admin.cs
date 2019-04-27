@@ -27,7 +27,7 @@ namespace ProjetChargeon
         /* Evènement sur les images */
 
         // Au Clic sur l'image, on kill le process et on ferme la page
-        private void Close(object sender, EventArgs e)
+        private void CloseProgram(object sender, EventArgs e)
         {
             Close();
         }
