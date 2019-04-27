@@ -19,11 +19,11 @@ namespace ProjetChargeon
         public TechnicienCRUD()
         {
             InitializeComponent();
-            InitializeComboBoxUpdate();
-            InitializeComboBoxDelete();
+            InitializeComboBoxNomUpdate();
+            InitializeComboBoxNomDelete();
         }
 
-        private void InitializeComboBoxUpdate()
+        private void InitializeComboBoxNomUpdate()
         {
             // Affiche dans la ComboBox Update la liste des Techniciens enregistrés dans la BDD
             TechnicienDAO selectTechnicien = new TechnicienDAO();
@@ -38,7 +38,7 @@ namespace ProjetChargeon
             cb_Nom_Supprimer.DataSource = listeTechniciens.Tables["Technicien"];
         }
 
-        private void InitializeComboBoxDelete()
+        private void InitializeComboBoxNomDelete()
         {
             // Affiche dans la ComboBox Delete la liste des Techniciens enregistrés dans la BDD
             TechnicienDAO selectTechnicien = new TechnicienDAO();
