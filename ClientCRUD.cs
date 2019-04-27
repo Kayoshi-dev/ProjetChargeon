@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Date de création : 23/04/2019
+ * Dernière modification : 27/04/2019
+ * Équipe : Nathouuuu
+ * Rôle : Fichier de classe contenant toute les méthodes permettant des actions sur l'utilisateur
+ * Développeur : Maxime, Nathan
+ * Design : Nathan
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,32 +50,24 @@ namespace ProjetChargeon
 			tb_ville.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[6].ToString();
 		}
 
-		// Au Clic sur l'image, on ferme l'application
-		private void Close(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        // Au Clic sur l'image, on retourne à la page précédente
-        private void Return(object sender, EventArgs e)
-        {
-            Hide();
-            var Data = new Gestion_Donnees();
-            Data.ShowDialog();
-            Close();
-        }
-
 		private void UpdateClick(object sender, EventArgs e)
 		{
 			string idSelected = cb_Nom.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
 			bool test = DataUser.UpdateCustomer(idSelected, tb_nom.Text, tb_adresse.Text, tb_cp.Text, tb_ville.Text);
-			if(test == true)
+			if (test == true)
 			{
-				l_test.Text = "ok";
+				l_test.ForeColor = Color.FromArgb(46, 204, 113); // Vert
+				l_test.Text = "Modification effectuée";
+
+				//On recharge la base de donnée pour prendre en compte la mise à jour
 				DataSet ListCustomer = DataUser.SelectClients();
 				cb_Nom.DataSource = ListCustomer.Tables[0];
-
+			}
+			else 
+			{ 
+				l_test.ForeColor = Color.FromArgb(231, 76, 60); // Rouge
+				l_test.Text = "Echec lors de la modification";
 			}
 		}
 
@@ -75,9 +76,20 @@ namespace ProjetChargeon
 			string idSelected = cb_Nom.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
 			bool test = DataUser.DeleteCustomer(idSelected);
+			if(test == true) 
+			{
+				l_test.ForeColor = Color.FromArgb(46, 204, 113); // Vert
+				l_test.Text = "Suppression effectuée";
 
-			DataSet ListCustomer = DataUser.SelectClients();
-			cb_Nom.DataSource = ListCustomer.Tables[0];
+				//On recharge la base de donnée pour prendre en compte la mise à jour
+				DataSet ListCustomer = DataUser.SelectClients();
+				cb_Nom.DataSource = ListCustomer.Tables[0];
+			}
+			else 
+			{
+				l_test.ForeColor = Color.FromArgb(231, 76, 60); // Rouge
+				l_test.Text = "Echec lors de la suppression";
+			}
 		}
 
 		private void AddClick(object sender, EventArgs e)
@@ -86,84 +98,42 @@ namespace ProjetChargeon
 
 			if (test == true)
 			{
+				//Après Modification des infos on reset la valeur des champs.
 				tb_Nom_Ajout.Text = "";
 				tb_Adresse_Ajout.Text = "";
 				tb_CP_Ajout.Text = "";
 				tb_Ville_Ajout.Text = "";
-			}
 
-			DataSet ListCustomer = DataUser.SelectClients();
-			cb_Nom.DataSource = ListCustomer.Tables[0];
+				if (test == true)
+				{
+					l_test.ForeColor = Color.FromArgb(46, 204, 113); // Vert
+					l_test.Text = "Ajout effectuée";
+
+					//On recharge la base de donnée pour prendre en compte la mise à jour
+					DataSet ListCustomer = DataUser.SelectClients();
+					cb_Nom.DataSource = ListCustomer.Tables[0];
+				}
+				else
+				{
+					l_test.ForeColor = Color.FromArgb(231, 76, 60); // Rouge
+					l_test.Text = "Echec lors de l'insertion";
+				}
+			}
 		}
 
-		/*
-        // Au Clic sur le bouton, permet d'ajouter un client dans la Base de Données
-        private void Ajouter_Client(object sender, EventArgs e)
-        {
-            // Récupère les valeurs des TextBox, et on les ajoutent dans une variable
-            // Pour l'instant, on met le TextBox CodePostal en String, on effectuera plus tard sa convertion en Int32
-            string nomClient = tb_Nom_Ajout.Text.ToString();
-            string adresseClient = tb_Adresse_Ajout.Text.ToString();
-            string cpClientText = tb_CP_Ajout.Text.ToString();
-            string villeClient = tb_Ville_Ajout.Text.ToString();
+		// Au Clic sur l'image, on ferme l'application
+		private void Close(object sender, EventArgs e)
+		{
+			Close();
+		}
 
-            CrudBornes insertClient = new CrudBornes();
-
-            // On vérifie si tous les TextBox sont remplis
-            if (nomClient == "" || adresseClient == "" || cpClientText == "" || villeClient == "")
-            {
-                // Si un d'entre eux n'est pas remplis, on affiche une erreur
-                MessageBox.Show("Veuillez remplir toutes les cases du formulaire !");
-            }
-            // Ensuite on vérifie le nombre de caractère des TextBox afin d'éviter les attaques (Injection SQL ...)
-            else if(nomClient.Length > 20 || adresseClient.Length > 70 || cpClientText.Length > 5 || villeClient.Length > 20)
-            {
-                MessageBox.Show("Veuillez réduire le nombre de caractère pour le formulaire !");
-            }
-
-            // Si tous est Ok, alors on peut traiter le TextBox CP, et exécuter la requête 
-            else
-            {
-                // On convertit maintenant le TextBox Code Postal en Int32
-                int cpClient = Convert.ToInt32(cpClientText);
-
-                // On exécute notre requête SQL INSERT
-                bool insertClientBool = insertClient.InsertClient(nomClient, adresseClient, cpClient, villeClient);
-
-                
-                if (insertClientBool == true)
-                {
-                    // Si requête exécutée, on affiche un message positif
-                    MessageBox.Show("Requête exécutée, client ajouté !");
-                }
-                else
-                {
-                    // Sinon on affiche une erreur
-                    MessageBox.Show("Erreur : Requête INSERT non exécutée !");
-                }
-            }
-        }
-
-        // Au Clic sur le bouton, permet de supprimer le client sélectionné dans la ComboBox
-        private void Supprimer_Client(object sender, EventArgs e)
-        {
-            // On récupère l'ID de la ComboBox
-            string idSelected = cb_Nom.SelectedValue.ToString();
-
-            CrudBornes deleteClient = new CrudBornes();
-            bool deleteClientBool = deleteClient.DeleteClient(idSelected);
-
-            // Si requête exécutée, on affiche un message positif, sinon on affiche une erreur
-            if (deleteClientBool == true)
-            {
-                MessageBox.Show("Requête exécutée, client supprimé !");
-            }
-            else
-            {
-                MessageBox.Show("Erreur : Requête DELETE non exécutée !");
-            }
-        }*/
-
-
+		// Au Clic sur l'image, on retourne à la page précédente
+		private void Return(object sender, EventArgs e)
+		{
+			Hide();
+			var Data = new Gestion_Donnees();
+			Data.ShowDialog();
+			Close();
+		}
 	}
 }

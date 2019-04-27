@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientCRUD));
 			this.p_form1 = new System.Windows.Forms.Panel();
 			this.img_Return = new System.Windows.Forms.PictureBox();
+			this.cb_Nom = new System.Windows.Forms.ComboBox();
 			this.l_Titre_Chargeon = new System.Windows.Forms.Label();
+			this.tb_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
 			this.img_Close = new System.Windows.Forms.PictureBox();
 			this.l_Titre_Ajout = new System.Windows.Forms.Label();
 			this.l_Titre_Nom_Ajout = new System.Windows.Forms.Label();
@@ -61,9 +64,8 @@
 			this.p_Supprimer_Client = new System.Windows.Forms.Panel();
 			this.l_nom = new System.Windows.Forms.Label();
 			this.bt_Supprimer = new System.Windows.Forms.Button();
-			this.cb_Nom = new System.Windows.Forms.ComboBox();
-			this.tb_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
 			this.l_test = new System.Windows.Forms.Label();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.p_form1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -97,6 +99,16 @@
 			this.img_Return.TabStop = false;
 			this.img_Return.Click += new System.EventHandler(this.Return);
 			// 
+			// cb_Nom
+			// 
+			this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cb_Nom.FormattingEnabled = true;
+			this.cb_Nom.Location = new System.Drawing.Point(784, 88);
+			this.cb_Nom.Name = "cb_Nom";
+			this.cb_Nom.Size = new System.Drawing.Size(187, 28);
+			this.cb_Nom.TabIndex = 6;
+			this.cb_Nom.SelectedIndexChanged += new System.EventHandler(this.NameIndexChange);
+			// 
 			// l_Titre_Chargeon
 			// 
 			this.l_Titre_Chargeon.AutoSize = true;
@@ -108,6 +120,18 @@
 			this.l_Titre_Chargeon.Size = new System.Drawing.Size(90, 21);
 			this.l_Titre_Chargeon.TabIndex = 4;
 			this.l_Titre_Chargeon.Text = "Chargéon";
+			// 
+			// tb_Titre_Nom_Supprimer
+			// 
+			this.tb_Titre_Nom_Supprimer.AutoSize = true;
+			this.tb_Titre_Nom_Supprimer.Font = new System.Drawing.Font("Century Gothic", 12F);
+			this.tb_Titre_Nom_Supprimer.ForeColor = System.Drawing.SystemColors.Window;
+			this.tb_Titre_Nom_Supprimer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.tb_Titre_Nom_Supprimer.Location = new System.Drawing.Point(708, 91);
+			this.tb_Titre_Nom_Supprimer.Name = "tb_Titre_Nom_Supprimer";
+			this.tb_Titre_Nom_Supprimer.Size = new System.Drawing.Size(59, 21);
+			this.tb_Titre_Nom_Supprimer.TabIndex = 15;
+			this.tb_Titre_Nom_Supprimer.Text = "Nom : ";
 			// 
 			// img_Close
 			// 
@@ -202,7 +226,7 @@
 			this.bt_Ajout.Location = new System.Drawing.Point(100, 246);
 			this.bt_Ajout.Name = "bt_Ajout";
 			this.bt_Ajout.Size = new System.Drawing.Size(105, 29);
-			this.bt_Ajout.TabIndex = 23;
+			this.bt_Ajout.TabIndex = 5;
 			this.bt_Ajout.Text = "Ajouter";
 			this.bt_Ajout.UseVisualStyleBackColor = true;
 			this.bt_Ajout.Click += new System.EventHandler(this.AddClick);
@@ -212,14 +236,14 @@
 			this.tb_Ville_Ajout.Location = new System.Drawing.Point(100, 191);
 			this.tb_Ville_Ajout.Name = "tb_Ville_Ajout";
 			this.tb_Ville_Ajout.Size = new System.Drawing.Size(172, 27);
-			this.tb_Ville_Ajout.TabIndex = 22;
+			this.tb_Ville_Ajout.TabIndex = 4;
 			// 
 			// tb_CP_Ajout
 			// 
 			this.tb_CP_Ajout.Location = new System.Drawing.Point(100, 144);
 			this.tb_CP_Ajout.Name = "tb_CP_Ajout";
 			this.tb_CP_Ajout.Size = new System.Drawing.Size(172, 27);
-			this.tb_CP_Ajout.TabIndex = 21;
+			this.tb_CP_Ajout.TabIndex = 3;
 			// 
 			// tb_Adresse_Ajout
 			// 
@@ -227,14 +251,14 @@
 			this.tb_Adresse_Ajout.Multiline = true;
 			this.tb_Adresse_Ajout.Name = "tb_Adresse_Ajout";
 			this.tb_Adresse_Ajout.Size = new System.Drawing.Size(172, 73);
-			this.tb_Adresse_Ajout.TabIndex = 20;
+			this.tb_Adresse_Ajout.TabIndex = 2;
 			// 
 			// tb_Nom_Ajout
 			// 
-			this.tb_Nom_Ajout.Location = new System.Drawing.Point(100, 10);
+			this.tb_Nom_Ajout.Location = new System.Drawing.Point(100, 13);
 			this.tb_Nom_Ajout.Name = "tb_Nom_Ajout";
 			this.tb_Nom_Ajout.Size = new System.Drawing.Size(172, 27);
-			this.tb_Nom_Ajout.TabIndex = 20;
+			this.tb_Nom_Ajout.TabIndex = 1;
 			// 
 			// p_separator_1
 			// 
@@ -267,7 +291,7 @@
 			this.bt_maj.Location = new System.Drawing.Point(100, 246);
 			this.bt_maj.Name = "bt_maj";
 			this.bt_maj.Size = new System.Drawing.Size(105, 29);
-			this.bt_maj.TabIndex = 23;
+			this.bt_maj.TabIndex = 11;
 			this.bt_maj.Text = "Modifier";
 			this.bt_maj.UseVisualStyleBackColor = true;
 			this.bt_maj.Click += new System.EventHandler(this.UpdateClick);
@@ -277,14 +301,14 @@
 			this.tb_ville.Location = new System.Drawing.Point(100, 191);
 			this.tb_ville.Name = "tb_ville";
 			this.tb_ville.Size = new System.Drawing.Size(172, 27);
-			this.tb_ville.TabIndex = 22;
+			this.tb_ville.TabIndex = 10;
 			// 
 			// tb_cp
 			// 
 			this.tb_cp.Location = new System.Drawing.Point(100, 144);
 			this.tb_cp.Name = "tb_cp";
 			this.tb_cp.Size = new System.Drawing.Size(172, 27);
-			this.tb_cp.TabIndex = 21;
+			this.tb_cp.TabIndex = 9;
 			// 
 			// tb_Titre_Ville_MAJ
 			// 
@@ -304,7 +328,7 @@
 			this.tb_adresse.Multiline = true;
 			this.tb_adresse.Name = "tb_adresse";
 			this.tb_adresse.Size = new System.Drawing.Size(172, 73);
-			this.tb_adresse.TabIndex = 20;
+			this.tb_adresse.TabIndex = 8;
 			// 
 			// tb_Titre_CP_MAJ
 			// 
@@ -323,7 +347,7 @@
 			this.tb_nom.Location = new System.Drawing.Point(100, 13);
 			this.tb_nom.Name = "tb_nom";
 			this.tb_nom.Size = new System.Drawing.Size(172, 27);
-			this.tb_nom.TabIndex = 20;
+			this.tb_nom.TabIndex = 7;
 			// 
 			// tb_Titre_Nom_MAJ
 			// 
@@ -394,54 +418,32 @@
 			// 
 			// l_nom
 			// 
-			this.l_nom.AutoSize = true;
 			this.l_nom.ForeColor = System.Drawing.Color.White;
-			this.l_nom.Location = new System.Drawing.Point(87, 22);
+			this.l_nom.Location = new System.Drawing.Point(19, 22);
 			this.l_nom.Name = "l_nom";
-			this.l_nom.Size = new System.Drawing.Size(71, 21);
+			this.l_nom.Size = new System.Drawing.Size(259, 21);
 			this.l_nom.TabIndex = 24;
 			this.l_nom.Text = "identite";
+			this.l_nom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// bt_Supprimer
 			// 
 			this.bt_Supprimer.Location = new System.Drawing.Point(91, 69);
 			this.bt_Supprimer.Name = "bt_Supprimer";
 			this.bt_Supprimer.Size = new System.Drawing.Size(105, 29);
-			this.bt_Supprimer.TabIndex = 23;
+			this.bt_Supprimer.TabIndex = 12;
 			this.bt_Supprimer.Text = "Supprimer";
 			this.bt_Supprimer.UseVisualStyleBackColor = true;
 			this.bt_Supprimer.Click += new System.EventHandler(this.DeleteClick);
 			// 
-			// cb_Nom
-			// 
-			this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cb_Nom.FormattingEnabled = true;
-			this.cb_Nom.Location = new System.Drawing.Point(784, 85);
-			this.cb_Nom.Name = "cb_Nom";
-			this.cb_Nom.Size = new System.Drawing.Size(187, 28);
-			this.cb_Nom.TabIndex = 24;
-			this.cb_Nom.SelectedIndexChanged += new System.EventHandler(this.NameIndexChange);
-			// 
-			// tb_Titre_Nom_Supprimer
-			// 
-			this.tb_Titre_Nom_Supprimer.AutoSize = true;
-			this.tb_Titre_Nom_Supprimer.Font = new System.Drawing.Font("Century Gothic", 12F);
-			this.tb_Titre_Nom_Supprimer.ForeColor = System.Drawing.SystemColors.Window;
-			this.tb_Titre_Nom_Supprimer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.tb_Titre_Nom_Supprimer.Location = new System.Drawing.Point(708, 88);
-			this.tb_Titre_Nom_Supprimer.Name = "tb_Titre_Nom_Supprimer";
-			this.tb_Titre_Nom_Supprimer.Size = new System.Drawing.Size(59, 21);
-			this.tb_Titre_Nom_Supprimer.TabIndex = 15;
-			this.tb_Titre_Nom_Supprimer.Text = "Nom : ";
-			// 
 			// l_test
 			// 
-			this.l_test.AutoSize = true;
-			this.l_test.Location = new System.Drawing.Point(708, 396);
+			this.l_test.ForeColor = System.Drawing.Color.White;
+			this.l_test.Location = new System.Drawing.Point(692, 380);
 			this.l_test.Name = "l_test";
-			this.l_test.Size = new System.Drawing.Size(57, 21);
+			this.l_test.Size = new System.Drawing.Size(296, 21);
 			this.l_test.TabIndex = 27;
-			this.l_test.Text = "label1";
+			this.l_test.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// ClientCRUD
 			// 
@@ -475,7 +477,6 @@
 			this.p_MAJ_Client.ResumeLayout(false);
 			this.p_MAJ_Client.PerformLayout();
 			this.p_Supprimer_Client.ResumeLayout(false);
-			this.p_Supprimer_Client.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -518,5 +519,6 @@
         private System.Windows.Forms.ComboBox cb_Nom;
 		private System.Windows.Forms.Label l_nom;
 		private System.Windows.Forms.Label l_test;
+		private System.Windows.Forms.Timer timer1;
 	}
 }

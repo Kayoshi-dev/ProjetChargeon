@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Date de création : 19/04/2019
+ * Dernière modification : 27/04/2019
+ * Équipe : Nathouuuu
+ * Rôle : Affichage des informations concernant toute les bornes
+ * Développeur : Maxime
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +43,7 @@ namespace ProjetChargeon
 
 			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[7].ToString();
 
+			// Selon le type de borne on affiche :
 			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[8].ToString() == "0") 
 			{
 				l_type.Text = "Intérieur";
@@ -44,21 +53,34 @@ namespace ProjetChargeon
 				l_type.Text = "Exterieur";
 			}
 
+			// Selon l'état de la borne on affiche une image avec un cercle de couleur différente
 			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "True")
 			{
 				l_etat.Text = "ON";
-				p_etat.Image = ProjetChargeon.Properties.Resources.circle_green;
+				p_etat.Image = ProjetChargeon.Properties.Resources.circle_green; //Chargement de l'image circle green
 			}
 			else
 			{
 				l_etat.Text = "OFF";
-				p_etat.Image = ProjetChargeon.Properties.Resources.circle_red;
+				p_etat.Image = ProjetChargeon.Properties.Resources.circle_red; //Chargement de l'image circle red
 			}
 
 			l_puis.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[10].ToString() + " kWh";
 
 			DataSet selectCity = dataBornes.SelectCityForBornes(idSelected);
 			l_ville.Text = selectCity.Tables[0].Rows[0].ItemArray[0].ToString();
+		}
+
+		private void needHelp(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void messageHelpClick(object sender, MouseEventArgs e)
+		{
+			if (tb_message.Text == "Décrivez votre problème") {
+				tb_message.Text = "";
+			}
 		}
 
 		private void BackForm(object sender, EventArgs e)
@@ -72,18 +94,6 @@ namespace ProjetChargeon
 		private void CloseProgram(object sender, EventArgs e)
 		{
 			Close();
-		}
-
-		private void needHelp(object sender, EventArgs e)
-		{
-			
-		}
-
-		private void messageHelpClick(object sender, MouseEventArgs e)
-		{
-			if (tb_message.Text == "Décrivez votre problème") {
-				tb_message.Text = "";
-			}
 		}
 	}
 }

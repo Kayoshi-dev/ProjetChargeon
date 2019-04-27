@@ -1,4 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿/*
+ * Date de création : 26/03/2019
+ * Dernière modification : 27/04/2019
+ * Équipe : Nathouuuu
+ * Rôle : Fichier de classe contenant toute les méthodes permettant des actions sur les statistiques
+ * Développeur : Nathan
+*/
+
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;

@@ -1,6 +1,6 @@
 ﻿/* 
- * Date de création : 20/04/2019
- * Dernière modification : 20/04/2019
+ * Date de création : 18/03/2019
+ * Dernière modification : 27/04/2019
  * Équipe : Nathouuuu
  * Rôle : Fichier de class contenant différentes méthodes concernant l'utilisateur
  * Développeurs : Maxime, Nathan
@@ -91,37 +91,45 @@ namespace ProjetChargeon
 			return listeDetailsClient;
 		}
 
-
-		/* Méthodes pour le CRUD Client */
-
 		// Cette méthode permet d'ajouter un Client
 		public bool InsertCustomer(string nomClient, string adresseClient, string cpClient, string villeClient)
 		{
-			string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES (@nom, @adresse, @cp, @ville)";
 			bool validate = false;
 
-			MySqlCommand req = new MySqlCommand(query, connection);
+			try 
+			{
+				string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES (@nom, @adresse, @cp, @ville)";
 
-			req.Parameters.Clear();
-			req.Parameters.Add(new MySqlParameter("@nom", nomClient));
-			req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
-			req.Parameters.Add(new MySqlParameter("@cp", cpClient));
-			req.Parameters.Add(new MySqlParameter("@ville", villeClient));
+				MySqlCommand req = new MySqlCommand(query, connection);
 
-			connection.Open();
+				//Bind Value des paramètres.
+				req.Parameters.Clear();
+				req.Parameters.Add(new MySqlParameter("@nom", nomClient));
+				req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
+				req.Parameters.Add(new MySqlParameter("@cp", cpClient));
+				req.Parameters.Add(new MySqlParameter("@ville", villeClient));
 
-			req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
+				connection.Open();
 
-			connection.Close();
+				req.ExecuteNonQuery();
 
-			validate = true;
+				connection.Close();
 
-			return validate;
+				validate = true;
+
+				return validate;
+			}
+			catch(MySqlException e) 
+			{
+				return validate;
+			}
 		}
 
+		// Méthode de mise à jour d'un client
 		public bool UpdateCustomer(string idCustomer, string nom, string adresse, string cp, string ville)
 		{
-			bool test;
+			bool validate = false;
+
 			try {
 				string query = "UPDATE client SET Cli_Nom = @nom, Cli_Adre = @adresse, Cli_CP = @cp, Cli_Ville = @ville WHERE Cli_Id = @idCustomer";
 
@@ -140,38 +148,43 @@ namespace ProjetChargeon
 
 				connection.Close();
 
-				test = true;
-				return test;
+				validate = true;
+				return validate;
 			} 
 			catch (MySqlException e) 
 			{
-				test = false;
-				return test;
+				return validate;
 			}
-			
 		}
 
-		// Cette méthode permet de supprimer un Client
+		// Méthode de suppression d'un compte client
 		public bool DeleteCustomer(string idSelected)
 		{
-			string query = "DELETE FROM client WHERE Cli_Id = @id";
 			bool validate = false;
+			
+			try
+			{
+				string query = "DELETE FROM client WHERE Cli_Id = @id";
 
-			MySqlCommand req = new MySqlCommand(query, connection);
+				MySqlCommand req = new MySqlCommand(query, connection);
 
-			req.Parameters.Clear();
-			req.Parameters.Add(new MySqlParameter("@id", idSelected));
+				req.Parameters.Clear();
+				req.Parameters.Add(new MySqlParameter("@id", idSelected));
 
-			connection.Open();
+				connection.Open();
 
-			req.ExecuteNonQuery(); // Si je met cette ligne, cela fait l'erreur suivante : "System.InvalidOperationException : 'Connection must be valid and open.'"
+				req.ExecuteNonQuery(); 
 
-			connection.Close();
+				connection.Close();
 
-			validate = true;
+				validate = true;
 
-			return validate;
+				return validate;
+			}
+			catch(MySqlException e) 
+			{
+				return validate;
+			}
 		}
-
 	}
 }
