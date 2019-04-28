@@ -54,6 +54,7 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssistanceDAO.cs" />
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
