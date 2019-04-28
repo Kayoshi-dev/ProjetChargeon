@@ -28,11 +28,10 @@ namespace ProjetChargeon
 
 			if(CountAssistance >= 1) 
 			{
-				MessageBox.Show(CountAssistance.ToString());
-
 				//Si il existe des demandes d'assistances on génère ce label
 				Label l_nbAss = new Label();
 				l_nbAss.BackColor = Color.FromArgb(53, 70, 99);
+				l_nbAss.ForeColor = Color.FromArgb(255, 255, 255);
 				l_nbAss.Padding = new Padding(1, 0, 0, 0);
 				l_nbAss.Location = new Point(656, 12);
 				l_nbAss.AutoSize = false;

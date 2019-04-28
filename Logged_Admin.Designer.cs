@@ -35,6 +35,7 @@ namespace ProjetChargeon
 			this.button2 = new System.Windows.Forms.Button();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.btn_stats = new System.Windows.Forms.Button();
+			this.label2 = new System.Windows.Forms.Label();
 			this.p_titre.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -43,6 +44,7 @@ namespace ProjetChargeon
 			// p_titre
 			// 
 			this.p_titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.p_titre.Controls.Add(this.label2);
 			this.p_titre.Controls.Add(this.pictureBox1);
 			this.p_titre.Controls.Add(this.label1);
 			resources.ApplyResources(this.p_titre, "p_titre");
@@ -93,6 +95,13 @@ namespace ProjetChargeon
 			this.btn_stats.UseVisualStyleBackColor = false;
 			this.btn_stats.Click += new System.EventHandler(this.onClickToStats);
 			// 
+			// label2
+			// 
+			resources.ApplyResources(this.label2, "label2");
+			this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+			this.label2.ForeColor = System.Drawing.SystemColors.Window;
+			this.label2.Name = "label2";
+			// 
 			// Logged_Admin
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -107,6 +116,7 @@ namespace ProjetChargeon
 			this.MaximizeBox = false;
 			this.Name = "Logged_Admin";
 			this.p_titre.ResumeLayout(false);
+			this.p_titre.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
@@ -120,6 +130,7 @@ namespace ProjetChargeon
         private System.Windows.Forms.Button btn_stats;
 		    private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Label label2;
 	}
 }
 
