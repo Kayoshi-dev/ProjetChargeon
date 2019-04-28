@@ -29,8 +29,6 @@ namespace ProjetChargeon
             cb_Technicien.ValueMember = "Tech_Id";
 
             cb_Technicien.DataSource = listeTechniciens.Tables["Technicien"];
-
-
         }
 
         
@@ -122,7 +120,7 @@ namespace ProjetChargeon
 
             
             // Condition pour Vérifier l'éxistence de la donnée Habilitation Référence
-            /*if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[6].ToString() != null)
+            if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[6].ToString() != null)
             {
                 // Affiche l'Adresse du client sélectionné
                 l_Habilitation.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[6].ToString();
@@ -130,7 +128,7 @@ namespace ProjetChargeon
             else
             {
                 l_Habilitation.Text = "Vide";
-            }*/
+            }
 
 
             // Condition pour Vérifier l'éxistence de la donnée Date de Début de l'Habilitation

@@ -117,7 +117,72 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;img_Return.Name" xml:space="preserve">
+    <value>img_Return</value>
+  </data>
+  <data name="&gt;&gt;img_Return.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;img_Return.Parent" xml:space="preserve">
+    <value>p_Titre_Chargeon</value>
+  </data>
+  <data name="&gt;&gt;img_Return.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;img_Close.Name" xml:space="preserve">
+    <value>img_Close</value>
+  </data>
+  <data name="&gt;&gt;img_Close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;img_Close.Parent" xml:space="preserve">
+    <value>p_Titre_Chargeon</value>
+  </data>
+  <data name="&gt;&gt;img_Close.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Chargeon.Name" xml:space="preserve">
+    <value>l_Titre_Chargeon</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Chargeon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Chargeon.Parent" xml:space="preserve">
+    <value>p_Titre_Chargeon</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Chargeon.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="p_Titre_Chargeon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="p_Titre_Chargeon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="p_Titre_Chargeon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="p_Titre_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 73</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="p_Titre_Chargeon.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;p_Titre_Chargeon.Name" xml:space="preserve">
+    <value>p_Titre_Chargeon</value>
+  </data>
+  <data name="&gt;&gt;p_Titre_Chargeon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_Titre_Chargeon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_Titre_Chargeon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="img_Return.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -128,7 +193,6 @@
         J5dCh/Ze09aGAAAAAElFTkSuQmCC
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="img_Return.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -138,7 +202,6 @@
   <data name="img_Return.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="img_Return.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -223,33 +286,6 @@
   <data name="&gt;&gt;l_Titre_Chargeon.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="p_Titre_Chargeon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="p_Titre_Chargeon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
-  </data>
-  <data name="p_Titre_Chargeon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="p_Titre_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 73</value>
-  </data>
-  <data name="p_Titre_Chargeon.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Name" xml:space="preserve">
-    <value>p_Titre_Chargeon</value>
-  </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;p_Titre_Chargeon.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="l_Titre_Ajout_Technicien.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -279,6 +315,111 @@
   </data>
   <data name="&gt;&gt;l_Titre_Ajout_Technicien.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Ajout.Name" xml:space="preserve">
+    <value>tb_Prenom_Ajout</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Ajout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Ajout.Name" xml:space="preserve">
+    <value>cb_Dispo_Ajout</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Ajout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Ajout.Name" xml:space="preserve">
+    <value>l_Titre_Nom_Ajout</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Ajout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Ajout.Name" xml:space="preserve">
+    <value>tb_Nom_Ajout</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Ajout.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Ajout.Name" xml:space="preserve">
+    <value>btn_Ajout</value>
+  </data>
+  <data name="&gt;&gt;btn_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;btn_Ajout.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Ajout.Name" xml:space="preserve">
+    <value>l_Titre_Prenom_Ajout</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Ajout.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Ajout.Name" xml:space="preserve">
+    <value>l_Titre_Dispo_Ajout</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Ajout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Ajout.Parent" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Ajout.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="p_Ajout_Technicien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 125</value>
+  </data>
+  <data name="p_Ajout_Technicien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 313</value>
+  </data>
+  <data name="p_Ajout_Technicien.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;p_Ajout_Technicien.Name" xml:space="preserve">
+    <value>p_Ajout_Technicien</value>
+  </data>
+  <data name="&gt;&gt;p_Ajout_Technicien.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_Ajout_Technicien.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_Ajout_Technicien.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tb_Prenom_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 91</value>
@@ -460,26 +601,122 @@
   <data name="&gt;&gt;l_Titre_Dispo_Ajout.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="p_Ajout_Technicien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 125</value>
+  <data name="&gt;&gt;tb_Nom_Modif.Name" xml:space="preserve">
+    <value>tb_Nom_Modif</value>
   </data>
-  <data name="p_Ajout_Technicien.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;tb_Nom_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;tb_Nom_Modif.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Modif.Name" xml:space="preserve">
+    <value>cb_Nom_Modif</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Modif.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Modif.Name" xml:space="preserve">
+    <value>tb_Prenom_Modif</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;tb_Prenom_Modif.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Modif.Name" xml:space="preserve">
+    <value>cb_Dispo_Modif</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;cb_Dispo_Modif.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Modif.Name" xml:space="preserve">
+    <value>l_Titre_Nom_Modif</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Nom_Modif.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Modifier.Name" xml:space="preserve">
+    <value>btn_Modifier</value>
+  </data>
+  <data name="&gt;&gt;btn_Modifier.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Modifier.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;btn_Modifier.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Modif.Name" xml:space="preserve">
+    <value>l_Titre_Prenom_Modif</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Prenom_Modif.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Modif.Name" xml:space="preserve">
+    <value>l_Titre_Dispo_Modif</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Dispo_Modif.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="p_Modifier_Technicien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 125</value>
+  </data>
+  <data name="p_Modifier_Technicien.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 313</value>
   </data>
-  <data name="p_Ajout_Technicien.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="p_Modifier_Technicien.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;p_Ajout_Technicien.Name" xml:space="preserve">
-    <value>p_Ajout_Technicien</value>
+  <data name="&gt;&gt;p_Modifier_Technicien.Name" xml:space="preserve">
+    <value>p_Modifier_Technicien</value>
   </data>
-  <data name="&gt;&gt;p_Ajout_Technicien.Type" xml:space="preserve">
+  <data name="&gt;&gt;p_Modifier_Technicien.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;p_Ajout_Technicien.Parent" xml:space="preserve">
+  <data name="&gt;&gt;p_Modifier_Technicien.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;p_Ajout_Technicien.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;p_Modifier_Technicien.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tb_Nom_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 75</value>
@@ -682,27 +919,6 @@
   <data name="&gt;&gt;l_Titre_Dispo_Modif.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="p_Modifier_Technicien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 125</value>
-  </data>
-  <data name="p_Modifier_Technicien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 313</value>
-  </data>
-  <data name="p_Modifier_Technicien.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;p_Modifier_Technicien.Name" xml:space="preserve">
-    <value>p_Modifier_Technicien</value>
-  </data>
-  <data name="&gt;&gt;p_Modifier_Technicien.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;p_Modifier_Technicien.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;p_Modifier_Technicien.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="l_Titre_Modifier_Technicien.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -735,6 +951,51 @@
   </data>
   <data name="&gt;&gt;l_Titre_Modifier_Technicien.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Supprimer.Name" xml:space="preserve">
+    <value>cb_Nom_Supprimer</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Supprimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Supprimer.Parent" xml:space="preserve">
+    <value>p_Supprimer_Technicien</value>
+  </data>
+  <data name="&gt;&gt;cb_Nom_Supprimer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Supprimer.Name" xml:space="preserve">
+    <value>btn_Supprimer</value>
+  </data>
+  <data name="&gt;&gt;btn_Supprimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Supprimer.Parent" xml:space="preserve">
+    <value>p_Supprimer_Technicien</value>
+  </data>
+  <data name="&gt;&gt;btn_Supprimer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="p_Supprimer_Technicien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 125</value>
+  </data>
+  <data name="p_Supprimer_Technicien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 119</value>
+  </data>
+  <data name="p_Supprimer_Technicien.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;p_Supprimer_Technicien.Name" xml:space="preserve">
+    <value>p_Supprimer_Technicien</value>
+  </data>
+  <data name="&gt;&gt;p_Supprimer_Technicien.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_Supprimer_Technicien.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_Supprimer_Technicien.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="cb_Nom_Supprimer.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 12</value>
@@ -784,27 +1045,6 @@
   <data name="&gt;&gt;btn_Supprimer.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="p_Supprimer_Technicien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 125</value>
-  </data>
-  <data name="p_Supprimer_Technicien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 119</value>
-  </data>
-  <data name="p_Supprimer_Technicien.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;p_Supprimer_Technicien.Name" xml:space="preserve">
-    <value>p_Supprimer_Technicien</value>
-  </data>
-  <data name="&gt;&gt;p_Supprimer_Technicien.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;p_Supprimer_Technicien.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;p_Supprimer_Technicien.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="l_Titre_Supprimer_Technicien.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -815,16 +1055,16 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Supprimer_Technicien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 87</value>
+    <value>536, 87</value>
   </data>
   <data name="l_Titre_Supprimer_Technicien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 25</value>
+    <value>264, 25</value>
   </data>
   <data name="l_Titre_Supprimer_Technicien.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
   <data name="l_Titre_Supprimer_Technicien.Text" xml:space="preserve">
-    <value>Suprimer un Technicien</value>
+    <value>Supprimer un Technicien</value>
   </data>
   <data name="&gt;&gt;l_Titre_Supprimer_Technicien.Name" xml:space="preserve">
     <value>l_Titre_Supprimer_Technicien</value>
