@@ -181,7 +181,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_Titre_Chargeon.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
   </data>
   <data name="img_Return.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -311,7 +311,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_title_Puis.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="l_Nom.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 17</value>
@@ -365,7 +365,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_Titre_Nom.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="l_Titre_ID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -392,7 +392,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_Titre_ID.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="p_Separator.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 94</value>
@@ -413,7 +413,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_Separator.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="l_Dispo.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 352</value>
@@ -440,7 +440,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_Dispo.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="l_Titre_Dispo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -467,7 +467,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_Titre_Dispo.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="p_Dispo.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 314</value>
@@ -488,7 +488,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_Dispo.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="l_Titre_Technicien.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -515,7 +515,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;l_Titre_Technicien.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="cb_Technicien.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 119</value>
@@ -536,7 +536,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cb_Technicien.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="p_Nom.Location" type="System.Drawing.Point, System.Drawing">
     <value>270, 119</value>
@@ -557,7 +557,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;p_Nom.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;l_Prenom.Name" xml:space="preserve">
     <value>l_Prenom</value>
@@ -566,31 +566,31 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;l_Prenom.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>p_Prenom</value>
   </data>
   <data name="&gt;&gt;l_Prenom.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="p_Prenom.Location" type="System.Drawing.Point, System.Drawing">
     <value>576, 119</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="p_Prenom.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 54</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="p_Prenom.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;p_Prenom.Name" xml:space="preserve">
+    <value>p_Prenom</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;p_Prenom.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;p_Prenom.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;p_Prenom.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="l_Prenom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -617,7 +617,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;l_Prenom.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>p_Prenom</value>
   </data>
   <data name="&gt;&gt;l_Prenom.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -653,7 +653,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="l_ID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -683,6 +683,273 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;l_ID.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="l_Titre_Habilitation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="l_Titre_Habilitation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Titre_Habilitation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 227</value>
+  </data>
+  <data name="l_Titre_Habilitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="l_Titre_Habilitation.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="l_Titre_Habilitation.Text" xml:space="preserve">
+    <value>Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Habilitation.Name" xml:space="preserve">
+    <value>l_Titre_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Habilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Habilitation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Habilitation.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Name" xml:space="preserve">
+    <value>l_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Parent" xml:space="preserve">
+    <value>p_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="p_Habilitation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 251</value>
+  </data>
+  <data name="p_Habilitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 54</value>
+  </data>
+  <data name="p_Habilitation.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;p_Habilitation.Name" xml:space="preserve">
+    <value>p_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;p_Habilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_Habilitation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_Habilitation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="l_Habilitation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Habilitation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="l_Habilitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 21</value>
+  </data>
+  <data name="l_Habilitation.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="l_Habilitation.Text" xml:space="preserve">
+    <value>AfficheHabilitation</value>
+  </data>
+  <data name="l_Habilitation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Name" xml:space="preserve">
+    <value>l_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.Parent" xml:space="preserve">
+    <value>p_Habilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Habilitation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 330</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 21</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="l_Titre_DateDebutHabilitation.Text" xml:space="preserve">
+    <value>Date Début</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateDebutHabilitation.Name" xml:space="preserve">
+    <value>l_Titre_DateDebutHabilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateDebutHabilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateDebutHabilitation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateDebutHabilitation.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Name" xml:space="preserve">
+    <value>l_DateDebut</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Parent" xml:space="preserve">
+    <value>p_DateDebut</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="p_DateDebut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 354</value>
+  </data>
+  <data name="p_DateDebut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 54</value>
+  </data>
+  <data name="p_DateDebut.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;p_DateDebut.Name" xml:space="preserve">
+    <value>p_DateDebut</value>
+  </data>
+  <data name="&gt;&gt;p_DateDebut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_DateDebut.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_DateDebut.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="l_DateDebut.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_DateDebut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="l_DateDebut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 21</value>
+  </data>
+  <data name="l_DateDebut.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="l_DateDebut.Text" xml:space="preserve">
+    <value>AfficheDateDebut</value>
+  </data>
+  <data name="l_DateDebut.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Name" xml:space="preserve">
+    <value>l_DateDebut</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.Parent" xml:space="preserve">
+    <value>p_DateDebut</value>
+  </data>
+  <data name="&gt;&gt;l_DateDebut.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="l_DateFin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_DateFin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="l_DateFin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 21</value>
+  </data>
+  <data name="l_DateFin.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="l_DateFin.Text" xml:space="preserve">
+    <value>AfficheDateFin</value>
+  </data>
+  <data name="l_DateFin.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;l_DateFin.Name" xml:space="preserve">
+    <value>l_DateFin</value>
+  </data>
+  <data name="&gt;&gt;l_DateFin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_DateFin.Parent" xml:space="preserve">
+    <value>p_DateFin</value>
+  </data>
+  <data name="&gt;&gt;l_DateFin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="p_DateFin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 354</value>
+  </data>
+  <data name="p_DateFin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 54</value>
+  </data>
+  <data name="p_DateFin.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;p_DateFin.Name" xml:space="preserve">
+    <value>p_DateFin</value>
+  </data>
+  <data name="&gt;&gt;p_DateFin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;p_DateFin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;p_DateFin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 330</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="l_Titre_DateFinHabilitation.Text" xml:space="preserve">
+    <value>Date Fin</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateFinHabilitation.Name" xml:space="preserve">
+    <value>l_Titre_DateFinHabilitation</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateFinHabilitation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateFinHabilitation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_DateFinHabilitation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

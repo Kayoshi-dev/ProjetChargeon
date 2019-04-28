@@ -44,17 +44,29 @@
             this.l_Titre_Technicien = new System.Windows.Forms.Label();
             this.cb_Technicien = new System.Windows.Forms.ComboBox();
             this.p_Nom = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.p_Prenom = new System.Windows.Forms.Panel();
             this.l_Prenom = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.l_ID = new System.Windows.Forms.Label();
+            this.l_Titre_Habilitation = new System.Windows.Forms.Label();
+            this.p_Habilitation = new System.Windows.Forms.Panel();
+            this.l_Habilitation = new System.Windows.Forms.Label();
+            this.l_Titre_DateDebutHabilitation = new System.Windows.Forms.Label();
+            this.p_DateDebut = new System.Windows.Forms.Panel();
+            this.l_DateDebut = new System.Windows.Forms.Label();
+            this.p_DateFin = new System.Windows.Forms.Panel();
+            this.l_DateFin = new System.Windows.Forms.Label();
+            this.l_Titre_DateFinHabilitation = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p_Dispo)).BeginInit();
             this.p_Nom.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.p_Prenom.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.p_Habilitation.SuspendLayout();
+            this.p_DateDebut.SuspendLayout();
+            this.p_DateFin.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -162,12 +174,12 @@
             resources.ApplyResources(this.p_Nom, "p_Nom");
             this.p_Nom.Name = "p_Nom";
             // 
-            // panel1
+            // p_Prenom
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.l_Prenom);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.p_Prenom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Prenom.Controls.Add(this.l_Prenom);
+            resources.ApplyResources(this.p_Prenom, "p_Prenom");
+            this.p_Prenom.Name = "p_Prenom";
             // 
             // l_Prenom
             // 
@@ -188,13 +200,76 @@
             resources.ApplyResources(this.l_ID, "l_ID");
             this.l_ID.Name = "l_ID";
             // 
+            // l_Titre_Habilitation
+            // 
+            resources.ApplyResources(this.l_Titre_Habilitation, "l_Titre_Habilitation");
+            this.l_Titre_Habilitation.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Habilitation.Name = "l_Titre_Habilitation";
+            // 
+            // p_Habilitation
+            // 
+            this.p_Habilitation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Habilitation.Controls.Add(this.l_Habilitation);
+            resources.ApplyResources(this.p_Habilitation, "p_Habilitation");
+            this.p_Habilitation.Name = "p_Habilitation";
+            // 
+            // l_Habilitation
+            // 
+            this.l_Habilitation.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.l_Habilitation, "l_Habilitation");
+            this.l_Habilitation.Name = "l_Habilitation";
+            // 
+            // l_Titre_DateDebutHabilitation
+            // 
+            resources.ApplyResources(this.l_Titre_DateDebutHabilitation, "l_Titre_DateDebutHabilitation");
+            this.l_Titre_DateDebutHabilitation.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_DateDebutHabilitation.Name = "l_Titre_DateDebutHabilitation";
+            // 
+            // p_DateDebut
+            // 
+            this.p_DateDebut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_DateDebut.Controls.Add(this.l_DateDebut);
+            resources.ApplyResources(this.p_DateDebut, "p_DateDebut");
+            this.p_DateDebut.Name = "p_DateDebut";
+            // 
+            // l_DateDebut
+            // 
+            this.l_DateDebut.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.l_DateDebut, "l_DateDebut");
+            this.l_DateDebut.Name = "l_DateDebut";
+            // 
+            // p_DateFin
+            // 
+            this.p_DateFin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_DateFin.Controls.Add(this.l_DateFin);
+            resources.ApplyResources(this.p_DateFin, "p_DateFin");
+            this.p_DateFin.Name = "p_DateFin";
+            // 
+            // l_DateFin
+            // 
+            this.l_DateFin.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.l_DateFin, "l_DateFin");
+            this.l_DateFin.Name = "l_DateFin";
+            // 
+            // l_Titre_DateFinHabilitation
+            // 
+            resources.ApplyResources(this.l_Titre_DateFinHabilitation, "l_Titre_DateFinHabilitation");
+            this.l_Titre_DateFinHabilitation.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_DateFinHabilitation.Name = "l_Titre_DateFinHabilitation";
+            // 
             // Technicien
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.l_Titre_DateFinHabilitation);
+            this.Controls.Add(this.p_DateFin);
+            this.Controls.Add(this.p_DateDebut);
+            this.Controls.Add(this.l_Titre_DateDebutHabilitation);
+            this.Controls.Add(this.p_Habilitation);
+            this.Controls.Add(this.l_Titre_Habilitation);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.p_Prenom);
             this.Controls.Add(this.p_Nom);
             this.Controls.Add(this.l_title_Puis);
             this.Controls.Add(this.l_Titre_Nom);
@@ -215,8 +290,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p_Dispo)).EndInit();
             this.p_Nom.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.p_Prenom.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.p_Habilitation.ResumeLayout(false);
+            this.p_DateDebut.ResumeLayout(false);
+            this.p_DateFin.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,9 +317,18 @@
         private System.Windows.Forms.Label l_Titre_Technicien;
         private System.Windows.Forms.ComboBox cb_Technicien;
         private System.Windows.Forms.Panel p_Nom;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel p_Prenom;
         private System.Windows.Forms.Label l_Prenom;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label l_ID;
+        private System.Windows.Forms.Label l_Titre_Habilitation;
+        private System.Windows.Forms.Panel p_Habilitation;
+        private System.Windows.Forms.Label l_Habilitation;
+        private System.Windows.Forms.Label l_Titre_DateDebutHabilitation;
+        private System.Windows.Forms.Panel p_DateDebut;
+        private System.Windows.Forms.Label l_DateDebut;
+        private System.Windows.Forms.Panel p_DateFin;
+        private System.Windows.Forms.Label l_DateFin;
+        private System.Windows.Forms.Label l_Titre_DateFinHabilitation;
     }
 }

@@ -32,7 +32,8 @@ namespace ProjetChargeon
         // Cette méthode permet d'obtenir les données du Technicien sélectionné et de les afficher
         public DataSet SelectDetailsTechnicien(string idSelected)
         {
-            string query = "SELECT Tech_Id, Tech_Nom, Tech_Prenom, Tech_Dispo FROM technicien WHERE Tech_Id = @id";
+            //string query = "SELECT Tech_Id, Tech_Nom, Tech_Prenom, Tech_Dispo, Hab_DateDeb, Hab_DateFin, TypeHab_Ref FROM technicien, habilitation, typehab WHERE TypeHab_Id = Hab_Id AND Hab_Id = Tech_NoHab AND Tech_Id = @id";
+            string query = "SELECT Tech_Id, Tech_Nom, Tech_Prenom, Tech_Dispo, Hab_DateDeb, Hab_DateFin FROM technicien, habilitation WHERE Tech_Id = @id AND Tech_NoHab = Hab_Id";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 

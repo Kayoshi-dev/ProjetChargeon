@@ -29,6 +29,8 @@ namespace ProjetChargeon
             cb_Technicien.ValueMember = "Tech_Id";
 
             cb_Technicien.DataSource = listeTechniciens.Tables["Technicien"];
+
+
         }
 
         
@@ -74,6 +76,7 @@ namespace ProjetChargeon
                 l_ID.Text = "Vide";
             }
 
+            
             // Condition pour Vérifier l'éxistence de la donnée Nom
             if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[1].ToString() != null)
             {
@@ -85,6 +88,7 @@ namespace ProjetChargeon
                 l_Nom.Text = "Vide";
             }
 
+            
             // Condition pour Vérifier l'éxistence de la donnée Prénom
             if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[2].ToString() != null)
             {
@@ -96,6 +100,7 @@ namespace ProjetChargeon
                 l_Prenom.Text = "Vide";
             }
 
+            
             // Condition pour Vérifier l'éxistence de la donnée Disponible
             if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[3].ToString() == "True")
             {
@@ -113,6 +118,42 @@ namespace ProjetChargeon
             {
                 l_Dispo.Text = "X"; // X pour ERREUR
                 p_Dispo.Image = ProjetChargeon.Properties.Resources.circle_red;
+            }
+
+            
+            // Condition pour Vérifier l'éxistence de la donnée Habilitation Référence
+            /*if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[6].ToString() != null)
+            {
+                // Affiche l'Adresse du client sélectionné
+                l_Habilitation.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[6].ToString();
+            }
+            else
+            {
+                l_Habilitation.Text = "Vide";
+            }*/
+
+
+            // Condition pour Vérifier l'éxistence de la donnée Date de Début de l'Habilitation
+            if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[4].ToString() != null)
+            {
+                // Affiche l'Adresse du client sélectionné
+                l_DateDebut.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[4].ToString();
+            }
+            else
+            {
+                l_DateDebut.Text = "Vide";
+            }
+
+
+            // Condition pour Vérifier l'éxistence de la donnée Date de Fin de l'Habilitation
+            if (listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[5].ToString() != null)
+            {
+                // Affiche l'Adresse du client sélectionné
+                l_DateFin.Text = listeDetailsTechniciens.Tables[0].Rows[0].ItemArray[5].ToString();
+            }
+            else
+            {
+                l_DateFin.Text = "Vide";
             }
         }
     }
