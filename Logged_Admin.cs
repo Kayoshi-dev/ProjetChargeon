@@ -21,6 +21,37 @@ namespace ProjetChargeon
         public Logged_Admin()
         {
             InitializeComponent();
+
+			AssistanceDAO DataAssist = new AssistanceDAO();
+			int CountAssistance = DataAssist.CountAssistance();
+
+
+			if(CountAssistance >= 1) 
+			{
+				MessageBox.Show(CountAssistance.ToString());
+
+				//Si il existe des demandes d'assistances on génère ce label
+				Label l_nbAss = new Label();
+				l_nbAss.BackColor = Color.FromArgb(53, 70, 99);
+				l_nbAss.Padding = new Padding(1, 0, 0, 0);
+				l_nbAss.Location = new Point(656, 12);
+				l_nbAss.AutoSize = false;
+				l_nbAss.Size = new Size(36, 30);
+				l_nbAss.Cursor = Cursors.Hand;
+				l_nbAss.Image = Properties.Resources.red_notif;
+				l_nbAss.TextAlign = ContentAlignment.MiddleCenter;
+				l_nbAss.Text = CountAssistance.ToString();
+				this.Controls.Add(l_nbAss);
+				l_nbAss.BringToFront();
+
+				l_nbAss.Click += (s, e) =>
+				{
+					Hide();
+					var InterventionForm = new Intervention();
+					InterventionForm.ShowDialog();
+					Close();
+				};
+			}
         }
 
 
@@ -58,5 +89,5 @@ namespace ProjetChargeon
             Data.ShowDialog();
             Close();
         }
-    }
+	}
 }

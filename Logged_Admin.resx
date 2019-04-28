@@ -118,13 +118,77 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAO7AAADuwGu9yalAAAAB3RJ
+        TUUH4wMODBAV1X7BsQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHGSURBVEhL
+        pZdJTgMxEEU5AmOUU3CKbLLIAdmACLPEWZCirDkDi6wZ/otSrY/ldttOSU+CcpVfz7FPPq8XS7ERO7EW
+        c0F+T2/4HGImbgWOrViR/BC/xrO4EkNja3ivuBD34keEY8vAlyWCF8FRDhPUhvcIpA8inX/H4I34tmTQ
+        LPdaMSblzG8puOSPQzKlWu41YkwKXPZZFJ6JO5ErnJT7mChJyTP+r+lcNMs9J6qkkDY2yROqpZA76h55
+        uzTCB0SLvF8a4QViSs7bQM1x0ggvFCX5u3hLckGbNMIbREmeo08a4Y0i5P69zXGcNMInEKfiSeSEwGXn
+        AIee7vBJBGfyKnJS4J7zwA09XeETCCZ8FDmhM/qFqwpvFLXSoE/uDaIk5bJzz3MPXJvcCwXSsY8DB8M9
+        54Gr/cIdLEl4gZiSMh61pfe8LPcB0SIN2uWeECUp+Zw0aJPbP9yzammE50S1PBq6pBE+Jqbk+6UzhRwF
+        C7Bc4aQ0wmtESc66fU4RK8zcu1gtjfBaUZKvKWBbkQ4g7fqV8R4xJt8v6NnLRIIz57J3SSO8V7B05qr6
+        pmHDwEog58wpGH/hG8LnENwydixsl7RXWyz/AAM0xvnRyp7FAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>758, 12</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>p_titre</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>p_titre</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="p_titre.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="p_titre.Size" type="System.Drawing.Size, System.Drawing">
     <value>800, 73</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="p_titre.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -139,36 +203,6 @@
   </data>
   <data name="&gt;&gt;p_titre.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="l_Titre_Chargeon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 25</value>
-  </data>
-  <data name="l_Titre_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
-  </data>
-  <data name="l_Titre_Chargeon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="l_Titre_Chargeon.Text" xml:space="preserve">
-    <value>Chargéon</value>
-  </data>
-  <data name="&gt;&gt;l_Titre_Chargeon.Name" xml:space="preserve">
-    <value>l_Titre_Chargeon</value>
-  </data>
-  <data name="&gt;&gt;l_Titre_Chargeon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;l_Titre_Chargeon.Parent" xml:space="preserve">
-    <value>p_Chargeon</value>
-  </data>
-  <data name="&gt;&gt;l_Titre_Chargeon.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -300,45 +334,6 @@
   </data>
   <data name="&gt;&gt;btn_stats.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAO7AAADuwGu9yalAAAAB3RJ
-        TUUH4wMODBAV1X7BsQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHGSURBVEhL
-        pZdJTgMxEEU5AmOUU3CKbLLIAdmACLPEWZCirDkDi6wZ/otSrY/ldttOSU+CcpVfz7FPPq8XS7ERO7EW
-        c0F+T2/4HGImbgWOrViR/BC/xrO4EkNja3ivuBD34keEY8vAlyWCF8FRDhPUhvcIpA8inX/H4I34tmTQ
-        LPdaMSblzG8puOSPQzKlWu41YkwKXPZZFJ6JO5ErnJT7mChJyTP+r+lcNMs9J6qkkDY2yROqpZA76h55
-        uzTCB0SLvF8a4QViSs7bQM1x0ggvFCX5u3hLckGbNMIbREmeo08a4Y0i5P69zXGcNMInEKfiSeSEwGXn
-        AIee7vBJBGfyKnJS4J7zwA09XeETCCZ8FDmhM/qFqwpvFLXSoE/uDaIk5bJzz3MPXJvcCwXSsY8DB8M9
-        54Gr/cIdLEl4gZiSMh61pfe8LPcB0SIN2uWeECUp+Zw0aJPbP9yzammE50S1PBq6pBE+Jqbk+6UzhRwF
-        C7Bc4aQ0wmtESc66fU4RK8zcu1gtjfBaUZKvKWBbkQ4g7fqV8R4xJt8v6NnLRIIz57J3SSO8V7B05qr6
-        pmHDwEog58wpGH/hG8LnENwydixsl7RXWyz/AAM0xvnRyp7FAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 12</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>p_titre</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1160,9 +1155,6 @@
         AAD/////////////////+AAA//////////////////gAAP/////////////////4AAD/////////////
         ////+AAA
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

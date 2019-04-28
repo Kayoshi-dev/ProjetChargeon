@@ -1,6 +1,6 @@
 ﻿/*
  * Date de création : 19/04/2019
- * Dernière modification : 27/04/2019
+ * Dernière modification : 28/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage des informations concernant toute les bornes
  * Développeur : Maxime
@@ -71,6 +71,7 @@ namespace ProjetChargeon
 			l_ville.Text = selectCity.Tables[0].Rows[0].ItemArray[0].ToString();
 		}
 
+		// Ajoute une demande d'assistance lors du clic
 		private void needHelp(object sender, EventArgs e)
 		{
 			string idSelected = cb_mesBornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
@@ -113,8 +114,8 @@ namespace ProjetChargeon
 		private void BackForm(object sender, EventArgs e)
 		{
 			Hide();
-			var Data = new Gestion_Donnees();
-			Data.ShowDialog();
+			var LoggedCustomer = new Logged_Customer();
+			LoggedCustomer.ShowDialog();
 			Close();
 		}
 

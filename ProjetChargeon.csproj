@@ -203,5 +203,8 @@
   <ItemGroup>
     <None Include="Resources\circle_red.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_notif.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
