@@ -54,7 +54,7 @@ namespace ProjetChargeon
         // Cette méthode permet d'ajouter un technicien dans la BDD
         public bool InsertTechnicien(string nomTechnicien, string prenomTechnicien, int dispoTechnicien)
         {
-            string query = "INSERT INTO technicien (Tech_Id, Tech_Nom, Tech_Prenom, Tech_Dispo) VALUES (@nom, @prenom, @dispo)";
+            string query = "INSERT INTO technicien (Tech_Nom, Tech_Prenom, Tech_Dispo) VALUES (@nom, @prenom, @dispo)";
             bool validate = false;
 
             MySqlCommand req = new MySqlCommand(query, connection);
@@ -75,9 +75,43 @@ namespace ProjetChargeon
             return validate;
         }
 
+        // Cette méthode permet de mettre à jour un technicien dans la BDD
+        public bool UpdateTechnicien(string idSelected, string nom, string prenom, int dispo)
+        {
+            bool validate = false;
+
+            string query = "UPDATE technicien SET Tech_Nom = @nom, Tech_Prenom = @prenom, Tech_Dispo = @dispo WHERE Tech_Id = @idTechnicien";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@idCustomer", idSelected));
+            req.Parameters.Add(new MySqlParameter("@nom", nom));
+            req.Parameters.Add(new MySqlParameter("@adresse", prenom));
+            req.Parameters.Add(new MySqlParameter("@cp", dispo));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
+        }
+
         // Cette méthode permet de supprimer un technicien dans la BDD
         public bool DeleteTechnicien(string idSelected)
         {
+            try
+            {
+
+            }
+            catch (MySqlException e)
+            {
+
+            }
             string query = "DELETE FROM technicien WHERE Tech_Id = @id";
             bool validate = false;
 

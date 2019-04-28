@@ -12,6 +12,23 @@ namespace ProjetChargeon
 {
     public partial class TechnicienCRUD : Form
     {
+        public class Item
+        {
+            public string Name;
+            public int Value;
+
+            public Item(string name, int value)
+            {
+                Name = name;
+                Value = value;
+            }
+
+            public override string ToString()
+            {
+                return Name;
+            }
+        }
+
         TechnicienDAO DataTechnicien = new TechnicienDAO();
 
         /* Code lors de l'initialisation de la Page */
@@ -21,6 +38,13 @@ namespace ProjetChargeon
             InitializeComponent();
             InitializeComboBoxNomUpdate();
             InitializeComboBoxNomDelete();
+            InitializeComboBoxDispoAdd();
+        }
+
+        private void InitializeComboBoxDispoAdd()
+        {
+            cb_Dispo_Ajout.Items.Add(new Item("Oui", 1));
+            cb_Dispo_Ajout.Items.Add(new Item("Non", 0));
         }
 
         private void InitializeComboBoxNomUpdate()
@@ -52,6 +76,7 @@ namespace ProjetChargeon
 
             cb_Nom_Modif.DataSource = listeTechniciens.Tables["Technicien"];
         }
+
 
         /* Liens de Redirection */
 
@@ -105,13 +130,53 @@ namespace ProjetChargeon
         // Au Clic, on ajoute un technicien dans la BDD
         private void AddTechnicien(object sender, EventArgs e)
         {
-            
+            // ATTENTION : La requête n'est pas complète : Il manque en paramètre la ComboBox Dispo
+            // Car pour l'instant cette ComboBox ne marche pas
+            // Check (MANQUANT)
+
+            /*
+            bool test = DataTechnicien.InsertTechnicien(tb_Nom_Ajout.Text, tb_Prenom_Ajout.Text, (MANQUANT)Valeur ComboBox Dispo Ajout);
+
+            if (test == true)
+            {
+                tb_Nom_Ajout.Text = "";
+                tb_Adresse_Ajout.Text = "";
+                (MANQUANT)ComboBox Dispo Ajout = "";
+            }*/
+
+            MessageBox.Show("Technicien Ajouté");
+
+            /*
+            DataSet ListTechnicien = DataTechnicien.SelectTechniciens();
+			cb_Nom_Modif.DataSource = ListTechnicien.Tables[0];
+            cb_Nom_Supprimer.DataSource = ListTechnicien.Tables[0];
+            */
         }
 
         // Au Clic, on peut modifier les données enregistrées dans la BDD en fonction du technicien sélectionné
         private void UpdateTechnicien(object sender, EventArgs e)
         {
+            // ATTENTION : La requête n'est pas complète : Il manque en paramètre la ComboBox Dispo
+            // Car pour l'instant cette ComboBox ne marche pas
+            // Check (MANQUANT)
 
+            /*
+            bool test = DataTechnicien.UpdateTechnicien(tb_Nom_Ajout.Text, tb_Prenom_Ajout.Text, (MANQUANT)Valeur ComboBox Dispo Modif);
+
+            if (test == true)
+            {
+                tb_Nom_Ajout.Text = "";
+                tb_Adresse_Ajout.Text = "";
+                (MANQUANT)ComboBox Dispo Ajout = "";
+            }*/
+
+            MessageBox.Show("Technicien Modifié");
+
+            /*
+            DataSet ListTechnicien = DataTechnicien.SelectTechniciens();
+			cb_Nom_Modif.DataSource = ListTechnicien.Tables[0];
+            cb_Nom_Supprimer.DataSource = ListTechnicien.Tables[0];
+            */
         }
 
         // Au Clic, on supprime le technicien sélectionné de la BDD
@@ -123,6 +188,8 @@ namespace ProjetChargeon
 
             DataSet ListTechnicien = DataTechnicien.SelectTechniciens();
             cb_Nom_Supprimer.DataSource = ListTechnicien.Tables[0];
+
+            MessageBox.Show("Technicien Supprimé");
         }
     }
 }

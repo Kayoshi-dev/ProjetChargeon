@@ -43,6 +43,8 @@
             this.l_Titre_Prenom_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_Dispo_Ajout = new System.Windows.Forms.Label();
             this.p_Modifier_Technicien = new System.Windows.Forms.Panel();
+            this.tb_Nom_Modif = new System.Windows.Forms.TextBox();
+            this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
             this.tb_Prenom_Modif = new System.Windows.Forms.TextBox();
             this.cb_Dispo_Modif = new System.Windows.Forms.ComboBox();
             this.l_Titre_Nom_Modif = new System.Windows.Forms.Label();
@@ -52,11 +54,8 @@
             this.l_Titre_Modifier_Technicien = new System.Windows.Forms.Label();
             this.p_Supprimer_Technicien = new System.Windows.Forms.Panel();
             this.cb_Nom_Supprimer = new System.Windows.Forms.ComboBox();
-            this.l_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
             this.btn_Supprimer = new System.Windows.Forms.Button();
             this.l_Titre_Supprimer_Technicien = new System.Windows.Forms.Label();
-            this.cb_Nom_Modif = new System.Windows.Forms.ComboBox();
-            this.tb_Nom_Modif = new System.Windows.Forms.TextBox();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -171,6 +170,18 @@
             resources.ApplyResources(this.p_Modifier_Technicien, "p_Modifier_Technicien");
             this.p_Modifier_Technicien.Name = "p_Modifier_Technicien";
             // 
+            // tb_Nom_Modif
+            // 
+            resources.ApplyResources(this.tb_Nom_Modif, "tb_Nom_Modif");
+            this.tb_Nom_Modif.Name = "tb_Nom_Modif";
+            // 
+            // cb_Nom_Modif
+            // 
+            this.cb_Nom_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
+            this.cb_Nom_Modif.Name = "cb_Nom_Modif";
+            this.cb_Nom_Modif.SelectedIndexChanged += new System.EventHandler(this.DataSelected);
+            // 
             // tb_Prenom_Modif
             // 
             resources.ApplyResources(this.tb_Prenom_Modif, "tb_Prenom_Modif");
@@ -217,7 +228,6 @@
             // 
             this.p_Supprimer_Technicien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_Supprimer_Technicien.Controls.Add(this.cb_Nom_Supprimer);
-            this.p_Supprimer_Technicien.Controls.Add(this.l_Titre_Nom_Supprimer);
             this.p_Supprimer_Technicien.Controls.Add(this.btn_Supprimer);
             resources.ApplyResources(this.p_Supprimer_Technicien, "p_Supprimer_Technicien");
             this.p_Supprimer_Technicien.Name = "p_Supprimer_Technicien";
@@ -227,12 +237,6 @@
             this.cb_Nom_Supprimer.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Nom_Supprimer, "cb_Nom_Supprimer");
             this.cb_Nom_Supprimer.Name = "cb_Nom_Supprimer";
-            // 
-            // l_Titre_Nom_Supprimer
-            // 
-            resources.ApplyResources(this.l_Titre_Nom_Supprimer, "l_Titre_Nom_Supprimer");
-            this.l_Titre_Nom_Supprimer.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Nom_Supprimer.Name = "l_Titre_Nom_Supprimer";
             // 
             // btn_Supprimer
             // 
@@ -246,18 +250,6 @@
             resources.ApplyResources(this.l_Titre_Supprimer_Technicien, "l_Titre_Supprimer_Technicien");
             this.l_Titre_Supprimer_Technicien.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Supprimer_Technicien.Name = "l_Titre_Supprimer_Technicien";
-            // 
-            // cb_Nom_Modif
-            // 
-            this.cb_Nom_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
-            this.cb_Nom_Modif.Name = "cb_Nom_Modif";
-            this.cb_Nom_Modif.SelectedIndexChanged += new System.EventHandler(this.DataSelected);
-            // 
-            // tb_Nom_Modif
-            // 
-            resources.ApplyResources(this.tb_Nom_Modif, "tb_Nom_Modif");
-            this.tb_Nom_Modif.Name = "tb_Nom_Modif";
             // 
             // TechnicienCRUD
             // 
@@ -283,7 +275,6 @@
             this.p_Modifier_Technicien.ResumeLayout(false);
             this.p_Modifier_Technicien.PerformLayout();
             this.p_Supprimer_Technicien.ResumeLayout(false);
-            this.p_Supprimer_Technicien.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +305,6 @@
         private System.Windows.Forms.Label l_Titre_Modifier_Technicien;
         private System.Windows.Forms.Panel p_Supprimer_Technicien;
         private System.Windows.Forms.ComboBox cb_Nom_Supprimer;
-        private System.Windows.Forms.Label l_Titre_Nom_Supprimer;
         private System.Windows.Forms.Button btn_Supprimer;
         private System.Windows.Forms.Label l_Titre_Supprimer_Technicien;
         private System.Windows.Forms.ComboBox cb_Nom_Modif;
