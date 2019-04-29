@@ -86,10 +86,10 @@ namespace ProjetChargeon
             MySqlCommand req = new MySqlCommand(query, connection);
 
             req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@idCustomer", idSelected));
+            req.Parameters.Add(new MySqlParameter("@idTechnicien", idSelected));
             req.Parameters.Add(new MySqlParameter("@nom", nom));
-            req.Parameters.Add(new MySqlParameter("@adresse", prenom));
-            req.Parameters.Add(new MySqlParameter("@cp", dispo));
+            req.Parameters.Add(new MySqlParameter("@prenom", prenom));
+            req.Parameters.Add(new MySqlParameter("@dispo", dispo));
 
             connection.Open();
 
