@@ -129,28 +129,21 @@ namespace ProjetChargeon
 
         // Au Clic, on ajoute un technicien dans la BDD
         private void AddTechnicien(object sender, EventArgs e)
-        {
-            // ATTENTION : La requête n'est pas complète : Il manque en paramètre la ComboBox Dispo
-            // Car pour l'instant cette ComboBox ne marche pas
-            // Check (MANQUANT)
-
-            /*
-            bool test = DataTechnicien.InsertTechnicien(tb_Nom_Ajout.Text, tb_Prenom_Ajout.Text, (MANQUANT)Valeur ComboBox Dispo Ajout);
+        {          
+            bool test = DataTechnicien.InsertTechnicien(tb_Nom_Ajout.Text, tb_Prenom_Ajout.Text, Convert.ToInt32(cb_Dispo_Ajout.SelectedValue));
 
             if (test == true)
             {
                 tb_Nom_Ajout.Text = "";
-                tb_Adresse_Ajout.Text = "";
-                (MANQUANT)ComboBox Dispo Ajout = "";
-            }*/
+                tb_Prenom_Ajout.Text = "";
+                cb_Dispo_Ajout.Text = "";
+            }
 
             MessageBox.Show("Technicien Ajouté");
 
-            /*
             DataSet ListTechnicien = DataTechnicien.SelectTechniciens();
 			cb_Nom_Modif.DataSource = ListTechnicien.Tables[0];
             cb_Nom_Supprimer.DataSource = ListTechnicien.Tables[0];
-            */
         }
 
         // Au Clic, on peut modifier les données enregistrées dans la BDD en fonction du technicien sélectionné
