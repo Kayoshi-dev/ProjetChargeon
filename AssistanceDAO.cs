@@ -81,5 +81,44 @@ namespace ProjetChargeon
 
 			return ListTypesAssistance;
 		}
+
+		public DataSet selectPendingAssistances()
+		{
+			string query = "SELECT * FROM assistance WHERE Assist_Etat = 0";
+			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+
+			DataSet ListPendingAssistance = new DataSet();
+
+			adapter.Fill(ListPendingAssistance);
+			adapter.Dispose();
+
+			return ListPendingAssistance;
+		}
+
+		public DataSet selectInProgressAssistances()
+		{
+			string query = "SELECT * FROM assistance WHERE Assist_Etat = 1";
+			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+
+			DataSet ListPendingAssistance = new DataSet();
+
+			adapter.Fill(ListPendingAssistance);
+			adapter.Dispose();
+
+			return ListPendingAssistance;
+		}
+
+		public DataSet selectCompletedAssistances()
+		{
+			string query = "SELECT * FROM assistance WHERE Assist_Etat = 2";
+			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+
+			DataSet ListPendingAssistance = new DataSet();
+
+			adapter.Fill(ListPendingAssistance);
+			adapter.Dispose();
+
+			return ListPendingAssistance;
+		}
 	}
 }
