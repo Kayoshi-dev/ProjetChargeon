@@ -158,6 +158,9 @@
     <EmbeddedResource Include="Bornes.resx">
       <DependentUpon>Bornes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BornesCRUD.resx">
+      <DependentUpon>BornesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>

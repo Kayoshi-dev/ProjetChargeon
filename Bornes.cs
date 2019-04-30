@@ -92,7 +92,7 @@ namespace ProjetChargeon
             if (ListMoreDetailsBornes.Tables[0].Rows[0].ItemArray[3].ToString() == "True")
             {
                 // Affiche le Type de la Borne sélectionné
-                l_Type.Text = "Intèrieur";
+                l_Type.Text = "Intérieur";
             }
             else
             {
@@ -125,7 +125,7 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Priorité
-            if (ListMoreDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "1")
+            if (ListMoreDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "True")
             {
                 // Affiche la Priorité de la Borne sélectionnée
                 l_Priorite.Text = "Elevée";

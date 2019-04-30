@@ -128,8 +128,110 @@ namespace ProjetChargeon
 			return listeBornesClient;
 		}
 
-		//Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
-		public DataSet SelectDetailsStats(string idSelected)
+        // Cette méthode récupère les données pour la page CRUD Borne (Modifier une Borne)
+        public DataSet SelectDetailsBornesForCRUD(string idSelected)
+        {
+            string query = "SELECT Borne_Id, Borne_Ref, Borne_NS, Borne_Desc, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio FROM bornes WHERE Borne_Id = @id";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataSet listeDetailsBornesForCRUD = new DataSet();
+
+            adapter.SelectCommand = req;
+            adapter.Fill(listeDetailsBornesForCRUD);
+
+            adapter.Dispose();
+            req.Dispose();
+
+            return listeDetailsBornesForCRUD;
+        }
+
+        // Cette méthode permet d'ajouter une nouvelle Borne à la BDD
+        public bool InsertBorne(string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
+        {
+
+            string query = "INSERT INTO bornes (Borne_Ref, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio) VALUES (@ref, @desc, @ns, @type, @etat, @puis, @prio)";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@ref", refBorne));
+            req.Parameters.Add(new MySqlParameter("@desc", descBorne));
+            req.Parameters.Add(new MySqlParameter("@ns", nsBorne));
+            req.Parameters.Add(new MySqlParameter("@type", typeBorne));
+            req.Parameters.Add(new MySqlParameter("@etat", etatBorne));
+            req.Parameters.Add(new MySqlParameter("@puis", puisBorne));
+            req.Parameters.Add(new MySqlParameter("@prio", prioBorne));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
+        }
+
+        // Cette méthode permet de mettre à jour une Borne sélectionnée
+        public bool UpdateBorne(string idBorne, string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
+        {
+            string query = "Update bornes SET Borne_Ref = @ref, Borne_Desc = @desc, Borne_NS = @ns, Borne_Type = @type, Borne_Etat = @etat, Borne_Puis = @puis, Borne_Prio = @prio WHERE Borne_Id = @id";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idBorne));
+            req.Parameters.Add(new MySqlParameter("@ref", refBorne));
+            req.Parameters.Add(new MySqlParameter("@desc", descBorne));
+            req.Parameters.Add(new MySqlParameter("@ns", nsBorne));
+            req.Parameters.Add(new MySqlParameter("@type", typeBorne));
+            req.Parameters.Add(new MySqlParameter("@etat", etatBorne));
+            req.Parameters.Add(new MySqlParameter("@puis", puisBorne));
+            req.Parameters.Add(new MySqlParameter("@prio", prioBorne));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
+        }
+
+        // Cette méthode permet de supprimer une borne dans la BDD
+        public bool DeleteBorne(string idSelected)
+        {
+            string query = "DELETE FROM bornes WHERE Borne_Id = @id";
+            bool validate = false;
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+
+            validate = true;
+
+            return validate;
+        }
+
+        // Cette méthode permet d'obtenir les données des Statistiques en fonction d'une borne sélectionnée
+        public DataSet SelectDetailsStats(string idSelected)
 		{
 			string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Stats_Id = Borne_NoStat AND Borne_NoStat = @id";
 
