@@ -89,7 +89,7 @@ namespace ProjetChargeon
 			this.btn_factures.Location = new System.Drawing.Point(449, 161);
 			this.btn_factures.Name = "btn_factures";
 			this.btn_factures.Size = new System.Drawing.Size(200, 200);
-			this.btn_factures.TabIndex = 13;
+			this.btn_factures.TabIndex = 2;
 			this.btn_factures.Text = "Mes Factures";
 			this.btn_factures.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btn_factures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -109,7 +109,7 @@ namespace ProjetChargeon
 			this.btn_bornes.Location = new System.Drawing.Point(146, 161);
 			this.btn_bornes.Name = "btn_bornes";
 			this.btn_bornes.Size = new System.Drawing.Size(200, 200);
-			this.btn_bornes.TabIndex = 14;
+			this.btn_bornes.TabIndex = 1;
 			this.btn_bornes.Text = "Mes Bornes";
 			this.btn_bornes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btn_bornes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;

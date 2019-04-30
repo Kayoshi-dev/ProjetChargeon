@@ -1,6 +1,6 @@
 ﻿/*
  * Date de création : 19/04/2019
- * Dernière modification : 27/04/2019
+ * Dernière modification : 28/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage des informations concernant toute les bornes
  * Développeur : Maxime
@@ -71,11 +71,39 @@ namespace ProjetChargeon
 			l_ville.Text = selectCity.Tables[0].Rows[0].ItemArray[0].ToString();
 		}
 
+		// Ajoute une demande d'assistance lors du clic
 		private void needHelp(object sender, EventArgs e)
 		{
-			
+			string idSelected = cb_mesBornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
+
+			AssistanceDAO AskForHelp = new AssistanceDAO();
+			// On vérifie que le texte ne vaut pas le placeholder
+			if(tb_message.Text != "Décrivez votre problème") 
+			{
+				// On ajoute la demande d'assistance
+				bool validate = AskForHelp.AddAssistance(Convert.ToInt32(idSelected), tb_message.Text);
+
+				// Si notre validation est vraie alors
+				if (validate == true) 
+				{
+					tb_message.Text = ""; // On vide la TextBox
+					l_valid.ForeColor = l_valid.ForeColor = Color.FromArgb(46, 204, 113); // Message en Vert
+					l_valid.Text = "Ok"; // On affiche ok
+				}
+				else 
+				{
+					l_valid.ForeColor = Color.FromArgb(231, 76, 60); // Message en Rouge
+					l_valid.Text = "Fail"; // On affiche fail
+				}
+			}
+			// Si le message entré vaut la placeholder
+			else 
+			{
+				MessageBox.Show("Entrez un message différent");
+			}
 		}
 
+		// Méthode pour placeholder
 		private void messageHelpClick(object sender, MouseEventArgs e)
 		{
 			if (tb_message.Text == "Décrivez votre problème") {
@@ -86,8 +114,8 @@ namespace ProjetChargeon
 		private void BackForm(object sender, EventArgs e)
 		{
 			Hide();
-			var Data = new Gestion_Donnees();
-			Data.ShowDialog();
+			var LoggedCustomer = new Logged_Customer();
+			LoggedCustomer.ShowDialog();
 			Close();
 		}
 

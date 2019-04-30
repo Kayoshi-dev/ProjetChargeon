@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientCRUD));
 			this.p_form1 = new System.Windows.Forms.Panel();
 			this.img_Return = new System.Windows.Forms.PictureBox();
-			this.cb_Nom = new System.Windows.Forms.ComboBox();
 			this.l_Titre_Chargeon = new System.Windows.Forms.Label();
-			this.tb_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
 			this.img_Close = new System.Windows.Forms.PictureBox();
+			this.cb_Nom = new System.Windows.Forms.ComboBox();
+			this.tb_Titre_Nom_Supprimer = new System.Windows.Forms.Label();
 			this.l_Titre_Ajout = new System.Windows.Forms.Label();
 			this.l_Titre_Nom_Ajout = new System.Windows.Forms.Label();
 			this.l_Titre_Adresse_Ajout = new System.Windows.Forms.Label();
@@ -65,7 +64,6 @@
 			this.l_nom = new System.Windows.Forms.Label();
 			this.bt_Supprimer = new System.Windows.Forms.Button();
 			this.l_test = new System.Windows.Forms.Label();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.p_form1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -99,16 +97,6 @@
 			this.img_Return.TabStop = false;
 			this.img_Return.Click += new System.EventHandler(this.Return);
 			// 
-			// cb_Nom
-			// 
-			this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cb_Nom.FormattingEnabled = true;
-			this.cb_Nom.Location = new System.Drawing.Point(784, 88);
-			this.cb_Nom.Name = "cb_Nom";
-			this.cb_Nom.Size = new System.Drawing.Size(187, 28);
-			this.cb_Nom.TabIndex = 6;
-			this.cb_Nom.SelectedIndexChanged += new System.EventHandler(this.NameIndexChange);
-			// 
 			// l_Titre_Chargeon
 			// 
 			this.l_Titre_Chargeon.AutoSize = true;
@@ -121,6 +109,27 @@
 			this.l_Titre_Chargeon.TabIndex = 4;
 			this.l_Titre_Chargeon.Text = "Chargéon";
 			// 
+			// img_Close
+			// 
+			this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.img_Close.Image = ((System.Drawing.Image)(resources.GetObject("img_Close.Image")));
+			this.img_Close.Location = new System.Drawing.Point(958, 12);
+			this.img_Close.Name = "img_Close";
+			this.img_Close.Size = new System.Drawing.Size(30, 30);
+			this.img_Close.TabIndex = 1;
+			this.img_Close.TabStop = false;
+			this.img_Close.Click += new System.EventHandler(this.Close);
+			// 
+			// cb_Nom
+			// 
+			this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cb_Nom.FormattingEnabled = true;
+			this.cb_Nom.Location = new System.Drawing.Point(784, 88);
+			this.cb_Nom.Name = "cb_Nom";
+			this.cb_Nom.Size = new System.Drawing.Size(187, 28);
+			this.cb_Nom.TabIndex = 6;
+			this.cb_Nom.SelectedIndexChanged += new System.EventHandler(this.NameIndexChange);
+			// 
 			// tb_Titre_Nom_Supprimer
 			// 
 			this.tb_Titre_Nom_Supprimer.AutoSize = true;
@@ -132,17 +141,6 @@
 			this.tb_Titre_Nom_Supprimer.Size = new System.Drawing.Size(59, 21);
 			this.tb_Titre_Nom_Supprimer.TabIndex = 15;
 			this.tb_Titre_Nom_Supprimer.Text = "Nom : ";
-			// 
-			// img_Close
-			// 
-			this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.img_Close.Image = ((System.Drawing.Image)(resources.GetObject("img_Close.Image")));
-			this.img_Close.Location = new System.Drawing.Point(958, 12);
-			this.img_Close.Name = "img_Close";
-			this.img_Close.Size = new System.Drawing.Size(30, 30);
-			this.img_Close.TabIndex = 1;
-			this.img_Close.TabStop = false;
-			this.img_Close.Click += new System.EventHandler(this.Close);
 			// 
 			// l_Titre_Ajout
 			// 
@@ -519,6 +517,5 @@
         private System.Windows.Forms.ComboBox cb_Nom;
 		private System.Windows.Forms.Label l_nom;
 		private System.Windows.Forms.Label l_test;
-		private System.Windows.Forms.Timer timer1;
 	}
 }

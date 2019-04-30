@@ -99,7 +99,6 @@ namespace ProjetChargeon
 			try 
 			{
 				string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES (@nom, @adresse, @cp, @ville)";
-
 				MySqlCommand req = new MySqlCommand(query, connection);
 
 				//Bind Value des paramètres.
@@ -116,7 +115,6 @@ namespace ProjetChargeon
 				connection.Close();
 
 				validate = true;
-
 				return validate;
 			}
 			catch(MySqlException e) 
