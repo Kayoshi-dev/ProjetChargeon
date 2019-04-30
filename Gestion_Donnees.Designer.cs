@@ -45,6 +45,80 @@ namespace ProjetChargeon
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
+            // p_Titre_Chargeon
+            // 
+            this.p_Titre_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.p_Titre_Chargeon.Controls.Add(this.img_Return);
+            this.p_Titre_Chargeon.Controls.Add(this.img_Close);
+            this.p_Titre_Chargeon.Controls.Add(this.l_Titre_Chargeon);
+            resources.ApplyResources(this.p_Titre_Chargeon, "p_Titre_Chargeon");
+            this.p_Titre_Chargeon.Name = "p_Titre_Chargeon";
+            // 
+            // img_Return
+            // 
+            this.img_Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            resources.ApplyResources(this.img_Return, "img_Return");
+            this.img_Return.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.img_Return.Name = "img_Return";
+            this.img_Return.TabStop = false;
+            this.img_Return.Click += new System.EventHandler(this.Return);
+            // 
+            // img_Close
+            // 
+            resources.ApplyResources(this.img_Close, "img_Close");
+            this.img_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img_Close.Name = "img_Close";
+            this.img_Close.TabStop = false;
+            this.img_Close.Click += new System.EventHandler(this.Close);
+            // 
+            // l_Titre_Chargeon
+            // 
+            resources.ApplyResources(this.l_Titre_Chargeon, "l_Titre_Chargeon");
+            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
+            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
+            // 
+            // btn_Clients
+            // 
+            this.btn_Clients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Clients.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Clients.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Clients, "btn_Clients");
+            this.btn_Clients.ForeColor = System.Drawing.Color.White;
+            this.btn_Clients.Name = "btn_Clients";
+            this.btn_Clients.UseVisualStyleBackColor = false;
+            // 
+            // btn_Bornes
+            // 
+            this.btn_Bornes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Bornes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Bornes.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Bornes, "btn_Bornes");
+            this.btn_Bornes.ForeColor = System.Drawing.Color.White;
+            this.btn_Bornes.Name = "btn_Bornes";
+            this.btn_Bornes.UseVisualStyleBackColor = false;
+            this.btn_Bornes.Click += new System.EventHandler(this.onClickToBorne);
+            // 
+            // btn_Interventions
+            // 
+            this.btn_Interventions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Interventions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Interventions.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Interventions, "btn_Interventions");
+            this.btn_Interventions.ForeColor = System.Drawing.Color.White;
+            this.btn_Interventions.Name = "btn_Interventions";
+            this.btn_Interventions.UseVisualStyleBackColor = false;
+            // 
+            // btn_Techniciens
+            // 
+            this.btn_Techniciens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_Techniciens.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Techniciens.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Techniciens, "btn_Techniciens");
+            this.btn_Techniciens.ForeColor = System.Drawing.Color.White;
+            this.btn_Techniciens.Name = "btn_Techniciens";
+            this.btn_Techniciens.UseVisualStyleBackColor = false;
+            this.btn_Techniciens.Click += new System.EventHandler(this.onClickToTechnicien);
+            //
             // p_titre
             // 
             this.p_titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
@@ -76,6 +150,7 @@ namespace ProjetChargeon
             this.btn_AjoutTechnicien.ForeColor = System.Drawing.Color.White;
             this.btn_AjoutTechnicien.Name = "btn_AjoutTechnicien";
             this.btn_AjoutTechnicien.UseVisualStyleBackColor = false;
+            this.btn_AjoutTechnicien.Click += new System.EventHandler(this.onClickToCRUDTechnicien);
             // 
             // btn_Intervention
             // 
