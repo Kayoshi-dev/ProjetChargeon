@@ -55,12 +55,17 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="AssistanceDAO.cs" />
-    <Compile Include="BorneDAO.cs" />
     <Compile Include="Bornes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bornes.Designer.cs">
       <DependentUpon>Bornes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BornesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BornesCRUD.Designer.cs">
+      <DependentUpon>BornesCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="TechnicienDAO.cs" />
     <Compile Include="Client.cs">

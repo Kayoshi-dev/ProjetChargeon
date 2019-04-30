@@ -32,8 +32,8 @@ namespace ProjetChargeon
             Close();
         }
 
-        
-        // Au Clic, redirige vers la page Gestion des Clients
+
+        // Au Clic, redirection vers la page Gestion des Clients
         private void onClickToClient(object sender, EventArgs e)
         {
             Hide();
@@ -42,7 +42,7 @@ namespace ProjetChargeon
             Close();
         }
 
-        // Au Clic, reidrige vers le CRUD des Clients
+        // Au Clic, redirection vers le CRUD des Clients
         private void onClickToClientCRUD(object sender, EventArgs e)
         {
             Hide();
@@ -51,17 +51,23 @@ namespace ProjetChargeon
             Close();
         }
 
-        
-        // Au Clic, redirige vers la page Gestion des Bornes
+
+        // Au Clic, redirection vers la page Gestion des Bornes
         private void onClickToBorne(object sender, EventArgs e)
         {
-
+            Hide();
+            var Borne = new Bornes();
+            Borne.ShowDialog();
+            Close();
         }
 
-        // Au Clic, reidrige vers le CRUD des Bornes
+        // Au Clic, redirection vers le CRUD des Bornes
         private void onClickToCRUDBorne(object sender, EventArgs e)
         {
-
+            Hide();
+            var BorneCRUD = new BornesCRUD();
+            BorneCRUD.ShowDialog();
+            Close();
         }
 
         
@@ -74,7 +80,7 @@ namespace ProjetChargeon
             Close();
         }
 
-        // Au Clic, reidrige vers le CRUD des Techniciens
+        // Au Clic, redirection vers le CRUD des Techniciens
         private void onClickToCRUDTechnicien(object sender, EventArgs e)
         {
             Hide();
@@ -84,7 +90,7 @@ namespace ProjetChargeon
         }
 
 
-        // Au Clic, redirige vers la page Gestion des Interventions
+        // Au Clic, redirection vers la page Gestion des Interventions
         private void onClickToIntervention(object sender, EventArgs e)
         {
             Hide();

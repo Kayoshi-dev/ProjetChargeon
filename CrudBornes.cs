@@ -64,7 +64,29 @@ namespace ProjetChargeon
 			return listeDetailsBornes;
 		}
 
-		public DataSet SelectCityForBornes(string idSelected) 
+        // Cette méthode récupère les données pour la page Gestion des Bornes
+        public DataSet SelectMoreDetailsBornes(string idSelected)
+        {
+            string query = "SELECT Borne_Id, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio, Site_Nom FROM bornes, site WHERE Site_NoZone = Borne_NoSite AND Borne_Id = @id";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataSet listeMoreDetailsBornes = new DataSet();
+
+            adapter.SelectCommand = req;
+            adapter.Fill(listeMoreDetailsBornes);
+
+            adapter.Dispose();
+            req.Dispose();
+
+            return listeMoreDetailsBornes;
+        }
+
+        public DataSet SelectCityForBornes(string idSelected) 
 		{
 			string query = "SELECT Site_Ville FROM site, bornes WHERE Borne_NoSite = Site_Id AND Borne_Id = @idSelected";
 

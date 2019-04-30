@@ -56,7 +56,10 @@
             this.l_Puissance = new System.Windows.Forms.Label();
             this.l_Titre_Site = new System.Windows.Forms.Label();
             this.p_Site = new System.Windows.Forms.Panel();
-            this.l_Zone = new System.Windows.Forms.Label();
+            this.l_Site = new System.Windows.Forms.Label();
+            this.p_Priorite = new System.Windows.Forms.Panel();
+            this.l_Priorite = new System.Windows.Forms.Label();
+            this.l_Titre_Priorite = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -67,6 +70,7 @@
             this.p_Type.SuspendLayout();
             this.p_Puissance.SuspendLayout();
             this.p_Site.SuspendLayout();
+            this.p_Priorite.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -135,6 +139,7 @@
             this.cb_Borne.Name = "cb_Borne";
             this.cb_Borne.Size = new System.Drawing.Size(193, 28);
             this.cb_Borne.TabIndex = 16;
+            this.cb_Borne.SelectedIndexChanged += new System.EventHandler(this.DataBorne);
             // 
             // l_Titre_ID
             // 
@@ -279,7 +284,7 @@
             this.l_Titre_Type.BackColor = System.Drawing.Color.Transparent;
             this.l_Titre_Type.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Type.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Titre_Type.Location = new System.Drawing.Point(271, 296);
+            this.l_Titre_Type.Location = new System.Drawing.Point(271, 260);
             this.l_Titre_Type.Name = "l_Titre_Type";
             this.l_Titre_Type.Size = new System.Drawing.Size(120, 21);
             this.l_Titre_Type.TabIndex = 55;
@@ -291,7 +296,7 @@
             this.l_Titre_Puissance.BackColor = System.Drawing.Color.Transparent;
             this.l_Titre_Puissance.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Puissance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Titre_Puissance.Location = new System.Drawing.Point(468, 296);
+            this.l_Titre_Puissance.Location = new System.Drawing.Point(468, 260);
             this.l_Titre_Puissance.Name = "l_Titre_Puissance";
             this.l_Titre_Puissance.Size = new System.Drawing.Size(85, 21);
             this.l_Titre_Puissance.TabIndex = 56;
@@ -301,7 +306,7 @@
             // 
             this.p_Type.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_Type.Controls.Add(this.l_Type);
-            this.p_Type.Location = new System.Drawing.Point(270, 320);
+            this.p_Type.Location = new System.Drawing.Point(270, 285);
             this.p_Type.Name = "p_Type";
             this.p_Type.Size = new System.Drawing.Size(121, 54);
             this.p_Type.TabIndex = 50;
@@ -321,7 +326,7 @@
             // 
             this.p_Puissance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_Puissance.Controls.Add(this.l_Puissance);
-            this.p_Puissance.Location = new System.Drawing.Point(450, 320);
+            this.p_Puissance.Location = new System.Drawing.Point(450, 285);
             this.p_Puissance.Name = "p_Puissance";
             this.p_Puissance.Size = new System.Drawing.Size(121, 54);
             this.p_Puissance.TabIndex = 51;
@@ -343,7 +348,7 @@
             this.l_Titre_Site.BackColor = System.Drawing.Color.Transparent;
             this.l_Titre_Site.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Site.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Titre_Site.Location = new System.Drawing.Point(672, 296);
+            this.l_Titre_Site.Location = new System.Drawing.Point(672, 260);
             this.l_Titre_Site.Name = "l_Titre_Site";
             this.l_Titre_Site.Size = new System.Drawing.Size(38, 21);
             this.l_Titre_Site.TabIndex = 57;
@@ -352,28 +357,62 @@
             // p_Site
             // 
             this.p_Site.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.p_Site.Controls.Add(this.l_Zone);
-            this.p_Site.Location = new System.Drawing.Point(633, 320);
+            this.p_Site.Controls.Add(this.l_Site);
+            this.p_Site.Location = new System.Drawing.Point(633, 285);
             this.p_Site.Name = "p_Site";
             this.p_Site.Size = new System.Drawing.Size(121, 54);
             this.p_Site.TabIndex = 52;
             // 
-            // l_Zone
+            // l_Site
             // 
-            this.l_Zone.ForeColor = System.Drawing.Color.White;
-            this.l_Zone.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Zone.Location = new System.Drawing.Point(0, 17);
-            this.l_Zone.Name = "l_Zone";
-            this.l_Zone.Size = new System.Drawing.Size(120, 21);
-            this.l_Zone.TabIndex = 42;
-            this.l_Zone.Text = "AfficheSite";
-            this.l_Zone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.l_Site.ForeColor = System.Drawing.Color.White;
+            this.l_Site.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Site.Location = new System.Drawing.Point(0, 17);
+            this.l_Site.Name = "l_Site";
+            this.l_Site.Size = new System.Drawing.Size(120, 21);
+            this.l_Site.TabIndex = 42;
+            this.l_Site.Text = "AfficheSite";
+            this.l_Site.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // p_Priorite
+            // 
+            this.p_Priorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Priorite.Controls.Add(this.l_Priorite);
+            this.p_Priorite.Location = new System.Drawing.Point(450, 384);
+            this.p_Priorite.Name = "p_Priorite";
+            this.p_Priorite.Size = new System.Drawing.Size(121, 54);
+            this.p_Priorite.TabIndex = 59;
+            // 
+            // l_Priorite
+            // 
+            this.l_Priorite.ForeColor = System.Drawing.Color.White;
+            this.l_Priorite.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Priorite.Location = new System.Drawing.Point(0, 17);
+            this.l_Priorite.Name = "l_Priorite";
+            this.l_Priorite.Size = new System.Drawing.Size(120, 21);
+            this.l_Priorite.TabIndex = 42;
+            this.l_Priorite.Text = "AffichePrio";
+            this.l_Priorite.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_Titre_Priorite
+            // 
+            this.l_Titre_Priorite.AutoSize = true;
+            this.l_Titre_Priorite.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Priorite.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Priorite.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Titre_Priorite.Location = new System.Drawing.Point(479, 360);
+            this.l_Titre_Priorite.Name = "l_Titre_Priorite";
+            this.l_Titre_Priorite.Size = new System.Drawing.Size(62, 21);
+            this.l_Titre_Priorite.TabIndex = 60;
+            this.l_Titre_Priorite.Text = "Priorité";
             // 
             // Bornes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.l_Titre_Priorite);
+            this.Controls.Add(this.p_Priorite);
             this.Controls.Add(this.p_Site);
             this.Controls.Add(this.l_Titre_Site);
             this.Controls.Add(this.p_Puissance);
@@ -409,6 +448,7 @@
             this.p_Type.ResumeLayout(false);
             this.p_Puissance.ResumeLayout(false);
             this.p_Site.ResumeLayout(false);
+            this.p_Priorite.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,6 +483,9 @@
         private System.Windows.Forms.Label l_Puissance;
         private System.Windows.Forms.Label l_Titre_Site;
         private System.Windows.Forms.Panel p_Site;
-        private System.Windows.Forms.Label l_Zone;
+        private System.Windows.Forms.Label l_Site;
+        private System.Windows.Forms.Panel p_Priorite;
+        private System.Windows.Forms.Label l_Priorite;
+        private System.Windows.Forms.Label l_Titre_Priorite;
     }
 }
