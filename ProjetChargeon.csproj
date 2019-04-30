@@ -54,6 +54,7 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="TechnicienDAO.cs" />
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +74,12 @@
       <DependentUpon>Crud.cs</DependentUpon>
     </Compile>
     <Compile Include="CrudBornes.cs" />
+    <Compile Include="TechnicienCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicienCRUD.Designer.cs">
+      <DependentUpon>TechnicienCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Facturation.cs">
       <SubType>Form</SubType>
@@ -125,6 +132,12 @@
     <Compile Include="StatutBornes.Designer.cs">
       <DependentUpon>StatutBornes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Technicien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technicien.Designer.cs">
+      <DependentUpon>Technicien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserDAO.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
@@ -171,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatutBornes.resx">
       <DependentUpon>StatutBornes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technicien.resx">
+      <DependentUpon>Technicien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicienCRUD.resx">
+      <DependentUpon>TechnicienCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
