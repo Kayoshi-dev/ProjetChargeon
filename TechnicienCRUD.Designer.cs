@@ -56,6 +56,7 @@
             this.cb_Nom_Supprimer = new System.Windows.Forms.ComboBox();
             this.btn_Supprimer = new System.Windows.Forms.Button();
             this.l_Titre_Supprimer_Technicien = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -251,11 +252,17 @@
             this.l_Titre_Supprimer_Technicien.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Supprimer_Technicien.Name = "l_Titre_Supprimer_Technicien";
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // TechnicienCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.l_Titre_Supprimer_Technicien);
             this.Controls.Add(this.p_Supprimer_Technicien);
             this.Controls.Add(this.l_Titre_Modifier_Technicien);
@@ -309,5 +316,6 @@
         private System.Windows.Forms.Label l_Titre_Supprimer_Technicien;
         private System.Windows.Forms.ComboBox cb_Nom_Modif;
         private System.Windows.Forms.TextBox tb_Nom_Modif;
+        private System.Windows.Forms.Label label1;
     }
 }
