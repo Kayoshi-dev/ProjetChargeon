@@ -17,12 +17,14 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        private void Close_Click(object sender, EventArgs e)
+        // Au Clic, on kill le process et on ferme la page
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void Return_Click(object sender, EventArgs e)
+        // Au Clic, on retourne à la page d'Accueil de l'Administrateur
+        private void Return(object sender, EventArgs e)
         {
             Hide();
             var accueilAdmin = new Logged_Admin();
@@ -30,7 +32,9 @@ namespace ProjetChargeon
             Close();
         }
 
-        private void onClickToCustomers(object sender, EventArgs e)
+        
+        // Au Clic, redirige vers la page Gestion des Clients
+        private void onClickToClient(object sender, EventArgs e)
         {
             Hide();
             var Client = new Client();
@@ -38,6 +42,7 @@ namespace ProjetChargeon
             Close();
         }
 
+        // Au Clic, reidrige vers le CRUD des Clients
         private void onClickToClientCRUD(object sender, EventArgs e)
         {
             Hide();
@@ -46,15 +51,21 @@ namespace ProjetChargeon
             Close();
         }
 
-        private void onClickToBornes(object sender, EventArgs e)
+        
+        // Au Clic, redirige vers la page Gestion des Bornes
+        private void onClickToBorne(object sender, EventArgs e)
         {
-            Hide();
-            var Bornes = new MesBornes();
-            Bornes.ShowDialog();
-            Close();
+
         }
 
-        // Au Clic, redirection vers Gestion des Techniciens
+        // Au Clic, reidrige vers le CRUD des Bornes
+        private void onClickToCRUDBorne(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        // Au Clic, redirection vers la page Gestion des Techniciens
         private void onClickToTechnicien(object sender, EventArgs e)
         {
             Hide();
@@ -63,12 +74,22 @@ namespace ProjetChargeon
             Close();
         }
 
-        // Au Clic, redirection vers le CRUD Technicien
+        // Au Clic, reidrige vers le CRUD des Techniciens
         private void onClickToCRUDTechnicien(object sender, EventArgs e)
         {
             Hide();
-            var CRUD_Technicien = new TechnicienCRUD();
-            CRUD_Technicien.ShowDialog();
+            var TechnicienCRUD = new TechnicienCRUD();
+            TechnicienCRUD.ShowDialog();
+            Close();
+        }
+
+
+        // Au Clic, redirige vers la page Gestion des Interventions
+        private void onClickToIntervention(object sender, EventArgs e)
+        {
+            Hide();
+            var Intervention = new Intervention();
+            Intervention.ShowDialog();
             Close();
         }
     }
