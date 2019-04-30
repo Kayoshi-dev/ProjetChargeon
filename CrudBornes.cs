@@ -29,14 +29,16 @@ namespace ProjetChargeon
 		 * grouper en une seule méthode *
 		 * il faut y réfléchir */
 
-		//Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
+        //Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
 		public DataSet SelectBornes()
 		{
 			string query = "SELECT Borne_Id, Borne_Ref FROM bornes";
 
 			MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
 			DataSet listeBornes = new DataSet();
+
 			da.Fill(listeBornes, "Borne");
+
 			return listeBornes;
 		}
 
@@ -125,5 +127,4 @@ namespace ProjetChargeon
 
 			return listeDetailsStats;
 		}
-    }
 }

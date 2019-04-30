@@ -3,7 +3,8 @@
  * Dernière modification : 19/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage et traitement du formulaire de connexion
- * Développeurs : Maxime
+ * Développeurs : Maxime, Kevin
+ * Design : Bastien
  */
 
 using System;
