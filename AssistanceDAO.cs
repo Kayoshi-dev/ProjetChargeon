@@ -25,18 +25,19 @@ namespace ProjetChargeon
 			DBConnect ConnectObject = new DBConnect();
 			connection = ConnectObject.GetConnection();
 		}
-		public bool AddAssistance(int idBorne, string Message) 
+		public bool AddAssistance(int idBorne, int idTypeAss, string titre) 
 		{
 			bool validate = false;
 
 			try 
 			{
-				string query = "INSERT INTO assistance (Assist_NoBorne, Assist_Message, Assist_Etat) VALUES (@idBorne, @message, 0)";
+				string query = "INSERT INTO assistance (Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat) VALUES (@idBorne, @idTypeAss, @titre, 0)";
 				MySqlCommand req = new MySqlCommand(query, connection);
 
 				req.Parameters.Clear();
 				req.Parameters.Add(new MySqlParameter("@idBorne", idBorne));
-				req.Parameters.Add(new MySqlParameter("@message", Message));
+				req.Parameters.Add(new MySqlParameter("@idTypeAss", idTypeAss));
+				req.Parameters.Add(new MySqlParameter("@titre", titre));
 
 				connection.Open();
 
@@ -66,6 +67,19 @@ namespace ProjetChargeon
 
 			int Count = Convert.ToInt32(CountAssistance.Tables[0].Rows[0].ItemArray[0]);
 			return Count;
+		}
+
+		public DataSet selectTypesAssistances() 
+		{
+			string query = "SELECT * FROM typeassist";
+			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+
+			DataSet ListTypesAssistance = new DataSet();
+
+			adapter.Fill(ListTypesAssistance);
+			adapter.Dispose();
+
+			return ListTypesAssistance;
 		}
 	}
 }
