@@ -91,6 +91,7 @@ namespace ProjetChargeon
             }
         }
 
+		// A bouger.
         public DataSet CheckLogin(string username, string password)
         {
             string query = "SELECT ChkAdmin.CntUser, Co_Admin FROM connexion, (SELECT COUNT(*) AS CntUser FROM connexion) AS ChkAdmin WHERE Co_Login = @username AND Co_Mdp = @password GROUP BY ChkAdmin.CntUser, Co_Admin";
