@@ -49,10 +49,10 @@ namespace ProjetChargeon
 			CrudBornes dataBornes = new CrudBornes();
 			DataSet DetailsMesBornes = dataBornes.SelectDetailsBornes(idSelected);
 
-			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[7].ToString();
+			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[5].ToString();
 
 			// Selon le type de borne on affiche :
-			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[8].ToString() == "0") 
+			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "0") 
 			{
 				l_type.Text = "Intérieur";
 			}
@@ -62,7 +62,7 @@ namespace ProjetChargeon
 			}
 
 			// Selon l'état de la borne on affiche une image avec un cercle de couleur différente
-			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "True")
+			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "True")
 			{
 				l_etat.Text = "ON";
 				p_etat.Image = ProjetChargeon.Properties.Resources.circle_green; //Chargement de l'image circle green
@@ -73,7 +73,7 @@ namespace ProjetChargeon
 				p_etat.Image = ProjetChargeon.Properties.Resources.circle_red; //Chargement de l'image circle red
 			}
 
-			l_puis.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[10].ToString() + " kWh";
+			l_puis.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[8].ToString() + " kWh";
 
 			DataSet selectCity = dataBornes.SelectCityForBornes(idSelected);
 			l_ville.Text = selectCity.Tables[0].Rows[0].ItemArray[0].ToString();
