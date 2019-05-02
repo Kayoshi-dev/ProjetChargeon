@@ -48,9 +48,9 @@ namespace ProjetChargeon
 			DataSet listeCity = selectDetailsBornes.SelectCityForBornes(idSelected);
 			l_zone.Text = listeCity.Tables[0].Rows[0].ItemArray[0].ToString(); 
 
-			l_desc.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString(); // Affiche la description
-			l_ns.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString(); // Affiche le Numéro de série
-			if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString() == "False") 
+			l_desc.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[4].ToString(); // Affiche la description
+			l_ns.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[5].ToString(); // Affiche le Numéro de série
+			if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "False") 
 			{
 				l_type.Text = "Intérieur";
 			}
@@ -58,7 +58,7 @@ namespace ProjetChargeon
 			{
 				l_type.Text = "Extérieur";
 			}
-			if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "True") // Cette condition change la couleur du texte selon l'état de la borne
+			if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "True") // Cette condition change la couleur du texte selon l'état de la borne
 			{
 				l_etat.Text = "ON";
 				l_etat.ForeColor = Color.FromArgb(46, 204, 113); // Vert
@@ -68,7 +68,7 @@ namespace ProjetChargeon
 				l_etat.Text = "OFF";
 				l_etat.ForeColor = Color.FromArgb(231, 76, 60); // Rouge
 			}
-			l_power.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[10].ToString() + " kWh";
+			l_power.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString() + " kWh";
 		}
 
 		private void BackForm(object sender, EventArgs e)

@@ -28,7 +28,7 @@ namespace ProjetChargeon
 		private void IndexChangePendingAssist(object sender, EventArgs e)
 		{
 			DataSet listePendingAssistance = dataAssistance.selectPendingAssistances();
-			l_typeAssAtt
+			//l_typeAssAtt
 		}
 	}
 }
