@@ -60,6 +60,9 @@
             this.p_Priorite = new System.Windows.Forms.Panel();
             this.l_Priorite = new System.Windows.Forms.Label();
             this.l_Titre_Priorite = new System.Windows.Forms.Label();
+            this.p_Client = new System.Windows.Forms.Panel();
+            this.l_Client = new System.Windows.Forms.Label();
+            this.l_Titre_Client = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -71,6 +74,7 @@
             this.p_Puissance.SuspendLayout();
             this.p_Site.SuspendLayout();
             this.p_Priorite.SuspendLayout();
+            this.p_Client.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Titre_Chargeon
@@ -101,12 +105,12 @@
             // l_Titre_Chargeon
             // 
             this.l_Titre_Chargeon.AutoSize = true;
-            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Chargeon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Chargeon.Location = new System.Drawing.Point(12, 25);
             this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
-            this.l_Titre_Chargeon.Size = new System.Drawing.Size(90, 21);
+            this.l_Titre_Chargeon.Size = new System.Drawing.Size(79, 20);
             this.l_Titre_Chargeon.TabIndex = 4;
             this.l_Titre_Chargeon.Text = "Chargéon";
             // 
@@ -127,17 +131,17 @@
             this.l_Titre_Borne.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Borne.Location = new System.Drawing.Point(80, 94);
             this.l_Titre_Borne.Name = "l_Titre_Borne";
-            this.l_Titre_Borne.Size = new System.Drawing.Size(54, 21);
+            this.l_Titre_Borne.Size = new System.Drawing.Size(52, 20);
             this.l_Titre_Borne.TabIndex = 15;
             this.l_Titre_Borne.Text = "Borne";
             // 
             // cb_Borne
             // 
-            this.cb_Borne.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Borne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Borne.FormattingEnabled = true;
             this.cb_Borne.Location = new System.Drawing.Point(12, 119);
             this.cb_Borne.Name = "cb_Borne";
-            this.cb_Borne.Size = new System.Drawing.Size(193, 28);
+            this.cb_Borne.Size = new System.Drawing.Size(193, 26);
             this.cb_Borne.TabIndex = 16;
             this.cb_Borne.SelectedIndexChanged += new System.EventHandler(this.DataBorne);
             // 
@@ -149,7 +153,7 @@
             this.l_Titre_ID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_ID.Location = new System.Drawing.Point(97, 185);
             this.l_Titre_ID.Name = "l_Titre_ID";
-            this.l_Titre_ID.Size = new System.Drawing.Size(27, 21);
+            this.l_Titre_ID.Size = new System.Drawing.Size(26, 20);
             this.l_Titre_ID.TabIndex = 38;
             this.l_Titre_ID.Text = "ID";
             // 
@@ -199,7 +203,7 @@
             this.l_Titre_Dispo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Dispo.Location = new System.Drawing.Point(67, 290);
             this.l_Titre_Dispo.Name = "l_Titre_Dispo";
-            this.l_Titre_Dispo.Size = new System.Drawing.Size(89, 21);
+            this.l_Titre_Dispo.Size = new System.Drawing.Size(83, 20);
             this.l_Titre_Dispo.TabIndex = 51;
             this.l_Titre_Dispo.Text = "Disponible";
             // 
@@ -222,7 +226,7 @@
             this.l_Titre_NS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_NS.Location = new System.Drawing.Point(263, 95);
             this.l_Titre_NS.Name = "l_Titre_NS";
-            this.l_Titre_NS.Size = new System.Drawing.Size(137, 21);
+            this.l_Titre_NS.Size = new System.Drawing.Size(128, 20);
             this.l_Titre_NS.TabIndex = 53;
             this.l_Titre_NS.Text = "Numéro de Série";
             // 
@@ -274,7 +278,7 @@
             this.l_Titre_Description.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Description.Location = new System.Drawing.Point(593, 95);
             this.l_Titre_Description.Name = "l_Titre_Description";
-            this.l_Titre_Description.Size = new System.Drawing.Size(97, 21);
+            this.l_Titre_Description.Size = new System.Drawing.Size(89, 20);
             this.l_Titre_Description.TabIndex = 54;
             this.l_Titre_Description.Text = "Description";
             // 
@@ -286,7 +290,7 @@
             this.l_Titre_Type.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Type.Location = new System.Drawing.Point(271, 260);
             this.l_Titre_Type.Name = "l_Titre_Type";
-            this.l_Titre_Type.Size = new System.Drawing.Size(120, 21);
+            this.l_Titre_Type.Size = new System.Drawing.Size(112, 20);
             this.l_Titre_Type.TabIndex = 55;
             this.l_Titre_Type.Text = "Type de Borne";
             // 
@@ -298,7 +302,7 @@
             this.l_Titre_Puissance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Puissance.Location = new System.Drawing.Point(468, 260);
             this.l_Titre_Puissance.Name = "l_Titre_Puissance";
-            this.l_Titre_Puissance.Size = new System.Drawing.Size(85, 21);
+            this.l_Titre_Puissance.Size = new System.Drawing.Size(82, 20);
             this.l_Titre_Puissance.TabIndex = 56;
             this.l_Titre_Puissance.Text = "Puissance";
             // 
@@ -350,7 +354,7 @@
             this.l_Titre_Site.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Site.Location = new System.Drawing.Point(672, 260);
             this.l_Titre_Site.Name = "l_Titre_Site";
-            this.l_Titre_Site.Size = new System.Drawing.Size(38, 21);
+            this.l_Titre_Site.Size = new System.Drawing.Size(37, 20);
             this.l_Titre_Site.TabIndex = 57;
             this.l_Titre_Site.Text = "Site";
             // 
@@ -378,7 +382,7 @@
             // 
             this.p_Priorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_Priorite.Controls.Add(this.l_Priorite);
-            this.p_Priorite.Location = new System.Drawing.Point(450, 384);
+            this.p_Priorite.Location = new System.Drawing.Point(270, 384);
             this.p_Priorite.Name = "p_Priorite";
             this.p_Priorite.Size = new System.Drawing.Size(121, 54);
             this.p_Priorite.TabIndex = 59;
@@ -400,17 +404,52 @@
             this.l_Titre_Priorite.BackColor = System.Drawing.Color.Transparent;
             this.l_Titre_Priorite.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Priorite.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Titre_Priorite.Location = new System.Drawing.Point(479, 360);
+            this.l_Titre_Priorite.Location = new System.Drawing.Point(302, 361);
             this.l_Titre_Priorite.Name = "l_Titre_Priorite";
-            this.l_Titre_Priorite.Size = new System.Drawing.Size(62, 21);
+            this.l_Titre_Priorite.Size = new System.Drawing.Size(58, 20);
             this.l_Titre_Priorite.TabIndex = 60;
             this.l_Titre_Priorite.Text = "Priorité";
+            // 
+            // p_Client
+            // 
+            this.p_Client.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Client.Controls.Add(this.l_Client);
+            this.p_Client.Location = new System.Drawing.Point(597, 384);
+            this.p_Client.Name = "p_Client";
+            this.p_Client.Size = new System.Drawing.Size(157, 54);
+            this.p_Client.TabIndex = 60;
+            // 
+            // l_Client
+            // 
+            this.l_Client.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Client.ForeColor = System.Drawing.Color.White;
+            this.l_Client.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Client.Location = new System.Drawing.Point(0, 17);
+            this.l_Client.Name = "l_Client";
+            this.l_Client.Size = new System.Drawing.Size(156, 21);
+            this.l_Client.TabIndex = 42;
+            this.l_Client.Text = "AfficheClient";
+            this.l_Client.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_Titre_Client
+            // 
+            this.l_Titre_Client.AutoSize = true;
+            this.l_Titre_Client.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Client.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Client.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_Titre_Client.Location = new System.Drawing.Point(651, 361);
+            this.l_Titre_Client.Name = "l_Titre_Client";
+            this.l_Titre_Client.Size = new System.Drawing.Size(49, 20);
+            this.l_Titre_Client.TabIndex = 61;
+            this.l_Titre_Client.Text = "Client";
             // 
             // Bornes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.l_Titre_Client);
+            this.Controls.Add(this.p_Client);
             this.Controls.Add(this.l_Titre_Priorite);
             this.Controls.Add(this.p_Priorite);
             this.Controls.Add(this.p_Site);
@@ -432,7 +471,7 @@
             this.Controls.Add(this.cb_Borne);
             this.Controls.Add(this.l_Titre_Borne);
             this.Controls.Add(this.p_Titre_Chargeon);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bornes";
@@ -449,6 +488,7 @@
             this.p_Puissance.ResumeLayout(false);
             this.p_Site.ResumeLayout(false);
             this.p_Priorite.ResumeLayout(false);
+            this.p_Client.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,5 +527,8 @@
         private System.Windows.Forms.Panel p_Priorite;
         private System.Windows.Forms.Label l_Priorite;
         private System.Windows.Forms.Label l_Titre_Priorite;
+        private System.Windows.Forms.Panel p_Client;
+        private System.Windows.Forms.Label l_Client;
+        private System.Windows.Forms.Label l_Titre_Client;
     }
 }

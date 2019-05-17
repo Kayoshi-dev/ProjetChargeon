@@ -20,7 +20,7 @@ namespace ProjetChargeon
 
         private void InitializeComboBoxBorne()
         {
-            CrudBornes DataBorne = new CrudBornes();
+            BornesDAO DataBorne = new BornesDAO();
             DataSet ListBornes = DataBorne.SelectBornes();
 
             // Affiche les Bornes dans la ComboBox
@@ -49,7 +49,7 @@ namespace ProjetChargeon
             // On récupère l'ID de la ComboBox
             string idSelected = cb_Borne.SelectedValue.ToString();
 
-            CrudBornes DataBorne = new CrudBornes();
+            BornesDAO DataBorne = new BornesDAO();
             DataSet ListMoreDetailsBornes = DataBorne.SelectMoreDetailsBornes(idSelected);
 
             
@@ -144,6 +144,17 @@ namespace ProjetChargeon
             else
             {
                 l_Site.Text = "Vide";
+            }
+
+            // Condition pour Vérifier l'éxistence de la donnée Nom du Client
+            if (ListMoreDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString() != null)
+            {
+                // Affiche le Nom du Site où est installé la Borne
+                l_Client.Text = ListMoreDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString();
+            }
+            else
+            {
+                l_Client.Text = "Vide";
             }
         }
     }

@@ -32,7 +32,9 @@ namespace ProjetChargeon
         }
 
 
-        CrudBornes DataBorne = new CrudBornes();
+        BornesDAO DataBorne = new BornesDAO();
+        UserDAO DataUser = new UserDAO();
+        SiteDAO DataSite = new SiteDAO();
 
 
         /* Code lors de l'initialisation de la Page */
@@ -40,6 +42,8 @@ namespace ProjetChargeon
         public BornesCRUD()
         {
             InitializeComponent();
+            InitializeAjoutComboBoxSite();
+            InitializeAjoutComboBoxClient();
             InitializeAjoutComboBoxType();
             InitializeAjoutComboBoxEtat();
             InitializeAjoutComboBoxPriorite();
@@ -48,6 +52,31 @@ namespace ProjetChargeon
             InitializeModifComboBoxPriorite();
             InitializeComboBoxBorneUpdate();
             InitializeComboBoxBorneDelete();
+        }
+
+        // Fonction pour afficher des données dans la ComboBox cb_Client_Ajout
+        private void InitializeAjoutComboBoxClient()
+        {
+            // Affiche dans la ComboBox Update la liste des Clients enregistrés dans la BDD
+            DataSet ListClient = DataUser.SelectClients();
+
+            // Affiche le Client dans la ComboBox
+            cb_Client_Ajout.DisplayMember = "Cli_Nom";
+            cb_Client_Ajout.ValueMember = "Cli_Id";
+            cb_Client_Ajout.DataSource = ListClient.Tables[0];
+
+        }
+
+        // Fonction pour afficher des données dans la ComboBox cb_Site_Ajout
+        private void InitializeAjoutComboBoxSite()
+        {
+            // Affiche dans la ComboBox Update la liste des Sites enregistrés dans la BDD
+            DataSet ListSite = DataSite.SelectSites();
+
+            // Affiche le Site dans la ComboBox
+            cb_Site_Ajout.DisplayMember = "Site_Nom";
+            cb_Site_Ajout.ValueMember = "Site_Id";
+            cb_Site_Ajout.DataSource = ListSite.Tables[0];
         }
 
         // Fonction pour afficher des données dans la ComboBox cb_Etat_Type
@@ -95,7 +124,7 @@ namespace ProjetChargeon
         private void InitializeComboBoxBorneUpdate()
         {
             // Affiche dans la ComboBox Update la liste des Bornes enregistrés dans la BDD
-            CrudBornes selectBorne = new CrudBornes();
+            BornesDAO selectBorne = new BornesDAO();
             DataSet listeBornes = selectBorne.SelectBornes();
 
             // Affiche le Nom du Technicien dans la ComboBox
@@ -110,7 +139,7 @@ namespace ProjetChargeon
         private void InitializeComboBoxBorneDelete()
         {
             // Affiche dans la ComboBox Delete la liste des Bornes enregistrés dans la BDD
-            CrudBornes selectBorne = new CrudBornes();
+            BornesDAO selectBorne = new BornesDAO();
             DataSet listeBornes = selectBorne.SelectBornes();
 
             // Affiche le Nom du Technicien dans la ComboBox
@@ -148,7 +177,7 @@ namespace ProjetChargeon
             // On récupère l'ID de la ComboBox
             string idSelected = cb_Borne_Modif.SelectedValue.ToString();
 
-            CrudBornes selectDetailsBorne = new CrudBornes();
+            BornesDAO selectDetailsBorne = new BornesDAO();
             DataSet listeDetailsBornes = selectDetailsBorne.SelectDetailsBornesForCRUD(idSelected);
 
             // Condition pour Vérifier l'éxistence de la donnée Référence
@@ -247,7 +276,7 @@ namespace ProjetChargeon
         // Au Clic, on ajoute une borne dans la BDD
         private void AddBorne(object sender, EventArgs e)
         {
-            bool test = DataBorne.InsertBorne(tb_Ref_Ajout.Text, tb_NS_Ajout.Text, tb_Description_Ajout.Text, (cb_Type_Ajout.SelectedItem as Item).Value, (cb_Etat_Ajout.SelectedItem as Item).Value, tb_Puissance_Ajout.Text, (cb_Prio_Ajout.SelectedItem as Item).Value);
+            bool test = DataBorne.InsertBorne(Convert.ToInt32(cb_Site_Ajout.SelectedValue), Convert.ToInt32(cb_Client_Ajout.SelectedValue), tb_Ref_Ajout.Text, tb_NS_Ajout.Text, tb_Description_Ajout.Text, (cb_Type_Ajout.SelectedItem as Item).Value, (cb_Etat_Ajout.SelectedItem as Item).Value, tb_Puissance_Ajout.Text, (cb_Prio_Ajout.SelectedItem as Item).Value);
             if (test == true)
             {
                 tb_Ref_Ajout.Text = "";

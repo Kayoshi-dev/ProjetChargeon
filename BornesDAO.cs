@@ -15,11 +15,11 @@ using MySql.Data.MySqlClient;
 
 namespace ProjetChargeon
 {
-	class CrudBornes
+	class BornesDAO
 	{
 		private MySqlConnection connection;
 
-		public CrudBornes() 
+		public BornesDAO() 
 		{
 			var ConnectObject = new DBConnect();
 			this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.
@@ -67,7 +67,7 @@ namespace ProjetChargeon
         // Cette méthode récupère les données pour la page Gestion des Bornes
         public DataSet SelectMoreDetailsBornes(string idSelected)
         {
-            string query = "SELECT Borne_Id, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio, Site_Nom FROM bornes, site WHERE Site_NoZone = Borne_NoSite AND Borne_Id = @id";
+            string query = "SELECT Borne_Id, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio, Site_Nom, Cli_Nom FROM bornes, site, client WHERE Site_NoZone = Borne_NoSite AND Cli_Id = Borne_NoCli AND Borne_Id = @id";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
@@ -151,15 +151,17 @@ namespace ProjetChargeon
         }
 
         // Cette méthode permet d'ajouter une nouvelle Borne à la BDD
-        public bool InsertBorne(string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
+        public bool InsertBorne(int noSite, int noClient, string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
         {
 
-            string query = "INSERT INTO bornes (Borne_Ref, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio) VALUES (@ref, @desc, @ns, @type, @etat, @puis, @prio)";
+            string query = "INSERT INTO bornes (Borne_NoSite, Borne_NoCli, Borne_Ref, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio) VALUES (@site, @client, @ref, @desc, @ns, @type, @etat, @puis, @prio)";
             bool validate = false;
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
             req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@site", noSite));
+            req.Parameters.Add(new MySqlParameter("@client", noClient));
             req.Parameters.Add(new MySqlParameter("@ref", refBorne));
             req.Parameters.Add(new MySqlParameter("@desc", descBorne));
             req.Parameters.Add(new MySqlParameter("@ns", nsBorne));

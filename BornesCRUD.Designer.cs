@@ -53,6 +53,18 @@
             this.l_Titre_NuméroSérie_Ajout = new System.Windows.Forms.Label();
             this.l_Titre_Type_Ajout = new System.Windows.Forms.Label();
             this.p_Modifier_Borne = new System.Windows.Forms.Panel();
+            this.l_Titre_Priorité_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Puissance_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Etat_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Type_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Description_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_NuméroSérie_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Référence_Modif = new System.Windows.Forms.Label();
+            this.cb_Prio_Modif = new System.Windows.Forms.ComboBox();
+            this.tb_Puissance_Modif = new System.Windows.Forms.TextBox();
+            this.cb_Etat_Modif = new System.Windows.Forms.ComboBox();
+            this.cb_Type_Modif = new System.Windows.Forms.ComboBox();
+            this.tb_Description_Modif = new System.Windows.Forms.TextBox();
             this.tb_Ref_Modif = new System.Windows.Forms.TextBox();
             this.cb_Borne_Modif = new System.Windows.Forms.ComboBox();
             this.tb_NS_Modif = new System.Windows.Forms.TextBox();
@@ -60,18 +72,10 @@
             this.p_Supprimer_Borne = new System.Windows.Forms.Panel();
             this.cb_Borne_Supprimer = new System.Windows.Forms.ComboBox();
             this.btn_Supprimer = new System.Windows.Forms.Button();
-            this.tb_Description_Modif = new System.Windows.Forms.TextBox();
-            this.cb_Type_Modif = new System.Windows.Forms.ComboBox();
-            this.cb_Etat_Modif = new System.Windows.Forms.ComboBox();
-            this.tb_Puissance_Modif = new System.Windows.Forms.TextBox();
-            this.cb_Prio_Modif = new System.Windows.Forms.ComboBox();
-            this.l_Titre_Référence_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_NuméroSérie_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Description_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Type_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Etat_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Puissance_Modif = new System.Windows.Forms.Label();
-            this.l_Titre_Priorité_Modif = new System.Windows.Forms.Label();
+            this.cb_Site_Ajout = new System.Windows.Forms.ComboBox();
+            this.cb_Client_Ajout = new System.Windows.Forms.ComboBox();
+            this.l_Titre_Site_Ajout = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -133,6 +137,10 @@
             // p_Ajout_Borne
             // 
             this.p_Ajout_Borne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Ajout_Borne.Controls.Add(this.label1);
+            this.p_Ajout_Borne.Controls.Add(this.l_Titre_Site_Ajout);
+            this.p_Ajout_Borne.Controls.Add(this.cb_Client_Ajout);
+            this.p_Ajout_Borne.Controls.Add(this.cb_Site_Ajout);
             this.p_Ajout_Borne.Controls.Add(this.cb_Prio_Ajout);
             this.p_Ajout_Borne.Controls.Add(this.l_Titre_Priorité_Ajout);
             this.p_Ajout_Borne.Controls.Add(this.tb_Puissance_Ajout);
@@ -248,6 +256,7 @@
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_Description_Modif);
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_NuméroSérie_Modif);
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_Référence_Modif);
+            this.p_Modifier_Borne.Controls.Add(this.btn_Modifier);
             this.p_Modifier_Borne.Controls.Add(this.cb_Prio_Modif);
             this.p_Modifier_Borne.Controls.Add(this.tb_Puissance_Modif);
             this.p_Modifier_Borne.Controls.Add(this.cb_Etat_Modif);
@@ -258,6 +267,76 @@
             this.p_Modifier_Borne.Controls.Add(this.tb_NS_Modif);
             resources.ApplyResources(this.p_Modifier_Borne, "p_Modifier_Borne");
             this.p_Modifier_Borne.Name = "p_Modifier_Borne";
+            // 
+            // l_Titre_Priorité_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Priorité_Modif, "l_Titre_Priorité_Modif");
+            this.l_Titre_Priorité_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Priorité_Modif.Name = "l_Titre_Priorité_Modif";
+            // 
+            // l_Titre_Puissance_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Puissance_Modif, "l_Titre_Puissance_Modif");
+            this.l_Titre_Puissance_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Puissance_Modif.Name = "l_Titre_Puissance_Modif";
+            // 
+            // l_Titre_Etat_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Etat_Modif, "l_Titre_Etat_Modif");
+            this.l_Titre_Etat_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Etat_Modif.Name = "l_Titre_Etat_Modif";
+            // 
+            // l_Titre_Type_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Type_Modif, "l_Titre_Type_Modif");
+            this.l_Titre_Type_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Type_Modif.Name = "l_Titre_Type_Modif";
+            // 
+            // l_Titre_Description_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Description_Modif, "l_Titre_Description_Modif");
+            this.l_Titre_Description_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Description_Modif.Name = "l_Titre_Description_Modif";
+            // 
+            // l_Titre_NuméroSérie_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_NuméroSérie_Modif, "l_Titre_NuméroSérie_Modif");
+            this.l_Titre_NuméroSérie_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_NuméroSérie_Modif.Name = "l_Titre_NuméroSérie_Modif";
+            // 
+            // l_Titre_Référence_Modif
+            // 
+            resources.ApplyResources(this.l_Titre_Référence_Modif, "l_Titre_Référence_Modif");
+            this.l_Titre_Référence_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Référence_Modif.Name = "l_Titre_Référence_Modif";
+            // 
+            // cb_Prio_Modif
+            // 
+            this.cb_Prio_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Prio_Modif, "cb_Prio_Modif");
+            this.cb_Prio_Modif.Name = "cb_Prio_Modif";
+            // 
+            // tb_Puissance_Modif
+            // 
+            resources.ApplyResources(this.tb_Puissance_Modif, "tb_Puissance_Modif");
+            this.tb_Puissance_Modif.Name = "tb_Puissance_Modif";
+            // 
+            // cb_Etat_Modif
+            // 
+            this.cb_Etat_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Etat_Modif, "cb_Etat_Modif");
+            this.cb_Etat_Modif.Name = "cb_Etat_Modif";
+            // 
+            // cb_Type_Modif
+            // 
+            this.cb_Type_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Type_Modif, "cb_Type_Modif");
+            this.cb_Type_Modif.Name = "cb_Type_Modif";
+            // 
+            // tb_Description_Modif
+            // 
+            resources.ApplyResources(this.tb_Description_Modif, "tb_Description_Modif");
+            this.tb_Description_Modif.Name = "tb_Description_Modif";
             // 
             // tb_Ref_Modif
             // 
@@ -304,75 +383,29 @@
             this.btn_Supprimer.UseVisualStyleBackColor = true;
             this.btn_Supprimer.Click += new System.EventHandler(this.DeleteBorne);
             // 
-            // tb_Description_Modif
+            // cb_Site_Ajout
             // 
-            resources.ApplyResources(this.tb_Description_Modif, "tb_Description_Modif");
-            this.tb_Description_Modif.Name = "tb_Description_Modif";
+            this.cb_Site_Ajout.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Site_Ajout, "cb_Site_Ajout");
+            this.cb_Site_Ajout.Name = "cb_Site_Ajout";
             // 
-            // cb_Type_Modif
+            // cb_Client_Ajout
             // 
-            this.cb_Type_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Type_Modif, "cb_Type_Modif");
-            this.cb_Type_Modif.Name = "cb_Type_Modif";
+            this.cb_Client_Ajout.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Client_Ajout, "cb_Client_Ajout");
+            this.cb_Client_Ajout.Name = "cb_Client_Ajout";
             // 
-            // cb_Etat_Modif
+            // l_Titre_Site_Ajout
             // 
-            this.cb_Etat_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Etat_Modif, "cb_Etat_Modif");
-            this.cb_Etat_Modif.Name = "cb_Etat_Modif";
+            resources.ApplyResources(this.l_Titre_Site_Ajout, "l_Titre_Site_Ajout");
+            this.l_Titre_Site_Ajout.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Site_Ajout.Name = "l_Titre_Site_Ajout";
             // 
-            // tb_Puissance_Modif
+            // label1
             // 
-            resources.ApplyResources(this.tb_Puissance_Modif, "tb_Puissance_Modif");
-            this.tb_Puissance_Modif.Name = "tb_Puissance_Modif";
-            // 
-            // cb_Prio_Modif
-            // 
-            this.cb_Prio_Modif.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Prio_Modif, "cb_Prio_Modif");
-            this.cb_Prio_Modif.Name = "cb_Prio_Modif";
-            // 
-            // l_Titre_Référence_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Référence_Modif, "l_Titre_Référence_Modif");
-            this.l_Titre_Référence_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Référence_Modif.Name = "l_Titre_Référence_Modif";
-            // 
-            // l_Titre_NuméroSérie_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_NuméroSérie_Modif, "l_Titre_NuméroSérie_Modif");
-            this.l_Titre_NuméroSérie_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_NuméroSérie_Modif.Name = "l_Titre_NuméroSérie_Modif";
-            // 
-            // l_Titre_Description_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Description_Modif, "l_Titre_Description_Modif");
-            this.l_Titre_Description_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Description_Modif.Name = "l_Titre_Description_Modif";
-            // 
-            // l_Titre_Type_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Type_Modif, "l_Titre_Type_Modif");
-            this.l_Titre_Type_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Type_Modif.Name = "l_Titre_Type_Modif";
-            // 
-            // l_Titre_Etat_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Etat_Modif, "l_Titre_Etat_Modif");
-            this.l_Titre_Etat_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Etat_Modif.Name = "l_Titre_Etat_Modif";
-            // 
-            // l_Titre_Puissance_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Puissance_Modif, "l_Titre_Puissance_Modif");
-            this.l_Titre_Puissance_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Puissance_Modif.Name = "l_Titre_Puissance_Modif";
-            // 
-            // l_Titre_Priorité_Modif
-            // 
-            resources.ApplyResources(this.l_Titre_Priorité_Modif, "l_Titre_Priorité_Modif");
-            this.l_Titre_Priorité_Modif.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Priorité_Modif.Name = "l_Titre_Priorité_Modif";
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
             // 
             // BornesCRUD
             // 
@@ -386,7 +419,6 @@
             this.Controls.Add(this.l_Titre_Modifier_Borne);
             this.Controls.Add(this.l_Titre_Ajout_Borne);
             this.Controls.Add(this.p_Titre_Chargeon);
-            this.Controls.Add(this.btn_Modifier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "BornesCRUD";
@@ -449,5 +481,9 @@
         private System.Windows.Forms.Label l_Titre_Description_Modif;
         private System.Windows.Forms.Label l_Titre_NuméroSérie_Modif;
         private System.Windows.Forms.Label l_Titre_Référence_Modif;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label l_Titre_Site_Ajout;
+        private System.Windows.Forms.ComboBox cb_Client_Ajout;
+        private System.Windows.Forms.ComboBox cb_Site_Ajout;
     }
 }
