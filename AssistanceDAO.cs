@@ -85,10 +85,36 @@ namespace ProjetChargeon
 		public DataSet selectPendingAssistances()
 		{
 			string query = "SELECT * FROM assistance WHERE Assist_Etat = 0";
+
 			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
 
 			DataSet ListPendingAssistance = new DataSet();
 
+			adapter.Fill(ListPendingAssistance);
+			adapter.Dispose();
+
+			return ListPendingAssistance;
+		}
+
+		public DataSet selectInfosPendingAssistances(int idDemande)
+		{
+			string query = "SELECT Assist_Id, Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat, Borne_Ref, TypeAssist_Ref " +
+						   "FROM assistance, bornes, typeassist " +
+						   "WHERE Assist_NoBorne = Borne_Id " +
+						   "AND Assist_NoTypeAssist = TypeAssist_Id	" +
+						   "AND Assist_Id = @idDemande " +
+						   "AND Assist_Etat = 0";
+
+			MySqlCommand req = new MySqlCommand(query, connection);
+
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
+
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+			DataSet ListPendingAssistance = new DataSet();
+
+			adapter.SelectCommand = req;
 			adapter.Fill(ListPendingAssistance);
 			adapter.Dispose();
 

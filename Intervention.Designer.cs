@@ -48,7 +48,10 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.l_typeAssAtt = new System.Windows.Forms.Label();
-			this.l_numAssAtt = new System.Windows.Forms.Label();
+			this.l_numBorneAtt = new System.Windows.Forms.Label();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.panel5 = new System.Windows.Forms.Panel();
 			this.p_Chargeon.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -99,6 +102,7 @@
 			this.img_Close.Size = new System.Drawing.Size(30, 30);
 			this.img_Close.TabIndex = 1;
 			this.img_Close.TabStop = false;
+			this.img_Close.Click += new System.EventHandler(this.CloseProgram);
 			// 
 			// panel1
 			// 
@@ -181,7 +185,7 @@
 			// cb_titreAssAtt
 			// 
 			this.cb_titreAssAtt.FormattingEnabled = true;
-			this.cb_titreAssAtt.Location = new System.Drawing.Point(16, 196);
+			this.cb_titreAssAtt.Location = new System.Drawing.Point(16, 169);
 			this.cb_titreAssAtt.Name = "cb_titreAssAtt";
 			this.cb_titreAssAtt.Size = new System.Drawing.Size(179, 29);
 			this.cb_titreAssAtt.TabIndex = 28;
@@ -198,7 +202,7 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(12, 163);
+			this.label7.Location = new System.Drawing.Point(12, 145);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(43, 21);
 			this.label7.TabIndex = 30;
@@ -207,7 +211,7 @@
 			// label8
 			// 
 			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(12, 259);
+			this.label8.Location = new System.Drawing.Point(12, 217);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(147, 21);
 			this.label8.TabIndex = 31;
@@ -216,7 +220,7 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(12, 345);
+			this.label9.Location = new System.Drawing.Point(12, 291);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(145, 21);
 			this.label9.TabIndex = 32;
@@ -224,26 +228,53 @@
 			// 
 			// l_typeAssAtt
 			// 
-			this.l_typeAssAtt.Location = new System.Drawing.Point(12, 378);
+			this.l_typeAssAtt.Location = new System.Drawing.Point(12, 327);
 			this.l_typeAssAtt.Name = "l_typeAssAtt";
-			this.l_typeAssAtt.Size = new System.Drawing.Size(245, 32);
+			this.l_typeAssAtt.Size = new System.Drawing.Size(245, 27);
 			this.l_typeAssAtt.TabIndex = 33;
-			this.l_typeAssAtt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.l_typeAssAtt.Text = "typeAssistance";
 			// 
-			// l_numAssAtt
+			// l_numBorneAtt
 			// 
-			this.l_numAssAtt.Location = new System.Drawing.Point(12, 290);
-			this.l_numAssAtt.Name = "l_numAssAtt";
-			this.l_numAssAtt.Size = new System.Drawing.Size(245, 32);
-			this.l_numAssAtt.TabIndex = 34;
-			this.l_numAssAtt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.l_numBorneAtt.Location = new System.Drawing.Point(12, 250);
+			this.l_numBorneAtt.Name = "l_numBorneAtt";
+			this.l_numBorneAtt.Size = new System.Drawing.Size(228, 24);
+			this.l_numBorneAtt.TabIndex = 35;
+			this.l_numBorneAtt.Text = "numBorne";
+			// 
+			// panel3
+			// 
+			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.panel3.Location = new System.Drawing.Point(16, 277);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(224, 3);
+			this.panel3.TabIndex = 20;
+			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.panel4.Location = new System.Drawing.Point(16, 211);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(224, 3);
+			this.panel4.TabIndex = 21;
+			// 
+			// panel5
+			// 
+			this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.panel5.Location = new System.Drawing.Point(16, 357);
+			this.panel5.Name = "panel5";
+			this.panel5.Size = new System.Drawing.Size(224, 3);
+			this.panel5.TabIndex = 21;
 			// 
 			// Intervention
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.l_numAssAtt);
+			this.Controls.Add(this.panel5);
+			this.Controls.Add(this.panel4);
+			this.Controls.Add(this.panel3);
+			this.Controls.Add(this.l_numBorneAtt);
 			this.Controls.Add(this.l_typeAssAtt);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.label8);
@@ -297,6 +328,9 @@
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label l_typeAssAtt;
-		private System.Windows.Forms.Label l_numAssAtt;
+		private System.Windows.Forms.Label l_numBorneAtt;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Panel panel4;
+		private System.Windows.Forms.Panel panel5;
 	}
 }
