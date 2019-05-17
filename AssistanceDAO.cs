@@ -134,7 +134,33 @@ namespace ProjetChargeon
 			return ListPendingAssistance;
 		}
 
-		public DataSet selectCompletedAssistances()
+        public DataSet selectInfosInProgressAssistances(int idDemande)
+        {
+            string query = "SELECT Assist_Id, Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat, Borne_Ref, TypeAssist_Ref, Tech_Nom " +
+                           "FROM assistance, bornes, typeassist, technicien " +
+                           "WHERE Assist_NoBorne = Borne_Id " +
+                           "AND Tech_Id = Assist_NoTech " +
+                           "AND Assist_NoTypeAssist = TypeAssist_Id	" +
+                           "AND Assist_Id = @idDemande " +
+                           "AND Assist_Etat = 1";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            DataSet ListPendingAssistance = new DataSet();
+
+            adapter.SelectCommand = req;
+            adapter.Fill(ListPendingAssistance);
+            adapter.Dispose();
+
+            return ListPendingAssistance;
+        }
+
+        public DataSet selectCompletedAssistances()
 		{
 			string query = "SELECT * FROM assistance WHERE Assist_Etat = 2";
 			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
@@ -146,5 +172,21 @@ namespace ProjetChargeon
 
 			return ListPendingAssistance;
 		}
+
+        public void SetAssistanceToInProgress(int idDemande, int idTechnicien)
+        {
+            string query = "UPDATE assistance SET Assist_NoTech = @idTechnicien, Assist_Etat = 1 WHERE Assist_Id = @idDemande";
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
+            req.Parameters.Add(new MySqlParameter("@idTechnicien", idTechnicien));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+        }
 	}
 }

@@ -87,7 +87,7 @@ namespace ProjetChargeon
 
 			AssistanceDAO AskForHelp = new AssistanceDAO();
 			// On vérifie que le texte ne vaut pas le placeholder
-			if(tb_intitule.Text != "Intitulé de votre problème") 
+			if(tb_intitule.Text != "Intitulé de votre problème" && tb_intitule.Text != null) 
 			{
 				// On ajoute la demande d'assistance
 				bool validate = AskForHelp.AddAssistance(idSelectedBornes, idSelectedTypeAssist, tb_intitule.Text);
