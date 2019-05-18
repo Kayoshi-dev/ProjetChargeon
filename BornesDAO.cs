@@ -131,7 +131,7 @@ namespace ProjetChargeon
         // Cette méthode récupère les données pour la page CRUD Borne (Modifier une Borne)
         public DataSet SelectDetailsBornesForCRUD(string idSelected)
         {
-            string query = "SELECT Borne_Id, Borne_Ref, Borne_NS, Borne_Desc, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio FROM bornes WHERE Borne_Id = @id";
+            string query = "SELECT Site_Nom, Cli_Nom, Borne_Id, Borne_Ref, Borne_NS, Borne_Desc, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio FROM site, client, bornes WHERE Borne_NoSite = Site_Id AND Borne_NoCli = Cli_Id AND Borne_Id = @id";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
@@ -182,15 +182,16 @@ namespace ProjetChargeon
         }
 
         // Cette méthode permet de mettre à jour une Borne sélectionnée
-        public bool UpdateBorne(string idBorne, string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
+        public bool UpdateBorne(int noSite, int noClient, string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne, string idBorne)
         {
-            string query = "Update bornes SET Borne_Ref = @ref, Borne_Desc = @desc, Borne_NS = @ns, Borne_Type = @type, Borne_Etat = @etat, Borne_Puis = @puis, Borne_Prio = @prio WHERE Borne_Id = @id";
+            string query = "Update bornes SET Borne_NoSite = @site, Borne_NoCli = @client, Borne_Ref = @ref, Borne_Desc = @desc, Borne_NS = @ns, Borne_Type = @type, Borne_Etat = @etat, Borne_Puis = @puis, Borne_Prio = @prio WHERE Borne_Id = @id";
             bool validate = false;
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
             req.Parameters.Clear();
-            req.Parameters.Add(new MySqlParameter("@id", idBorne));
+            req.Parameters.Add(new MySqlParameter("@site", noSite));
+            req.Parameters.Add(new MySqlParameter("@client", noClient));
             req.Parameters.Add(new MySqlParameter("@ref", refBorne));
             req.Parameters.Add(new MySqlParameter("@desc", descBorne));
             req.Parameters.Add(new MySqlParameter("@ns", nsBorne));
@@ -198,6 +199,7 @@ namespace ProjetChargeon
             req.Parameters.Add(new MySqlParameter("@etat", etatBorne));
             req.Parameters.Add(new MySqlParameter("@puis", puisBorne));
             req.Parameters.Add(new MySqlParameter("@prio", prioBorne));
+            req.Parameters.Add(new MySqlParameter("@id", idBorne));
 
             connection.Open();
 

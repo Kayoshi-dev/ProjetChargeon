@@ -37,6 +37,10 @@
             this.l_Titre_Modifier_Borne = new System.Windows.Forms.Label();
             this.l_Titre_Supprimer_Borne = new System.Windows.Forms.Label();
             this.p_Ajout_Borne = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.l_Titre_Site_Ajout = new System.Windows.Forms.Label();
+            this.cb_Client_Ajout = new System.Windows.Forms.ComboBox();
+            this.cb_Site_Ajout = new System.Windows.Forms.ComboBox();
             this.cb_Prio_Ajout = new System.Windows.Forms.ComboBox();
             this.l_Titre_Priorité_Ajout = new System.Windows.Forms.Label();
             this.tb_Puissance_Ajout = new System.Windows.Forms.TextBox();
@@ -60,6 +64,7 @@
             this.l_Titre_Description_Modif = new System.Windows.Forms.Label();
             this.l_Titre_NuméroSérie_Modif = new System.Windows.Forms.Label();
             this.l_Titre_Référence_Modif = new System.Windows.Forms.Label();
+            this.btn_Modifier = new System.Windows.Forms.Button();
             this.cb_Prio_Modif = new System.Windows.Forms.ComboBox();
             this.tb_Puissance_Modif = new System.Windows.Forms.TextBox();
             this.cb_Etat_Modif = new System.Windows.Forms.ComboBox();
@@ -68,14 +73,13 @@
             this.tb_Ref_Modif = new System.Windows.Forms.TextBox();
             this.cb_Borne_Modif = new System.Windows.Forms.ComboBox();
             this.tb_NS_Modif = new System.Windows.Forms.TextBox();
-            this.btn_Modifier = new System.Windows.Forms.Button();
             this.p_Supprimer_Borne = new System.Windows.Forms.Panel();
             this.cb_Borne_Supprimer = new System.Windows.Forms.ComboBox();
             this.btn_Supprimer = new System.Windows.Forms.Button();
-            this.cb_Site_Ajout = new System.Windows.Forms.ComboBox();
-            this.cb_Client_Ajout = new System.Windows.Forms.ComboBox();
-            this.l_Titre_Site_Ajout = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cb_Site_Modif = new System.Windows.Forms.ComboBox();
+            this.cb_Client_Modif = new System.Windows.Forms.ComboBox();
+            this.l_Titre_Site_Modif = new System.Windows.Forms.Label();
+            this.l_Titre_Client_Modif = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -158,6 +162,30 @@
             this.p_Ajout_Borne.Controls.Add(this.l_Titre_Type_Ajout);
             resources.ApplyResources(this.p_Ajout_Borne, "p_Ajout_Borne");
             this.p_Ajout_Borne.Name = "p_Ajout_Borne";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // l_Titre_Site_Ajout
+            // 
+            resources.ApplyResources(this.l_Titre_Site_Ajout, "l_Titre_Site_Ajout");
+            this.l_Titre_Site_Ajout.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Site_Ajout.Name = "l_Titre_Site_Ajout";
+            // 
+            // cb_Client_Ajout
+            // 
+            this.cb_Client_Ajout.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Client_Ajout, "cb_Client_Ajout");
+            this.cb_Client_Ajout.Name = "cb_Client_Ajout";
+            // 
+            // cb_Site_Ajout
+            // 
+            this.cb_Site_Ajout.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Site_Ajout, "cb_Site_Ajout");
+            this.cb_Site_Ajout.Name = "cb_Site_Ajout";
             // 
             // cb_Prio_Ajout
             // 
@@ -249,6 +277,10 @@
             // p_Modifier_Borne
             // 
             this.p_Modifier_Borne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_Modifier_Borne.Controls.Add(this.l_Titre_Client_Modif);
+            this.p_Modifier_Borne.Controls.Add(this.l_Titre_Site_Modif);
+            this.p_Modifier_Borne.Controls.Add(this.cb_Client_Modif);
+            this.p_Modifier_Borne.Controls.Add(this.cb_Site_Modif);
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_Priorité_Modif);
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_Puissance_Modif);
             this.p_Modifier_Borne.Controls.Add(this.l_Titre_Etat_Modif);
@@ -310,6 +342,13 @@
             this.l_Titre_Référence_Modif.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Référence_Modif.Name = "l_Titre_Référence_Modif";
             // 
+            // btn_Modifier
+            // 
+            resources.ApplyResources(this.btn_Modifier, "btn_Modifier");
+            this.btn_Modifier.Name = "btn_Modifier";
+            this.btn_Modifier.UseVisualStyleBackColor = true;
+            this.btn_Modifier.Click += new System.EventHandler(this.UpdateBorne);
+            // 
             // cb_Prio_Modif
             // 
             this.cb_Prio_Modif.FormattingEnabled = true;
@@ -355,13 +394,6 @@
             resources.ApplyResources(this.tb_NS_Modif, "tb_NS_Modif");
             this.tb_NS_Modif.Name = "tb_NS_Modif";
             // 
-            // btn_Modifier
-            // 
-            resources.ApplyResources(this.btn_Modifier, "btn_Modifier");
-            this.btn_Modifier.Name = "btn_Modifier";
-            this.btn_Modifier.UseVisualStyleBackColor = true;
-            this.btn_Modifier.Click += new System.EventHandler(this.UpdateBorne);
-            // 
             // p_Supprimer_Borne
             // 
             this.p_Supprimer_Borne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -383,29 +415,29 @@
             this.btn_Supprimer.UseVisualStyleBackColor = true;
             this.btn_Supprimer.Click += new System.EventHandler(this.DeleteBorne);
             // 
-            // cb_Site_Ajout
+            // cb_Site_Modif
             // 
-            this.cb_Site_Ajout.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Site_Ajout, "cb_Site_Ajout");
-            this.cb_Site_Ajout.Name = "cb_Site_Ajout";
+            this.cb_Site_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Site_Modif, "cb_Site_Modif");
+            this.cb_Site_Modif.Name = "cb_Site_Modif";
             // 
-            // cb_Client_Ajout
+            // cb_Client_Modif
             // 
-            this.cb_Client_Ajout.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_Client_Ajout, "cb_Client_Ajout");
-            this.cb_Client_Ajout.Name = "cb_Client_Ajout";
+            this.cb_Client_Modif.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Client_Modif, "cb_Client_Modif");
+            this.cb_Client_Modif.Name = "cb_Client_Modif";
             // 
-            // l_Titre_Site_Ajout
+            // l_Titre_Site_Modif
             // 
-            resources.ApplyResources(this.l_Titre_Site_Ajout, "l_Titre_Site_Ajout");
-            this.l_Titre_Site_Ajout.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Site_Ajout.Name = "l_Titre_Site_Ajout";
+            resources.ApplyResources(this.l_Titre_Site_Modif, "l_Titre_Site_Modif");
+            this.l_Titre_Site_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Site_Modif.Name = "l_Titre_Site_Modif";
             // 
-            // label1
+            // l_Titre_Client_Modif
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.l_Titre_Client_Modif, "l_Titre_Client_Modif");
+            this.l_Titre_Client_Modif.ForeColor = System.Drawing.Color.White;
+            this.l_Titre_Client_Modif.Name = "l_Titre_Client_Modif";
             // 
             // BornesCRUD
             // 
@@ -485,5 +517,9 @@
         private System.Windows.Forms.Label l_Titre_Site_Ajout;
         private System.Windows.Forms.ComboBox cb_Client_Ajout;
         private System.Windows.Forms.ComboBox cb_Site_Ajout;
+        private System.Windows.Forms.Label l_Titre_Client_Modif;
+        private System.Windows.Forms.Label l_Titre_Site_Modif;
+        private System.Windows.Forms.ComboBox cb_Client_Modif;
+        private System.Windows.Forms.ComboBox cb_Site_Modif;
     }
 }

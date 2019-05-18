@@ -14,6 +14,7 @@ namespace ProjetChargeon
     {
         /* Nouvelle Classe pour les ComboBox du CRUD */
 
+        // Avec cette classe, on peut ajouter des nouveaux items dans des ComboBox, avec une valeur et un libelle
         public class Item
         {
             public string Name;
@@ -42,15 +43,41 @@ namespace ProjetChargeon
         public BornesCRUD()
         {
             InitializeComponent();
+
+            // A l'initialisation de la page : Afficher la liste des Sites dans la ComboBox (INSERT)
             InitializeAjoutComboBoxSite();
+
+            // A l'initialisation de la page : Afficher la liste des Clients dans la ComboBox (INSERT)
             InitializeAjoutComboBoxClient();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Type (INSERT)
             InitializeAjoutComboBoxType();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Etat (INSERT)
             InitializeAjoutComboBoxEtat();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Priorite (INSERT)
             InitializeAjoutComboBoxPriorite();
+
+            // A l'initialisation de la page : Afficher la liste des Sites dans la ComboBox (UPDATE)
+            InitializeModifComboBoxSite();
+
+            // A l'initialisation de la page : Afficher la liste des Clients dans la ComboBox (UPDATE)
+            InitializeModifComboBoxClient();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Type (UPDATE)
             InitializeModifComboBoxType();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Etat (UPDATE)
             InitializeModifComboBoxEtat();
+
+            // A l'initialisation de la page : Afficher les options pour la ComboBox Priorite (UPDATE)
             InitializeModifComboBoxPriorite();
+
+            // A l'initialisation de la page : Afficher la liste des Bornes dans la ComboBox (UPDATE)
             InitializeComboBoxBorneUpdate();
+
+            // A l'initialisation de la page : Afficher la liste des Bornes dans la ComboBox (DELETE)
             InitializeComboBoxBorneDelete();
         }
 
@@ -98,6 +125,31 @@ namespace ProjetChargeon
         {
             cb_Prio_Ajout.Items.Add(new Item("Elevée", 1));
             cb_Prio_Ajout.Items.Add(new Item("Normale", 0));
+        }
+
+        // Fonction pour afficher des données dans la ComboBox cb_Site_Modif
+        private void InitializeModifComboBoxClient()
+        {
+            // Affiche dans la ComboBox Update la liste des Clients enregistrés dans la BDD
+            DataSet ListClient = DataUser.SelectClients();
+
+            // Affiche le Client dans la ComboBox
+            cb_Client_Modif.DisplayMember = "Cli_Nom";
+            cb_Client_Modif.ValueMember = "Cli_Id";
+            cb_Client_Modif.DataSource = ListClient.Tables[0];
+
+        }
+
+        // Fonction pour afficher des données dans la ComboBox cb_Site_Modif
+        private void InitializeModifComboBoxSite()
+        {
+            // Affiche dans la ComboBox Update la liste des Sites enregistrés dans la BDD
+            DataSet ListSite = DataSite.SelectSites();
+
+            // Affiche le Site dans la ComboBox
+            cb_Site_Modif.DisplayMember = "Site_Nom";
+            cb_Site_Modif.ValueMember = "Site_Id";
+            cb_Site_Modif.DataSource = ListSite.Tables[0];
         }
 
         // Fonction pour afficher des données dans la ComboBox cb_Etat_Type
@@ -180,11 +232,33 @@ namespace ProjetChargeon
             BornesDAO selectDetailsBorne = new BornesDAO();
             DataSet listeDetailsBornes = selectDetailsBorne.SelectDetailsBornesForCRUD(idSelected);
 
-            // Condition pour Vérifier l'éxistence de la donnée Référence
+            // Condition pour Vérifier l'éxistence de la donnée Nom du Site
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[0].ToString() != null)
+            {
+                // Affiche le nom du Site de la Borne sélectionnée
+                cb_Site_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[0].ToString();
+            }
+            else
+            {
+                cb_Site_Modif.Text = "";
+            }
+
+            // Condition pour Vérifier l'éxistence de la donnée Nom du Client
             if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[1].ToString() != null)
             {
+                // Affiche le nom du Client de la Borne sélectionnée
+                cb_Client_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[1].ToString();
+            }
+            else
+            {
+                cb_Client_Modif.Text = "";
+            }
+
+            // Condition pour Vérifier l'éxistence de la donnée Référence
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[3].ToString() != null)
+            {
                 // Affiche la Référence de la Borne sélectionnée
-                tb_Ref_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[1].ToString();
+                tb_Ref_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[3].ToString();
             }
             else
             {
@@ -192,10 +266,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Numéro de Série
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[2].ToString() != null)
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[4].ToString() != null)
             {
                 // Affiche le Numéro de Série de la Borne sélectionnée
-                tb_NS_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[2].ToString();
+                tb_NS_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[4].ToString();
             }
             else
             {
@@ -203,10 +277,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Description
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[3].ToString() != null)
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[5].ToString() != null)
             {
                 // Affiche la Description de la Borne sélectionnée
-                tb_Description_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[3].ToString();
+                tb_Description_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[5].ToString();
             }
             else
             {
@@ -214,12 +288,12 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Type
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[4].ToString() == "True")
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "True")
             {
                 // Affiche le Type de la Borne sélectionnée
                 cb_Type_Modif.Text = "Intérieur";
             }
-            else if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[4].ToString() == "False")
+            else if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "False")
             {
                 cb_Type_Modif.Text = "Extérieur";
             }
@@ -229,12 +303,12 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Etat
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[5].ToString() == "True")
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "True")
             {
                 // Affiche l'Etat de la Borne sélectionnée
                 cb_Etat_Modif.Text = "ON";
             }
-            else if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[5].ToString() == "False")
+            else if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "False")
             {
                 cb_Etat_Modif.Text = "OFF";
             }
@@ -244,10 +318,10 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Puissance
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString() != null)
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString() != null)
             {
                 // Affiche la Puissance de la Borne sélectionnée
-                tb_Puissance_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[6].ToString();
+                tb_Puissance_Modif.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[8].ToString();
             }
             else
             {
@@ -255,12 +329,12 @@ namespace ProjetChargeon
             }
 
             // Condition pour Vérifier l'éxistence de la donnée Priorité
-            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "1")
+            if (listeDetailsBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "1")
             {
                 // Affiche la Priorité de la Borne sélectionnée
                 cb_Prio_Modif.Text = "Elevée";
             }
-            else if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "0")
+            else if(listeDetailsBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "0")
             {
                 cb_Prio_Modif.Text = "Normale";
             }
@@ -301,9 +375,12 @@ namespace ProjetChargeon
         {
             string idSelected = cb_Borne_Modif.SelectedValue.ToString();
 
-            bool test = DataBorne.UpdateBorne(idSelected, tb_Ref_Modif.Text, tb_NS_Modif.Text, tb_Description_Modif.Text, (cb_Type_Modif.SelectedItem as Item).Value, (cb_Etat_Modif.SelectedItem as Item).Value, tb_Puissance_Modif.Text, (cb_Prio_Modif.SelectedItem as Item).Value);
+            bool test = DataBorne.UpdateBorne(Convert.ToInt32(cb_Site_Modif.SelectedValue), Convert.ToInt32(cb_Client_Modif.SelectedValue), tb_Ref_Modif.Text, tb_Description_Modif.Text, tb_NS_Modif.Text, (cb_Type_Modif.SelectedItem as Item).Value, (cb_Etat_Modif.SelectedItem as Item).Value, tb_Puissance_Modif.Text, (cb_Prio_Modif.SelectedItem as Item).Value, idSelected);
             if (test == true)
             {
+                cb_Borne_Modif.Text = "";
+                cb_Site_Modif.Text = "";
+                cb_Client_Modif.Text = "";
                 tb_Ref_Modif.Text = "";
                 tb_NS_Modif.Text = "";
                 tb_Description_Modif.Text = "";

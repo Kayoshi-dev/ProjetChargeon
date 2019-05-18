@@ -326,7 +326,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 87</value>
+    <value>561, 87</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 25</value>
@@ -859,6 +859,108 @@
   <data name="&gt;&gt;p_Ajout_Borne.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="l_Titre_Client_Modif.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="l_Titre_Client_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Titre_Client_Modif.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 83</value>
+  </data>
+  <data name="l_Titre_Client_Modif.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="l_Titre_Client_Modif.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="l_Titre_Client_Modif.Text" xml:space="preserve">
+    <value>Client :</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Client_Modif.Name" xml:space="preserve">
+    <value>l_Titre_Client_Modif</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Client_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Client_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Borne</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Client_Modif.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="l_Titre_Site_Modif.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="l_Titre_Site_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_Titre_Site_Modif.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 49</value>
+  </data>
+  <data name="l_Titre_Site_Modif.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="l_Titre_Site_Modif.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="l_Titre_Site_Modif.Text" xml:space="preserve">
+    <value>Site :</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Site_Modif.Name" xml:space="preserve">
+    <value>l_Titre_Site_Modif</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Site_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Site_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Borne</value>
+  </data>
+  <data name="&gt;&gt;l_Titre_Site_Modif.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cb_Client_Modif.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 80</value>
+  </data>
+  <data name="cb_Client_Modif.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 28</value>
+  </data>
+  <data name="cb_Client_Modif.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;cb_Client_Modif.Name" xml:space="preserve">
+    <value>cb_Client_Modif</value>
+  </data>
+  <data name="&gt;&gt;cb_Client_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Client_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Borne</value>
+  </data>
+  <data name="&gt;&gt;cb_Client_Modif.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cb_Site_Modif.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 46</value>
+  </data>
+  <data name="cb_Site_Modif.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 28</value>
+  </data>
+  <data name="cb_Site_Modif.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;cb_Site_Modif.Name" xml:space="preserve">
+    <value>cb_Site_Modif</value>
+  </data>
+  <data name="&gt;&gt;cb_Site_Modif.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Site_Modif.Parent" xml:space="preserve">
+    <value>p_Modifier_Borne</value>
+  </data>
+  <data name="&gt;&gt;cb_Site_Modif.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="l_Titre_Priorité_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -866,7 +968,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Priorité_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 273</value>
+    <value>3, 335</value>
   </data>
   <data name="l_Titre_Priorité_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -887,7 +989,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Priorité_Modif.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="l_Titre_Puissance_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -896,7 +998,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Puissance_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 240</value>
+    <value>3, 303</value>
   </data>
   <data name="l_Titre_Puissance_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -917,7 +1019,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Puissance_Modif.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="l_Titre_Etat_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -926,7 +1028,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Etat_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 205</value>
+    <value>3, 269</value>
   </data>
   <data name="l_Titre_Etat_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -947,7 +1049,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Etat_Modif.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="l_Titre_Type_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -956,7 +1058,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Type_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 170</value>
+    <value>3, 235</value>
   </data>
   <data name="l_Titre_Type_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 20</value>
@@ -977,7 +1079,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Type_Modif.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="l_Titre_Description_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -986,7 +1088,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Description_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 117</value>
+    <value>3, 181</value>
   </data>
   <data name="l_Titre_Description_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -1007,7 +1109,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Description_Modif.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1016,7 +1118,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 84</value>
+    <value>3, 149</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1037,7 +1139,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_NuméroSérie_Modif.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="l_Titre_Référence_Modif.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1046,7 +1148,7 @@
     <value>NoControl</value>
   </data>
   <data name="l_Titre_Référence_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 51</value>
+    <value>3, 117</value>
   </data>
   <data name="l_Titre_Référence_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -1067,13 +1169,13 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;l_Titre_Référence_Modif.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="btn_Modifier.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_Modifier.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 350</value>
+    <value>65, 380</value>
   </data>
   <data name="btn_Modifier.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 31</value>
@@ -1094,10 +1196,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;btn_Modifier.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="cb_Prio_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 270</value>
+    <value>83, 332</value>
   </data>
   <data name="cb_Prio_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 28</value>
@@ -1115,10 +1217,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;cb_Prio_Modif.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="tb_Puissance_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 237</value>
+    <value>83, 300</value>
   </data>
   <data name="tb_Puissance_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 26</value>
@@ -1136,10 +1238,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;tb_Puissance_Modif.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="cb_Etat_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 202</value>
+    <value>83, 266</value>
   </data>
   <data name="cb_Etat_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 28</value>
@@ -1157,10 +1259,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;cb_Etat_Modif.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="cb_Type_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 167</value>
+    <value>83, 232</value>
   </data>
   <data name="cb_Type_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 28</value>
@@ -1178,10 +1280,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;cb_Type_Modif.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="tb_Description_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 114</value>
+    <value>83, 178</value>
   </data>
   <data name="tb_Description_Modif.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1202,10 +1304,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;tb_Description_Modif.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="tb_Ref_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 48</value>
+    <value>83, 114</value>
   </data>
   <data name="tb_Ref_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 26</value>
@@ -1223,7 +1325,7 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;tb_Ref_Modif.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="cb_Borne_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 10</value>
@@ -1244,10 +1346,10 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;cb_Borne_Modif.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="tb_NS_Modif.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 81</value>
+    <value>83, 146</value>
   </data>
   <data name="tb_NS_Modif.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 26</value>
@@ -1265,13 +1367,13 @@
     <value>p_Modifier_Borne</value>
   </data>
   <data name="&gt;&gt;tb_NS_Modif.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="p_Modifier_Borne.Location" type="System.Drawing.Point, System.Drawing">
     <value>295, 115</value>
   </data>
   <data name="p_Modifier_Borne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 389</value>
+    <value>222, 423</value>
   </data>
   <data name="p_Modifier_Borne.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
