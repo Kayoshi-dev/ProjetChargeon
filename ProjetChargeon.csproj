@@ -54,6 +54,12 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccueilSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccueilSplash.Designer.cs">
+      <DependentUpon>AccueilSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="AssistanceDAO.cs" />
     <Compile Include="Bornes.cs">
       <SubType>Form</SubType>
@@ -68,6 +74,12 @@
       <DependentUpon>BornesCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="SiteDAO.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="TechnicienDAO.cs" />
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
@@ -198,6 +210,9 @@
     </Compile>
     <EmbeddedResource Include="Logged_Admin.resx">
       <DependentUpon>Logged_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stats.resx">
       <DependentUpon>Stats.cs</DependentUpon>
