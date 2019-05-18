@@ -1,6 +1,6 @@
 ﻿/*
  * Date de création : 19/04/2019
- * Dernière modification : 28/04/2019
+ * Dernière modification : 30/04/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage des informations concernant toute les bornes
  * Développeur : Maxime
@@ -27,11 +27,19 @@ namespace ProjetChargeon
 			UserDAO IdList = new UserDAO();
 			int idAccount = IdList.GetId();
 
+			// Initialisation de la ComboBox affichant les différentes bornes
 			BornesDAO selectBornes = new BornesDAO();
 			DataSet listeBornes = selectBornes.SelectBornesCustomer(idAccount);
 			cb_mesBornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
 			cb_mesBornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant
-			cb_mesBornes.DataSource = listeBornes.Tables[0]; // Affiche la seul table contenu dans le DataSource
+			cb_mesBornes.DataSource = listeBornes.Tables[0]; // Affiche la seule table contenu dans le DataSource
+
+			// Initialisation de la ComboBox pour les différents types de problèmes
+			AssistanceDAO selectTypesAssistances = new AssistanceDAO();
+			DataSet listTypesAssistances = selectTypesAssistances.selectTypesAssistances();
+			cb_typepb.DisplayMember = "TypeAssist_Ref";
+			cb_typepb.ValueMember = "TypeAssist_Id";
+			cb_typepb.DataSource = listTypesAssistances.Tables[0];
 		}
 
 		private void Cb_bornesClient_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,10 +49,10 @@ namespace ProjetChargeon
 			BornesDAO dataBornes = new BornesDAO();
 			DataSet DetailsMesBornes = dataBornes.SelectDetailsBornes(idSelected);
 
-			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[7].ToString();
+			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[5].ToString();
 
 			// Selon le type de borne on affiche :
-			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[8].ToString() == "0") 
+			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[6].ToString() == "0") 
 			{
 				l_type.Text = "Intérieur";
 			}
@@ -54,7 +62,7 @@ namespace ProjetChargeon
 			}
 
 			// Selon l'état de la borne on affiche une image avec un cercle de couleur différente
-			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[9].ToString() == "True")
+			if (DetailsMesBornes.Tables[0].Rows[0].ItemArray[7].ToString() == "True")
 			{
 				l_etat.Text = "ON";
 				p_etat.Image = ProjetChargeon.Properties.Resources.circle_green; //Chargement de l'image circle green
@@ -65,7 +73,7 @@ namespace ProjetChargeon
 				p_etat.Image = ProjetChargeon.Properties.Resources.circle_red; //Chargement de l'image circle red
 			}
 
-			l_puis.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[10].ToString() + " kWh";
+			l_puis.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[8].ToString() + " kWh";
 
 			DataSet selectCity = dataBornes.SelectCityForBornes(idSelected);
 			l_ville.Text = selectCity.Tables[0].Rows[0].ItemArray[0].ToString();
@@ -74,19 +82,20 @@ namespace ProjetChargeon
 		// Ajoute une demande d'assistance lors du clic
 		private void needHelp(object sender, EventArgs e)
 		{
-			string idSelected = cb_mesBornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
+			int idSelectedBornes = Convert.ToInt32(cb_mesBornes.SelectedValue); // idSelected vaut l'ID du champ de la ComboBox
+			int idSelectedTypeAssist = Convert.ToInt32(cb_typepb.SelectedValue);
 
 			AssistanceDAO AskForHelp = new AssistanceDAO();
 			// On vérifie que le texte ne vaut pas le placeholder
-			if(tb_message.Text != "Décrivez votre problème") 
+			if(tb_intitule.Text != "Intitulé de votre problème" && tb_intitule.Text != null) 
 			{
 				// On ajoute la demande d'assistance
-				bool validate = AskForHelp.AddAssistance(Convert.ToInt32(idSelected), tb_message.Text);
+				bool validate = AskForHelp.AddAssistance(idSelectedBornes, idSelectedTypeAssist, tb_intitule.Text);
 
 				// Si notre validation est vraie alors
 				if (validate == true) 
 				{
-					tb_message.Text = ""; // On vide la TextBox
+					tb_intitule.Text = ""; // On vide la TextBox
 					l_valid.ForeColor = l_valid.ForeColor = Color.FromArgb(46, 204, 113); // Message en Vert
 					l_valid.Text = "Ok"; // On affiche ok
 				}
@@ -106,8 +115,8 @@ namespace ProjetChargeon
 		// Méthode pour placeholder
 		private void messageHelpClick(object sender, MouseEventArgs e)
 		{
-			if (tb_message.Text == "Décrivez votre problème") {
-				tb_message.Text = "";
+			if (tb_intitule.Text == "Intitulé de votre problème") {
+				tb_intitule.Text = "";
 			}
 		}
 

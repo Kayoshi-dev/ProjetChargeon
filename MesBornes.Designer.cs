@@ -48,9 +48,10 @@
 			this.l_puis = new System.Windows.Forms.Label();
 			this.l_title_Puis = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.tb_message = new System.Windows.Forms.TextBox();
 			this.l_valid = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.cb_typepb = new System.Windows.Forms.ComboBox();
+			this.tb_intitule = new System.Windows.Forms.TextBox();
 			this.p_Chargeon.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -256,11 +257,18 @@
 			this.label3.Text = "Demander de l\'aide";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// l_valid
+			// 
+			this.l_valid.Location = new System.Drawing.Point(712, 406);
+			this.l_valid.Name = "l_valid";
+			this.l_valid.Size = new System.Drawing.Size(88, 29);
+			this.l_valid.TabIndex = 31;
+			// 
 			// button1
 			// 
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(631, 399);
+			this.button1.Location = new System.Drawing.Point(631, 412);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 29;
@@ -268,32 +276,35 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.needHelp);
 			// 
-			// tb_message
+			// cb_typepb
 			// 
-			this.tb_message.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tb_message.Location = new System.Drawing.Point(582, 339);
-			this.tb_message.MaxLength = 500;
-			this.tb_message.Multiline = true;
-			this.tb_message.Name = "tb_message";
-			this.tb_message.Size = new System.Drawing.Size(174, 42);
-			this.tb_message.TabIndex = 30;
-			this.tb_message.Text = "Décrivez votre problème";
-			this.tb_message.MouseClick += new System.Windows.Forms.MouseEventHandler(this.messageHelpClick);
+			this.cb_typepb.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cb_typepb.FormattingEnabled = true;
+			this.cb_typepb.Location = new System.Drawing.Point(577, 377);
+			this.cb_typepb.Name = "cb_typepb";
+			this.cb_typepb.Size = new System.Drawing.Size(186, 28);
+			this.cb_typepb.TabIndex = 32;
 			// 
-			// l_valid
+			// tb_intitule
 			// 
-			this.l_valid.Location = new System.Drawing.Point(712, 398);
-			this.l_valid.Name = "l_valid";
-			this.l_valid.Size = new System.Drawing.Size(88, 29);
-			this.l_valid.TabIndex = 31;
+			this.tb_intitule.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tb_intitule.Location = new System.Drawing.Point(577, 329);
+			this.tb_intitule.MaxLength = 500;
+			this.tb_intitule.Multiline = true;
+			this.tb_intitule.Name = "tb_intitule";
+			this.tb_intitule.Size = new System.Drawing.Size(186, 42);
+			this.tb_intitule.TabIndex = 30;
+			this.tb_intitule.Text = "Intitulé de votre problème";
+			this.tb_intitule.MouseClick += new System.Windows.Forms.MouseEventHandler(this.messageHelpClick);
 			// 
 			// MesBornes
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.cb_typepb);
 			this.Controls.Add(this.l_valid);
-			this.Controls.Add(this.tb_message);
+			this.Controls.Add(this.tb_intitule);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.l_puis);
@@ -348,8 +359,9 @@
 		private System.Windows.Forms.Label l_puis;
 		private System.Windows.Forms.Label l_title_Puis;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox tb_message;
 		private System.Windows.Forms.Label l_valid;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.ComboBox cb_typepb;
+		private System.Windows.Forms.TextBox tb_intitule;
 	}
 }
