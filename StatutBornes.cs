@@ -23,7 +23,7 @@ namespace ProjetChargeon
 		public StatutBornes()
 		{
 			InitializeComponent();
-			CrudBornes selectBornes = new CrudBornes();
+			BornesDAO selectBornes = new BornesDAO();
 			DataSet listeBornes = selectBornes.SelectBornes();
 			cb_bornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
 			cb_bornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant
@@ -39,7 +39,7 @@ namespace ProjetChargeon
 		{
 			string idSelected = cb_bornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
-			CrudBornes selectDetailsBornes = new CrudBornes();
+			BornesDAO selectDetailsBornes = new BornesDAO();
 			DataSet listeDetailsBornes = selectDetailsBornes.SelectDetailsBornes(idSelected);
 
 			l_id.Text = listeDetailsBornes.Tables[0].Rows[0].ItemArray[0].ToString(); // Affiche l'ID

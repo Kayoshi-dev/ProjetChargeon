@@ -28,7 +28,7 @@ namespace ProjetChargeon
 			int idAccount = IdList.GetId();
 
 			// Initialisation de la ComboBox affichant les différentes bornes
-			CrudBornes selectBornes = new CrudBornes();
+			BornesDAO selectBornes = new BornesDAO();
 			DataSet listeBornes = selectBornes.SelectBornesCustomer(idAccount);
 			cb_mesBornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
 			cb_mesBornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant
@@ -46,7 +46,7 @@ namespace ProjetChargeon
 		{
 			string idSelected = cb_mesBornes.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
-			CrudBornes dataBornes = new CrudBornes();
+			BornesDAO dataBornes = new BornesDAO();
 			DataSet DetailsMesBornes = dataBornes.SelectDetailsBornes(idSelected);
 
 			l_ns.Text = DetailsMesBornes.Tables[0].Rows[0].ItemArray[5].ToString();

@@ -12,7 +12,7 @@ namespace ProjetChargeon
 {
     public partial class Stats : Form
     {
-        CrudBornes selectBornes = new CrudBornes(); // Connexion à la BDD pour la liste des bornes
+        BornesDAO selectBornes = new BornesDAO(); // Connexion à la BDD pour la liste des bornes
 
 
         public Stats()
