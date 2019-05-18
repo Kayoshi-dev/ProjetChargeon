@@ -116,20 +116,21 @@
             // l_Titre_Borne
             // 
             this.l_Titre_Borne.AutoSize = true;
+            this.l_Titre_Borne.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Borne.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Borne.Location = new System.Drawing.Point(80, 94);
             this.l_Titre_Borne.Name = "l_Titre_Borne";
-            this.l_Titre_Borne.Size = new System.Drawing.Size(52, 20);
+            this.l_Titre_Borne.Size = new System.Drawing.Size(54, 21);
             this.l_Titre_Borne.TabIndex = 15;
             this.l_Titre_Borne.Text = "Borne";
             // 
             // cb_Borne
             // 
-            this.cb_Borne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Borne.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Borne.FormattingEnabled = true;
             this.cb_Borne.Location = new System.Drawing.Point(12, 119);
             this.cb_Borne.Name = "cb_Borne";
-            this.cb_Borne.Size = new System.Drawing.Size(193, 26);
+            this.cb_Borne.Size = new System.Drawing.Size(193, 29);
             this.cb_Borne.TabIndex = 16;
             this.cb_Borne.SelectedIndexChanged += new System.EventHandler(this.DataBorne);
             // 
@@ -137,11 +138,12 @@
             // 
             this.l_Titre_ID.AutoSize = true;
             this.l_Titre_ID.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_ID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_ID.ForeColor = System.Drawing.Color.White;
             this.l_Titre_ID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_ID.Location = new System.Drawing.Point(97, 185);
             this.l_Titre_ID.Name = "l_Titre_ID";
-            this.l_Titre_ID.Size = new System.Drawing.Size(26, 20);
+            this.l_Titre_ID.Size = new System.Drawing.Size(27, 21);
             this.l_Titre_ID.TabIndex = 38;
             this.l_Titre_ID.Text = "ID";
             // 
@@ -156,6 +158,7 @@
             // 
             // l_ID
             // 
+            this.l_ID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_ID.ForeColor = System.Drawing.Color.White;
             this.l_ID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_ID.Location = new System.Drawing.Point(0, 17);
@@ -187,16 +190,18 @@
             // 
             this.l_Titre_Dispo.AutoSize = true;
             this.l_Titre_Dispo.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Dispo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Dispo.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Dispo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Dispo.Location = new System.Drawing.Point(67, 290);
             this.l_Titre_Dispo.Name = "l_Titre_Dispo";
-            this.l_Titre_Dispo.Size = new System.Drawing.Size(83, 20);
+            this.l_Titre_Dispo.Size = new System.Drawing.Size(89, 21);
             this.l_Titre_Dispo.TabIndex = 51;
             this.l_Titre_Dispo.Text = "Disponible";
             // 
             // l_Dispo
             // 
+            this.l_Dispo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Dispo.ForeColor = System.Drawing.Color.White;
             this.l_Dispo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Dispo.Location = new System.Drawing.Point(83, 352);
@@ -210,11 +215,12 @@
             // 
             this.l_Titre_NS.AutoSize = true;
             this.l_Titre_NS.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_NS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_NS.ForeColor = System.Drawing.Color.White;
             this.l_Titre_NS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_NS.Location = new System.Drawing.Point(263, 95);
             this.l_Titre_NS.Name = "l_Titre_NS";
-            this.l_Titre_NS.Size = new System.Drawing.Size(128, 20);
+            this.l_Titre_NS.Size = new System.Drawing.Size(137, 21);
             this.l_Titre_NS.TabIndex = 53;
             this.l_Titre_NS.Text = "Numéro de Série";
             // 
@@ -229,6 +235,7 @@
             // 
             // l_NS
             // 
+            this.l_NS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_NS.ForeColor = System.Drawing.Color.White;
             this.l_NS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_NS.Location = new System.Drawing.Point(0, 17);
@@ -249,6 +256,7 @@
             // 
             // l_Description
             // 
+            this.l_Description.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Description.ForeColor = System.Drawing.Color.White;
             this.l_Description.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Description.Location = new System.Drawing.Point(0, 17);
@@ -262,11 +270,12 @@
             // 
             this.l_Titre_Description.AutoSize = true;
             this.l_Titre_Description.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Description.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Description.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Description.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Description.Location = new System.Drawing.Point(593, 95);
             this.l_Titre_Description.Name = "l_Titre_Description";
-            this.l_Titre_Description.Size = new System.Drawing.Size(89, 20);
+            this.l_Titre_Description.Size = new System.Drawing.Size(97, 21);
             this.l_Titre_Description.TabIndex = 54;
             this.l_Titre_Description.Text = "Description";
             // 
@@ -286,11 +295,12 @@
             // 
             this.l_Titre_Puissance.AutoSize = true;
             this.l_Titre_Puissance.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Puissance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Puissance.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Puissance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Puissance.Location = new System.Drawing.Point(468, 260);
             this.l_Titre_Puissance.Name = "l_Titre_Puissance";
-            this.l_Titre_Puissance.Size = new System.Drawing.Size(82, 20);
+            this.l_Titre_Puissance.Size = new System.Drawing.Size(85, 21);
             this.l_Titre_Puissance.TabIndex = 56;
             this.l_Titre_Puissance.Text = "Puissance";
             // 
@@ -305,6 +315,7 @@
             // 
             // l_Type
             // 
+            this.l_Type.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Type.ForeColor = System.Drawing.Color.White;
             this.l_Type.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Type.Location = new System.Drawing.Point(0, 17);
@@ -325,6 +336,7 @@
             // 
             // l_Puissance
             // 
+            this.l_Puissance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Puissance.ForeColor = System.Drawing.Color.White;
             this.l_Puissance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Puissance.Location = new System.Drawing.Point(0, 17);
@@ -338,11 +350,12 @@
             // 
             this.l_Titre_Site.AutoSize = true;
             this.l_Titre_Site.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Site.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Site.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Site.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Site.Location = new System.Drawing.Point(672, 260);
             this.l_Titre_Site.Name = "l_Titre_Site";
-            this.l_Titre_Site.Size = new System.Drawing.Size(37, 20);
+            this.l_Titre_Site.Size = new System.Drawing.Size(38, 21);
             this.l_Titre_Site.TabIndex = 57;
             this.l_Titre_Site.Text = "Site";
             // 
@@ -357,6 +370,7 @@
             // 
             // l_Site
             // 
+            this.l_Site.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Site.ForeColor = System.Drawing.Color.White;
             this.l_Site.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Site.Location = new System.Drawing.Point(0, 17);
@@ -377,6 +391,7 @@
             // 
             // l_Priorite
             // 
+            this.l_Priorite.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Priorite.ForeColor = System.Drawing.Color.White;
             this.l_Priorite.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Priorite.Location = new System.Drawing.Point(0, 17);
@@ -409,7 +424,7 @@
             // 
             // l_Client
             // 
-            this.l_Client.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Client.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Client.ForeColor = System.Drawing.Color.White;
             this.l_Client.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Client.Location = new System.Drawing.Point(0, 17);
@@ -423,11 +438,12 @@
             // 
             this.l_Titre_Client.AutoSize = true;
             this.l_Titre_Client.BackColor = System.Drawing.Color.Transparent;
+            this.l_Titre_Client.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Client.ForeColor = System.Drawing.Color.White;
             this.l_Titre_Client.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Client.Location = new System.Drawing.Point(651, 361);
             this.l_Titre_Client.Name = "l_Titre_Client";
-            this.l_Titre_Client.Size = new System.Drawing.Size(49, 20);
+            this.l_Titre_Client.Size = new System.Drawing.Size(56, 21);
             this.l_Titre_Client.TabIndex = 61;
             this.l_Titre_Client.Text = "Client";
             // 
@@ -476,6 +492,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bornes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Template - Bornes";
             this.p_Titre_Chargeon.ResumeLayout(false);
             this.p_Titre_Chargeon.PerformLayout();

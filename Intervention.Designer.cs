@@ -207,10 +207,11 @@
             // 
             // cb_titreAssAtt
             // 
+            this.cb_titreAssAtt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_titreAssAtt.FormattingEnabled = true;
             this.cb_titreAssAtt.Location = new System.Drawing.Point(16, 169);
             this.cb_titreAssAtt.Name = "cb_titreAssAtt";
-            this.cb_titreAssAtt.Size = new System.Drawing.Size(224, 28);
+            this.cb_titreAssAtt.Size = new System.Drawing.Size(224, 29);
             this.cb_titreAssAtt.TabIndex = 28;
             this.cb_titreAssAtt.SelectedIndexChanged += new System.EventHandler(this.IndexChangePendingAssist);
             // 
@@ -285,10 +286,11 @@
             // 
             // cb_Technicien
             // 
+            this.cb_Technicien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Technicien.FormattingEnabled = true;
             this.cb_Technicien.Location = new System.Drawing.Point(16, 378);
             this.cb_Technicien.Name = "cb_Technicien";
-            this.cb_Technicien.Size = new System.Drawing.Size(179, 28);
+            this.cb_Technicien.Size = new System.Drawing.Size(179, 29);
             this.cb_Technicien.TabIndex = 46;
             // 
             // label10
@@ -395,10 +397,11 @@
             // 
             // cb_titreAssCur
             // 
+            this.cb_titreAssCur.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_titreAssCur.FormattingEnabled = true;
             this.cb_titreAssCur.Location = new System.Drawing.Point(287, 169);
             this.cb_titreAssCur.Name = "cb_titreAssCur";
-            this.cb_titreAssCur.Size = new System.Drawing.Size(224, 28);
+            this.cb_titreAssCur.Size = new System.Drawing.Size(224, 29);
             this.cb_titreAssCur.TabIndex = 52;
             this.cb_titreAssCur.SelectedIndexChanged += new System.EventHandler(this.IndexChangeInProgressAssist);
             // 
@@ -498,10 +501,11 @@
             // 
             // cb_titreAssDone
             // 
+            this.cb_titreAssDone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_titreAssDone.FormattingEnabled = true;
             this.cb_titreAssDone.Location = new System.Drawing.Point(553, 169);
             this.cb_titreAssDone.Name = "cb_titreAssDone";
-            this.cb_titreAssDone.Size = new System.Drawing.Size(224, 28);
+            this.cb_titreAssDone.Size = new System.Drawing.Size(224, 29);
             this.cb_titreAssDone.TabIndex = 65;
             this.cb_titreAssDone.SelectedIndexChanged += new System.EventHandler(this.IndexChangeCompletedAssist);
             // 
