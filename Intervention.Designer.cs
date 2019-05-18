@@ -42,7 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cb_titreAssAtt = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,7 +53,6 @@
             this.cb_Technicien = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.bt_maj = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -66,6 +64,18 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cb_titreAssCur = new System.Windows.Forms.ComboBox();
             this.l_technicienCur = new System.Windows.Forms.Label();
+            this.l_technicienDone = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.l_numBorneDone = new System.Windows.Forms.Label();
+            this.l_typeAssDone = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cb_titreAssDone = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.p_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -198,14 +208,6 @@
             this.cb_titreAssAtt.TabIndex = 28;
             this.cb_titreAssAtt.SelectedIndexChanged += new System.EventHandler(this.IndexChangePendingAssist);
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(655, 163);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 28);
-            this.comboBox3.TabIndex = 29;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -239,7 +241,6 @@
             this.l_typeAssAtt.Name = "l_typeAssAtt";
             this.l_typeAssAtt.Size = new System.Drawing.Size(245, 27);
             this.l_typeAssAtt.TabIndex = 33;
-            this.l_typeAssAtt.Text = "typeAssistance";
             // 
             // l_numBorneAtt
             // 
@@ -247,7 +248,6 @@
             this.l_numBorneAtt.Name = "l_numBorneAtt";
             this.l_numBorneAtt.Size = new System.Drawing.Size(228, 24);
             this.l_numBorneAtt.TabIndex = 35;
-            this.l_numBorneAtt.Text = "numBorne";
             // 
             // panel3
             // 
@@ -301,16 +301,6 @@
             this.bt_maj.UseVisualStyleBackColor = true;
             this.bt_maj.Click += new System.EventHandler(this.btn_Assignation);
             // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(348, 412);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 29);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Assigner";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -350,7 +340,6 @@
             this.l_numBorneCur.Name = "l_numBorneCur";
             this.l_numBorneCur.Size = new System.Drawing.Size(228, 24);
             this.l_numBorneCur.TabIndex = 57;
-            this.l_numBorneCur.Text = "numBorne";
             // 
             // l_typeAssCur
             // 
@@ -358,7 +347,6 @@
             this.l_typeAssCur.Name = "l_typeAssCur";
             this.l_typeAssCur.Size = new System.Drawing.Size(245, 27);
             this.l_typeAssCur.TabIndex = 56;
-            this.l_typeAssCur.Text = "typeAssistance";
             // 
             // label14
             // 
@@ -394,7 +382,7 @@
             this.cb_titreAssCur.Name = "cb_titreAssCur";
             this.cb_titreAssCur.Size = new System.Drawing.Size(224, 28);
             this.cb_titreAssCur.TabIndex = 52;
-            this.cb_titreAssCur.SelectedIndexChanged += new System.EventHandler(this.Cb_titreAssCur_SelectedIndexChanged);
+            this.cb_titreAssCur.SelectedIndexChanged += new System.EventHandler(this.IndexChangeInProgressAssist);
             // 
             // l_technicienCur
             // 
@@ -402,15 +390,126 @@
             this.l_technicienCur.Name = "l_technicienCur";
             this.l_technicienCur.Size = new System.Drawing.Size(245, 28);
             this.l_technicienCur.TabIndex = 61;
-            this.l_technicienCur.Text = "Nom Technicien";
+            // 
+            // l_technicienDone
+            // 
+            this.l_technicienDone.Location = new System.Drawing.Point(549, 378);
+            this.l_technicienDone.Name = "l_technicienDone";
+            this.l_technicienDone.Size = new System.Drawing.Size(245, 28);
+            this.l_technicienDone.TabIndex = 72;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(549, 355);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 20);
+            this.label13.TabIndex = 71;
+            this.label13.Text = "Technicien";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel9.Location = new System.Drawing.Point(553, 341);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(224, 3);
+            this.panel9.TabIndex = 63;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel10.Location = new System.Drawing.Point(553, 211);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(224, 3);
+            this.panel10.TabIndex = 64;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel11.Location = new System.Drawing.Point(553, 270);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(224, 3);
+            this.panel11.TabIndex = 62;
+            // 
+            // l_numBorneDone
+            // 
+            this.l_numBorneDone.Location = new System.Drawing.Point(549, 243);
+            this.l_numBorneDone.Name = "l_numBorneDone";
+            this.l_numBorneDone.Size = new System.Drawing.Size(228, 24);
+            this.l_numBorneDone.TabIndex = 70;
+            // 
+            // l_typeAssDone
+            // 
+            this.l_typeAssDone.Location = new System.Drawing.Point(549, 311);
+            this.l_typeAssDone.Name = "l_typeAssDone";
+            this.l_typeAssDone.Size = new System.Drawing.Size(245, 27);
+            this.l_typeAssDone.TabIndex = 69;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(549, 284);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(135, 20);
+            this.label19.TabIndex = 68;
+            this.label19.Text = "Type d\'assistance";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(549, 217);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(132, 20);
+            this.label20.TabIndex = 67;
+            this.label20.Text = "Numéro de borne";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(549, 145);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 20);
+            this.label21.TabIndex = 66;
+            this.label21.Text = "Titre";
+            // 
+            // cb_titreAssDone
+            // 
+            this.cb_titreAssDone.FormattingEnabled = true;
+            this.cb_titreAssDone.Location = new System.Drawing.Point(553, 169);
+            this.cb_titreAssDone.Name = "cb_titreAssDone";
+            this.cb_titreAssDone.Size = new System.Drawing.Size(224, 28);
+            this.cb_titreAssDone.TabIndex = 65;
+            this.cb_titreAssDone.SelectedIndexChanged += new System.EventHandler(this.IndexChangeCompletedAssist);
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(348, 412);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 29);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Terminer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_Terminer);
             // 
             // Intervention
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.l_technicienCur);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.l_technicienDone);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.l_numBorneDone);
+            this.Controls.Add(this.l_typeAssDone);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.cb_titreAssDone);
+            this.Controls.Add(this.l_technicienCur);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
@@ -432,7 +531,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.cb_titreAssAtt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -474,7 +572,6 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.ComboBox cb_titreAssAtt;
-		private System.Windows.Forms.ComboBox comboBox3;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label9;
@@ -486,7 +583,6 @@
         private System.Windows.Forms.ComboBox cb_Technicien;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button bt_maj;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
@@ -498,5 +594,17 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cb_titreAssCur;
         private System.Windows.Forms.Label l_technicienCur;
+        private System.Windows.Forms.Label l_technicienDone;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label l_numBorneDone;
+        private System.Windows.Forms.Label l_typeAssDone;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cb_titreAssDone;
+        private System.Windows.Forms.Button button1;
     }
 }

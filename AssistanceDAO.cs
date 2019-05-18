@@ -1,6 +1,6 @@
 ﻿/* 
  * Date de création : 28/04/2019
- * Dernière modification : 28/04/2019
+ * Dernière modification : 18/05/2019
  * Équipe : Nathouuuu
  * Rôle : Fichier de class contenant différentes méthodes concernant les demandes d'assistance
  * Développeur : Maxime
@@ -123,20 +123,20 @@ namespace ProjetChargeon
 
 		public DataSet selectInProgressAssistances()
 		{
-			string query = "SELECT * FROM assistance WHERE Assist_Etat = 1";
+			string query = "SELECT Assist_Id, Assist_Titre FROM assistance WHERE Assist_Etat = 1";
 			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
 
-			DataSet ListPendingAssistance = new DataSet();
+			DataSet ListInProgressAssistance = new DataSet();
 
-			adapter.Fill(ListPendingAssistance);
+			adapter.Fill(ListInProgressAssistance);
 			adapter.Dispose();
 
-			return ListPendingAssistance;
+			return ListInProgressAssistance;
 		}
 
         public DataSet selectInfosInProgressAssistances(int idDemande)
         {
-            string query = "SELECT Assist_Id, Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat, Borne_Ref, TypeAssist_Ref, Tech_Nom " +
+            string query = "SELECT Assist_Titre, Borne_Ref, TypeAssist_Ref, Tech_Nom " +
                            "FROM assistance, bornes, typeassist, technicien " +
                            "WHERE Assist_NoBorne = Borne_Id " +
                            "AND Tech_Id = Assist_NoTech " +
@@ -151,13 +151,13 @@ namespace ProjetChargeon
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            DataSet ListPendingAssistance = new DataSet();
+            DataSet ListInfosInProgressAssistance = new DataSet();
 
             adapter.SelectCommand = req;
-            adapter.Fill(ListPendingAssistance);
+            adapter.Fill(ListInfosInProgressAssistance);
             adapter.Dispose();
 
-            return ListPendingAssistance;
+            return ListInfosInProgressAssistance;
         }
 
         public DataSet selectCompletedAssistances()
@@ -165,13 +165,39 @@ namespace ProjetChargeon
 			string query = "SELECT * FROM assistance WHERE Assist_Etat = 2";
 			MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
 
-			DataSet ListPendingAssistance = new DataSet();
+			DataSet ListCompletedAssistance = new DataSet();
 
-			adapter.Fill(ListPendingAssistance);
+			adapter.Fill(ListCompletedAssistance);
 			adapter.Dispose();
 
-			return ListPendingAssistance;
+			return ListCompletedAssistance;
 		}
+
+        public DataSet selectInfosCompletedAssistances(int idDemande)
+        {
+            string query = "SELECT Assist_Titre, Borne_Ref, TypeAssist_Ref, Tech_Nom " +
+                           "FROM assistance, bornes, typeassist, technicien " +
+                           "WHERE Assist_NoBorne = Borne_Id " +
+                           "AND Tech_Id = Assist_NoTech " +
+                           "AND Assist_NoTypeAssist = TypeAssist_Id	" +
+                           "AND Assist_Id = @idDemande " +
+                           "AND Assist_Etat = 2";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            DataSet ListInfosCompletedAssistance = new DataSet();
+
+            adapter.SelectCommand = req;
+            adapter.Fill(ListInfosCompletedAssistance);
+            adapter.Dispose();
+
+            return ListInfosCompletedAssistance;
+        }
 
         public void SetAssistanceToInProgress(int idDemande, int idTechnicien)
         {
@@ -181,6 +207,22 @@ namespace ProjetChargeon
             req.Parameters.Clear();
             req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
             req.Parameters.Add(new MySqlParameter("@idTechnicien", idTechnicien));
+
+            connection.Open();
+
+            req.ExecuteNonQuery();
+
+            connection.Close();
+        }
+
+        public void SetAssistanceToDone(int idDemande)
+        {
+            string query = "UPDATE assistance SET Assist_Etat = 2 WHERE Assist_Id = @idDemande";
+
+            MySqlCommand req = new MySqlCommand(query, connection);
+
+            req.Parameters.Clear();
+            req.Parameters.Add(new MySqlParameter("@idDemande", idDemande));
 
             connection.Open();
 
