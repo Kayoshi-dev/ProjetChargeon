@@ -1,7 +1,8 @@
 /* 
  * Date de création : 11/03/2019
- * Dernière modification : 27/03/2019
+ * Dernière modification : 18/05/2019
  * Équipe : Nathouuuu
+ * Développeur : Maxime
  */
 
 using System;
@@ -11,8 +12,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetChargeon
@@ -21,16 +20,7 @@ namespace ProjetChargeon
     {
         public Accueil()
         {
-            Thread t = new Thread(new ThreadStart(StartForm));
-            t.Start();
-            Thread.Sleep(5000);
             InitializeComponent();
-            t.Abort();
-        }
-
-        public void StartForm()
-        {
-            Application.Run(new SplashScreen());
         }
 
         // Au Clic sur le bouton, accéder à la page Login
@@ -41,7 +31,15 @@ namespace ProjetChargeon
             Login.ShowDialog();
             Close();
         }
-        
+
+        private void OpenStatut(object sender, EventArgs e)
+        {
+            Hide();
+            var StatutBornes = new StatutBornes();
+            StatutBornes.ShowDialog();
+            Close();
+        }
+
         private void OpenCarte(object sender, EventArgs e)
         {
             Hide();
@@ -55,13 +53,5 @@ namespace ProjetChargeon
         {
             Close();
         }
-
-		private void OpenStatut(object sender, EventArgs e)
-		{
-			Hide();
-			var StatutBornes = new StatutBornes();
-			StatutBornes.ShowDialog();
-			Close();
-		}
 	}
 }

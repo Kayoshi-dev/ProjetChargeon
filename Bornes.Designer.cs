@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bornes));
             this.p_Titre_Chargeon = new System.Windows.Forms.Panel();
             this.img_Return = new System.Windows.Forms.PictureBox();
-            this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Borne = new System.Windows.Forms.Label();
             this.cb_Borne = new System.Windows.Forms.ComboBox();
@@ -63,6 +62,7 @@
             this.p_Client = new System.Windows.Forms.Panel();
             this.l_Client = new System.Windows.Forms.Label();
             this.l_Titre_Client = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -80,8 +80,8 @@
             // p_Titre_Chargeon
             // 
             this.p_Titre_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.p_Titre_Chargeon.Controls.Add(this.label2);
             this.p_Titre_Chargeon.Controls.Add(this.img_Return);
-            this.p_Titre_Chargeon.Controls.Add(this.l_Titre_Chargeon);
             this.p_Titre_Chargeon.Controls.Add(this.img_Close);
             this.p_Titre_Chargeon.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_Titre_Chargeon.Location = new System.Drawing.Point(0, 0);
@@ -101,18 +101,6 @@
             this.img_Return.TabIndex = 13;
             this.img_Return.TabStop = false;
             this.img_Return.Click += new System.EventHandler(this.Return);
-            // 
-            // l_Titre_Chargeon
-            // 
-            this.l_Titre_Chargeon.AutoSize = true;
-            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
-            this.l_Titre_Chargeon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_Titre_Chargeon.Location = new System.Drawing.Point(12, 25);
-            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
-            this.l_Titre_Chargeon.Size = new System.Drawing.Size(79, 20);
-            this.l_Titre_Chargeon.TabIndex = 4;
-            this.l_Titre_Chargeon.Text = "Chargéon";
             // 
             // img_Close
             // 
@@ -443,6 +431,19 @@
             this.l_Titre_Client.TabIndex = 61;
             this.l_Titre_Client.Text = "Client";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(12, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 21);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Chargéon";
+            // 
             // Bornes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -498,7 +499,6 @@
 
         private System.Windows.Forms.Panel p_Titre_Chargeon;
         private System.Windows.Forms.PictureBox img_Return;
-        private System.Windows.Forms.Label l_Titre_Chargeon;
         private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Label l_Titre_Borne;
         private System.Windows.Forms.ComboBox cb_Borne;
@@ -530,5 +530,6 @@
         private System.Windows.Forms.Panel p_Client;
         private System.Windows.Forms.Label l_Client;
         private System.Windows.Forms.Label l_Titre_Client;
+        private System.Windows.Forms.Label label2;
     }
 }
