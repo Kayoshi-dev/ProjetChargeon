@@ -215,17 +215,37 @@ namespace ProjetChargeon
         // Cette méthode permet de supprimer une borne dans la BDD
         public bool DeleteBorne(string idSelected)
         {
-            string query = "DELETE FROM bornes WHERE Borne_Id = @id";
             bool validate = false;
 
+            string query = "DELETE FROM assistance WHERE Assist_NoBorne = @id";
+            string query2 = "DELETE FROM stats WHERE Stats_NoBorne = @id";
+            string query3 = "DELETE FROM facture WHERE Fact_IdBorne = @id";
+            string query4 = "DELETE FROM bornes WHERE Borne_Id = @id";
+            
+
             MySqlCommand req = new MySqlCommand(query, connection);
+            MySqlCommand req2 = new MySqlCommand(query2, connection);
+            MySqlCommand req3 = new MySqlCommand(query3, connection);
+            MySqlCommand req4 = new MySqlCommand(query4, connection);
 
             req.Parameters.Clear();
             req.Parameters.Add(new MySqlParameter("@id", idSelected));
 
+            req2.Parameters.Clear();
+            req2.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            req3.Parameters.Clear();
+            req3.Parameters.Add(new MySqlParameter("@id", idSelected));
+
+            req4.Parameters.Clear();
+            req4.Parameters.Add(new MySqlParameter("@id", idSelected));
+
             connection.Open();
 
             req.ExecuteNonQuery();
+            req2.ExecuteNonQuery();
+            req3.ExecuteNonQuery();
+            req4.ExecuteNonQuery();
 
             connection.Close();
 
