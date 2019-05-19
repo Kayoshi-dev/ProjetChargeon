@@ -15,12 +15,25 @@ namespace ProjetChargeon
 {
     public partial class Facturation : Form
     {
+        FacturationDAO DataFacturation = new FacturationDAO();
+
         public Facturation()
         {
             InitializeComponent();
+
+            // Récupération de l'ID de l'utilisateur
+            UserDAO IdList = new UserDAO();
+            int idCustomer = IdList.GetId();
+
+            DataSet ListeMyFacture = DataFacturation.selectMyFacture(idCustomer);
+
+            // Affiche le Client dans la ComboBox
+            cb_Facture.DisplayMember = "Fact_Titre";
+            cb_Facture.ValueMember = "Fact_Id";
+            cb_Facture.DataSource = ListeMyFacture.Tables[0];
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Click_Sauvegarde(object sender, EventArgs e)
         {
             using(SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true })
             {
@@ -43,6 +56,20 @@ namespace ProjetChargeon
                     }
                 }
             }
+        }
+
+        private void SelectedFactureIndexChange(object sender, EventArgs e)
+        {
+            int idFacture = Convert.ToInt32(cb_Facture.SelectedValue); // idFacture vaut l'ID du champ de la ComboBox
+
+            DataSet ListeInfosMyFacture = DataFacturation.selectInfosMyFacture(idFacture);
+
+            l_deb.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[4].ToString();
+            l_fin.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString();
+
+            rtb_data.Text = "Facture du : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[4].ToString() + Environment.NewLine +
+                "au : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString() + Environment.NewLine +
+                "Montant à régler : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[3].ToString() + "€" ;
         }
     }
 }

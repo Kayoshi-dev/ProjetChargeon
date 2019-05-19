@@ -97,6 +97,7 @@
     <Compile Include="Facturation.Designer.cs">
       <DependentUpon>Facturation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturationDAO.cs" />
     <Compile Include="SiteDAO.cs" />
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>

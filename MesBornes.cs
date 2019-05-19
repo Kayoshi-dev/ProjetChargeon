@@ -1,6 +1,6 @@
 ﻿/*
  * Date de création : 19/04/2019
- * Dernière modification : 30/04/2019
+ * Dernière modification : 19/05/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage des informations concernant toute les bornes
  * Développeur : Maxime
@@ -24,6 +24,7 @@ namespace ProjetChargeon
 		{
 			InitializeComponent();
 
+            // Récupération de l'ID de l'utilisateur
 			UserDAO IdList = new UserDAO();
 			int idAccount = IdList.GetId();
 
