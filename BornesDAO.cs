@@ -3,6 +3,7 @@
 * Dernière modification : 23/04/2019
 * Équipe : Nathouuuu
 * Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
+* Développeurs : Nathan, Maxime
 */
 
 using System;
@@ -153,7 +154,6 @@ namespace ProjetChargeon
         // Cette méthode permet d'ajouter une nouvelle Borne à la BDD
         public bool InsertBorne(int noSite, int noClient, string refBorne, string descBorne, string nsBorne, int typeBorne, int etatBorne, string puisBorne, int prioBorne)
         {
-
             string query = "INSERT INTO bornes (Borne_NoSite, Borne_NoCli, Borne_Ref, Borne_Desc, Borne_NS, Borne_Type, Borne_Etat, Borne_Puis, Borne_Prio) VALUES (@site, @client, @ref, @desc, @ns, @type, @etat, @puis, @prio)";
             bool validate = false;
 

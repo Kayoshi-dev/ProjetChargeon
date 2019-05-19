@@ -137,7 +137,6 @@ namespace ProjetChargeon
             cb_Client_Modif.DisplayMember = "Cli_Nom";
             cb_Client_Modif.ValueMember = "Cli_Id";
             cb_Client_Modif.DataSource = ListClient.Tables[0];
-
         }
 
         // Fonction pour afficher des données dans la ComboBox cb_Site_Modif
@@ -205,7 +204,6 @@ namespace ProjetChargeon
 
 
         /* Liens de Redirection */
-
         // Au Clic, on retourne vers la page Gestion_Donnees
         private void Return(object sender, EventArgs e)
         {
@@ -221,9 +219,7 @@ namespace ProjetChargeon
             Close();
         }
 
-
         /* On affiche les Données dans la ComboBox cb_Borne_Modif en fonction de la Borne Sélectionnée */
-
         private void DataBorneSelected(object sender, EventArgs e)
         {
             // On récupère l'ID de la ComboBox
@@ -346,7 +342,6 @@ namespace ProjetChargeon
 
 
         /* Evènements au Clic sur les Boutons */
-
         // Au Clic, on ajoute une borne dans la BDD
         private void AddBorne(object sender, EventArgs e)
         {
