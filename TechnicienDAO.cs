@@ -1,4 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿/* 
+ * Date de création : 20/04/2019
+ * Dernière modification : 30/04/2019
+ * Équipe : Nathouuuu
+ * Rôle : Fichier de class contenant différentes méthodes concernant les données "Technicien"
+ * Développeur : Nathan
+ */
+
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;

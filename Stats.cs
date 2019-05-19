@@ -1,3 +1,11 @@
+/* 
+* Date de création : 15/04/2019
+* Dernière modification : 19/05/2019
+* Équipe : Nathouuuu
+* Rôle : Page pour afficher les Stats d'une borne sélectionnée
+* Développeurs : Nathan, Maxime
+*/
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

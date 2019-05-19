@@ -1,3 +1,10 @@
+/* 
+ * Date de création : 11/03/2019
+ * Dernière modification : 11/03/2019
+ * Équipe : Nathouuuu
+ * Rôle : Page d'Accueil (Client)
+ */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

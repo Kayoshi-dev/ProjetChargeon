@@ -1,3 +1,11 @@
+/* 
+* Date de création : 10/04/2019
+* Dernière modification : 20/05/2019
+* Équipe : Nathouuuu
+* Rôle : Page d'Accueil pour la Gestion de l'ensemble des données de l'application "Chargeon"
+* Développeurs : Nathan, Maxime
+*/
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
