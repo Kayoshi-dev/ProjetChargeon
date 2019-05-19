@@ -64,12 +64,12 @@ namespace ProjetChargeon
 
             DataSet ListeInfosMyFacture = DataFacturation.selectInfosMyFacture(idFacture);
 
-            l_deb.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[4].ToString();
-            l_fin.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString();
+            l_deb.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[6].ToString();
+            l_fin.Text = ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[7].ToString();
 
-            rtb_data.Text = "Facture du : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[4].ToString() + Environment.NewLine +
-                "au : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString() + Environment.NewLine +
-                "Montant à régler : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[3].ToString() + "€" ;
+            rtb_data.Text = "Facture du : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[6].ToString() + Environment.NewLine +
+                "au : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[7].ToString() + Environment.NewLine +
+                "Montant à régler : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString() + "€" ;
         }
 
         private void CloseProgram(object sender, EventArgs e)
