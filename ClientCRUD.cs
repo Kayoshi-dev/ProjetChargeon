@@ -21,7 +21,7 @@ namespace ProjetChargeon
 {
     public partial class ClientCRUD : Form
     {
-		UserDAO DataUser = new UserDAO();
+		ClientDAO DataUser = new ClientDAO();
 
 		public ClientCRUD()
         {
@@ -43,18 +43,18 @@ namespace ProjetChargeon
 
 			DataSet dataCustomerDetails = DataUser.SelectDetailsClient(idSelected);
 
-			l_nom.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
-			tb_nom.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
-			tb_adresse.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString();
-			tb_cp.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[5].ToString();
-			tb_ville.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[6].ToString();
+			l_Nom_Supprimer.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
+			tb_Nom_Modif.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[3].ToString();
+			tb_Adresse_Modif.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[4].ToString();
+			tb_CP_Modif.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[5].ToString();
+			tb_Ville_Modif.Text = dataCustomerDetails.Tables[0].Rows[0].ItemArray[6].ToString();
 		}
 
 		private void UpdateClick(object sender, EventArgs e)
 		{
 			string idSelected = cb_Nom.SelectedValue.ToString(); // idSelected vaut l'ID du champ de la ComboBox
 
-			bool test = DataUser.UpdateCustomer(idSelected, tb_nom.Text, tb_adresse.Text, tb_cp.Text, tb_ville.Text);
+			bool test = DataUser.UpdateCustomer(idSelected, tb_Nom_Modif.Text, tb_Adresse_Modif.Text, tb_CP_Modif.Text, tb_Ville_Modif.Text);
 			if (test == true)
 			{
 				l_test.ForeColor = Color.FromArgb(46, 204, 113); // Vert

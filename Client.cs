@@ -16,7 +16,7 @@ namespace ProjetChargeon
         {
             InitializeComponent();
 
-			UserDAO DataUser = new UserDAO();
+			ClientDAO DataUser = new ClientDAO();
 			DataSet ListCustomer = DataUser.SelectClients();
 
 			// Affiche le Client dans la ComboBox
@@ -43,7 +43,7 @@ namespace ProjetChargeon
             // On récupère l'ID de la ComboBox
             string idSelected = cb_Client.SelectedValue.ToString();
 
-			UserDAO DataUser = new UserDAO();
+			ClientDAO DataUser = new ClientDAO();
 			DataSet ListCustomerDetails = DataUser.SelectDetailsClient(idSelected);
 
 			/* Affichage des données dans chaque label */

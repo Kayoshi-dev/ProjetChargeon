@@ -75,7 +75,7 @@ namespace ProjetChargeon
         private void onClickToIntervention(object sender, EventArgs e)
         {
             Hide();
-            var Intervention = new Intervention();
+            var Intervention = new Assistance();
             Intervention.ShowDialog();
             Close();
         }

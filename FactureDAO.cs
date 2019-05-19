@@ -17,11 +17,11 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    class FacturationDAO
+    class FactureDAO
     {
         private MySqlConnection connection;
 
-        public FacturationDAO()
+        public FactureDAO()
         {
             DBConnect ConnectObject = new DBConnect();
             connection = ConnectObject.GetConnection();

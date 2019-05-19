@@ -13,16 +13,16 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-    public partial class Facturation : Form
+    public partial class Facture : Form
     {
-        FacturationDAO DataFacturation = new FacturationDAO();
+        FactureDAO DataFacturation = new FactureDAO();
 
-        public Facturation()
+        public Facture()
         {
             InitializeComponent();
 
             // Récupération de l'ID de l'utilisateur
-            UserDAO IdList = new UserDAO();
+            ClientDAO IdList = new ClientDAO();
             int idCustomer = IdList.GetId();
 
             DataSet ListeMyFacture = DataFacturation.selectMyFacture(idCustomer);

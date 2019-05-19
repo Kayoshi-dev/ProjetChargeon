@@ -34,7 +34,7 @@ namespace ProjetChargeon
 
 
         BornesDAO DataBorne = new BornesDAO();
-        UserDAO DataUser = new UserDAO();
+        ClientDAO DataUser = new ClientDAO();
         SiteDAO DataSite = new SiteDAO();
 
 

@@ -91,13 +91,13 @@
     <Compile Include="BornesCRUD.Designer.cs">
       <DependentUpon>BornesCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Facturation.cs">
+    <Compile Include="Facture.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Facturation.Designer.cs">
-      <DependentUpon>Facturation.cs</DependentUpon>
+    <Compile Include="Facture.Designer.cs">
+      <DependentUpon>Facture.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturationDAO.cs" />
+    <Compile Include="FactureDAO.cs" />
     <Compile Include="FactureCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +144,11 @@
     <Compile Include="Gestion_Donnees.Designer.cs">
       <DependentUpon>Gestion_Donnees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Intervention.cs">
+    <Compile Include="Assistance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Intervention.Designer.cs">
-      <DependentUpon>Intervention.cs</DependentUpon>
+    <Compile Include="Assistance.Designer.cs">
+      <DependentUpon>Assistance.cs</DependentUpon>
     </Compile>
     <Compile Include="Logged_Customer.cs">
       <SubType>Form</SubType>
@@ -189,7 +189,7 @@
     <Compile Include="Technicien.Designer.cs">
       <DependentUpon>Technicien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserDAO.cs" />
+    <Compile Include="ClientDAO.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,8 +211,8 @@
     <EmbeddedResource Include="Carte.resx">
       <DependentUpon>Carte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Facturation.resx">
-      <DependentUpon>Facturation.cs</DependentUpon>
+    <EmbeddedResource Include="Facture.resx">
+      <DependentUpon>Facture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FactureCRUD.resx">
       <DependentUpon>FactureCRUD.cs</DependentUpon>
@@ -220,8 +220,8 @@
     <EmbeddedResource Include="Gestion_Donnees.resx">
       <DependentUpon>Gestion_Donnees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Intervention.resx">
-      <DependentUpon>Intervention.cs</DependentUpon>
+    <EmbeddedResource Include="Assistance.resx">
+      <DependentUpon>Assistance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logged_Customer.resx">
       <DependentUpon>Logged_Customer.cs</DependentUpon>
