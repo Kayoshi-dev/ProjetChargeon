@@ -13,6 +13,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
@@ -68,17 +69,38 @@ namespace ProjetChargeon
             return ListInfosMyFacture;
         }
 
-        public bool addNewFacture(int idCustomer, int idBorne)
+        public bool addNewFacture(string titre, int montant, string dateDebut, string dateFin, int idCustomer, int idBorne)
         {
             bool validate = false;
 
             try
             {
-                string query = "";
+                string query = "INSERT INTO facture (Fact_Titre, Fact_Mont, Fact_DateDeb, Fact_DateFin, Fact_IdClient, Fact_IdBorne) " +
+                               "VALUES (@titre, @montant, @dateDebut, @dateFin, @idCustomer, @idBorne)";
+
+                MySqlCommand req = new MySqlCommand(query, connection);
+
+                req.Parameters.Clear();
+                req.Parameters.Add(new MySqlParameter("@titre", titre));
+                req.Parameters.Add(new MySqlParameter("@montant", montant));
+                req.Parameters.Add(new MySqlParameter("@dateDebut", dateDebut));
+                req.Parameters.Add(new MySqlParameter("@dateFin", dateFin));
+                req.Parameters.Add(new MySqlParameter("@idCustomer", idCustomer));
+                req.Parameters.Add(new MySqlParameter("@idBorne", idBorne));
+
+                connection.Open();
+
+                req.ExecuteNonQuery();
+
+                connection.Close();
+
+                validate = true;
+
                 return validate;
             }
-            catch (Exception e)
+            catch (MySqlException ex)
             {
+                MessageBox.Show(ex.Message);
                 return validate;
             }
         }

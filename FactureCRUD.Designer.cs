@@ -41,10 +41,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Creer = new System.Windows.Forms.Button();
             this.cb_Client = new System.Windows.Forms.ComboBox();
             this.cb_Borne = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Debut = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fin = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.l_statut = new System.Windows.Forms.Label();
             this.p_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -170,18 +173,19 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(598, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 21);
+            this.label6.Size = new System.Drawing.Size(103, 21);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Date ";
+            this.label6.Text = "Date début";
             // 
-            // button1
+            // btn_Creer
             // 
-            this.button1.Location = new System.Drawing.Point(358, 410);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Créer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Creer.Location = new System.Drawing.Point(358, 410);
+            this.btn_Creer.Name = "btn_Creer";
+            this.btn_Creer.Size = new System.Drawing.Size(75, 28);
+            this.btn_Creer.TabIndex = 26;
+            this.btn_Creer.Text = "Créer";
+            this.btn_Creer.UseVisualStyleBackColor = true;
+            this.btn_Creer.Click += new System.EventHandler(this.btn_CreateFacture);
             // 
             // cb_Client
             // 
@@ -200,24 +204,55 @@
             this.cb_Borne.Size = new System.Drawing.Size(182, 29);
             this.cb_Borne.TabIndex = 28;
             // 
-            // dateTimePicker1
+            // dtp_Debut
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(602, 156);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(182, 27);
-            this.dateTimePicker1.TabIndex = 29;
+            this.dtp_Debut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtp_Debut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Debut.Location = new System.Drawing.Point(602, 156);
+            this.dtp_Debut.Name = "dtp_Debut";
+            this.dtp_Debut.Size = new System.Drawing.Size(182, 27);
+            this.dtp_Debut.TabIndex = 29;
+            // 
+            // dtp_Fin
+            // 
+            this.dtp_Fin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtp_Fin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Fin.Location = new System.Drawing.Point(602, 245);
+            this.dtp_Fin.Name = "dtp_Fin";
+            this.dtp_Fin.Size = new System.Drawing.Size(182, 27);
+            this.dtp_Fin.TabIndex = 30;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(598, 221);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 21);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Date fin";
+            // 
+            // l_statut
+            // 
+            this.l_statut.AutoSize = true;
+            this.l_statut.ForeColor = System.Drawing.Color.White;
+            this.l_statut.Location = new System.Drawing.Point(450, 414);
+            this.l_statut.Name = "l_statut";
+            this.l_statut.Size = new System.Drawing.Size(0, 21);
+            this.l_statut.TabIndex = 32;
             // 
             // FactureCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.l_statut);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.dtp_Fin);
+            this.Controls.Add(this.dtp_Debut);
             this.Controls.Add(this.cb_Borne);
             this.Controls.Add(this.cb_Client);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Creer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -256,9 +291,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Creer;
         private System.Windows.Forms.ComboBox cb_Client;
         private System.Windows.Forms.ComboBox cb_Borne;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_Debut;
+        private System.Windows.Forms.DateTimePicker dtp_Fin;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label l_statut;
     }
 }

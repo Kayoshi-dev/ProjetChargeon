@@ -35,7 +35,6 @@ namespace ProjetChargeon
             Close();
         }
 
-
         // Au Clic, redirection vers la page Gestion des Bornes
         private void onClickToBorne(object sender, EventArgs e)
         {
@@ -53,7 +52,6 @@ namespace ProjetChargeon
             BorneCRUD.ShowDialog();
             Close();
         }
-
         
         // Au Clic, redirection vers la page Gestion des Techniciens
         private void onClickToTechnicien(object sender, EventArgs e)
@@ -72,7 +70,6 @@ namespace ProjetChargeon
             TechnicienCRUD.ShowDialog();
             Close();
         }
-
 
         // Au Clic, redirection vers la page Gestion des Interventions
         private void onClickToIntervention(object sender, EventArgs e)
