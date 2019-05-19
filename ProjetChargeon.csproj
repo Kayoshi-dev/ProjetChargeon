@@ -98,6 +98,12 @@
       <DependentUpon>Facturation.cs</DependentUpon>
     </Compile>
     <Compile Include="FacturationDAO.cs" />
+    <Compile Include="FactureCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactureCRUD.Designer.cs">
+      <DependentUpon>FactureCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="SiteDAO.cs" />
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
@@ -207,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation.resx">
       <DependentUpon>Facturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactureCRUD.resx">
+      <DependentUpon>FactureCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion_Donnees.resx">
       <DependentUpon>Gestion_Donnees.cs</DependentUpon>

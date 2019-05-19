@@ -26,7 +26,7 @@ namespace ProjetChargeon
             connection = ConnectObject.GetConnection();
         }
 
-        // Récupère le titre et l'ID d'une facture
+        // Récupère le titre et l'ID d'une facture en fonction du client
         public DataSet selectMyFacture(int idCustomer)
         {
             string query = "SELECT Fact_Id, Fact_Titre FROM facture WHERE Fact_IdClient = @idCustomer";
@@ -66,6 +66,21 @@ namespace ProjetChargeon
             adapter.Dispose();
 
             return ListInfosMyFacture;
+        }
+
+        public bool addNewFacture(int idCustomer, int idBorne)
+        {
+            bool validate = false;
+
+            try
+            {
+                string query = "";
+                return validate;
+            }
+            catch (Exception e)
+            {
+                return validate;
+            }
         }
     }
 }

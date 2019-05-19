@@ -17,22 +17,6 @@ namespace ProjetChargeon
             InitializeComponent();
         }
 
-        // Au Clic, on kill le process et on ferme la page
-        private void Close(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        // Au Clic, on retourne à la page d'Accueil de l'Administrateur
-        private void Return(object sender, EventArgs e)
-        {
-            Hide();
-            var accueilAdmin = new Logged_Admin();
-            accueilAdmin.ShowDialog();
-            Close();
-        }
-
-
         // Au Clic, redirection vers la page Gestion des Clients
         private void onClickToClient(object sender, EventArgs e)
         {
@@ -96,6 +80,29 @@ namespace ProjetChargeon
             Hide();
             var Intervention = new Intervention();
             Intervention.ShowDialog();
+            Close();
+        }
+
+        private void onClickToFacture(object sender, EventArgs e)
+        {
+            Hide();
+            var GestionFacture = new FactureCRUD();
+            GestionFacture.ShowDialog();
+            Close();
+        }
+
+        // Au Clic, on kill le process et on ferme la page
+        private void Close(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        // Au Clic, on retourne à la page d'Accueil de l'Administrateur
+        private void Return(object sender, EventArgs e)
+        {
+            Hide();
+            var accueilAdmin = new Logged_Admin();
+            accueilAdmin.ShowDialog();
             Close();
         }
     }

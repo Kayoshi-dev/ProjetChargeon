@@ -39,7 +39,7 @@ namespace ProjetChargeon
             {
                 if(sfd.ShowDialog() == DialogResult.OK)
                 {
-                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.A4.Rotate());
+                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.A4);
                     try
                     {
                         PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
@@ -70,6 +70,19 @@ namespace ProjetChargeon
             rtb_data.Text = "Facture du : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[4].ToString() + Environment.NewLine +
                 "au : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[5].ToString() + Environment.NewLine +
                 "Montant à régler : " + ListeInfosMyFacture.Tables[0].Rows[0].ItemArray[3].ToString() + "€" ;
+        }
+
+        private void CloseProgram(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BackForm(object sender, EventArgs e)
+        {
+            Hide();
+            var LoggedCustomer = new Logged_Customer();
+            LoggedCustomer.ShowDialog();
+            Close();
         }
     }
 }

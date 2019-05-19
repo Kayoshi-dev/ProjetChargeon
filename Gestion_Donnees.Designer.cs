@@ -40,6 +40,7 @@ namespace ProjetChargeon
             this.btn_Gestion_Borne = new System.Windows.Forms.Button();
             this.btn_Gestion_Technicien = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btn_GestionFacture = new System.Windows.Forms.Button();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -154,11 +155,23 @@ namespace ProjetChargeon
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.onClickToIntervention);
             // 
+            // btn_GestionFacture
+            // 
+            this.btn_GestionFacture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btn_GestionFacture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_GestionFacture.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_GestionFacture, "btn_GestionFacture");
+            this.btn_GestionFacture.ForeColor = System.Drawing.Color.White;
+            this.btn_GestionFacture.Name = "btn_GestionFacture";
+            this.btn_GestionFacture.UseVisualStyleBackColor = false;
+            this.btn_GestionFacture.Click += new System.EventHandler(this.onClickToFacture);
+            // 
             // Gestion_Donnees
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.btn_GestionFacture);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn_Gestion_Technicien);
             this.Controls.Add(this.btn_Gestion_Borne);
@@ -190,5 +203,6 @@ namespace ProjetChargeon
         private System.Windows.Forms.Button btn_Gestion_Borne;
         private System.Windows.Forms.Button btn_Gestion_Technicien;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_GestionFacture;
     }
 }

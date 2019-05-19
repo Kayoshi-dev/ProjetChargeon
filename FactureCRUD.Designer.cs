@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-    partial class Facturation
+    partial class FactureCRUD
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FactureCRUD));
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.p_form1 = new System.Windows.Forms.Panel();
             this.img_Return = new System.Windows.Forms.PictureBox();
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cb_Facture = new System.Windows.Forms.ComboBox();
+            this.tb_Titre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.l_deb = new System.Windows.Forms.Label();
-            this.l_fin = new System.Windows.Forms.Label();
-            this.rtb_data = new System.Windows.Forms.RichTextBox();
+            this.tb_Montant = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.cb_Client = new System.Windows.Forms.ComboBox();
+            this.cb_Borne = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.p_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -68,7 +72,7 @@
             this.p_form1.Location = new System.Drawing.Point(0, 0);
             this.p_form1.Name = "p_form1";
             this.p_form1.Size = new System.Drawing.Size(800, 72);
-            this.p_form1.TabIndex = 13;
+            this.p_form1.TabIndex = 14;
             // 
             // img_Return
             // 
@@ -81,7 +85,6 @@
             this.img_Return.Size = new System.Drawing.Size(30, 30);
             this.img_Return.TabIndex = 13;
             this.img_Return.TabStop = false;
-            this.img_Return.Click += new System.EventHandler(this.BackForm);
             // 
             // img_Close
             // 
@@ -92,105 +95,144 @@
             this.img_Close.Size = new System.Drawing.Size(30, 30);
             this.img_Close.TabIndex = 1;
             this.img_Close.TabStop = false;
-            this.img_Close.Click += new System.EventHandler(this.CloseProgram);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 75);
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(263, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 21);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Mes factures";
+            this.label1.Size = new System.Drawing.Size(281, 24);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Faire une nouvelle facture";
             // 
-            // cb_Facture
+            // tb_Titre
             // 
-            this.cb_Facture.FormattingEnabled = true;
-            this.cb_Facture.Location = new System.Drawing.Point(16, 108);
-            this.cb_Facture.Name = "cb_Facture";
-            this.cb_Facture.Size = new System.Drawing.Size(189, 29);
-            this.cb_Facture.TabIndex = 15;
-            this.cb_Facture.SelectedIndexChanged += new System.EventHandler(this.SelectedFactureIndexChange);
+            this.tb_Titre.Location = new System.Drawing.Point(12, 154);
+            this.tb_Titre.MaxLength = 30;
+            this.tb_Titre.Name = "tb_Titre";
+            this.tb_Titre.Size = new System.Drawing.Size(182, 27);
+            this.tb_Titre.TabIndex = 16;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(337, 75);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 21);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Date début";
+            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Titre de la facture";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(627, 75);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(8, 223);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 21);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Date fin";
+            this.label3.Size = new System.Drawing.Size(143, 21);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Montant à regler";
             // 
-            // l_deb
+            // tb_Montant
             // 
-            this.l_deb.AutoSize = true;
-            this.l_deb.Location = new System.Drawing.Point(337, 111);
-            this.l_deb.Name = "l_deb";
-            this.l_deb.Size = new System.Drawing.Size(57, 21);
-            this.l_deb.TabIndex = 18;
-            this.l_deb.Text = "label4";
+            this.tb_Montant.Location = new System.Drawing.Point(12, 247);
+            this.tb_Montant.MaxLength = 5;
+            this.tb_Montant.Name = "tb_Montant";
+            this.tb_Montant.Size = new System.Drawing.Size(182, 27);
+            this.tb_Montant.TabIndex = 18;
             // 
-            // l_fin
+            // label4
             // 
-            this.l_fin.AutoSize = true;
-            this.l_fin.Location = new System.Drawing.Point(627, 111);
-            this.l_fin.Name = "l_fin";
-            this.l_fin.Size = new System.Drawing.Size(57, 21);
-            this.l_fin.TabIndex = 19;
-            this.l_fin.Text = "label5";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(335, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 21);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Selection client";
             // 
-            // rtb_data
+            // label5
             // 
-            this.rtb_data.Cursor = System.Windows.Forms.Cursors.No;
-            this.rtb_data.Location = new System.Drawing.Point(16, 158);
-            this.rtb_data.Name = "rtb_data";
-            this.rtb_data.ReadOnly = true;
-            this.rtb_data.Size = new System.Drawing.Size(772, 238);
-            this.rtb_data.TabIndex = 20;
-            this.rtb_data.Text = "";
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(332, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Selection borne";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(598, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 21);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Date ";
             // 
             // button1
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(657, 407);
+            this.button1.Location = new System.Drawing.Point(358, 410);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 31);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Telecharger";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Créer";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Click_Sauvegarde);
             // 
-            // Facturation
+            // cb_Client
+            // 
+            this.cb_Client.FormattingEnabled = true;
+            this.cb_Client.Location = new System.Drawing.Point(306, 154);
+            this.cb_Client.Name = "cb_Client";
+            this.cb_Client.Size = new System.Drawing.Size(182, 29);
+            this.cb_Client.TabIndex = 27;
+            this.cb_Client.SelectedIndexChanged += new System.EventHandler(this.SelectedClientIndexChange);
+            // 
+            // cb_Borne
+            // 
+            this.cb_Borne.FormattingEnabled = true;
+            this.cb_Borne.Location = new System.Drawing.Point(306, 247);
+            this.cb_Borne.Name = "cb_Borne";
+            this.cb_Borne.Size = new System.Drawing.Size(182, 29);
+            this.cb_Borne.TabIndex = 28;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(602, 156);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(182, 27);
+            this.dateTimePicker1.TabIndex = 29;
+            // 
+            // FactureCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.ControlBox = false;
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.cb_Borne);
+            this.Controls.Add(this.cb_Client);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.rtb_data);
-            this.Controls.Add(this.l_fin);
-            this.Controls.Add(this.l_deb);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.tb_Montant);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cb_Facture);
+            this.Controls.Add(this.tb_Titre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.p_form1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Facturation";
+            this.Name = "FactureCRUD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Facturation";
+            this.Text = "Gestion des factures";
             this.p_form1.ResumeLayout(false);
             this.p_form1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();
@@ -207,12 +249,16 @@
         private System.Windows.Forms.PictureBox img_Return;
         private System.Windows.Forms.PictureBox img_Close;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cb_Facture;
+        private System.Windows.Forms.TextBox tb_Titre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label l_deb;
-        private System.Windows.Forms.Label l_fin;
-        private System.Windows.Forms.RichTextBox rtb_data;
+        private System.Windows.Forms.TextBox tb_Montant;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cb_Client;
+        private System.Windows.Forms.ComboBox cb_Borne;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
