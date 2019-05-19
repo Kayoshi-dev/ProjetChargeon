@@ -25,7 +25,7 @@ namespace ProjetChargeon
             InitializeComponent();
 
             // Initialisation de la combo box contenant les clients
-            UserDAO DataUser = new UserDAO();
+            ClientDAO DataUser = new ClientDAO();
             DataSet ListCustomer = DataUser.SelectClients();
 
             // Affiche le Client dans la ComboBox
@@ -65,7 +65,7 @@ namespace ProjetChargeon
             string dateDebut = dtp_Debut.Value.Date.ToString("yyyy-MM-dd");
             string dateFin = dtp_Fin.Value.Date.ToString("yyyy-MM-dd");
 
-            FacturationDAO DataFacturation = new FacturationDAO();
+            FactureDAO DataFacturation = new FactureDAO();
             bool validate = DataFacturation.addNewFacture(tb_Titre.Text, Convert.ToInt32(tb_Montant.Text), dateDebut, dateFin, idCustomer, idBorne);
 
             if(validate == true)
@@ -78,6 +78,19 @@ namespace ProjetChargeon
             {
                 l_statut.Text = "Une erreur est survenue";
             }
+        }
+
+        private void Close(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Return(object sender, EventArgs e)
+        {
+            Hide();
+            var Data = new Gestion_Donnees();
+            Data.ShowDialog();
+            Close();
         }
     }
 }

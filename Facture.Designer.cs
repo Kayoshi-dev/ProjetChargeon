@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-    partial class Facturation
+    partial class Facture
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facture));
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.p_form1 = new System.Windows.Forms.Panel();
             this.img_Return = new System.Windows.Forms.PictureBox();

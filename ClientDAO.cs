@@ -17,12 +17,12 @@ using MySql.Data.MySqlClient;
 
 namespace ProjetChargeon
 {
-    class UserDAO
+    class ClientDAO
     {
 		private MySqlConnection connection;
 		public static int idAccount;
 
-		public UserDAO() 
+		public ClientDAO() 
 		{
 			var ConnectObject = new DBConnect();
 			this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.

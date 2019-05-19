@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BornesCRUD));
             this.p_Titre_Chargeon = new System.Windows.Forms.Panel();
+            this.l_Titre_Chargeon = new System.Windows.Forms.Label();
             this.img_Return = new System.Windows.Forms.PictureBox();
             this.img_Close = new System.Windows.Forms.PictureBox();
             this.l_Titre_Ajout_Borne = new System.Windows.Forms.Label();
@@ -79,7 +80,6 @@
             this.p_Supprimer_Borne = new System.Windows.Forms.Panel();
             this.cb_Borne_Supprimer = new System.Windows.Forms.ComboBox();
             this.btn_Supprimer = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.p_Titre_Chargeon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Close)).BeginInit();
@@ -91,11 +91,18 @@
             // p_Titre_Chargeon
             // 
             this.p_Titre_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.p_Titre_Chargeon.Controls.Add(this.label2);
+            this.p_Titre_Chargeon.Controls.Add(this.l_Titre_Chargeon);
             this.p_Titre_Chargeon.Controls.Add(this.img_Return);
             this.p_Titre_Chargeon.Controls.Add(this.img_Close);
             resources.ApplyResources(this.p_Titre_Chargeon, "p_Titre_Chargeon");
             this.p_Titre_Chargeon.Name = "p_Titre_Chargeon";
+            // 
+            // l_Titre_Chargeon
+            // 
+            resources.ApplyResources(this.l_Titre_Chargeon, "l_Titre_Chargeon");
+            this.l_Titre_Chargeon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
+            this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
             // 
             // img_Return
             // 
@@ -433,13 +440,6 @@
             this.btn_Supprimer.UseVisualStyleBackColor = true;
             this.btn_Supprimer.Click += new System.EventHandler(this.DeleteBorne);
             // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Name = "label2";
-            // 
             // BornesCRUD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -522,6 +522,6 @@
         private System.Windows.Forms.Label l_Titre_Site_Modif;
         private System.Windows.Forms.ComboBox cb_Client_Modif;
         private System.Windows.Forms.ComboBox cb_Site_Modif;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label l_Titre_Chargeon;
     }
 }

@@ -28,9 +28,9 @@ namespace ProjetChargeon
 
 		public DataSet SelectDetailsStats(string idSelected)
 		{
-			string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Stats_Id = @id";
+            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Stats_Id = @id";
 
-			MySqlCommand req = new MySqlCommand(query, connection);
+            MySqlCommand req = new MySqlCommand(query, connection);
 
 			req.Parameters.Clear();
 			req.Parameters.Add(new MySqlParameter("@id", idSelected));

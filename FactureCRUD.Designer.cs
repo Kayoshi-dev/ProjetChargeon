@@ -56,12 +56,12 @@
             // l_Titre_Chargeon
             // 
             this.l_Titre_Chargeon.AutoSize = true;
-            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Chargeon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Chargeon.Location = new System.Drawing.Point(12, 25);
             this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
-            this.l_Titre_Chargeon.Size = new System.Drawing.Size(90, 21);
+            this.l_Titre_Chargeon.Size = new System.Drawing.Size(79, 20);
             this.l_Titre_Chargeon.TabIndex = 4;
             this.l_Titre_Chargeon.Text = "Chargéon";
             // 
@@ -88,6 +88,7 @@
             this.img_Return.Size = new System.Drawing.Size(30, 30);
             this.img_Return.TabIndex = 13;
             this.img_Return.TabStop = false;
+            this.img_Return.Click += new System.EventHandler(this.Return);
             // 
             // img_Close
             // 
@@ -98,16 +99,17 @@
             this.img_Close.Size = new System.Drawing.Size(30, 30);
             this.img_Close.TabIndex = 1;
             this.img_Close.TabStop = false;
+            this.img_Close.Click += new System.EventHandler(this.Close);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(263, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 24);
+            this.label1.Size = new System.Drawing.Size(262, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Faire une nouvelle facture";
             // 
@@ -116,7 +118,7 @@
             this.tb_Titre.Location = new System.Drawing.Point(12, 154);
             this.tb_Titre.MaxLength = 30;
             this.tb_Titre.Name = "tb_Titre";
-            this.tb_Titre.Size = new System.Drawing.Size(182, 27);
+            this.tb_Titre.Size = new System.Drawing.Size(182, 26);
             this.tb_Titre.TabIndex = 16;
             // 
             // label2
@@ -125,7 +127,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(8, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "Titre de la facture";
             // 
@@ -135,7 +137,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(8, 223);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 21);
+            this.label3.Size = new System.Drawing.Size(125, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "Montant à regler";
             // 
@@ -144,7 +146,7 @@
             this.tb_Montant.Location = new System.Drawing.Point(12, 247);
             this.tb_Montant.MaxLength = 5;
             this.tb_Montant.Name = "tb_Montant";
-            this.tb_Montant.Size = new System.Drawing.Size(182, 27);
+            this.tb_Montant.Size = new System.Drawing.Size(182, 26);
             this.tb_Montant.TabIndex = 18;
             // 
             // label4
@@ -153,7 +155,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(335, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 21);
+            this.label4.Size = new System.Drawing.Size(116, 20);
             this.label4.TabIndex = 21;
             this.label4.Text = "Selection client";
             // 
@@ -163,7 +165,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(332, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 21);
+            this.label5.Size = new System.Drawing.Size(120, 20);
             this.label5.TabIndex = 23;
             this.label5.Text = "Selection borne";
             // 
@@ -173,7 +175,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(598, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 21);
+            this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 25;
             this.label6.Text = "Date début";
             // 
@@ -192,7 +194,7 @@
             this.cb_Client.FormattingEnabled = true;
             this.cb_Client.Location = new System.Drawing.Point(306, 154);
             this.cb_Client.Name = "cb_Client";
-            this.cb_Client.Size = new System.Drawing.Size(182, 29);
+            this.cb_Client.Size = new System.Drawing.Size(182, 28);
             this.cb_Client.TabIndex = 27;
             this.cb_Client.SelectedIndexChanged += new System.EventHandler(this.SelectedClientIndexChange);
             // 
@@ -201,7 +203,7 @@
             this.cb_Borne.FormattingEnabled = true;
             this.cb_Borne.Location = new System.Drawing.Point(306, 247);
             this.cb_Borne.Name = "cb_Borne";
-            this.cb_Borne.Size = new System.Drawing.Size(182, 29);
+            this.cb_Borne.Size = new System.Drawing.Size(182, 28);
             this.cb_Borne.TabIndex = 28;
             // 
             // dtp_Debut
@@ -210,7 +212,7 @@
             this.dtp_Debut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_Debut.Location = new System.Drawing.Point(602, 156);
             this.dtp_Debut.Name = "dtp_Debut";
-            this.dtp_Debut.Size = new System.Drawing.Size(182, 27);
+            this.dtp_Debut.Size = new System.Drawing.Size(182, 26);
             this.dtp_Debut.TabIndex = 29;
             // 
             // dtp_Fin
@@ -219,7 +221,7 @@
             this.dtp_Fin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_Fin.Location = new System.Drawing.Point(602, 245);
             this.dtp_Fin.Name = "dtp_Fin";
-            this.dtp_Fin.Size = new System.Drawing.Size(182, 27);
+            this.dtp_Fin.Size = new System.Drawing.Size(182, 26);
             this.dtp_Fin.TabIndex = 30;
             // 
             // label7
@@ -228,7 +230,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(598, 221);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 21);
+            this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 31;
             this.label7.Text = "Date fin";
             // 
@@ -238,7 +240,7 @@
             this.l_statut.ForeColor = System.Drawing.Color.White;
             this.l_statut.Location = new System.Drawing.Point(450, 414);
             this.l_statut.Name = "l_statut";
-            this.l_statut.Size = new System.Drawing.Size(0, 21);
+            this.l_statut.Size = new System.Drawing.Size(0, 20);
             this.l_statut.TabIndex = 32;
             // 
             // FactureCRUD
@@ -262,7 +264,7 @@
             this.Controls.Add(this.tb_Titre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.p_form1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FactureCRUD";

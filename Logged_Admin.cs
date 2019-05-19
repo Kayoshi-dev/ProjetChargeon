@@ -46,7 +46,7 @@ namespace ProjetChargeon
 				l_nbAss.Click += (s, e) =>
 				{
 					Hide();
-					var InterventionForm = new Intervention();
+					var InterventionForm = new Assistance();
 					InterventionForm.ShowDialog();
 					Close();
 				};

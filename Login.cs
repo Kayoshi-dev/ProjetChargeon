@@ -43,7 +43,7 @@ namespace ProjetChargeon
 				if (DataAccount.Tables[0].Rows[0].ItemArray[1].ToString() == "False")
 				{
 					//On initialise l'ID du client
-					var ListeID = new UserDAO();
+					var ListeID = new ClientDAO();
 					ListeID.RetrieveCustomerId(tb_login.Text);
 
 					Hide();

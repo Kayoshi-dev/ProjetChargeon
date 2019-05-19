@@ -1,6 +1,6 @@
 ﻿namespace ProjetChargeon
 {
-	partial class Intervention
+	partial class Assistance
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intervention));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Assistance));
             this.p_Chargeon = new System.Windows.Forms.Panel();
             this.img_Return = new System.Windows.Forms.PictureBox();
             this.l_Titre_Chargeon = new System.Windows.Forms.Label();

@@ -18,12 +18,12 @@ using System.Windows.Forms;
 
 namespace ProjetChargeon
 {
-	public partial class Intervention : Form
+	public partial class Assistance : Form
 	{
 		AssistanceDAO dataAssistance = new AssistanceDAO();
         TechnicienDAO dataTechnicien = new TechnicienDAO();
 
-		public Intervention()
+		public Assistance()
 		{
 			InitializeComponent();
 
@@ -134,8 +134,8 @@ namespace ProjetChargeon
         private void Return(object sender, EventArgs e)
         {
             Hide();
-            var accueilAdmin = new Logged_Admin();
-            accueilAdmin.ShowDialog();
+            var Data = new Gestion_Donnees();
+            Data.ShowDialog();
             Close();
         }
     }

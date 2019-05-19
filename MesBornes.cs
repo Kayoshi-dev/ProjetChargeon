@@ -25,7 +25,7 @@ namespace ProjetChargeon
 			InitializeComponent();
 
             // Récupération de l'ID de l'utilisateur
-			UserDAO IdList = new UserDAO();
+			ClientDAO IdList = new ClientDAO();
 			int idAccount = IdList.GetId();
 
 			// Initialisation de la ComboBox affichant les différentes bornes
