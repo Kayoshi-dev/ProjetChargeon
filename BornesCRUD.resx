@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="l_Titre_Chargeon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="l_Titre_Chargeon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -133,7 +133,7 @@
     <value>12, 25</value>
   </data>
   <data name="l_Titre_Chargeon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
+    <value>90, 21</value>
   </data>
   <data name="l_Titre_Chargeon.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -230,7 +230,7 @@
     <value>Top</value>
   </data>
   <data name="p_Titre_Chargeon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="p_Titre_Chargeon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -257,7 +257,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Ajout_Borne.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Century Gothic, 15.75pt</value>
   </data>
   <data name="l_Titre_Ajout_Borne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -266,7 +266,7 @@
     <value>27, 87</value>
   </data>
   <data name="l_Titre_Ajout_Borne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 25</value>
+    <value>193, 24</value>
   </data>
   <data name="l_Titre_Ajout_Borne.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -290,7 +290,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Modifier_Borne.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Century Gothic, 15.75pt</value>
   </data>
   <data name="l_Titre_Modifier_Borne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -299,7 +299,7 @@
     <value>309, 87</value>
   </data>
   <data name="l_Titre_Modifier_Borne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 25</value>
+    <value>201, 24</value>
   </data>
   <data name="l_Titre_Modifier_Borne.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -323,7 +323,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Century Gothic, 15.75pt</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -332,7 +332,7 @@
     <value>569, 87</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 25</value>
+    <value>222, 24</value>
   </data>
   <data name="l_Titre_Supprimer_Borne.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -356,7 +356,7 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -365,7 +365,7 @@
     <value>3, 46</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>64, 21</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -389,7 +389,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Site_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Site_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -398,7 +398,7 @@
     <value>3, 13</value>
   </data>
   <data name="l_Titre_Site_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>46, 21</value>
   </data>
   <data name="l_Titre_Site_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -418,11 +418,14 @@
   <data name="&gt;&gt;l_Titre_Site_Ajout.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cb_Client_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Client_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 43</value>
   </data>
   <data name="cb_Client_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Client_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -439,11 +442,14 @@
   <data name="&gt;&gt;cb_Client_Ajout.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="cb_Site_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Site_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 9</value>
   </data>
   <data name="cb_Site_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Site_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -460,11 +466,14 @@
   <data name="&gt;&gt;cb_Site_Ajout.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="cb_Prio_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Prio_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 295</value>
   </data>
   <data name="cb_Prio_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Prio_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -485,7 +494,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Priorité_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Priorité_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -494,7 +503,7 @@
     <value>3, 298</value>
   </data>
   <data name="l_Titre_Priorité_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>45, 21</value>
   </data>
   <data name="l_Titre_Priorité_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -514,11 +523,17 @@
   <data name="&gt;&gt;l_Titre_Priorité_Ajout.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="tb_Puissance_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Puissance_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 263</value>
   </data>
+  <data name="tb_Puissance_Ajout.MaxLength" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="tb_Puissance_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_Puissance_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -539,7 +554,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Puissance_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Puissance_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -548,7 +563,7 @@
     <value>3, 266</value>
   </data>
   <data name="l_Titre_Puissance_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+    <value>52, 21</value>
   </data>
   <data name="l_Titre_Puissance_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -568,11 +583,14 @@
   <data name="&gt;&gt;l_Titre_Puissance_Ajout.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="cb_Etat_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Etat_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 229</value>
   </data>
   <data name="cb_Etat_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Etat_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -593,7 +611,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Etat_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Etat_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -602,7 +620,7 @@
     <value>3, 232</value>
   </data>
   <data name="l_Titre_Etat_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
+    <value>52, 21</value>
   </data>
   <data name="l_Titre_Etat_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -626,7 +644,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Description.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -635,7 +653,7 @@
     <value>3, 144</value>
   </data>
   <data name="l_Titre_Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>56, 21</value>
   </data>
   <data name="l_Titre_Description.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -655,8 +673,14 @@
   <data name="&gt;&gt;l_Titre_Description.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="tb_Description_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Description_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 141</value>
+  </data>
+  <data name="tb_Description_Ajout.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
   <data name="tb_Description_Ajout.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -679,11 +703,17 @@
   <data name="&gt;&gt;tb_Description_Ajout.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="tb_NS_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_NS_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 109</value>
   </data>
+  <data name="tb_NS_Ajout.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tb_NS_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_NS_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -700,11 +730,14 @@
   <data name="&gt;&gt;tb_NS_Ajout.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="cb_Type_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Type_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 195</value>
   </data>
   <data name="cb_Type_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Type_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -725,7 +758,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Référence_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Référence_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -734,7 +767,7 @@
     <value>3, 80</value>
   </data>
   <data name="l_Titre_Référence_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+    <value>43, 21</value>
   </data>
   <data name="l_Titre_Référence_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -754,11 +787,17 @@
   <data name="&gt;&gt;l_Titre_Référence_Ajout.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="tb_Ref_Ajout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Ref_Ajout.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 77</value>
   </data>
+  <data name="tb_Ref_Ajout.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tb_Ref_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_Ref_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -776,7 +815,7 @@
     <value>15</value>
   </data>
   <data name="btn_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="btn_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -809,7 +848,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_NuméroSérie_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_NuméroSérie_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -818,7 +857,7 @@
     <value>3, 112</value>
   </data>
   <data name="l_Titre_NuméroSérie_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>38, 21</value>
   </data>
   <data name="l_Titre_NuméroSérie_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -842,7 +881,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Type_Ajout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Type_Ajout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -851,7 +890,7 @@
     <value>3, 202</value>
   </data>
   <data name="l_Titre_Type_Ajout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 20</value>
+    <value>55, 21</value>
   </data>
   <data name="l_Titre_Type_Ajout.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -896,7 +935,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Client_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Client_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -905,7 +944,7 @@
     <value>3, 83</value>
   </data>
   <data name="l_Titre_Client_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>64, 21</value>
   </data>
   <data name="l_Titre_Client_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -929,7 +968,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Site_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Site_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -938,7 +977,7 @@
     <value>3, 49</value>
   </data>
   <data name="l_Titre_Site_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>46, 21</value>
   </data>
   <data name="l_Titre_Site_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -958,11 +997,14 @@
   <data name="&gt;&gt;l_Titre_Site_Modif.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cb_Client_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Client_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 80</value>
   </data>
   <data name="cb_Client_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Client_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -979,11 +1021,14 @@
   <data name="&gt;&gt;cb_Client_Modif.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="cb_Site_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Site_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 46</value>
   </data>
   <data name="cb_Site_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Site_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1004,7 +1049,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Priorité_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Priorité_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1013,7 +1058,7 @@
     <value>3, 335</value>
   </data>
   <data name="l_Titre_Priorité_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>45, 21</value>
   </data>
   <data name="l_Titre_Priorité_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1037,7 +1082,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Puissance_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Puissance_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1046,7 +1091,7 @@
     <value>3, 303</value>
   </data>
   <data name="l_Titre_Puissance_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+    <value>52, 21</value>
   </data>
   <data name="l_Titre_Puissance_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1070,7 +1115,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Etat_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Etat_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1079,7 +1124,7 @@
     <value>3, 269</value>
   </data>
   <data name="l_Titre_Etat_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
+    <value>52, 21</value>
   </data>
   <data name="l_Titre_Etat_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1103,7 +1148,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Type_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Type_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1112,7 +1157,7 @@
     <value>3, 235</value>
   </data>
   <data name="l_Titre_Type_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 20</value>
+    <value>55, 21</value>
   </data>
   <data name="l_Titre_Type_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1136,7 +1181,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Description_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Description_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1145,7 +1190,7 @@
     <value>3, 181</value>
   </data>
   <data name="l_Titre_Description_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>56, 21</value>
   </data>
   <data name="l_Titre_Description_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1169,7 +1214,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1178,7 +1223,7 @@
     <value>3, 149</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>38, 21</value>
   </data>
   <data name="l_Titre_NuméroSérie_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1202,7 +1247,7 @@
     <value>True</value>
   </data>
   <data name="l_Titre_Référence_Modif.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="l_Titre_Référence_Modif.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1211,7 +1256,7 @@
     <value>3, 117</value>
   </data>
   <data name="l_Titre_Référence_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+    <value>43, 21</value>
   </data>
   <data name="l_Titre_Référence_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1232,7 +1277,7 @@
     <value>10</value>
   </data>
   <data name="btn_Modifier.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="btn_Modifier.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1261,11 +1306,14 @@
   <data name="&gt;&gt;btn_Modifier.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="cb_Prio_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Prio_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 332</value>
   </data>
   <data name="cb_Prio_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Prio_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1282,11 +1330,17 @@
   <data name="&gt;&gt;cb_Prio_Modif.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="tb_Puissance_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Puissance_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 300</value>
   </data>
+  <data name="tb_Puissance_Modif.MaxLength" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="tb_Puissance_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_Puissance_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1303,11 +1357,14 @@
   <data name="&gt;&gt;tb_Puissance_Modif.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="cb_Etat_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Etat_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 266</value>
   </data>
   <data name="cb_Etat_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Etat_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1324,11 +1381,14 @@
   <data name="&gt;&gt;cb_Etat_Modif.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="cb_Type_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Type_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 232</value>
   </data>
   <data name="cb_Type_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 28</value>
+    <value>134, 29</value>
   </data>
   <data name="cb_Type_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1345,8 +1405,14 @@
   <data name="&gt;&gt;cb_Type_Modif.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="tb_Description_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Description_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 178</value>
+  </data>
+  <data name="tb_Description_Modif.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
   <data name="tb_Description_Modif.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1369,11 +1435,17 @@
   <data name="&gt;&gt;tb_Description_Modif.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="tb_Ref_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_Ref_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 114</value>
   </data>
+  <data name="tb_Ref_Modif.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tb_Ref_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_Ref_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1390,11 +1462,14 @@
   <data name="&gt;&gt;tb_Ref_Modif.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="cb_Borne_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Borne_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 10</value>
   </data>
   <data name="cb_Borne_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 28</value>
+    <value>214, 29</value>
   </data>
   <data name="cb_Borne_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1411,11 +1486,17 @@
   <data name="&gt;&gt;cb_Borne_Modif.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="tb_NS_Modif.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="tb_NS_Modif.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 146</value>
   </data>
+  <data name="tb_NS_Modif.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tb_NS_Modif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
+    <value>134, 27</value>
   </data>
   <data name="tb_NS_Modif.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1453,11 +1534,14 @@
   <data name="&gt;&gt;p_Modifier_Borne.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cb_Borne_Supprimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="cb_Borne_Supprimer.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 10</value>
   </data>
   <data name="cb_Borne_Supprimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 28</value>
+    <value>214, 29</value>
   </data>
   <data name="cb_Borne_Supprimer.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1475,7 +1559,7 @@
     <value>0</value>
   </data>
   <data name="btn_Supprimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Century Gothic, 12pt</value>
   </data>
   <data name="btn_Supprimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

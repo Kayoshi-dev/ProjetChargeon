@@ -178,20 +178,20 @@
             // 
             // cb_Client_Ajout
             // 
-            this.cb_Client_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Client_Ajout, "cb_Client_Ajout");
+            this.cb_Client_Ajout.FormattingEnabled = true;
             this.cb_Client_Ajout.Name = "cb_Client_Ajout";
             // 
             // cb_Site_Ajout
             // 
-            this.cb_Site_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Site_Ajout, "cb_Site_Ajout");
+            this.cb_Site_Ajout.FormattingEnabled = true;
             this.cb_Site_Ajout.Name = "cb_Site_Ajout";
             // 
             // cb_Prio_Ajout
             // 
-            this.cb_Prio_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Prio_Ajout, "cb_Prio_Ajout");
+            this.cb_Prio_Ajout.FormattingEnabled = true;
             this.cb_Prio_Ajout.Name = "cb_Prio_Ajout";
             // 
             // l_Titre_Priorité_Ajout
@@ -204,6 +204,7 @@
             // 
             resources.ApplyResources(this.tb_Puissance_Ajout, "tb_Puissance_Ajout");
             this.tb_Puissance_Ajout.Name = "tb_Puissance_Ajout";
+            this.tb_Puissance_Ajout.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AcceptNumbers);
             // 
             // l_Titre_Puissance_Ajout
             // 
@@ -213,8 +214,8 @@
             // 
             // cb_Etat_Ajout
             // 
-            this.cb_Etat_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Etat_Ajout, "cb_Etat_Ajout");
+            this.cb_Etat_Ajout.FormattingEnabled = true;
             this.cb_Etat_Ajout.Name = "cb_Etat_Ajout";
             // 
             // l_Titre_Etat_Ajout
@@ -236,13 +237,14 @@
             // 
             // tb_NS_Ajout
             // 
+            this.tb_NS_Ajout.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.tb_NS_Ajout, "tb_NS_Ajout");
             this.tb_NS_Ajout.Name = "tb_NS_Ajout";
             // 
             // cb_Type_Ajout
             // 
-            this.cb_Type_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Type_Ajout, "cb_Type_Ajout");
+            this.cb_Type_Ajout.FormattingEnabled = true;
             this.cb_Type_Ajout.Name = "cb_Type_Ajout";
             // 
             // l_Titre_Référence_Ajout
@@ -253,6 +255,7 @@
             // 
             // tb_Ref_Ajout
             // 
+            this.tb_Ref_Ajout.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.tb_Ref_Ajout, "tb_Ref_Ajout");
             this.tb_Ref_Ajout.Name = "tb_Ref_Ajout";
             // 
@@ -315,14 +318,14 @@
             // 
             // cb_Client_Modif
             // 
-            this.cb_Client_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Client_Modif, "cb_Client_Modif");
+            this.cb_Client_Modif.FormattingEnabled = true;
             this.cb_Client_Modif.Name = "cb_Client_Modif";
             // 
             // cb_Site_Modif
             // 
-            this.cb_Site_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Site_Modif, "cb_Site_Modif");
+            this.cb_Site_Modif.FormattingEnabled = true;
             this.cb_Site_Modif.Name = "cb_Site_Modif";
             // 
             // l_Titre_Priorité_Modif
@@ -376,25 +379,26 @@
             // 
             // cb_Prio_Modif
             // 
-            this.cb_Prio_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Prio_Modif, "cb_Prio_Modif");
+            this.cb_Prio_Modif.FormattingEnabled = true;
             this.cb_Prio_Modif.Name = "cb_Prio_Modif";
             // 
             // tb_Puissance_Modif
             // 
             resources.ApplyResources(this.tb_Puissance_Modif, "tb_Puissance_Modif");
             this.tb_Puissance_Modif.Name = "tb_Puissance_Modif";
+            this.tb_Puissance_Modif.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AcceptNumbers);
             // 
             // cb_Etat_Modif
             // 
-            this.cb_Etat_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Etat_Modif, "cb_Etat_Modif");
+            this.cb_Etat_Modif.FormattingEnabled = true;
             this.cb_Etat_Modif.Name = "cb_Etat_Modif";
             // 
             // cb_Type_Modif
             // 
-            this.cb_Type_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Type_Modif, "cb_Type_Modif");
+            this.cb_Type_Modif.FormattingEnabled = true;
             this.cb_Type_Modif.Name = "cb_Type_Modif";
             // 
             // tb_Description_Modif
@@ -404,18 +408,20 @@
             // 
             // tb_Ref_Modif
             // 
+            this.tb_Ref_Modif.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.tb_Ref_Modif, "tb_Ref_Modif");
             this.tb_Ref_Modif.Name = "tb_Ref_Modif";
             // 
             // cb_Borne_Modif
             // 
-            this.cb_Borne_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Borne_Modif, "cb_Borne_Modif");
+            this.cb_Borne_Modif.FormattingEnabled = true;
             this.cb_Borne_Modif.Name = "cb_Borne_Modif";
             this.cb_Borne_Modif.SelectedIndexChanged += new System.EventHandler(this.DataBorneSelected);
             // 
             // tb_NS_Modif
             // 
+            this.tb_NS_Modif.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.tb_NS_Modif, "tb_NS_Modif");
             this.tb_NS_Modif.Name = "tb_NS_Modif";
             // 
@@ -429,8 +435,8 @@
             // 
             // cb_Borne_Supprimer
             // 
-            this.cb_Borne_Supprimer.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Borne_Supprimer, "cb_Borne_Supprimer");
+            this.cb_Borne_Supprimer.FormattingEnabled = true;
             this.cb_Borne_Supprimer.Name = "cb_Borne_Supprimer";
             // 
             // btn_Supprimer

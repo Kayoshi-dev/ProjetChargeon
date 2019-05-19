@@ -407,5 +407,14 @@ namespace ProjetChargeon
             cb_Borne_Supprimer.DataSource = ListeBornes.Tables[0];
             cb_Borne_Modif.DataSource = ListeBornes.Tables[0];
         }
+
+        private void AcceptNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsControl(e.KeyChar) || !Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }
