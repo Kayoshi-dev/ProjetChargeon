@@ -92,5 +92,14 @@ namespace ProjetChargeon
             Data.ShowDialog();
             Close();
         }
+
+        private void AcceptNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsControl(e.KeyChar) || !Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

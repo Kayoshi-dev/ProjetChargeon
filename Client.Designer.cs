@@ -113,7 +113,7 @@
             // 
             this.l_Titre_Client.AutoSize = true;
             this.l_Titre_Client.ForeColor = System.Drawing.Color.White;
-            this.l_Titre_Client.Location = new System.Drawing.Point(69, 119);
+            this.l_Titre_Client.Location = new System.Drawing.Point(73, 119);
             this.l_Titre_Client.Name = "l_Titre_Client";
             this.l_Titre_Client.Size = new System.Drawing.Size(56, 21);
             this.l_Titre_Client.TabIndex = 14;
@@ -121,11 +121,11 @@
             // 
             // cb_Client
             // 
-            this.cb_Client.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Client.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Client.FormattingEnabled = true;
             this.cb_Client.Location = new System.Drawing.Point(12, 143);
             this.cb_Client.Name = "cb_Client";
-            this.cb_Client.Size = new System.Drawing.Size(182, 28);
+            this.cb_Client.Size = new System.Drawing.Size(182, 29);
             this.cb_Client.TabIndex = 15;
             this.cb_Client.SelectedIndexChanged += new System.EventHandler(this.cb_Client_SelectedIndexChanged);
             // 

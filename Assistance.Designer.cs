@@ -149,11 +149,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 88);
+            this.label1.Location = new System.Drawing.Point(302, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 21);
+            this.label1.Size = new System.Drawing.Size(199, 21);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Demandes d\'interventions";
+            this.label1.Text = "Demandes d\'assistances";
             // 
             // label2
             // 
@@ -169,11 +169,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 88);
+            this.label3.Location = new System.Drawing.Point(32, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(214, 21);
+            this.label3.Size = new System.Drawing.Size(199, 21);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Demandes d\'interventions";
+            this.label3.Text = "Demandes d\'assistances";
             // 
             // label4
             // 
@@ -189,7 +189,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(628, 109);
+            this.label5.Location = new System.Drawing.Point(624, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 21);
             this.label5.TabIndex = 26;
@@ -199,11 +199,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(562, 88);
+            this.label6.Location = new System.Drawing.Point(566, 88);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(214, 21);
+            this.label6.Size = new System.Drawing.Size(199, 21);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Demandes d\'interventions";
+            this.label6.Text = "Demandes d\'assistances";
             // 
             // cb_titreAssAtt
             // 
@@ -238,9 +238,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(12, 284);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 20);
+            this.label9.Size = new System.Drawing.Size(145, 21);
             this.label9.TabIndex = 32;
             this.label9.Text = "Type d\'assistance";
             // 
@@ -521,7 +522,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btn_Terminer);
             // 
-            // Intervention
+            // Assistance
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
@@ -574,9 +575,9 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Intervention";
+            this.Name = "Assistance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intervention";
+            this.Text = "Assistance";
             this.p_Chargeon.ResumeLayout(false);
             this.p_Chargeon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Return)).EndInit();

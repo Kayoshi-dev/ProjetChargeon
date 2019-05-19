@@ -100,12 +100,12 @@
             // l_Titre_Chargeon
             // 
             this.l_Titre_Chargeon.AutoSize = true;
-            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.l_Titre_Chargeon.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Chargeon.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Chargeon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Chargeon.Location = new System.Drawing.Point(12, 25);
             this.l_Titre_Chargeon.Name = "l_Titre_Chargeon";
-            this.l_Titre_Chargeon.Size = new System.Drawing.Size(79, 20);
+            this.l_Titre_Chargeon.Size = new System.Drawing.Size(90, 21);
             this.l_Titre_Chargeon.TabIndex = 4;
             this.l_Titre_Chargeon.Text = "Chargéon";
             // 
@@ -122,83 +122,83 @@
             // 
             // cb_Nom
             // 
-            this.cb_Nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Nom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Nom.FormattingEnabled = true;
             this.cb_Nom.Location = new System.Drawing.Point(784, 88);
             this.cb_Nom.Name = "cb_Nom";
-            this.cb_Nom.Size = new System.Drawing.Size(187, 26);
+            this.cb_Nom.Size = new System.Drawing.Size(187, 29);
             this.cb_Nom.TabIndex = 6;
             this.cb_Nom.SelectedIndexChanged += new System.EventHandler(this.NameIndexChange);
             // 
             // tb_Titre_Nom
             // 
             this.tb_Titre_Nom.AutoSize = true;
-            this.tb_Titre_Nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_Titre_Nom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Titre_Nom.ForeColor = System.Drawing.SystemColors.Window;
             this.tb_Titre_Nom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_Titre_Nom.Location = new System.Drawing.Point(708, 91);
             this.tb_Titre_Nom.Name = "tb_Titre_Nom";
-            this.tb_Titre_Nom.Size = new System.Drawing.Size(54, 20);
+            this.tb_Titre_Nom.Size = new System.Drawing.Size(59, 21);
             this.tb_Titre_Nom.TabIndex = 15;
             this.tb_Titre_Nom.Text = "Nom : ";
             // 
             // l_Titre_Ajout
             // 
             this.l_Titre_Ajout.AutoSize = true;
-            this.l_Titre_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Titre_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Ajout.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Ajout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Ajout.Location = new System.Drawing.Point(78, 88);
             this.l_Titre_Ajout.Name = "l_Titre_Ajout";
-            this.l_Titre_Ajout.Size = new System.Drawing.Size(171, 25);
+            this.l_Titre_Ajout.Size = new System.Drawing.Size(142, 21);
             this.l_Titre_Ajout.TabIndex = 14;
             this.l_Titre_Ajout.Text = "Ajouter un Client";
             // 
             // l_Titre_Nom_Ajout
             // 
             this.l_Titre_Nom_Ajout.AutoSize = true;
-            this.l_Titre_Nom_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.l_Titre_Nom_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Nom_Ajout.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Nom_Ajout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Nom_Ajout.Location = new System.Drawing.Point(15, 16);
             this.l_Titre_Nom_Ajout.Name = "l_Titre_Nom_Ajout";
-            this.l_Titre_Nom_Ajout.Size = new System.Drawing.Size(54, 20);
+            this.l_Titre_Nom_Ajout.Size = new System.Drawing.Size(59, 21);
             this.l_Titre_Nom_Ajout.TabIndex = 15;
             this.l_Titre_Nom_Ajout.Text = "Nom : ";
             // 
             // l_Titre_Adresse_Ajout
             // 
             this.l_Titre_Adresse_Ajout.AutoSize = true;
-            this.l_Titre_Adresse_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.l_Titre_Adresse_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Adresse_Ajout.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Adresse_Ajout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Adresse_Ajout.Location = new System.Drawing.Point(15, 57);
             this.l_Titre_Adresse_Ajout.Name = "l_Titre_Adresse_Ajout";
-            this.l_Titre_Adresse_Ajout.Size = new System.Drawing.Size(76, 20);
+            this.l_Titre_Adresse_Ajout.Size = new System.Drawing.Size(79, 21);
             this.l_Titre_Adresse_Ajout.TabIndex = 16;
             this.l_Titre_Adresse_Ajout.Text = "Adresse :";
             // 
             // l_Titre_Ville_Ajout
             // 
             this.l_Titre_Ville_Ajout.AutoSize = true;
-            this.l_Titre_Ville_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.l_Titre_Ville_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Ville_Ajout.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Ville_Ajout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Ville_Ajout.Location = new System.Drawing.Point(15, 194);
             this.l_Titre_Ville_Ajout.Name = "l_Titre_Ville_Ajout";
-            this.l_Titre_Ville_Ajout.Size = new System.Drawing.Size(46, 20);
+            this.l_Titre_Ville_Ajout.Size = new System.Drawing.Size(48, 21);
             this.l_Titre_Ville_Ajout.TabIndex = 17;
             this.l_Titre_Ville_Ajout.Text = "Ville :";
             // 
             // l_Titre_CP_Ajout
             // 
             this.l_Titre_CP_Ajout.AutoSize = true;
-            this.l_Titre_CP_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.l_Titre_CP_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_CP_Ajout.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_CP_Ajout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_CP_Ajout.Location = new System.Drawing.Point(15, 147);
             this.l_Titre_CP_Ajout.Name = "l_Titre_CP_Ajout";
-            this.l_Titre_CP_Ajout.Size = new System.Drawing.Size(38, 20);
+            this.l_Titre_CP_Ajout.Size = new System.Drawing.Size(40, 21);
             this.l_Titre_CP_Ajout.TabIndex = 18;
             this.l_Titre_CP_Ajout.Text = "CP :";
             // 
@@ -221,6 +221,7 @@
             // 
             // bt_Ajout
             // 
+            this.bt_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Ajout.Location = new System.Drawing.Point(100, 246);
             this.bt_Ajout.Name = "bt_Ajout";
             this.bt_Ajout.Size = new System.Drawing.Size(105, 29);
@@ -231,21 +232,28 @@
             // 
             // tb_Ville_Ajout
             // 
+            this.tb_Ville_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Ville_Ajout.Location = new System.Drawing.Point(100, 191);
+            this.tb_Ville_Ajout.MaxLength = 25;
             this.tb_Ville_Ajout.Name = "tb_Ville_Ajout";
-            this.tb_Ville_Ajout.Size = new System.Drawing.Size(172, 26);
+            this.tb_Ville_Ajout.Size = new System.Drawing.Size(172, 27);
             this.tb_Ville_Ajout.TabIndex = 4;
             // 
             // tb_CP_Ajout
             // 
+            this.tb_CP_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_CP_Ajout.Location = new System.Drawing.Point(100, 144);
+            this.tb_CP_Ajout.MaxLength = 5;
             this.tb_CP_Ajout.Name = "tb_CP_Ajout";
-            this.tb_CP_Ajout.Size = new System.Drawing.Size(172, 26);
+            this.tb_CP_Ajout.Size = new System.Drawing.Size(172, 27);
             this.tb_CP_Ajout.TabIndex = 3;
+            this.tb_CP_Ajout.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AcceptNumbers);
             // 
             // tb_Adresse_Ajout
             // 
+            this.tb_Adresse_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Adresse_Ajout.Location = new System.Drawing.Point(100, 57);
+            this.tb_Adresse_Ajout.MaxLength = 100;
             this.tb_Adresse_Ajout.Multiline = true;
             this.tb_Adresse_Ajout.Name = "tb_Adresse_Ajout";
             this.tb_Adresse_Ajout.Size = new System.Drawing.Size(172, 73);
@@ -253,9 +261,12 @@
             // 
             // tb_Nom_Ajout
             // 
+            this.tb_Nom_Ajout.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tb_Nom_Ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Nom_Ajout.Location = new System.Drawing.Point(100, 13);
+            this.tb_Nom_Ajout.MaxLength = 25;
             this.tb_Nom_Ajout.Name = "tb_Nom_Ajout";
-            this.tb_Nom_Ajout.Size = new System.Drawing.Size(172, 26);
+            this.tb_Nom_Ajout.Size = new System.Drawing.Size(172, 27);
             this.tb_Nom_Ajout.TabIndex = 1;
             // 
             // p_Separator_1
@@ -286,6 +297,7 @@
             // 
             // bt_MAJ
             // 
+            this.bt_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_MAJ.Location = new System.Drawing.Point(100, 246);
             this.bt_MAJ.Name = "bt_MAJ";
             this.bt_MAJ.Size = new System.Drawing.Size(105, 29);
@@ -296,33 +308,40 @@
             // 
             // tb_Ville_Modif
             // 
+            this.tb_Ville_Modif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Ville_Modif.Location = new System.Drawing.Point(100, 191);
+            this.tb_Ville_Modif.MaxLength = 25;
             this.tb_Ville_Modif.Name = "tb_Ville_Modif";
-            this.tb_Ville_Modif.Size = new System.Drawing.Size(172, 26);
+            this.tb_Ville_Modif.Size = new System.Drawing.Size(172, 27);
             this.tb_Ville_Modif.TabIndex = 10;
             // 
             // tb_CP_Modif
             // 
+            this.tb_CP_Modif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_CP_Modif.Location = new System.Drawing.Point(100, 144);
+            this.tb_CP_Modif.MaxLength = 5;
             this.tb_CP_Modif.Name = "tb_CP_Modif";
-            this.tb_CP_Modif.Size = new System.Drawing.Size(172, 26);
+            this.tb_CP_Modif.Size = new System.Drawing.Size(172, 27);
             this.tb_CP_Modif.TabIndex = 9;
+            this.tb_CP_Modif.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AcceptNumbers);
             // 
             // tb_Titre_Ville_MAJ
             // 
             this.tb_Titre_Ville_MAJ.AutoSize = true;
-            this.tb_Titre_Ville_MAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_Titre_Ville_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Titre_Ville_MAJ.ForeColor = System.Drawing.SystemColors.Window;
             this.tb_Titre_Ville_MAJ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_Titre_Ville_MAJ.Location = new System.Drawing.Point(15, 194);
             this.tb_Titre_Ville_MAJ.Name = "tb_Titre_Ville_MAJ";
-            this.tb_Titre_Ville_MAJ.Size = new System.Drawing.Size(46, 20);
+            this.tb_Titre_Ville_MAJ.Size = new System.Drawing.Size(48, 21);
             this.tb_Titre_Ville_MAJ.TabIndex = 17;
             this.tb_Titre_Ville_MAJ.Text = "Ville :";
             // 
             // tb_Adresse_Modif
             // 
+            this.tb_Adresse_Modif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Adresse_Modif.Location = new System.Drawing.Point(100, 57);
+            this.tb_Adresse_Modif.MaxLength = 100;
             this.tb_Adresse_Modif.Multiline = true;
             this.tb_Adresse_Modif.Name = "tb_Adresse_Modif";
             this.tb_Adresse_Modif.Size = new System.Drawing.Size(172, 73);
@@ -331,55 +350,58 @@
             // tb_Titre_CP_MAJ
             // 
             this.tb_Titre_CP_MAJ.AutoSize = true;
-            this.tb_Titre_CP_MAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_Titre_CP_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Titre_CP_MAJ.ForeColor = System.Drawing.SystemColors.Window;
             this.tb_Titre_CP_MAJ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_Titre_CP_MAJ.Location = new System.Drawing.Point(15, 147);
             this.tb_Titre_CP_MAJ.Name = "tb_Titre_CP_MAJ";
-            this.tb_Titre_CP_MAJ.Size = new System.Drawing.Size(38, 20);
+            this.tb_Titre_CP_MAJ.Size = new System.Drawing.Size(40, 21);
             this.tb_Titre_CP_MAJ.TabIndex = 18;
             this.tb_Titre_CP_MAJ.Text = "CP :";
             // 
             // tb_Nom_Modif
             // 
+            this.tb_Nom_Modif.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tb_Nom_Modif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Nom_Modif.Location = new System.Drawing.Point(100, 13);
+            this.tb_Nom_Modif.MaxLength = 25;
             this.tb_Nom_Modif.Name = "tb_Nom_Modif";
-            this.tb_Nom_Modif.Size = new System.Drawing.Size(172, 26);
+            this.tb_Nom_Modif.Size = new System.Drawing.Size(172, 27);
             this.tb_Nom_Modif.TabIndex = 7;
             // 
             // tb_Titre_Nom_MAJ
             // 
             this.tb_Titre_Nom_MAJ.AutoSize = true;
-            this.tb_Titre_Nom_MAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_Titre_Nom_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Titre_Nom_MAJ.ForeColor = System.Drawing.SystemColors.Window;
             this.tb_Titre_Nom_MAJ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_Titre_Nom_MAJ.Location = new System.Drawing.Point(15, 16);
             this.tb_Titre_Nom_MAJ.Name = "tb_Titre_Nom_MAJ";
-            this.tb_Titre_Nom_MAJ.Size = new System.Drawing.Size(54, 20);
+            this.tb_Titre_Nom_MAJ.Size = new System.Drawing.Size(59, 21);
             this.tb_Titre_Nom_MAJ.TabIndex = 15;
             this.tb_Titre_Nom_MAJ.Text = "Nom : ";
             // 
             // tb_Titre_Adresse_MAJ
             // 
             this.tb_Titre_Adresse_MAJ.AutoSize = true;
-            this.tb_Titre_Adresse_MAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_Titre_Adresse_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Titre_Adresse_MAJ.ForeColor = System.Drawing.SystemColors.Window;
             this.tb_Titre_Adresse_MAJ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_Titre_Adresse_MAJ.Location = new System.Drawing.Point(15, 57);
             this.tb_Titre_Adresse_MAJ.Name = "tb_Titre_Adresse_MAJ";
-            this.tb_Titre_Adresse_MAJ.Size = new System.Drawing.Size(76, 20);
+            this.tb_Titre_Adresse_MAJ.Size = new System.Drawing.Size(79, 21);
             this.tb_Titre_Adresse_MAJ.TabIndex = 16;
             this.tb_Titre_Adresse_MAJ.Text = "Adresse :";
             // 
             // l_Titre_MAJ
             // 
             this.l_Titre_MAJ.AutoSize = true;
-            this.l_Titre_MAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Titre_MAJ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_MAJ.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_MAJ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_MAJ.Location = new System.Drawing.Point(382, 88);
             this.l_Titre_MAJ.Name = "l_Titre_MAJ";
-            this.l_Titre_MAJ.Size = new System.Drawing.Size(231, 25);
+            this.l_Titre_MAJ.Size = new System.Drawing.Size(184, 21);
             this.l_Titre_MAJ.TabIndex = 25;
             this.l_Titre_MAJ.Text = "Mise à Jour d\'un Client";
             // 
@@ -395,12 +417,12 @@
             // l_Titre_Supprimer
             // 
             this.l_Titre_Supprimer.AutoSize = true;
-            this.l_Titre_Supprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Titre_Supprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Titre_Supprimer.ForeColor = System.Drawing.SystemColors.Window;
             this.l_Titre_Supprimer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.l_Titre_Supprimer.Location = new System.Drawing.Point(745, 184);
             this.l_Titre_Supprimer.Name = "l_Titre_Supprimer";
-            this.l_Titre_Supprimer.Size = new System.Drawing.Size(201, 25);
+            this.l_Titre_Supprimer.Size = new System.Drawing.Size(162, 21);
             this.l_Titre_Supprimer.TabIndex = 26;
             this.l_Titre_Supprimer.Text = "Supprimer un Client";
             // 
@@ -416,7 +438,7 @@
             // 
             // l_Nom_Supprimer
             // 
-            this.l_Nom_Supprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Nom_Supprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Nom_Supprimer.ForeColor = System.Drawing.Color.White;
             this.l_Nom_Supprimer.Location = new System.Drawing.Point(19, 22);
             this.l_Nom_Supprimer.Name = "l_Nom_Supprimer";
@@ -427,6 +449,7 @@
             // 
             // bt_Supprimer
             // 
+            this.bt_Supprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Supprimer.Location = new System.Drawing.Point(91, 69);
             this.bt_Supprimer.Name = "bt_Supprimer";
             this.bt_Supprimer.Size = new System.Drawing.Size(105, 29);

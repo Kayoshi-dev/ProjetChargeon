@@ -122,8 +122,8 @@
             // 
             // cb_Dispo_Ajout
             // 
-            this.cb_Dispo_Ajout.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Dispo_Ajout, "cb_Dispo_Ajout");
+            this.cb_Dispo_Ajout.FormattingEnabled = true;
             this.cb_Dispo_Ajout.Name = "cb_Dispo_Ajout";
             // 
             // l_Titre_Nom_Ajout
@@ -177,8 +177,8 @@
             // 
             // cb_Nom_Modif
             // 
-            this.cb_Nom_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Nom_Modif, "cb_Nom_Modif");
+            this.cb_Nom_Modif.FormattingEnabled = true;
             this.cb_Nom_Modif.Name = "cb_Nom_Modif";
             this.cb_Nom_Modif.SelectedIndexChanged += new System.EventHandler(this.DataSelected);
             // 
@@ -189,8 +189,8 @@
             // 
             // cb_Dispo_Modif
             // 
-            this.cb_Dispo_Modif.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Dispo_Modif, "cb_Dispo_Modif");
+            this.cb_Dispo_Modif.FormattingEnabled = true;
             this.cb_Dispo_Modif.Name = "cb_Dispo_Modif";
             // 
             // l_Titre_Nom_Modif
@@ -234,8 +234,8 @@
             // 
             // cb_Nom_Supprimer
             // 
-            this.cb_Nom_Supprimer.FormattingEnabled = true;
             resources.ApplyResources(this.cb_Nom_Supprimer, "cb_Nom_Supprimer");
+            this.cb_Nom_Supprimer.FormattingEnabled = true;
             this.cb_Nom_Supprimer.Name = "cb_Nom_Supprimer";
             // 
             // btn_Supprimer
