@@ -2,6 +2,7 @@
  * Date de création : 11/03/2019
  * Dernière modification : 11/03/2019
  * Équipe : Nathouuuu
+ * Rôle : Page d'Accueil (Administrateur)
  */
 
 using System;

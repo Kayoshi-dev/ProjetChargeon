@@ -1,4 +1,12 @@
-﻿using iTextSharp.text;
+﻿/* 
+* Date de création : 17/05/2019
+* Dernière modification : 20/05/2019
+* Équipe : Nathouuuu
+* Rôle : Page permettant de consulter les factures d'une borne
+* Développeurs : Maxime
+*/
+
+using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Date de création : 23/04/2019
+ * Dernière modification : 20/05/2019
+ * Équipe : Nathouuuu
+ * Rôle : Page pour la Gestion des données "Clients"
+ * Développeur : Maxime, Nathan
+ * Design : Nathan
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -1,8 +1,8 @@
 ﻿/* 
-* Date de création : 17/04/2019
-* Dernière modification : 23/04/2019
+* Date de création : 17/05/2019
+* Dernière modification : 20/05/2019
 * Équipe : Nathouuuu
-* Rôle : Cette classe comporte différentes méthodes concernant les factures des clients
+* Rôle : CRUD pour les "Factures"
 * Développeur : Maxime
 */
 

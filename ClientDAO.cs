@@ -96,31 +96,25 @@ namespace ProjetChargeon
 		{
 			bool validate = false;
 
-			try 
-			{
-				string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES (@nom, @adresse, @cp, @ville)";
-				MySqlCommand req = new MySqlCommand(query, connection);
+			string query = "INSERT INTO client (Cli_Nom, Cli_Adre, Cli_CP, Cli_Ville) VALUES (@nom, @adresse, @cp, @ville)";
+			MySqlCommand req = new MySqlCommand(query, connection);
 
-				//Bind Value des paramètres.
-				req.Parameters.Clear();
-				req.Parameters.Add(new MySqlParameter("@nom", nomClient));
-				req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
-				req.Parameters.Add(new MySqlParameter("@cp", cpClient));
-				req.Parameters.Add(new MySqlParameter("@ville", villeClient));
+		    //Bind Value des paramètres.
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@nom", nomClient));
+			req.Parameters.Add(new MySqlParameter("@adresse", adresseClient));
+			req.Parameters.Add(new MySqlParameter("@cp", cpClient));
+			req.Parameters.Add(new MySqlParameter("@ville", villeClient));
 
-				connection.Open();
+			connection.Open();
 
-				req.ExecuteNonQuery();
+			req.ExecuteNonQuery();
 
-				connection.Close();
+			connection.Close();
 
-				validate = true;
-				return validate;
-			}
-			catch(MySqlException e) 
-			{
-				return validate;
-			}
+			validate = true;
+
+            return validate;
 		}
 
 		// Méthode de mise à jour d'un client
@@ -128,31 +122,26 @@ namespace ProjetChargeon
 		{
 			bool validate = false;
 
-			try {
-				string query = "UPDATE client SET Cli_Nom = @nom, Cli_Adre = @adresse, Cli_CP = @cp, Cli_Ville = @ville WHERE Cli_Id = @idCustomer";
+            string query = "UPDATE client SET Cli_Nom = @nom, Cli_Adre = @adresse, Cli_CP = @cp, Cli_Ville = @ville WHERE Cli_Id = @idCustomer";
 
-				MySqlCommand req = new MySqlCommand(query, connection);
+			MySqlCommand req = new MySqlCommand(query, connection);
 
-				req.Parameters.Clear();
-				req.Parameters.Add(new MySqlParameter("@idCustomer", idCustomer));
-				req.Parameters.Add(new MySqlParameter("@nom", nom));
-				req.Parameters.Add(new MySqlParameter("@adresse", adresse));
-				req.Parameters.Add(new MySqlParameter("@cp", cp));
-				req.Parameters.Add(new MySqlParameter("@ville", ville));
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idCustomer", idCustomer));
+			req.Parameters.Add(new MySqlParameter("@nom", nom));
+			req.Parameters.Add(new MySqlParameter("@adresse", adresse));
+			req.Parameters.Add(new MySqlParameter("@cp", cp));
+			req.Parameters.Add(new MySqlParameter("@ville", ville));
 
-				connection.Open();
+			connection.Open();
 
-				req.ExecuteNonQuery();
+			req.ExecuteNonQuery();
 
-				connection.Close();
+			connection.Close();
 
-				validate = true;
-				return validate;
-			} 
-			catch (MySqlException e) 
-			{
-				return validate;
-			}
+			validate = true;
+
+            return validate;
 		}
 
 		// Méthode de suppression d'un compte client
@@ -160,29 +149,22 @@ namespace ProjetChargeon
 		{
 			bool validate = false;
 			
-			try
-			{
-				string query = "DELETE FROM client WHERE Cli_Id = @id";
+		    string query = "DELETE FROM client WHERE Cli_Id = @id";
 
-				MySqlCommand req = new MySqlCommand(query, connection);
+			MySqlCommand req = new MySqlCommand(query, connection);
 
-				req.Parameters.Clear();
-				req.Parameters.Add(new MySqlParameter("@id", idSelected));
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@id", idSelected));
 
-				connection.Open();
+			connection.Open();
 
-				req.ExecuteNonQuery(); 
+			req.ExecuteNonQuery(); 
 
-				connection.Close();
+			connection.Close();
 
-				validate = true;
+			validate = true;
 
-				return validate;
-			}
-			catch(MySqlException e) 
-			{
-				return validate;
-			}
+			return validate;
 		}
 	}
 }

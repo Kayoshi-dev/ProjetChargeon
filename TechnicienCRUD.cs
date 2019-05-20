@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+ * Date de création : 20/04/2019
+ * Dernière modification : 30/04/2019
+ * Équipe : Nathouuuu
+ * Rôle : CRUD pour les Techniciens
+ * Développeur : Nathan
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

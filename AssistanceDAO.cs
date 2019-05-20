@@ -29,30 +29,23 @@ namespace ProjetChargeon
 		{
 			bool validate = false;
 
-			try 
-			{
-				string query = "INSERT INTO assistance (Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat) VALUES (@idBorne, @idTypeAss, @titre, 0)";
-				MySqlCommand req = new MySqlCommand(query, connection);
+			string query = "INSERT INTO assistance (Assist_NoBorne, Assist_NoTypeAssist, Assist_Titre, Assist_Etat) VALUES (@idBorne, @idTypeAss, @titre, 0)";
+			MySqlCommand req = new MySqlCommand(query, connection);
 
-				req.Parameters.Clear();
-				req.Parameters.Add(new MySqlParameter("@idBorne", idBorne));
-				req.Parameters.Add(new MySqlParameter("@idTypeAss", idTypeAss));
-				req.Parameters.Add(new MySqlParameter("@titre", titre));
+			req.Parameters.Clear();
+			req.Parameters.Add(new MySqlParameter("@idBorne", idBorne));
+			req.Parameters.Add(new MySqlParameter("@idTypeAss", idTypeAss));
+			req.Parameters.Add(new MySqlParameter("@titre", titre));
 
-				connection.Open();
+			connection.Open();
 
-				req.ExecuteNonQuery();
+			req.ExecuteNonQuery();
 
-				connection.Close();
+			connection.Close();
 
-				validate = true;
-				return validate;
-			} 
+			validate = true;
 
-			catch (MySqlException e) 
-			{
-				return validate;
-			}
+            return validate;
 		}
 
 		public int CountAssistance() 

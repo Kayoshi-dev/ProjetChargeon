@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+* Date de création : 17/04/2019
+* Dernière modification : 20/05/2019
+* Équipe : Nathouuuu
+* Rôle : CRUD pour les données "Bornes"
+* Développeurs : Nathan, Maxime
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
