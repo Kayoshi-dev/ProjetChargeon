@@ -1,10 +1,12 @@
 ﻿/* 
  * Date de création : 11/03/2019
- * Dernière modification : 19/04/2019
+ * Dernière modification : 20/05/2019
  * Équipe : Nathouuuu
  * Rôle : Affichage et traitement du formulaire de connexion
  * Développeurs : Maxime, Kevin
  * Design : Bastien
+ * 
+ * Refonte du Design : Maxime
  */
 
 using System;
@@ -62,7 +64,22 @@ namespace ProjetChargeon
 			}
 		}
 
-		private void BackForm(object sender, EventArgs e)
+        private void RemovePlaceholderId(object sender, EventArgs e)
+        {
+            if (tb_login.Text == "Identifiant")
+            {
+                tb_login.Text = "";
+            }
+        }
+        private void RemovePlaceholderMdp(object sender, EventArgs e)
+        {
+            if (tb_mdp.Text == "Mot de passe")
+            {
+                tb_mdp.Text = "";
+            }
+        }
+
+        private void BackForm(object sender, EventArgs e)
 		{
 			Hide();
 			var Accueil = new Accueil();
@@ -74,5 +91,5 @@ namespace ProjetChargeon
 		{
 			Close();
 		}
-	}
+    }
 }
