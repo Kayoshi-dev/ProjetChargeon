@@ -353,7 +353,7 @@ namespace ProjetChargeon
         // Au Clic, on ajoute une borne dans la BDD
         private void AddBorne(object sender, EventArgs e)
         {
-            bool test = DataBorne.InsertBorne(Convert.ToInt32(cb_Site_Ajout.SelectedValue), Convert.ToInt32(cb_Client_Ajout.SelectedValue), tb_Ref_Ajout.Text, tb_NS_Ajout.Text, tb_Description_Ajout.Text, (cb_Type_Ajout.SelectedItem as Item).Value, (cb_Etat_Ajout.SelectedItem as Item).Value, tb_Puissance_Ajout.Text, (cb_Prio_Ajout.SelectedItem as Item).Value);
+            bool test = DataBorne.InsertBorne(Convert.ToInt32(cb_Site_Ajout.SelectedValue), Convert.ToInt32(cb_Client_Ajout.SelectedValue), tb_Ref_Ajout.Text, tb_Description_Ajout.Text, tb_NS_Ajout.Text, (cb_Type_Ajout.SelectedItem as Item).Value, (cb_Etat_Ajout.SelectedItem as Item).Value, tb_Puissance_Ajout.Text, (cb_Prio_Ajout.SelectedItem as Item).Value);
             if (test == true)
             {
                 tb_Ref_Ajout.Text = "";
