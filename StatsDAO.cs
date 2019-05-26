@@ -1,9 +1,9 @@
 ﻿/*
  * Date de création : 26/03/2019
- * Dernière modification : 27/04/2019
+ * Dernière modification : 26/05/2019
  * Équipe : Nathouuuu
  * Rôle : Fichier de classe contenant toute les méthodes permettant des actions sur les statistiques
- * Développeur : Nathan
+ * Développeur : Nathan, Maxime
 */
 
 using MySql.Data.MySqlClient;
@@ -26,9 +26,10 @@ namespace ProjetChargeon
 			this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.
 		}
 
+        // Selectionne les statistiques correspondant à la borne choisie
 		public DataSet SelectDetailsStats(string idSelected)
 		{
-            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Stats_Id = @id";
+            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Borne_Id = @id";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 

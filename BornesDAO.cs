@@ -1,6 +1,6 @@
 /* 
 * Date de création : 17/04/2019
-* Dernière modification : 23/04/2019
+* Dernière modification : 26/05/2019
 * Équipe : Nathouuuu
 * Rôle : Cette classe comporte différentes méthodes permettant d'obtenir des informations sur différentes bornes
 * Développeurs : Nathan, Maxime
@@ -26,10 +26,6 @@ namespace ProjetChargeon
 			this.connection = ConnectObject.GetConnection(); //On récupère la valeur de Connection grâce à la méthode GetConnection.
 		}
 
-		/* Il est surement possible de tout *
-		 * grouper en une seule méthode *
-		 * il faut y réfléchir */
-
         //Cette méthode permet d'obtenir l'ID et la Ref pour remplir la ComboBox
 		public DataSet SelectBornes()
 		{
@@ -42,6 +38,19 @@ namespace ProjetChargeon
 
 			return listeBornes;
 		}
+
+        // Retourne uniquement les bornes possédant des statistiques
+        public DataSet SelectBornesWithStats()
+        {
+            string query = "SELECT Borne_Id, Borne_Ref FROM bornes, stats WHERE stats_NoBorne = Borne_Id";
+
+            MySqlDataAdapter da = new MySqlDataAdapter(query, connection);
+            DataSet listeBorneWithStats = new DataSet();
+
+            da.Fill(listeBorneWithStats);
+
+            return listeBorneWithStats;
+        }
 
 		//Cette méthode récupère quant à elle les autres champs de la base de données, tout en s'adaptant à l'ID selectionné
 		public DataSet SelectDetailsBornes(string idSelected)
@@ -108,6 +117,7 @@ namespace ProjetChargeon
 			return cityForBorne;
 		}
 
+        // Retourne les bornes appartenant à un client
 		public DataSet SelectBornesCustomer(int idAccount)
 		{
 			string query = "SELECT * FROM bornes WHERE Borne_NoCli = @idAccount";
