@@ -29,12 +29,12 @@ namespace ProjetChargeon
         // Selectionne les statistiques correspondant à la borne choisie
 		public DataSet SelectDetailsStats(string idSelected)
 		{
-            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Borne_Id = @id";
+            string query = "SELECT Stats_Titre, Stats_Date, Stats_PuisAbs, Stats_Duree FROM Stats, Bornes WHERE Borne_Id = Stats_NoBorne AND Borne_Id = @idSelected";
 
             MySqlCommand req = new MySqlCommand(query, connection);
 
 			req.Parameters.Clear();
-			req.Parameters.Add(new MySqlParameter("@id", idSelected));
+			req.Parameters.Add(new MySqlParameter("@idSelected", idSelected));
 
 			MySqlDataAdapter adapter = new MySqlDataAdapter();
 			DataSet listeDetailsStats = new DataSet();
