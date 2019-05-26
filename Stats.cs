@@ -20,17 +20,16 @@ namespace ProjetChargeon
 {
     public partial class Stats : Form
     {
-        BornesDAO selectBornes = new BornesDAO(); // Connexion à la BDD pour la liste des bornes
-
+        BornesDAO selectBornes = new BornesDAO(); // Nouvelle instance pour les bornes :)
 
         public Stats()
         {
             InitializeComponent();
 
-            DataSet listeBornes = selectBornes.SelectBornes();
+            DataSet listeBornes = selectBornes.SelectBornesWithStats();
             cb_Bornes.DisplayMember = "Borne_Ref"; // La ComboBox affiche la référence
             cb_Bornes.ValueMember = "Borne_Id"; // Mais vaut l'ID correspondant
-            cb_Bornes.DataSource = listeBornes.Tables["Borne"];
+            cb_Bornes.DataSource = listeBornes.Tables[0];
         }
 
 
